@@ -12,5 +12,5 @@ Project for the GameOff2k22
 | Time2shine | [Github](https://github.com/MaximeGammaitoni) |
 | Strik | [ArtStation](https://www.artstation.com/hipstrik) |
 | JP | [Github](https://github.com/jipey25) |
-| Titi | Empty | 
-| LordFarqwaad | [Website]() |
+| Titi | [Empty]() | 
+| LordFarqwaad | [Empty]() |
