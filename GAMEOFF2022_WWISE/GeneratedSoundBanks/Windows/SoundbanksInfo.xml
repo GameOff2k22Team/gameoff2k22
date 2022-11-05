@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>G:\GO2022 wwise project\GAMEOFF2022_WWISE\</ProjectRoot>
+		<SourceFilesRoot>G:\GO2022 wwise project\GAMEOFF2022_WWISE\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>G:\GO2022 wwise project\GAMEOFF2022_WWISE\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>G:\GO2022 wwise project\GAMEOFF2022_WWISE\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1958929096">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3492006613">
+			<ObjectPath>\SoundBanks\Default Work Unit\MAIN</ObjectPath>
+			<ShortName>MAIN</ShortName>
+			<Path>MAIN.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3157003241" Name="Test" ObjectPath="\Events\Default Work Unit\Test" DurationType="OneShot" DurationMin="380.691162" DurationMax="380.691162">
+					<IncludedMemoryFiles>
+						<File Id="996146106" Language="SFX">
+							<ShortName>Sunny Crimea - Shining Lights.wav</ShortName>
+							<Path>SFX\Sunny Crimea - Shining Lights_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="996146106" Language="SFX">
+					<ShortName>Sunny Crimea - Shining Lights.wav</ShortName>
+					<Path>SFX\Sunny Crimea - Shining Lights_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

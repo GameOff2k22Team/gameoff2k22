@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Sunny Crimea - Shining Lights" ID="{3EA8A029-E4D0-4389-A8CE-ED74C069C1E2}" ShortID="114971507">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sunny Crimea - Shining Lights" ID="{746E8533-4333-45A4-9E60-C709B3ABC495}">
+							<Language>SFX</Language>
+							<AudioFile>Sunny Crimea - Shining Lights.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="996146106"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Sunny Crimea - Shining Lights" ID="{746E8533-4333-45A4-9E60-C709B3ABC495}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

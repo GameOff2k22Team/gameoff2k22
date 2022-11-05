@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EDB93510-2901-42B1-A633-9B33D402F006}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{EDB93510-2901-42B1-A633-9B33D402F006}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="MAIN" ID="{D33F41F9-DB97-4902-B157-22B2F8823A8B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Sunny Crimea - Shining Lights" ID="{3EA8A029-E4D0-4389-A8CE-ED74C069C1E2}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Test" ID="{DAFF8595-4373-4B7C-9E60-363CE8252815}" WorkUnitID="{42ED04B7-6095-41D8-97F3-B0108300DB15}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

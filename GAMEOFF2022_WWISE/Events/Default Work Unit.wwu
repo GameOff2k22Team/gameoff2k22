@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{42ED04B7-6095-41D8-97F3-B0108300DB15}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{42ED04B7-6095-41D8-97F3-B0108300DB15}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Test" ID="{DAFF8595-4373-4B7C-9E60-363CE8252815}">
+					<ChildrenList>
+						<Action Name="" ID="{9E6678A6-7F15-467B-922B-F55BF54D04D9}" ShortID="1036829454">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sunny Crimea - Shining Lights" ID="{3EA8A029-E4D0-4389-A8CE-ED74C069C1E2}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
