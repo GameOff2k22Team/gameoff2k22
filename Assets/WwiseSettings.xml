@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <WwiseProjectPath>../../GO2022 wwise project/GAMEOFF2022_WWISE/GAMEOFF2022_WWISE.wproj</WwiseProjectPath>
+    <WwiseInstallationPathWindows>G:\Wwise 2021.1.10.7883</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+</WwiseSettings>
