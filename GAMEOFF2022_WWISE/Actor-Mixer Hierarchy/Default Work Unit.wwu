@@ -33,6 +33,161 @@
 						<ActiveSource Name="Sunny Crimea - Shining Lights" ID="{746E8533-4333-45A4-9E60-C709B3ABC495}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<ActorMixer Name="SFX" ID="{01148E96-C4BC-41A0-BBD7-1004C014F982}" ShortID="848048511">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="16"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Console" ID="{BB1E7240-7C0A-451A-ADED-6FA786BF6090}" ShortID="425574867">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Console" ID="{A5CD1D48-619A-4E45-BB3E-D082FE0439FF}" ShortID="707268033">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Console [2022-11-07 223425]" ID="{975ABDA9-E5A1-4823-BC9C-2651D40A6FB2}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Console [2022-11-07 223425].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="960625662"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Console [2022-11-07 223425]" ID="{975ABDA9-E5A1-4823-BC9C-2651D40A6FB2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="UI" ID="{6225E61F-723F-4364-9C76-E660CE1E75A5}" ShortID="400698766">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="18"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="VOICE" ID="{582F43F5-DB14-4AA8-9491-1BC19768EED6}" ShortID="932566854">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="20"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Mother" ID="{60BBC419-EFA9-4509-96CB-389F5383288D}" ShortID="841461938">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Hero" ID="{92B96B0B-EBA4-46B6-BE9F-9600A9F9F9E6}" ShortID="752345424">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="AMB" ID="{D9AAB138-7FD0-406F-A897-8BA1B7366BCE}" ShortID="481062344">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="AMB_Chambre_Roomtone" ID="{763EB5FF-515A-47D1-8D26-449F17A38819}" ShortID="882124711">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AMB_Chambre_Roomtone [2022-11-07 224126]" ID="{D6E3D1B3-BF6B-4B16-BD1B-5F6DE9FE966C}">
+									<Language>SFX</Language>
+									<AudioFile>AMB_Chambre_Roomtone [2022-11-07 224126].wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="933608982"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="AMB_Chambre_Roomtone [2022-11-07 224126]" ID="{D6E3D1B3-BF6B-4B16-BD1B-5F6DE9FE966C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
