@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{19BF1A09-2D37-4017-B8BC-325976FC9900}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Donjon" ID="{19BF1A09-2D37-4017-B8BC-325976FC9900}" PersistMode="Standalone"/>
+	</Events>
+</WwiseDocument>

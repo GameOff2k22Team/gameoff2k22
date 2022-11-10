@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Title_Screen" ID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}" PersistMode="Standalone"/>
+	</Events>
+</WwiseDocument>
