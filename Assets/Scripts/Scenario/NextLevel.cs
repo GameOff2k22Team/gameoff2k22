@@ -12,6 +12,7 @@ public class NextLevel : MonoBehaviour
 
 public enum SceneName
 {
-    Title_Scene,
+    Title_scene,
+    Menu_scene,
     Room
 }
