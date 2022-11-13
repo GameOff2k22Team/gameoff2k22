@@ -1,0 +1,20 @@
+{
+  "steps": [
+    {
+      "name": "dialog1",
+      "texts": [ "<1> Bonjour CONNARD !", "<2> tu vois c'etat pas si difficile <shake>a coder</shake>.", "et faut arret d'avoir peur dès que tu vois des <shake> balises </shake> dans le text"]
+    },
+    {
+      "name": "tuto2",
+      "texts": [ "Maintenant, deplacez vous sur les zones vertes, la ligne au sol vous indique ou se trouve la prochaine destination" ]
+    },
+    {
+      "name": "tutoEnd",
+      "texts": [ "La phase d'aprentissage de l'utilisation du casque est à présent términée, vous pouvez cliquer sur le bouton du menu pour commencer la simulation" ]
+    },
+    {
+      "name": "askForTuto",
+      "texts": [ "Le tutoriel de déplacement n'as pas était fait, voulez vous le faire avant de commencer la simulation ?" ]
+    }
+  ]
+}
