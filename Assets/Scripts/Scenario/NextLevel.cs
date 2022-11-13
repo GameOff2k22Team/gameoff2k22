@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
@@ -7,15 +6,12 @@ public class NextLevel : MonoBehaviour
 
     public virtual void GoToNextScene()
     {
-        GameManager.Instance.UpdateGameState(
-                            GameState.LoadNextScene);
-        // TODO Add a blur
-        SceneManager.LoadScene(nextScene.ToString(), 
-                               LoadSceneMode.Single);
+        LoadManager.Instance.LoadScene(nextScene.ToString());
     }
 }
 
 public enum SceneName
 {
-    Title_Scene
+    Title_Scene,
+    Room
 }
