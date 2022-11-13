@@ -103,11 +103,13 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _Fade: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
+    - _Offset: 0
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -122,9 +124,12 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Bot: {r: 0.6320754, g: 0.04472231, b: 0.20163365, a: 0}
     - _Bottom: {r: 0.09223529, g: 0.686, b: 0.27670592, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Left: {r: 0, g: 0, b: 0, a: 0}
+    - _Right: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Top: {r: 0, g: 0.333, b: 0.31714284, a: 1}
+    - _Top: {r: 0.16037738, g: 0.0007564989, b: 0.01577964, a: 1}
   m_BuildTextureStacks: []
