@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="3341653493">
+		<SoundBank Id="491961918" Language="SFX" Hash="1749773702">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -40,6 +40,10 @@
 					<ShortName>FS_G_05 [2022-11-10 104221].wav</ShortName>
 					<Path>SFX\FS_G_05 [2022-11-10 104221]_10C4C929.wem</Path>
 				</File>
+				<File Id="204755983" Language="SFX">
+					<ShortName>MS_Foret_Loop.wav</ShortName>
+					<Path>SFX\MS_Foret_Loop_D79FB2B7.wem</Path>
+				</File>
 				<File Id="260575531" Language="SFX">
 					<ShortName>FS_G_02 [2022-11-10 104219].wav</ShortName>
 					<Path>SFX\FS_G_02 [2022-11-10 104219]_10C4C929.wem</Path>
@@ -63,6 +67,10 @@
 				<File Id="663564149" Language="SFX">
 					<ShortName>FS_G_11 [2022-11-10 104225].wav</ShortName>
 					<Path>SFX\FS_G_11 [2022-11-10 104225]_10C4C929.wem</Path>
+				</File>
+				<File Id="719905947" Language="SFX">
+					<ShortName>MS_Foret_Intro.wav</ShortName>
+					<Path>SFX\MS_Foret_Intro_D79FB2B7.wem</Path>
 				</File>
 				<File Id="743538883" Language="SFX">
 					<ShortName>FS_G_03 [2022-11-10 104219].wav</ShortName>
@@ -95,24 +103,10 @@
 				<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2077253480" Language="SFX" Hash="507229325">
+		<SoundBank Id="2077253480" Language="SFX" Hash="620970551">
 			<ObjectPath>\SoundBanks\Default Work Unit\Room</ObjectPath>
 			<ShortName>Room</ShortName>
 			<Path>Room.bnk</Path>
-			<IncludedEvents>
-				<Event Id="212799888" Name="MUSIC_Room" ObjectPath="\Events\Music\MUSIC_Room" DurationType="OneShot" DurationMin="1." DurationMax="1."/>
-				<Event Id="3871166418" Name="SFX_Sleep_Time" ObjectPath="\Events\Room\SFX_Sleep_Time" DurationType="OneShot" DurationMin="1.25" DurationMax="1.25">
-					<IncludedMemoryFiles>
-						<File Id="87575895" Language="SFX">
-							<ShortName>SFX_Sleep_Time [2022-11-10 150926].wav</ShortName>
-							<Path>SFX\SFX_Sleep_Time [2022-11-10 150926]_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<AuxBusSends>
-						<AuxBus Id="2077253480" Name="Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room"/>
-					</AuxBusSends>
-				</Event>
-			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="5474161" Language="SFX">
 					<ShortName>FS_W_17 [2022-11-10 102831].wav</ShortName>
@@ -185,6 +179,10 @@
 				<File Id="641494805" Language="SFX">
 					<ShortName>FS_W_15 [2022-11-10 102825].wav</ShortName>
 					<Path>SFX\FS_W_15 [2022-11-10 102825]_10C4C929.wem</Path>
+				</File>
+				<File Id="656424530" Language="SFX">
+					<ShortName>SFX_Door_Room_Close [2022-11-11 152959].wav</ShortName>
+					<Path>SFX\SFX_Door_Room_Close [2022-11-11 152959]_10C4C929.wem</Path>
 				</File>
 				<File Id="679995185" Language="SFX">
 					<ShortName>FS_W_08 [2022-11-10 102803].wav</ShortName>
@@ -273,7 +271,7 @@
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="3515711307">
+		<SoundBank Id="2891873417" Language="SFX" Hash="99537964">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -305,6 +303,10 @@
 				<File Id="421264799" Language="SFX">
 					<ShortName>FS_S_02 [2022-11-10 150442].wav</ShortName>
 					<Path>SFX\FS_S_02 [2022-11-10 150442]_10C4C929.wem</Path>
+				</File>
+				<File Id="447295671" Language="SFX">
+					<ShortName>SFX_Door_Donjon_Open [2022-11-11 150946].wav</ShortName>
+					<Path>SFX\SFX_Door_Donjon_Open [2022-11-11 150946]_10C4C929.wem</Path>
 				</File>
 				<File Id="473109578" Language="SFX">
 					<ShortName>FS_S_08 [2022-11-10 150446].wav</ShortName>
@@ -338,6 +340,10 @@
 					<ShortName>FS_S_01 [2022-11-10 150442].wav</ShortName>
 					<Path>SFX\FS_S_01 [2022-11-10 150442]_10C4C929.wem</Path>
 				</File>
+				<File Id="971204579" Language="SFX">
+					<ShortName>SFX_Door_Donjon_Close [2022-11-11 150947].wav</ShortName>
+					<Path>SFX\SFX_Door_Donjon_Close [2022-11-11 150947]_10C4C929.wem</Path>
+				</File>
 				<File Id="992431545" Language="SFX">
 					<ShortName>FS_S_10 [2022-11-10 150448].wav</ShortName>
 					<Path>SFX\FS_S_10 [2022-11-10 150448]_10C4C929.wem</Path>
@@ -348,12 +354,22 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3720479411" Language="SFX" Hash="1230261542">
+		<SoundBank Id="3720479411" Language="SFX" Hash="1136277883">
 			<ObjectPath>\SoundBanks\Default Work Unit\House</ObjectPath>
 			<ShortName>House</ShortName>
 			<Path>House.bnk</Path>
+			<IncludedMemoryFiles>
+				<File Id="17721100" Language="SFX">
+					<ShortName>MS_Maison_Loop.wav</ShortName>
+					<Path>SFX\MS_Maison_Loop_D79FB2B7.wem</Path>
+				</File>
+				<File Id="840043804" Language="SFX">
+					<ShortName>MS_Maison_Intro.wav</ShortName>
+					<Path>SFX\MS_Maison_Intro_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3853285476" Language="SFX" Hash="1316454863">
+		<SoundBank Id="3853285476" Language="SFX" Hash="2952545178">
 			<ObjectPath>\SoundBanks\Default Work Unit\Title_Screen</ObjectPath>
 			<ShortName>Title_Screen</ShortName>
 			<Path>Title_Screen.bnk</Path>

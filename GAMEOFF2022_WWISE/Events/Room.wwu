@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Room" ID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}" PersistMode="Standalone">
-			<ChildrenList>
-				<Event Name="SFX_Sleep_Time" ID="{5DF70809-DFEE-4E2A-BBA8-56B070ACC53C}">
-					<ChildrenList>
-						<Action Name="" ID="{F5382090-1D23-486F-9599-6CFD4D2F9DCD}" ShortID="870080171">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_Sleep_Time" ID="{CBF37432-2EF5-48B0-BAAD-FC704227CF52}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Room" ID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>

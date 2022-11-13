@@ -11,12 +11,6 @@
 
 namespace AK
 {
-    namespace EVENTS
-    {
-        static const AkUniqueID MUSIC_ROOM = 212799888U;
-        static const AkUniqueID SFX_SLEEP_TIME = 3871166418U;
-    } // namespace EVENTS
-
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;

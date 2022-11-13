@@ -6,6 +6,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	372058969	FS_S_14	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_14 [2022-11-10 150450]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_14		114816
 	387345076	FS_S_13	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_13 [2022-11-10 150450]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_13		147064
 	421264799	FS_S_02	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_02 [2022-11-10 150442]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_02		103564
+	447295671	SFX_Door_Donjon_Open	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Door_Donjon_Open [2022-11-11 150946]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Door\SFX_Door_Donjon_Open		278464
 	473109578	FS_S_08	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_08 [2022-11-10 150446]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_08		102064
 	506451451	FS_S_16	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_16 [2022-11-10 150452]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_16		103564
 	548146792	FS_S_15	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_15 [2022-11-10 150451]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_15		108064
@@ -14,6 +15,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	679062465	FS_S_11	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_11 [2022-11-10 150448]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_11		111816
 	722308116	FS_S_09	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_09 [2022-11-10 150447]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_09		100564
 	732914951	FS_S_01	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_01 [2022-11-10 150442]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_01		79564
+	971204579	SFX_Door_Donjon_Close	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Door_Donjon_Close [2022-11-11 150947]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Door\SFX_Door_Donjon_Close		207938
 	992431545	FS_S_10	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_10 [2022-11-10 150448]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_10		114064
 	993366977	FS_S_17	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_17 [2022-11-10 150452]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_17		109548
 
