@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +7,8 @@ public class InteractWithObject : MonoBehaviour
     public PlayerInputActions player;
 
     public PlayerInputActions.IPlayerActions input;
+
+    public Action<InputAction.CallbackContext> lambdaHandler;
 
     private const string INTERACTABLE_TAG = "Interactable";
 
@@ -25,8 +28,8 @@ public class InteractWithObject : MonoBehaviour
         if (CheckInteractable(other))
         {
             var interaction = other.gameObject.GetComponentInParent<Interaction>();
-            player.Player.Use.performed += 
-                (InputAction.CallbackContext context) => interaction.Interact();
+            lambdaHandler = context => interaction.Interact();
+            player.Player.Use.performed += lambdaHandler;
         }
     }
 
@@ -34,9 +37,7 @@ public class InteractWithObject : MonoBehaviour
     {
         if (CheckInteractable(other))
         {
-            var interaction = other.gameObject.GetComponentInParent<Interaction>();
-            player.Player.Use.performed -=
-                (InputAction.CallbackContext context) => interaction.Interact();
+            player.Player.Use.performed -= lambdaHandler;
         }
     }
 
