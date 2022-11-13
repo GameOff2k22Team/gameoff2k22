@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    protected InputsManager inputManager;
+    protected InputManager inputManager;
     protected PlayerInputActions _playerInputs;
     protected CharacterController _controller;
     protected Vector3 _playerVelocity;
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        _playerInputs = InputsManager.Instance._playerInputs;
+        _playerInputs = InputManager.Instance._playerInputs;
 
         if (!TryGetComponent<CharacterController>(out _controller))
         {

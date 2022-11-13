@@ -14,7 +14,7 @@ public class PlayerMovement2D : MonoBehaviour
 
     void Awake()
     {
-        _playerInputs = InputsManager.Instance._playerInputs;
+        _playerInputs = InputManager.Instance._playerInputs;
         _playerTR = this.transform;
         _player2Drb = this.GetComponent<Rigidbody2D>();
     }
