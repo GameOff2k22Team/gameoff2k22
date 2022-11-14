@@ -7,10 +7,8 @@ using UnityEngine.SceneManagement;
 /// Help from : https://www.youtube.com/watch?v=OmobsXZSRKo
 /// and https://www.youtube.com/watch?v=Oadq-IrOazg
 /// </summary>
-public class LoadManager : MonoBehaviour
+public class LoadManager : Singleton<LoadManager>
 {
-    public static LoadManager Instance;
-
     [SerializeField]
     private Animator _fadeAnimator;
 
@@ -21,18 +19,10 @@ public class LoadManager : MonoBehaviour
 
     private bool _fadeOutCompleted;
 
-    private void Awake()
+    public override void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this);
-            OnFadeOutCompleted.AddListener(() => _fadeOutCompleted = true);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+        base.Awake();
+        OnFadeOutCompleted.AddListener(() => _fadeOutCompleted = true);
     }
 
     private void OnDestroy()
@@ -41,7 +31,7 @@ public class LoadManager : MonoBehaviour
         OnFadeInCompleted?.RemoveAllListeners();
     }
 
-    public virtual void LoadScene(string scene)
+    public virtual void LoadSceneInGame(string scene)
     {
         GameManager.Instance.UpdateGameState(
                             GameState.LoadNextScene);
@@ -61,6 +51,11 @@ public class LoadManager : MonoBehaviour
     public void FadeInCompleted()
     {
         OnFadeInCompleted?.Invoke();
+    }
+
+    public void LoadScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
     }
 
     IEnumerator WaitToLoadLevel(string scene)
