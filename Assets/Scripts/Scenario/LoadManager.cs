@@ -60,7 +60,6 @@ public class LoadManager : Singleton<LoadManager>
 
     IEnumerator WaitToLoadLevel(string scene)
     {
-        Debug.Log("Started load coroutine");
         AsyncOperation asyncOperation =
                 SceneManager.LoadSceneAsync(scene);
 
@@ -69,7 +68,6 @@ public class LoadManager : Singleton<LoadManager>
         do {
             yield return null;
         } while (!_fadeOutCompleted || asyncOperation.progress < 0.8);
-        Debug.Log("Outtawhile");
 
         asyncOperation.allowSceneActivation = true;
 

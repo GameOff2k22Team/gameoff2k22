@@ -32,15 +32,14 @@ public class InputManager : Singleton<InputManager>
 
     public void OnDestroy()
     {
-        OnMenuLoaded.UnregisterListeners();
-        OnGamePaused.UnregisterListeners();
-        OnGameUnpaused.UnregisterListeners();
+        OnMenuLoaded.UnregisterListener(EnableUI);
+        OnGameLoaded.UnregisterListener(EnablePlayer);
+        OnGamePaused.UnregisterListener(EnableUI); ;
+        OnGameUnpaused.UnregisterListener(EnablePlayer);
     }
 
-    // Update is called once per frame
     void EnableUI()
     {
-        Debug.Log("Enabled UI");
         _playerInputs.Player.Disable();
         _playerInputs.UI.Enable();
     }

@@ -31,7 +31,6 @@ public class Weapon : MonoBehaviour
 
     private void LaunchWeapon(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Launching weapon");
         if (ctx.performed)
         {
             if (!_isWeaponLaunched)
@@ -39,7 +38,6 @@ public class Weapon : MonoBehaviour
                 Vector2 lookingDirection = playerInput.Player.Look.ReadValue<Vector2>();
                 lookingDirection = RecalculateMovementVector(lookingDirection);
                 Vector3 launchVector = new Vector3(lookingDirection.x, 0, lookingDirection.y);
-                Debug.Log("launchVector is " + launchVector);
                 if(launchVector.magnitude > 0.5f)
                 {
                     _instance = Instantiate(WeaponGO, transform.position + 3 * launchVector
@@ -97,7 +95,6 @@ public class Weapon : MonoBehaviour
 
     private IEnumerator AddForceToPlayerCoroutine(Vector3 impact)
     {
-        Debug.Log("InCorutine, consuming impact");
         if (impact.magnitude > 0.2)
         {
             characterController.Move(impact * Time.deltaTime);

@@ -6,7 +6,7 @@ public class NextLevel : MonoBehaviour
 
     public virtual void GoToNextScene()
     {
-        LoadManager.Instance.LoadScene(nextScene.ToString());
+        LoadManager.Instance.LoadSceneInGame(nextScene.ToString());
     }
 }
 

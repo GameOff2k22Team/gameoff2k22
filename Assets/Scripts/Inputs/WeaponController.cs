@@ -20,7 +20,6 @@ public class WeaponController : PlayerMovement
         _controller.Move(movementVector * Time.deltaTime
             * _playerSpeed);
 
-        //Debug.Log("input is " + movementVector);
         if (movementVector != Vector3.zero)
         {
             gameObject.transform.forward = movementVector;

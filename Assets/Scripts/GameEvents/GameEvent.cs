@@ -16,20 +16,15 @@ namespace Architecture
 
         public void Raise()
         {
-            Debug.Log("Raised");
             for (int i = eventListeners.Count - 1; i >= 0; i--)
             {
-                Debug.Log("InLoopRaise");
                 eventListeners[i].OnEventRaised();
-
             }
 
         }
 
         public void Raise<T>(T input)
         {
-            Debug.Log("GenericRaised");
-
             for (int i = eventListeners.Count - 1; i >= 0; i--)
                 eventListeners[i].OnEventRaised(input);
         }

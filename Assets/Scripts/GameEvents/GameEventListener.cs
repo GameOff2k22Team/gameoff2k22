@@ -22,15 +22,19 @@ namespace Architecture
             Event.RegisterListener(this);
         }
 
-        public void UnregisterListeners()
+        public void UnregisterAllListeners()
         {
             Response.RemoveAllListeners();
             Event.UnregisterListener(this);
         }
 
+        public void UnregisterListener(UnityAction action)
+        {
+            Response.RemoveListener(action);
+        }
+
         public void OnEventRaised()
         {
-            Debug.Log("Invoking");
             Response.Invoke();
         }
 
@@ -64,10 +68,15 @@ namespace Architecture
             Event.RegisterListener(this);
         }
 
-        public void UnregisterListeners()
+        public void UnregisterAllListeners()
         {
             Response.RemoveAllListeners();
             Event.UnregisterListener(this);
+        }
+
+        public void UnregisterListener(UnityAction<T> action)
+        {
+            Response.RemoveListener(action);
         }
 
         public void OnEventRaised()

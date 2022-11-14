@@ -38,13 +38,11 @@ public class GameManager : Singleton<GameManager>
 
     public void PauseGame()
     {
-        Debug.Log("game should be Paused");
         UpdateGameState(GameState.Pause);
     }
 
     public void UnPauseGame()
     {
-        Debug.Log("game should be Paused");
         UpdateGameState(GameState.UnPause);
     }
 
