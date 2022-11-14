@@ -3,10 +3,6 @@ using UnityEngine;
 
 public class FromWorldToInventorySpace : MonoBehaviour, Interaction
 {
-    [Header("Cameras")]
-    public Camera baseCamera;
-    public Camera UICamera;
-
     [Header("Animation Information")]
     public float timeToAnimate;
 
