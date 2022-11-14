@@ -1,0 +1,18 @@
+<<<<<<< HEAD:Assets/Plugins/Febucci/Text Animator/Example/Example 1A - Effects.unity.meta
+fileFormatVersion: 2
+guid: e2aea7108c86c8b48ad9af1de53e5bde
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+=======
+fileFormatVersion: 2
+guid: 847731d5629e95c43a858a79e4edae74
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> [IMP] BubbleText: Add bubble text link to something:Assets/Viking Crew Tools/UI/SpeechBubbleManager/prefabs/Classic Unity UI.meta
