@@ -1,19 +1,26 @@
 using System.Collections;
 using UnityEngine;
 
-public class FromWorldToInventorySpace : MonoBehaviour, Interaction
+public class GoToReturnFromInventory : MonoBehaviour, Interaction
 {
+    [Header("Object Inoformations")]
+    public Collider[] colliderToDeactivate;
+
     [Header("Animation Information")]
     public float timeToAnimate;
 
-    private string originalLayer;
+    private int originalLayer;
+    private Transform originalParent;
+    private Vector3 originalScale;
     private const string UILayer = "UI"; 
     private const float TIME_TO_WAIT = 0.1f;
     private YieldInstruction yieldInstruction = new WaitForSeconds(TIME_TO_WAIT);
 
     private void Awake()
     {
-        originalLayer = gameObject.layer.ToString();
+        originalLayer = gameObject.layer;
+        originalScale = transform.localScale;
+        originalParent = transform.parent;
     }
 
     public void Interact()
@@ -23,32 +30,51 @@ public class FromWorldToInventorySpace : MonoBehaviour, Interaction
 
     public void PutObjectInInventory(Transform inventorySlot)
     {
-        StartCoroutine(ChangeTransformToInventorySlot(inventorySlot));
-    }
-
-    IEnumerator ChangeTransformToInventorySlot(Transform inventorySlot)
-    {
         ChangeSpaceToUICamera(inventorySlot);
-
-        float time = 0;
 
         Vector3 position = Vector3.zero;
         Quaternion rotation = Quaternion.identity;
         Vector3 scale = Vector3.one;
 
+        HandleCollider(false);
+
+        StartCoroutine(ChangePosition(position, rotation, scale));
+    }
+
+    public void RemoveObjectFromInventory(Vector3 position)
+    {
+        StartCoroutine(RemoveObjectFromInventorySpace(position));
+    }
+
+    IEnumerator ChangePosition(Vector3 position, Quaternion rotation, Vector3 scale)
+    {
+        float time = 0;
+
         while (time < timeToAnimate)
         {
-            this.transform.localPosition = Vector3.Lerp(this.transform.localPosition, 
-                                                        position, time/timeToAnimate);
+            this.transform.localPosition = Vector3.Lerp(this.transform.localPosition,
+                                                        position, time / timeToAnimate);
             this.transform.localRotation = Quaternion.Lerp(this.transform.localRotation,
                                                            rotation, time / timeToAnimate);
-            this.transform.localScale = Vector3.Lerp(this.transform.localScale, 
-                                                     scale, time/timeToAnimate);
-            
+            this.transform.localScale = Vector3.Lerp(this.transform.localScale,
+                                                     scale, time / timeToAnimate);
+
             yield return yieldInstruction;
-            
+
             time += TIME_TO_WAIT;
         }
+    }
+
+    IEnumerator RemoveObjectFromInventorySpace(Vector3 position)
+    {
+        this.transform.SetParent(originalParent, true);
+
+        yield return ChangePosition(position, 
+                                    transform.rotation, 
+                                    originalScale);
+
+        HandleCollider(true);
+        ResetLayer();
     }
 
     void ChangeSpaceToUICamera(Transform inventorySlot)
@@ -64,6 +90,14 @@ public class FromWorldToInventorySpace : MonoBehaviour, Interaction
 
     private void ResetLayer()
     {
-        gameObject.layer = LayerMask.NameToLayer(originalLayer);
+        gameObject.layer = originalLayer;
+    }
+
+    private void HandleCollider(bool activate)
+    {
+        foreach (Collider collider in colliderToDeactivate)
+        {
+            collider.enabled = activate;
+        }
     }
 }

@@ -5,8 +5,8 @@ using UnityEngine;
 public class InventoryManager : Singleton<InventoryManager>
 {
     public Transform[] inventorySlotIcons;
-    private Dictionary<Transform, FromWorldToInventorySpace> linkSlotObject 
-        = new Dictionary<Transform, FromWorldToInventorySpace>();
+    private Dictionary<GoToReturnFromInventory, Transform> linkSlotObject 
+        = new Dictionary<GoToReturnFromInventory, Transform>();
     
     public override void Awake()
     {
@@ -15,20 +15,34 @@ public class InventoryManager : Singleton<InventoryManager>
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public void PlaceObjectInInventory(FromWorldToInventorySpace objectToPlace)
+    public void PlaceObjectInInventory(GoToReturnFromInventory objectToPlace)
     {
         Transform slot = FindFreeSlot();
 
         objectToPlace.PutObjectInInventory(slot);
 
-        linkSlotObject.Add(slot, objectToPlace);
+        linkSlotObject.Add(objectToPlace, slot);
+    }
+
+    public void RemoveObjectFromInventory(GoToReturnFromInventory objectToRemove, 
+                                          Vector3 position)
+    {
+        objectToRemove.RemoveObjectFromInventory(position);
+
+        bool objectIsRemoved = linkSlotObject.Remove(objectToRemove);
+
+        if (!objectIsRemoved)
+        {
+            Debug.LogError("The object " + objectToRemove.name + " was not in the inventory", 
+                            objectToRemove);
+        }
     }
 
     private Transform FindFreeSlot()
     {
         foreach (Transform icon in inventorySlotIcons)
         {
-            if (!linkSlotObject.TryGetValue(icon, out _))
+            if (!linkSlotObject.ContainsValue(icon))
             {
                 return icon;
             }

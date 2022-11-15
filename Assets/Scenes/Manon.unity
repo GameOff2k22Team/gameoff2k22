@@ -234,6 +234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9514b672e0cb14046a08d275c6727926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colliderToDeactivate:
+  - {fileID: 195445924}
   timeToAnimate: 5
 --- !u!20 &602290212 stripped
 Camera:
@@ -369,10 +371,10 @@ GameObject:
   - component: {fileID: 839992320}
   - component: {fileID: 839992319}
   - component: {fileID: 839992323}
-  - component: {fileID: 839992324}
+  - component: {fileID: 839992325}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,11 +387,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839992318}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1.6910763}
-  m_Center: {x: -5.311947e-10, y: 0, z: 0.3455371}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &839992320
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -472,7 +474,7 @@ MonoBehaviour:
   onObjectFacePlayer:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 839992324}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NextLevel, Assembly-CSharp
         m_MethodName: GoToNextScene
         m_Mode: 1
@@ -484,7 +486,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &839992324
+--- !u!114 &839992325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -493,10 +495,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 839992318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16522e6eefefc914689a6cda853ac8dd, type: 3}
+  m_Script: {fileID: 11500000, guid: e29046dac5fb81a4c936a7ec24af9e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 1
+  objectsToUse:
+  - objectToUse: {fileID: 1514655234}
+    position: {x: 0.84, y: 1.88, z: -1.99}
 --- !u!1 &929235839
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +513,7 @@ GameObject:
   - component: {fileID: 929235841}
   m_Layer: 0
   m_Name: DoorArea
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,14 +525,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929235839}
-  m_LocalRotation: {x: -0, y: 0.69724315, z: -0, w: 0.7168348}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 839992322}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 88.412, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &929235841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -537,11 +541,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929235839}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.6910763}
+  m_Center: {x: -5.311947e-10, y: 0, z: 0.3455371}
 --- !u!1 &1207320411
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437510680}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.12, y: 0.46, z: -0.06}
+  m_LocalPosition: {x: -2.34, y: 0.46, z: -0.72}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -871,6 +875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9514b672e0cb14046a08d275c6727926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colliderToDeactivate:
+  - {fileID: 1514655230}
   timeToAnimate: 5
 --- !u!1 &1593012272
 GameObject:
