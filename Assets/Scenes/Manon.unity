@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 195445925}
   - component: {fileID: 195445924}
   - component: {fileID: 195445928}
+  - component: {fileID: 195445929}
   m_Layer: 0
   m_Name: Thing
   m_TagString: Interactable
@@ -214,7 +215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195445923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5300009, y: 0.16999984, z: 3.23}
+  m_LocalPosition: {x: -3.07, y: 0.16999984, z: 3.23}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -237,6 +238,19 @@ MonoBehaviour:
   colliderToDeactivate:
   - {fileID: 195445924}
   timeToAnimate: 5
+--- !u!135 &195445929
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195445923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!20 &602290212 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3780697709920784843, guid: 07a55f886600df349bed88b3c110ad55,
@@ -370,8 +384,9 @@ GameObject:
   - component: {fileID: 839992321}
   - component: {fileID: 839992320}
   - component: {fileID: 839992319}
-  - component: {fileID: 839992323}
   - component: {fileID: 839992325}
+  - component: {fileID: 839992326}
+  - component: {fileID: 839992327}
   m_Layer: 0
   m_Name: Door
   m_TagString: Interactable
@@ -458,34 +473,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -88.46, z: 0}
---- !u!114 &839992323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839992318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d483b7f8df2754eac409612e049a7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTag: Player
-  onObjectFacePlayer:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NextLevel, Assembly-CSharp
-        m_MethodName: GoToNextScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &839992325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,6 +488,48 @@ MonoBehaviour:
   objectsToUse:
   - objectToUse: {fileID: 1514655234}
     position: {x: 0.84, y: 1.88, z: -1.99}
+  OnUsedObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 707d6ffc37284634ca31f89aaefec92c, type: 2}
+        m_TargetAssemblyTypeName: Architecture.BoolVariable, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &839992326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839992318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252a9a837e7d7ff4397ae4b59338d074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: 1
+  condition: {fileID: 11400000, guid: 707d6ffc37284634ca31f89aaefec92c, type: 2}
+--- !u!65 &839992327
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839992318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.6910763}
+  m_Center: {x: -5.311947e-10, y: 0, z: 0.3455371}
 --- !u!1 &929235839
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,7 +678,6 @@ GameObject:
   - component: {fileID: 1437510682}
   - component: {fileID: 1437510681}
   - component: {fileID: 1437510685}
-  - component: {fileID: 1437510686}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -728,7 +756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437510680}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.34, y: 0.46, z: -0.72}
+  m_LocalPosition: {x: -3.49, y: 0.46, z: -1.58}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -751,18 +779,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1437510686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437510680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3240c29a861e0479166aa9e9632626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1514655229
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +792,7 @@ GameObject:
   - component: {fileID: 1514655231}
   - component: {fileID: 1514655230}
   - component: {fileID: 1514655234}
+  - component: {fileID: 1514655235}
   m_Layer: 0
   m_Name: Key
   m_TagString: Interactable
@@ -878,6 +895,19 @@ MonoBehaviour:
   colliderToDeactivate:
   - {fileID: 1514655230}
   timeToAnimate: 5
+--- !u!135 &1514655235
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514655229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1593012272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1409,7 @@ PrefabInstance:
     - target: {fileID: 5473895969643898971, guid: d012df199a690d24bb436a4de06eb18c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d012df199a690d24bb436a4de06eb18c, type: 3}

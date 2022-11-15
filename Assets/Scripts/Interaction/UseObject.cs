@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class UseObject : MonoBehaviour, Interaction
+public class UseObject : Interaction
 {
     [Serializable]
     public struct ObjectToUseInfo
@@ -13,13 +14,35 @@ public class UseObject : MonoBehaviour, Interaction
 
     public List<ObjectToUseInfo> objectsToUse;
 
-    public void Interact()
+    public UnityEvent OnUsedObject;
+
+    public override void Interact()
     {
-        foreach (ObjectToUseInfo usedObject in objectsToUse)
+        GoToReturnFromInventory[] objects = GetObjectsToReturn();
+
+        if (InventoryManager.Instance.AreObjectsInInventory(objects))
         {
-            InventoryManager.Instance.RemoveObjectFromInventory(usedObject.objectToUse, 
-                                                                usedObject.position);
+            foreach (ObjectToUseInfo usedObject in objectsToUse)
+            {
+                InventoryManager.Instance.RemoveObjectFromInventory(usedObject.objectToUse, 
+                                                                    usedObject.position);
+            }
+
+            OnUsedObject?.Invoke();
         }
+        
+    }
+
+    private GoToReturnFromInventory[] GetObjectsToReturn()
+    {
+        List<GoToReturnFromInventory> gos = new List<GoToReturnFromInventory>();
+        
+        foreach(ObjectToUseInfo obj in objectsToUse)
+        {
+            gos.Add(obj.objectToUse);
+        }
+
+        return gos.ToArray();
     }
 
     private void OnDrawGizmosSelected()

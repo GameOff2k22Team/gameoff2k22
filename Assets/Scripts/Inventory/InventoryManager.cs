@@ -38,6 +38,18 @@ public class InventoryManager : Singleton<InventoryManager>
         }
     }
 
+    public bool AreObjectsInInventory(GoToReturnFromInventory[] objectsToCheck)
+    {
+        foreach (GoToReturnFromInventory obj in objectsToCheck)
+        {
+            if (!linkSlotObject.ContainsKey(obj))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     private Transform FindFreeSlot()
     {
         foreach (Transform icon in inventorySlotIcons)

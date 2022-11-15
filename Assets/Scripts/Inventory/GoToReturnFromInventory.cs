@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class GoToReturnFromInventory : MonoBehaviour, Interaction
+public class GoToReturnFromInventory : Interaction
 {
     [Header("Object Inoformations")]
     public Collider[] colliderToDeactivate;
@@ -16,14 +16,16 @@ public class GoToReturnFromInventory : MonoBehaviour, Interaction
     private const float TIME_TO_WAIT = 0.1f;
     private YieldInstruction yieldInstruction = new WaitForSeconds(TIME_TO_WAIT);
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         originalLayer = gameObject.layer;
         originalScale = transform.localScale;
         originalParent = transform.parent;
     }
 
-    public void Interact()
+    public override void Interact()
     {
         InventoryManager.Instance.PlaceObjectInInventory(this);
     }

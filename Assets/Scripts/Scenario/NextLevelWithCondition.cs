@@ -6,7 +6,7 @@ public class NextLevelWithCondition : NextLevel
 
     public override void GoToNextScene()
     {
-        if (condition)
+        if (condition.Value)
         {
             base.GoToNextScene();
         }
