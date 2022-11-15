@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>G:\GAMEOFF2022\GAMEOFF2022_WWISE\</ProjectRoot>
-		<SourceFilesRoot>G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>G:\GAMEOFF2022\GAMEOFF2022_WWISE\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>E:\GAMEOFF2022\GAMEOFF2022_WWISE\</ProjectRoot>
+		<SourceFilesRoot>E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\GAMEOFF2022\GAMEOFF2022_WWISE\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>G:\GAMEOFF2022\GAMEOFF2022_WWISE\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\GAMEOFF2022\GAMEOFF2022_WWISE\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="1749773702">
+		<SoundBank Id="491961918" Language="SFX" Hash="1260835143">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2181728358" Name="Music_Forest" ObjectPath="\Events\Forest\Music_Forest" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="204755983" Language="SFX">
+							<ShortName>MS_Foret_Loop.wav</ShortName>
+							<Path>SFX\MS_Foret_Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="719905947" Language="SFX">
+							<ShortName>MS_Foret_Intro.wav</ShortName>
+							<Path>SFX\MS_Foret_Intro_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="16990621" Language="SFX">
 					<ShortName>FS_G_01 [2022-11-10 104218].wav</ShortName>
@@ -103,7 +117,7 @@
 				<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2077253480" Language="SFX" Hash="620970551">
+		<SoundBank Id="2077253480" Language="SFX" Hash="3406034845">
 			<ObjectPath>\SoundBanks\Default Work Unit\Room</ObjectPath>
 			<ShortName>Room</ShortName>
 			<Path>Room.bnk</Path>
@@ -271,7 +285,7 @@
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="99537964">
+		<SoundBank Id="2891873417" Language="SFX" Hash="3685427833">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -354,10 +368,24 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3720479411" Language="SFX" Hash="1136277883">
+		<SoundBank Id="3720479411" Language="SFX" Hash="1036585835">
 			<ObjectPath>\SoundBanks\Default Work Unit\House</ObjectPath>
 			<ShortName>House</ShortName>
 			<Path>House.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3574811899" Name="Music_House" ObjectPath="\Events\House\Music_House" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="17721100" Language="SFX">
+							<ShortName>MS_Maison_Loop.wav</ShortName>
+							<Path>SFX\MS_Maison_Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="840043804" Language="SFX">
+							<ShortName>MS_Maison_Intro.wav</ShortName>
+							<Path>SFX\MS_Maison_Intro_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="17721100" Language="SFX">
 					<ShortName>MS_Maison_Loop.wav</ShortName>

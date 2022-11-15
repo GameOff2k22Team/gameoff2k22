@@ -4,8 +4,10 @@
 		<UserProjectSettings Name="" ID="{74C4EDA9-858B-442D-AF1B-80FF8ED0AEDB}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\leoni\Downloads\"/>
+				<Property Name="Event Action List\{00862B52-F478-4532-8187-C7EDA0056F18}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5DF70809-DFEE-4E2A-BBA8-56B070ACC53C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7F22797B-9475-4FB5-BA2C-8B0E35A923C5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8D07D16A-851F-421E-B002-3AACD3A00EDD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{93CFE779-EAD6-4AFE-A4A9-642248EF7568}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9CB6DD88-336D-4FDC-8BD4-0C25EC953BD6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A2A225E9-CEED-4734-B231-A77AA1BA5582}\x64_Expand States" Type="string" Value=""/>
@@ -61,14 +63,14 @@
 				<Property Name="PluginUserAcknowledge\MotionSource" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{756D9D86-1A9F-4845-9FAD-548C80864ACF}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{01148E96-C4BC-41A0-BBD7-1004C014F982}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_7_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_9_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
 				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value="1ytZOR0vi0OmYnfCV/XOGKYQfN02ZQ1Np0yIBFBCmjJLqke72oVJTaVM90XzLvi+gEMY6DusFk+pATLIyfeJ3YuN2YSsDv9PsQX0E1nfZY0="/>
+				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value="1ytZOR0vi0OmYnfCV/XOGEuqR7vahUlNpUz3RfMu+L4="/>
 				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_16_1" Type="string" Value=""/>
@@ -80,7 +82,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ8ztwk6KXwZ1PuQANmHkhb/E="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="OLGq2dB/b0Col4uhtzZrzpaOFAG8xKBBu9cQBMAU+YJTcY8kuvWhQYdiwOikfZSe3PY4tXSl/kKCXCj2sUaGVJ706vBaXU9DgJGSuqt0gUsf5iViP3JkQ5x25mDOHnWlWGmnVyHwt0S0B3fU+9gYZSV6vHWUHWtJsQESte5+H2r1Qy9YFNuoSpSRG8GXaO7WxaCCyfq44kqoaN9s5VE4CxB5ErT8K41Nr71bu6mGr8JvNIbztC8jTr1/uSBCQFLRZK0zlXfWcU6p5t/eXVVNST1c4Zxug85Ohw0CPFYtT6YV9zW6HircToaT94F5oQzC"/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="OLGq2dB/b0Col4uhtzZrzpaOFAG8xKBBu9cQBMAU+YJTcY8kuvWhQYdiwOikfZSe3PY4tXSl/kKCXCj2sUaGVB/mJWI/cmRDnHbmYM4edaVYaadXIfC3RLQHd9T72BhlJXq8dZQda0mxARK17n4favVDL1gU26hKlJEbwZdo7tbFoILJ+rjiSqho32zlUTgLEHkStPwrjU2vvVu7qYavwm80hvO0LyNOvX+5IEJAUtFkrTOVd9ZxTqnm395dVU1JPVzhnG6Dzk6HDQI8Vi1PphX3NboeKtxOhpP3gXmhDMI="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="twTtQpVg2EGX87AQgwDbFTy0mif1OlpIvUN/XUnEfjejsiNZQ74JS53FP7tDZC6G"/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>

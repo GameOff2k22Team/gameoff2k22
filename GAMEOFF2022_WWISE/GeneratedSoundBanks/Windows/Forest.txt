@@ -1,21 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2181728358	Music_Forest			\Forest\Music_Forest	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	16990621	FS_G_01	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_01 [2022-11-10 104218]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_01		84064
-	56970132	FS_G_06	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_06 [2022-11-10 104222]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_06		108064
-	114234725	FS_G_08	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_08 [2022-11-10 104223]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_08		108064
-	188235433	FS_G_14	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_14 [2022-11-10 104226]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_14		120064
-	194854972	FS_G_13	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_13 [2022-11-10 104226]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_13		132064
-	201489506	FS_G_05	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_05 [2022-11-10 104221]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_05		108064
-	204755983	MS_Foret_Loop	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Foret_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Forest\Music_Forest_Loop\MS_Foret_Loop		26331496
-	260575531	FS_G_02	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_02 [2022-11-10 104219]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_02		108064
-	297071322	FS_G_07	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_07 [2022-11-10 104222]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_07		120064
-	351255117	FS_G_09	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_09 [2022-11-10 104223]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_09		96064
-	509737433	FS_G_16	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_16 [2022-11-10 104229]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_16		108064
-	634811331	FS_G_17	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_17 [2022-11-10 104230]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_17		108064
-	663564149	FS_G_11	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_11 [2022-11-10 104225]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_11		120064
-	719905947	MS_Foret_Intro	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Foret_Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Forest\Music_Forest_Intro\MS_Foret_Intro		640064
-	743538883	FS_G_03	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_03 [2022-11-10 104219]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_03		120064
-	755749943	FS_G_12	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_12 [2022-11-10 104225]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_12		108064
-	856571331	FS_G_15	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_15 [2022-11-10 104228]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_15		108064
-	900007380	FS_G_10	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_10 [2022-11-10 104224]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_10		120064
-	1058741125	FS_G_04	G:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_04 [2022-11-10 104220]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_04		120064
+	16990621	FS_G_01	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_01 [2022-11-10 104218]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_01		84064
+	56970132	FS_G_06	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_06 [2022-11-10 104222]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_06		108064
+	114234725	FS_G_08	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_08 [2022-11-10 104223]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_08		108064
+	188235433	FS_G_14	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_14 [2022-11-10 104226]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_14		120064
+	194854972	FS_G_13	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_13 [2022-11-10 104226]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_13		132064
+	201489506	FS_G_05	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_05 [2022-11-10 104221]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_05		108064
+	204755983	MS_Foret_Loop	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Foret_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Forest\Music_Forest_Loop\MS_Foret_Loop		26331496
+	260575531	FS_G_02	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_02 [2022-11-10 104219]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_02		108064
+	297071322	FS_G_07	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_07 [2022-11-10 104222]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_07		120064
+	351255117	FS_G_09	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_09 [2022-11-10 104223]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_09		96064
+	509737433	FS_G_16	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_16 [2022-11-10 104229]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_16		108064
+	634811331	FS_G_17	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_17 [2022-11-10 104230]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_17		108064
+	663564149	FS_G_11	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_11 [2022-11-10 104225]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_11		120064
+	719905947	MS_Foret_Intro	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Foret_Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Forest\Music_Forest_Intro\MS_Foret_Intro		640064
+	743538883	FS_G_03	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_03 [2022-11-10 104219]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_03		120064
+	755749943	FS_G_12	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_12 [2022-11-10 104225]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_12		108064
+	856571331	FS_G_15	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_15 [2022-11-10 104228]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_15		108064
+	900007380	FS_G_10	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_10 [2022-11-10 104224]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_10		120064
+	1058741125	FS_G_04	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_04 [2022-11-10 104220]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest_Grass\FS_G_04		120064
 
