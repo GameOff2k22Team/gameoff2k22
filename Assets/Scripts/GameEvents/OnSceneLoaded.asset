@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591dad8fc049b014b8b3659f0ac37787, type: 3}
-  m_Name: HasKeyForDoorManonScene
+  m_Script: {fileID: 11500000, guid: 396feac7af894654897861272df77b61, type: 3}
+  m_Name: OnSceneLoaded
   m_EditorClassIdentifier: 
-  DeveloperDescription: 
-  DefaultValue: 0
-  Value: 0

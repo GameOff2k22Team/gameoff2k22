@@ -33,9 +33,6 @@ public class LoadManager : Singleton<LoadManager>
 
     public virtual void LoadSceneInGame(string scene)
     {
-        GameManager.Instance.UpdateGameState(
-                            GameState.LoadNextScene);
-
         _fadeAnimator.SetTrigger("FadeOut");
 
         StartCoroutine(WaitToLoadLevel(scene));
@@ -69,10 +66,15 @@ public class LoadManager : Singleton<LoadManager>
             yield return null;
         } while (!_fadeOutCompleted || asyncOperation.progress < 0.8);
 
+
         asyncOperation.allowSceneActivation = true;
 
         _fadeAnimator.SetTrigger("FadeIn");
 
         _fadeOutCompleted = false;
+
+        yield return null;
+        GameManager.Instance.UpdateGameState(
+                    GameState.LoadNextScene);
     }
 }

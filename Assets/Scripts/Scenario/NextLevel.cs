@@ -4,9 +4,15 @@ public class NextLevel : MonoBehaviour
 {
     public SceneName nextScene;
 
+    bool isLoading;
+
     public virtual void GoToNextScene()
     {
-        LoadManager.Instance.LoadSceneInGame(nextScene.ToString());
+        if (!isLoading)
+        {
+            LoadManager.Instance.LoadSceneInGame(nextScene.ToString());
+            isLoading = true;
+        }
     }
 }
 
