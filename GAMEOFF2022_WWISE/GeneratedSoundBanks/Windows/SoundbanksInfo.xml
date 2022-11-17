@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="1260835143">
+		<SoundBank Id="491961918" Language="SFX" Hash="1226472164">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -108,7 +108,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="953895731">
+		<SoundBank Id="1355168291" Language="SFX" Hash="104581645">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -117,10 +117,88 @@
 				<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2077253480" Language="SFX" Hash="3406034845">
+		<SoundBank Id="2077253480" Language="SFX" Hash="943852698">
 			<ObjectPath>\SoundBanks\Default Work Unit\Room</ObjectPath>
 			<ShortName>Room</ShortName>
 			<Path>Room.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2641191134" Name="Footsteps_Room_Carpet" ObjectPath="\Events\Room\Footsteps_Room_Carpet" MaxAttenuation="75." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="24635894" Language="SFX">
+							<ShortName>FS_C_17 [2022-11-10 145212].wav</ShortName>
+							<Path>SFX\FS_C_17 [2022-11-10 145212]_10C4C929.wem</Path>
+						</File>
+						<File Id="57123771" Language="SFX">
+							<ShortName>FS_C_07 [2022-11-10 145206].wav</ShortName>
+							<Path>SFX\FS_C_07 [2022-11-10 145206]_10C4C929.wem</Path>
+						</File>
+						<File Id="198019637" Language="SFX">
+							<ShortName>FS_C_14 [2022-11-10 145210].wav</ShortName>
+							<Path>SFX\FS_C_14 [2022-11-10 145210]_10C4C929.wem</Path>
+						</File>
+						<File Id="258852259" Language="SFX">
+							<ShortName>FS_C_11 [2022-11-10 145208].wav</ShortName>
+							<Path>SFX\FS_C_11 [2022-11-10 145208]_10C4C929.wem</Path>
+						</File>
+						<File Id="280828825" Language="SFX">
+							<ShortName>FS_C_05 [2022-11-10 145204].wav</ShortName>
+							<Path>SFX\FS_C_05 [2022-11-10 145204]_10C4C929.wem</Path>
+						</File>
+						<File Id="324160003" Language="SFX">
+							<ShortName>FS_C_13 [2022-11-10 145210].wav</ShortName>
+							<Path>SFX\FS_C_13 [2022-11-10 145210]_10C4C929.wem</Path>
+						</File>
+						<File Id="344404645" Language="SFX">
+							<ShortName>FS_C_16 [2022-11-10 145212].wav</ShortName>
+							<Path>SFX\FS_C_16 [2022-11-10 145212]_10C4C929.wem</Path>
+						</File>
+						<File Id="354614497" Language="SFX">
+							<ShortName>FS_C_10 [2022-11-10 145208].wav</ShortName>
+							<Path>SFX\FS_C_10 [2022-11-10 145208]_10C4C929.wem</Path>
+						</File>
+						<File Id="596725264" Language="SFX">
+							<ShortName>FS_C_15 [2022-11-10 145211].wav</ShortName>
+							<Path>SFX\FS_C_15 [2022-11-10 145211]_10C4C929.wem</Path>
+						</File>
+						<File Id="696046968" Language="SFX">
+							<ShortName>FS_C_08 [2022-11-10 145206].wav</ShortName>
+							<Path>SFX\FS_C_08 [2022-11-10 145206]_10C4C929.wem</Path>
+						</File>
+						<File Id="710497602" Language="SFX">
+							<ShortName>FS_C_03 [2022-11-10 145203].wav</ShortName>
+							<Path>SFX\FS_C_03 [2022-11-10 145203]_10C4C929.wem</Path>
+						</File>
+						<File Id="725938857" Language="SFX">
+							<ShortName>FS_C_04 [2022-11-10 145204].wav</ShortName>
+							<Path>SFX\FS_C_04 [2022-11-10 145204]_10C4C929.wem</Path>
+						</File>
+						<File Id="752272842" Language="SFX">
+							<ShortName>FS_C_12 [2022-11-10 145209].wav</ShortName>
+							<Path>SFX\FS_C_12 [2022-11-10 145209]_10C4C929.wem</Path>
+						</File>
+						<File Id="799844652" Language="SFX">
+							<ShortName>FS_C_06 [2022-11-10 145205].wav</ShortName>
+							<Path>SFX\FS_C_06 [2022-11-10 145205]_10C4C929.wem</Path>
+						</File>
+						<File Id="889196616" Language="SFX">
+							<ShortName>FS_C_09 [2022-11-10 145207].wav</ShortName>
+							<Path>SFX\FS_C_09 [2022-11-10 145207]_10C4C929.wem</Path>
+						</File>
+						<File Id="920244191" Language="SFX">
+							<ShortName>FS_C_01 [2022-11-10 145202].wav</ShortName>
+							<Path>SFX\FS_C_01 [2022-11-10 145202]_10C4C929.wem</Path>
+						</File>
+						<File Id="997759834" Language="SFX">
+							<ShortName>FS_C_02 [2022-11-10 145202].wav</ShortName>
+							<Path>SFX\FS_C_02 [2022-11-10 145202]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2077253480" Name="Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1081171197" Name="Stop_Footsteps_Room_Carpet" ObjectPath="\Events\Room\Stop_Footsteps_Room_Carpet" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="5474161" Language="SFX">
 					<ShortName>FS_W_17 [2022-11-10 102831].wav</ShortName>
@@ -279,13 +357,16 @@
 					<Path>SFX\FS_W_02 [2022-11-10 102746]_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="3749487386" Name="FS_RTPC" ObjectPath="\Game Parameters\Default Work Unit\FS_RTPC"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="2607556080" Language="SFX" Hash="257621175">
 			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="3685427833">
+		<SoundBank Id="2891873417" Language="SFX" Hash="3089280653">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -368,7 +449,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3720479411" Language="SFX" Hash="1036585835">
+		<SoundBank Id="3720479411" Language="SFX" Hash="2136479163">
 			<ObjectPath>\SoundBanks\Default Work Unit\House</ObjectPath>
 			<ShortName>House</ShortName>
 			<Path>House.bnk</Path>

@@ -5,9 +5,11 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\leoni\Downloads\"/>
 				<Property Name="Event Action List\{00862B52-F478-4532-8187-C7EDA0056F18}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{103C80F4-57B4-4EE9-B0BD-B3F7B737982D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5DF70809-DFEE-4E2A-BBA8-56B070ACC53C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7F22797B-9475-4FB5-BA2C-8B0E35A923C5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8D07D16A-851F-421E-B002-3AACD3A00EDD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9285F3F7-F25C-4FEF-8177-7BD7DBBE5F41}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{93CFE779-EAD6-4AFE-A4A9-642248EF7568}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9CB6DD88-336D-4FDC-8BD4-0C25EC953BD6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A2A225E9-CEED-4734-B231-A77AA1BA5582}\x64_Expand States" Type="string" Value=""/>
@@ -82,18 +84,19 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ8ztwk6KXwZ1PuQANmHkhb/E="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="OLGq2dB/b0Col4uhtzZrzpaOFAG8xKBBu9cQBMAU+YJTcY8kuvWhQYdiwOikfZSe3PY4tXSl/kKCXCj2sUaGVB/mJWI/cmRDnHbmYM4edaVYaadXIfC3RLQHd9T72BhlJXq8dZQda0mxARK17n4favVDL1gU26hKlJEbwZdo7tbFoILJ+rjiSqho32zlUTgLEHkStPwrjU2vvVu7qYavwm80hvO0LyNOvX+5IEJAUtFkrTOVd9ZxTqnm395dVU1JPVzhnG6Dzk6HDQI8Vi1PphX3NboeKtxOhpP3gXmhDMI="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="OLGq2dB/b0Col4uhtzZrzpaOFAG8xKBBu9cQBMAU+YJTcY8kuvWhQYdiwOikfZSe3PY4tXSl/kKCXCj2sUaGVB/mJWI/cmRDnHbmYM4edaVYaadXIfC3RLQHd9T72BhlPAKtsgM/1EansqsLQF1HpCV6vHWUHWtJsQESte5+H2r1Qy9YFNuoSpSRG8GXaO7WxaCCyfq44kqoaN9s5VE4CxB5ErT8K41Nr71bu6mGr8JvNIbztC8jTr1/uSBCQFLRZK0zlXfWcU6p5t/eXVVNST1c4Zxug85Ohw0CPFYtT6YV9zW6HircToaT94F5oQzC"/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="twTtQpVg2EGX87AQgwDbFTy0mif1OlpIvUN/XUnEfjejsiNZQ74JS53FP7tDZC6G"/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="EDW57QEpsUKmM5sz1ALwBg=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value="CNahSfFU+UqelEkTvZP8/g=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_9_1" Type="string" Value=""/>
 				<Property Name="RTPC\GameParameterSimValue\{09E2B445-C4A3-447F-B3CA-818A1D925EF7}" Type="Real64" Value="6"/>
 				<Property Name="RTPC\GameParameterSimValue\{1329EBEF-A193-472E-A38C-64668B494879}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{28387EE3-C13A-4316-B9C3-DB5C521624AF}" Type="Real64" Value="1"/>
 				<Property Name="RTPC\GameParameterSimValue\{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}" Type="Real64" Value="75"/>
 				<Property Name="RTPC\GameParameterSimValue\{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" Type="Real64" Value="6"/>
+				<Property Name="RTPC\GameParameterSimValue\{5471E3EC-8B61-461B-8159-EFE8921C90F8}" Type="Real64" Value="0.232774674115456"/>
 				<Property Name="RTPC\GameParameterSimValue\{9112AA05-F577-44FD-9F4E-4424158129E6}" Type="Real64" Value="0"/>
 				<Property Name="RTPC\GameParameterSimValue\{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" Type="Real64" Value="50"/>
@@ -128,6 +131,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{D356C184-FC5F-41BF-9344-CFF4116EA920}"/>
 			</PropertyList>
 			<PluginInnerObjectList>
 				<List Name="BatchRenameSettings">

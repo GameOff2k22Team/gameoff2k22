@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Room" ID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}" PersistMode="Standalone"/>
+		<WorkUnit Name="Room" ID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Footsteps_Room_Carpet" ID="{103C80F4-57B4-4EE9-B0BD-B3F7B737982D}">
+					<ChildrenList>
+						<Action Name="" ID="{E8BAE6E6-7F69-494C-903D-735BAEDDE77D}" ShortID="191751922">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Room_Carpet" ID="{BC7CFF72-8237-4A03-8FBD-A3AA79DB022A}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Footsteps_Room_Carpet" ID="{9285F3F7-F25C-4FEF-8177-7BD7DBBE5F41}">
+					<ChildrenList>
+						<Action Name="" ID="{BA8FC7DC-232F-4F51-A51F-426E9E538928}" ShortID="793458040">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Room_Carpet" ID="{BC7CFF72-8237-4A03-8FBD-A3AA79DB022A}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
