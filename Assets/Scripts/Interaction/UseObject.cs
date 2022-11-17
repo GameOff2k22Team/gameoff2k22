@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class UseObject : Interaction
+public class UseObject : MonoBehaviour
 {
     [Serializable]
     public struct ObjectToUseInfo
@@ -16,7 +16,7 @@ public class UseObject : Interaction
 
     public UnityEvent OnUsedObject;
 
-    public override void Interact()
+    public void UseObjects()
     {
         GoToReturnFromInventory[] objects = GetObjectsToReturn();
 

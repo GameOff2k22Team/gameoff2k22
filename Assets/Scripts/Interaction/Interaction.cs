@@ -1,13 +1,15 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public abstract class Interaction : MonoBehaviour
+public class Interaction : MonoBehaviour
 {
     public PlayerInputActions player;
 
+    public UnityEvent OnInteraction;
     protected Action<InputAction.CallbackContext> LambdaHandler { 
-        get => context => Interact(); 
+        get => context => OnInteraction?.Invoke(); 
     }
 
     private const string PLAYER_TAG = "Player";
@@ -30,8 +32,6 @@ public abstract class Interaction : MonoBehaviour
             player.Player.Use.performed += LambdaHandler;
         }
     }
-
-    public abstract void Interact();
 
     private void OnTriggerExit(Collider other)
     {
