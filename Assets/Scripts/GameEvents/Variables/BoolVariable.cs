@@ -9,7 +9,13 @@ namespace Architecture
         [Multiline]
         public string DeveloperDescription = "";
 #endif
+        public bool DefaultValue;
         public bool Value;
+
+        private void OnEnable()
+        {
+            Value = DefaultValue;
+        }
 
         public void SetValue(bool value)
         {

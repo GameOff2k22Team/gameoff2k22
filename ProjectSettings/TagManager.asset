@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ball
   - Ground
+  - Interactable
+  - UICamera
   layers:
   - Default
   - TransparentFX

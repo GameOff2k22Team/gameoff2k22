@@ -12,6 +12,7 @@ public class GameManager : Singleton<GameManager>
     [Header ("Game Events")]
     public GameEvent OnMenuLoaded;
     public GameEvent OnGameLoaded;
+    public GameEvent OnSceneLoaded;
 
     public GameEvent OnGamePaused;
     public GameEvent OnGameUnpaused;
@@ -79,6 +80,7 @@ public class GameManager : Singleton<GameManager>
                 {
                     OnGameLoaded.Raise();
                 }
+                OnSceneLoaded.Raise();
                 break;
             case GameState.OnMenuScene:
                 OnMenuLoaded?.Raise();
