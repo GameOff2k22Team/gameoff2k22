@@ -6,8 +6,7 @@ public class PuzzlePerseverance : MonoBehaviour
 {
 
     private PuzzleManager _puzzleManager;
-    [SerializeField]
-    private Chest chest;
+    private bool _isOpen = false;
     private PuzzleManager.PuzzleType type = PuzzleManager.PuzzleType.PERSEVERANCE;
 
     // Start is called before the first frame update
@@ -28,7 +27,11 @@ public class PuzzlePerseverance : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (chest.isOpen == false)
-            this._puzzleManager.OpenChest(type, this.chest);
+        if (this._isOpen == false && !this._puzzleManager.perseverancePuzzleIsEnd)
+        {
+            this._isOpen = true;
+            this._puzzleManager.OpenChest(type);
+            this.gameObject.SetActive(false); // This must be replaced by the opening chest animation
+        }
     }
 }
