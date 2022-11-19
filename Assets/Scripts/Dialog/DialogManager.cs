@@ -15,11 +15,13 @@ public class DialogManager : Singleton<DialogManager>
 
     public void StartDialog(List<MessageByUnit> dialog)
     {
+        GameManager.Instance.UpdateGameState(GameState.StartDialogue);
         foreach (MessageByUnit dialogInfo in dialog)
         {
             SaySomething(dialogInfo, SpeechBubbleManager.SpeechbubbleType.NORMAL);
         }
-        
+        GameManager.Instance.UpdateGameState(GameState.FinishDialogue);
+
     }
     public void SaySomething(MessageByUnit dialogInfo, SpeechBubbleManager.SpeechbubbleType speechbubbleType)
     {
