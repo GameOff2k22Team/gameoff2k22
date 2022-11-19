@@ -5,7 +5,9 @@ using UnityEngine.InputSystem;
 
 public class Interaction : MonoBehaviour
 {
-    public PlayerInputActions player;
+    public PlayerInputActions input {
+        get => InputManager.Instance._playerInputs;
+    }
 
     public UnityEvent OnInteraction;
     protected Action<InputAction.CallbackContext> LambdaHandler { 
@@ -14,22 +16,11 @@ public class Interaction : MonoBehaviour
 
     private const string PLAYER_TAG = "Player";
 
-    protected virtual void Awake()
-    {
-        player = new PlayerInputActions();
-        player.Player.Enable();
-    }
-
-    private void OnDestroy()
-    {
-        player.Player.Disable();
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (CheckPlayer(other))
         {
-            player.Player.Use.performed += LambdaHandler;
+            input.Player.Use.performed += LambdaHandler;
         }
     }
 
@@ -37,7 +28,7 @@ public class Interaction : MonoBehaviour
     {
         if (CheckPlayer(other))
         {
-            player.Player.Use.performed -= LambdaHandler;
+            input.Player.Use.performed -= LambdaHandler;
         }
     }
 
