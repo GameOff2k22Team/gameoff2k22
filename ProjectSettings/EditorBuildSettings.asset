@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Forest.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/Scenes/Title_scene.unity
     guid: 04f57edb026cb97469c23f8d41295ee9
   - enabled: 1
-    path: Assets/Scenes/Room.unity
-    guid: eb6078b4f95c8c24694480f99e937ea7
-  - enabled: 1
     path: Assets/Scenes/Menu_scene.unity
     guid: 6d4fdcdd060b9724fa777332061c3d17
+  - enabled: 1
+    path: Assets/Scenes/BedRoom.unity
+    guid: eb6078b4f95c8c24694480f99e937ea7
+  - enabled: 1
+    path: Assets/Scenes/InHouse.unity
+    guid: eaca62d36574b6d47ba551b8da6d346d
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

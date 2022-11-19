@@ -20,5 +20,7 @@ public enum SceneName
 {
     Title_scene,
     Menu_scene,
-    BedRoom
+    BedRoom,
+    InHouse,
+    Forest
 }
