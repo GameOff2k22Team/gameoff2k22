@@ -36,20 +36,10 @@ public class GameManager : Singleton<GameManager>
         UpdateGameState(GameState.OnMenuScene);
     }
 
-
-    public void PauseGame()
-    {
-        UpdateGameState(GameState.Pause);
-    }
-
-    public void UnPauseGame()
-    {
-        UpdateGameState(GameState.UnPause);
-    }
-
     public void UpdateGameState(GameState newState)
     {
         _previousState = State;
+        Debug.Log(newState);
         State = newState;
         switch (newState)
         {
@@ -62,10 +52,8 @@ public class GameManager : Singleton<GameManager>
             case GameState.LevelEnd:
                 break;
             case GameState.Pause:
-                OnGamePaused.Raise();
                 break;
             case GameState.UnPause:
-                OnGameUnpaused.Raise();
                 break;
             case GameState.PlayerDeath:
                 break;
@@ -83,7 +71,6 @@ public class GameManager : Singleton<GameManager>
                 OnSceneLoaded.Raise();
                 break;
             case GameState.OnMenuScene:
-                OnMenuLoaded?.Raise();
                 break;
             default:
                 throw new ArgumentOutOfRangeException(
@@ -93,6 +80,9 @@ public class GameManager : Singleton<GameManager>
         OnGameStateChanged?.Invoke(newState);
     }
 
+    private void HandleLoadNextScene()
+    {
+    }
 }
 public enum GameState
 {
@@ -107,5 +97,8 @@ public enum GameState
     Respawn,
     GameOver,
     LoadNextScene,
-    OnMenuScene
+    OnMenuScene,
+    StartDialogue,
+    FinishDialogue,
+    BossCombat
 }

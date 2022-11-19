@@ -17,6 +17,8 @@ public class LoadManager : Singleton<LoadManager>
     public UnityEvent OnFadeInCompleted;
     public UnityEvent OnFadeOutCompleted;
 
+    public SceneName CurrentScene;
+
     private bool _fadeOutCompleted;
 
     public override void Awake()
@@ -57,6 +59,8 @@ public class LoadManager : Singleton<LoadManager>
 
     IEnumerator WaitToLoadLevel(string scene)
     {
+        GameManager.Instance.UpdateGameState(
+                    GameState.LoadNextScene);
         AsyncOperation asyncOperation =
                 SceneManager.LoadSceneAsync(scene);
 
@@ -75,6 +79,6 @@ public class LoadManager : Singleton<LoadManager>
 
         yield return null;
         GameManager.Instance.UpdateGameState(
-                    GameState.LoadNextScene);
+                    GameState.LevelStart);
     }
 }

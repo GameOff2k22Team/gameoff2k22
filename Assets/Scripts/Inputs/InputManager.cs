@@ -23,20 +23,40 @@ public class InputManager : Singleton<InputManager>
     {
         base.Awake();
         _playerInputs = new PlayerInputActions();
-        OnMenuLoaded.RegisterListener(EnableUI);
-        OnGameLoaded.RegisterListener(EnablePlayer);
-        OnGamePaused.RegisterListener(EnableUI);
-        OnGameUnpaused.RegisterListener(EnablePlayer);
+        GameManager.OnGameStateChanged += UpdateInputsOnGameManagerStateChanged;
 
     }
 
     public void OnDestroy()
     {
-        OnMenuLoaded.UnregisterListener(EnableUI);
-        OnGameLoaded.UnregisterListener(EnablePlayer);
-        OnGamePaused.UnregisterListener(EnableUI); ;
-        OnGameUnpaused.UnregisterListener(EnablePlayer);
+        GameManager.OnGameStateChanged -= UpdateInputsOnGameManagerStateChanged;
+
     }
+
+
+    void UpdateInputsOnGameManagerStateChanged(GameState state)
+    {
+        if (state == GameState.OnMenuScene ||
+            state == GameState.Pause )
+        {
+            EnableUI();
+        }
+        else if (state == GameState.SpawnCharacterStarts ||
+                 state == GameState.UnPause)
+        {
+            EnablePlayer();
+        }
+
+        else if (state == GameState.StartDialogue)
+        {
+            DisableMovement();
+        }
+        else if (state == GameState.FinishDialogue)
+        {
+            EnableMovement();
+        }
+    }
+
 
     void EnableUI()
     {
@@ -46,8 +66,20 @@ public class InputManager : Singleton<InputManager>
 
     void EnablePlayer()
     {
+        Debug.Log("Enabling Player");
+
         _playerInputs.UI.Disable();
         _playerInputs.Player.Enable();
+    }
+
+    void DisableMovement()
+    {
+        _playerInputs.Player.Move.Disable();
+
+    }
+    void EnableMovement()
+    {
+        _playerInputs.Player.Move.Enable();
     }
 
 }
