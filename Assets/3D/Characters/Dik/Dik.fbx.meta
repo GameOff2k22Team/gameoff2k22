@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: c29d663015cd68f44a99f98047c78125
+guid: 45e8286d27b0a674db04ab213bb9cca1
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: dbc469888852836438f92980ac6bf821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hairs
+    second: {fileID: 2100000, guid: 944a03b00b3e24949a5769b1079539c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MouthKid
+    second: {fileID: 2100000, guid: 17a11abf7087e3f47801078f9ae41551, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunic
+    second: {fileID: 2100000, guid: c0598d4572dc13046af52d2522abc57d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

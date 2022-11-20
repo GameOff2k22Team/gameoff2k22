@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: c29d663015cd68f44a99f98047c78125
+guid: 1d36333536b609c4ba8379ed55ffb70b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 453d402d9efa0294d82c087ff1fd29aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SWORDO
+    second: {fileID: 2100000, guid: 5b9a0427b701bb048b62e006d75f0d4c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
