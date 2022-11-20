@@ -72,6 +72,10 @@ public class GameManager : Singleton<GameManager>
                 break;
             case GameState.OnMenuScene:
                 break;
+            case GameState.StartDialogue:
+                break;
+            case GameState.FinishDialogue:
+                break;
             default:
                 throw new ArgumentOutOfRangeException(
                                 nameof(newState), newState, null);

@@ -1,7 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using SpeechBubbleManager = VikingCrew.Tools.UI.SpeechBubbleManager;
 
 
@@ -10,21 +9,31 @@ public class DialogManager : Singleton<DialogManager>
     [Serializable]
     public struct MessageByUnit{
         public UnitManager.UnitType type;
+        [TextArea]
         public string message;
     }
 
-    public void StartDialog(List<MessageByUnit> dialog)
+    private Action<InputAction.CallbackContext> lambdaHandler;
+
+    public void StartDialog(DialogTrigger dialogTrigger)
     {
         GameManager.Instance.UpdateGameState(GameState.StartDialogue);
-        foreach (MessageByUnit dialogInfo in dialog)
-        {
-            SaySomething(dialogInfo, SpeechBubbleManager.SpeechbubbleType.NORMAL);
-        }
-        GameManager.Instance.UpdateGameState(GameState.FinishDialogue);
+        lambdaHandler = context => dialogTrigger.NextMessage();
+        InputManager.Instance._playerInputs.Player.Use.performed += lambdaHandler;
 
+        dialogTrigger.NextMessage();
     }
+
+    public void FinishDialogue()
+    {
+        SpeechBubbleManager.Instance.Clear();
+        InputManager.Instance._playerInputs.Player.Use.performed -= lambdaHandler;
+        GameManager.Instance.UpdateGameState(GameState.FinishDialogue);
+    }
+
     public void SaySomething(MessageByUnit dialogInfo, SpeechBubbleManager.SpeechbubbleType speechbubbleType)
     {
+            SpeechBubbleManager.Instance.Clear();
             SpeechBubbleManager.Instance.AddSpeechBubble(UnitManager.Instance.GetUnitByType(dialogInfo.type).transform.position , dialogInfo.message, speechbubbleType);
     }
 }
