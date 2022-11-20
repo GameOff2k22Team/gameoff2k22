@@ -10,6 +10,9 @@ public class InputManager : Singleton<InputManager>
     public PlayerInputActions _playerInputs;
 
     [SerializeField]
+    private BoolVariable DebugMode;
+
+    [SerializeField]
     private GameEventListener OnMenuLoaded;
     [SerializeField]
     private GameEventListener OnGameLoaded;
@@ -23,6 +26,7 @@ public class InputManager : Singleton<InputManager>
     {
         base.Awake();
         _playerInputs = new PlayerInputActions();
+        
         GameManager.OnGameStateChanged += UpdateInputsOnGameManagerStateChanged;
 
     }
@@ -33,7 +37,13 @@ public class InputManager : Singleton<InputManager>
 
     }
 
-
+    private void Start()
+    {
+        if (DebugMode.Value)
+        {
+            _playerInputs.Player.Enable();
+        }
+    }
     void UpdateInputsOnGameManagerStateChanged(GameState state)
     {
         if (state == GameState.OnMenuScene ||
