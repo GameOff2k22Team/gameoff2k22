@@ -1,9 +1,71 @@
 fileFormatVersion: 2
-guid: c29d663015cd68f44a99f98047c78125
+guid: 665d969d51473c44c877e93a229cf2f0
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
-  externalObjects: {}
+  internalIDToNameTable:
+  - first:
+      74: 3883155493392930285
+    second: Armature|Rest
+  - first:
+      74: -4779212398625334856
+    second: Armature|Tpose
+  - first:
+      74: 8349542763059015795
+    second: Armature|Walk
+  - first:
+      74: -5770659042738644603
+    second: Armature|Walking_Heavy
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown
+    second: {fileID: 2100000, guid: 47d42e6b078ad7f4ab9f3b42b00af7d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: dbc469888852836438f92980ac6bf821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hairs
+    second: {fileID: 2100000, guid: f56fd160ef302fb4e874ad540d60488e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LightBrown
+    second: {fileID: 2100000, guid: 2762b35ae1b54864788205e896687807, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 2c7e20bc1b946ba41b6c0106b3251283, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MouthKid
+    second: {fileID: 2100000, guid: d26706f03a5e0b148bef19bee2983d9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SWORDO
+    second: {fileID: 2100000, guid: 40151ca62754e3c4a90ffcd25c59d340, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 8f624ecce5c7a3a45a4de899bddfe1e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunic
+    second: {fileID: 2100000, guid: ce099620fe7280d45bb436bf5a018c06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 382f013149bee8f47b7c379b5955837a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
