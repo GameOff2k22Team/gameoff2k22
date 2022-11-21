@@ -25,6 +25,8 @@ public class PuzzleManager : Singleton<PuzzleManager>
     [Header("Perseverance Puzzle")]
     public int perseverancePuzzleNumberOfTryRequired = 15;
     public PerseverancePuzzle perseverancePuzzle;
+    [HideInInspector]
+    public bool perseverancePuzzleIsEnd = false;
     [Space(10)]
     [Header("Focus Puzzle")]
     [SerializeField]
@@ -40,15 +42,16 @@ public class PuzzleManager : Singleton<PuzzleManager>
     void Start()
     {
         perseverancePuzzle = new PerseverancePuzzle(PuzzleType.PERSEVERANCE, perseverancePuzzleNumberOfTryRequired);
-        this.EnsureLightingRoadIsActive();
+        if(_lightingRoad)
+            this.EnsureLightingRoadIsActive();
     }
 
-    public void OpenChest(PuzzleType puzzleType, Chest chest)
+    public void OpenChest(PuzzleType puzzleType)
     {
         switch (puzzleType)
         {
             case PuzzleType.PERSEVERANCE:
-                this.OpenChestPerseverance(chest);
+                this.OpenChestPerseverance();
                 break;
             case PuzzleType.FOCUS:
                 this.GiveArtefact();
@@ -57,12 +60,15 @@ public class PuzzleManager : Singleton<PuzzleManager>
         }
     }
 
-    private void OpenChestPerseverance(Chest chest)
+    private void OpenChestPerseverance()
     {
-        chest.isOpen = true;
         if (this.perseverancePuzzle.numberOfTry == this.perseverancePuzzle.numberOfTryRequired)
         {
-            this.GiveArtefact();
+            if(!this.perseverancePuzzleIsEnd)
+            {
+                this.GiveArtefact();
+                this.perseverancePuzzleIsEnd = true;
+            }
         }
         else
         {
