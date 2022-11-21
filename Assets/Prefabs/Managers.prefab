@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83266f66e1af6f746afc0cd44305244f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DebugMode: {fileID: 11400000, guid: de063f0a5ab284f47a60818ab16e0d3b, type: 2}
   OnMenuLoaded:
     Event: {fileID: 11400000, guid: e68b1515096a2fa4684d8f442b2f4a72, type: 2}
   OnGameLoaded:
