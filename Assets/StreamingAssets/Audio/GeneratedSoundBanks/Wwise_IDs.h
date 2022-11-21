@@ -13,15 +13,31 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMB_ROOM = 3202361783U;
         static const AkUniqueID FOOTSTEPS_ROOM_CARPET = 2641191134U;
+        static const AkUniqueID MUSIC_DONJON = 611981041U;
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
         static const AkUniqueID MUSIC_HOUSE = 3574811899U;
+        static const AkUniqueID MUSIC_TITLE_SCREEN = 4129491292U;
+        static const AkUniqueID SFX_PLAY_CONSOLE = 3983758741U;
         static const AkUniqueID STOP_FOOTSTEPS_ROOM_CARPET = 1081171197U;
+        static const AkUniqueID STOP_MUSIC_DONJON = 3111214772U;
+        static const AkUniqueID STOP_MUSIC_TITLE_SCREEN = 2271500369U;
+        static const AkUniqueID UI_BACK = 2024222415U;
+        static const AkUniqueID UI_CLICK = 2249769530U;
+        static const AkUniqueID UI_HOVER = 2118900976U;
+        static const AkUniqueID UI_PLAY = 2382194672U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID FS_RTPC = 3749487386U;
+        static const AkUniqueID MASTER_VOLUME = 4179668880U;
+        static const AkUniqueID MUSIC_FADE_OUT_BOSS = 580948670U;
+        static const AkUniqueID MUSIC_FADE_OUT_DONJON = 2668762309U;
+        static const AkUniqueID MUSIC_FADE_OUT_FOREST = 2802239154U;
+        static const AkUniqueID MUSIC_FADE_OUT_HOUSE = 2281470583U;
+        static const AkUniqueID MUSIC_FADE_OUT_TITLE_SCREEN = 1395019464U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
@@ -39,6 +55,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID DONJON = 2891873417U;
         static const AkUniqueID FOREST = 491961918U;
         static const AkUniqueID HOUSE = 3720479411U;

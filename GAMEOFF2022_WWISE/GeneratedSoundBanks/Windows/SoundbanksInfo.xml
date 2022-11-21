@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="1226472164">
+		<SoundBank Id="491961918" Language="SFX" Hash="2052190988">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -108,7 +108,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="104581645">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2804550160">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -116,12 +116,28 @@
 				<AuxBus Id="2077253480" Name="Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room"/>
 				<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
 			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2077253480" Language="SFX" Hash="943852698">
+		<SoundBank Id="1560169506" Language="SFX" Hash="868757426">
+			<ObjectPath>\SoundBanks\Default Work Unit\Boss</ObjectPath>
+			<ShortName>Boss</ShortName>
+			<Path>Boss.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2077253480" Language="SFX" Hash="3273271878">
 			<ObjectPath>\SoundBanks\Default Work Unit\Room</ObjectPath>
 			<ShortName>Room</ShortName>
 			<Path>Room.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3202361783" Name="AMB_Room" ObjectPath="\Events\Room\AMB_Room" DurationType="OneShot" DurationMin="50.375" DurationMax="50.375">
+					<IncludedMemoryFiles>
+						<File Id="933608982" Language="SFX">
+							<ShortName>AMB_Chambre_Roomtone [2022-11-07 224126].wav</ShortName>
+							<Path>SFX\AMB_Chambre_Roomtone [2022-11-07 224126]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2641191134" Name="Footsteps_Room_Carpet" ObjectPath="\Events\Room\Footsteps_Room_Carpet" MaxAttenuation="75." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="24635894" Language="SFX">
@@ -191,6 +207,17 @@
 						<File Id="997759834" Language="SFX">
 							<ShortName>FS_C_02 [2022-11-10 145202].wav</ShortName>
 							<Path>SFX\FS_C_02 [2022-11-10 145202]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2077253480" Name="Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3983758741" Name="SFX_Play_Console" ObjectPath="\Events\Room\SFX_Play_Console" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="960625662" Language="SFX">
+							<ShortName>SFX_Console [2022-11-07 223425].wav</ShortName>
+							<Path>SFX\SFX_Console [2022-11-07 223425]_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -361,15 +388,26 @@
 				<GameParameter Id="3749487386" Name="FS_RTPC" ObjectPath="\Game Parameters\Default Work Unit\FS_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2607556080" Language="SFX" Hash="257621175">
+		<SoundBank Id="2607556080" Language="SFX" Hash="826467581">
 			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="3089280653">
+		<SoundBank Id="2891873417" Language="SFX" Hash="810466979">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
+			<IncludedEvents>
+				<Event Id="611981041" Name="Music_Donjon" ObjectPath="\Events\Donjon\Music_Donjon" DurationType="OneShot" DurationMin="100.944" DurationMax="100.944">
+					<IncludedMemoryFiles>
+						<File Id="392436119" Language="SFX">
+							<ShortName>MS_Chateau.wav</ShortName>
+							<Path>SFX\MS_Chateau_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3111214772" Name="Stop_Music_Donjon" ObjectPath="\Events\Donjon\Stop_Music_Donjon" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="57875454" Language="SFX">
 					<ShortName>FS_S_05 [2022-11-10 150445].wav</ShortName>
@@ -394,6 +432,10 @@
 				<File Id="387345076" Language="SFX">
 					<ShortName>FS_S_13 [2022-11-10 150450].wav</ShortName>
 					<Path>SFX\FS_S_13 [2022-11-10 150450]_10C4C929.wem</Path>
+				</File>
+				<File Id="392436119" Language="SFX">
+					<ShortName>MS_Chateau.wav</ShortName>
+					<Path>SFX\MS_Chateau_D79FB2B7.wem</Path>
 				</File>
 				<File Id="421264799" Language="SFX">
 					<ShortName>FS_S_02 [2022-11-10 150442].wav</ShortName>
@@ -423,6 +465,10 @@
 					<ShortName>FS_S_12 [2022-11-10 150449].wav</ShortName>
 					<Path>SFX\FS_S_12 [2022-11-10 150449]_10C4C929.wem</Path>
 				</File>
+				<File Id="677850272" Language="SFX">
+					<ShortName>SFX_Key_Donjon [2022-11-21 164400].wav</ShortName>
+					<Path>SFX\SFX_Key_Donjon [2022-11-21 164400]_10C4C929.wem</Path>
+				</File>
 				<File Id="679062465" Language="SFX">
 					<ShortName>FS_S_11 [2022-11-10 150448].wav</ShortName>
 					<Path>SFX\FS_S_11 [2022-11-10 150448]_10C4C929.wem</Path>
@@ -434,6 +480,10 @@
 				<File Id="732914951" Language="SFX">
 					<ShortName>FS_S_01 [2022-11-10 150442].wav</ShortName>
 					<Path>SFX\FS_S_01 [2022-11-10 150442]_10C4C929.wem</Path>
+				</File>
+				<File Id="903955383" Language="SFX">
+					<ShortName>SFX_Chest_Donjon [2022-11-21 164350].wav</ShortName>
+					<Path>SFX\SFX_Chest_Donjon [2022-11-21 164350]_10C4C929.wem</Path>
 				</File>
 				<File Id="971204579" Language="SFX">
 					<ShortName>SFX_Door_Donjon_Close [2022-11-11 150947].wav</ShortName>
@@ -448,8 +498,11 @@
 					<Path>SFX\FS_S_17 [2022-11-10 150452]_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="2668762309" Name="Music_Fade_Out_Donjon" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Donjon"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3720479411" Language="SFX" Hash="2136479163">
+		<SoundBank Id="3720479411" Language="SFX" Hash="3848917431">
 			<ObjectPath>\SoundBanks\Default Work Unit\House</ObjectPath>
 			<ShortName>House</ShortName>
 			<Path>House.bnk</Path>
@@ -478,10 +531,78 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3853285476" Language="SFX" Hash="2952545178">
+		<SoundBank Id="3853285476" Language="SFX" Hash="3015729061">
 			<ObjectPath>\SoundBanks\Default Work Unit\Title_Screen</ObjectPath>
 			<ShortName>Title_Screen</ShortName>
 			<Path>Title_Screen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4129491292" Name="Music_Title_Screen" ObjectPath="\Events\Title_Screen\Music_Title_Screen" DurationType="OneShot" DurationMin="200.074753" DurationMax="200.074753">
+					<IncludedMemoryFiles>
+						<File Id="316207741" Language="SFX">
+							<ShortName>Prince Ralis is Saved - The Legend of Zelda： Twilight Princess.wav</ShortName>
+							<Path>SFX\Prince Ralis is Saved - The Legend of Zelda： Twilight Princess_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2271500369" Name="Stop_Music_Title_Screen" ObjectPath="\Events\Title_Screen\Stop_Music_Title_Screen" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2024222415" Name="UI_Back" ObjectPath="\Events\Title_Screen\UI_Back" DurationType="OneShot" DurationMin="0.107" DurationMax="0.107">
+					<IncludedMemoryFiles>
+						<File Id="192766873" Language="SFX">
+							<ShortName>UI_Back [2022-11-21 165940].wav</ShortName>
+							<Path>SFX\UI_Back [2022-11-21 165940]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2249769530" Name="UI_Click" ObjectPath="\Events\Title_Screen\UI_Click" DurationType="OneShot" DurationMin="0.095312" DurationMax="0.095312">
+					<IncludedMemoryFiles>
+						<File Id="321886356" Language="SFX">
+							<ShortName>UI_Click [2022-11-21 165938].wav</ShortName>
+							<Path>SFX\UI_Click [2022-11-21 165938]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Title_Screen\UI_Hover" DurationType="OneShot" DurationMin="0.053677" DurationMax="0.053677">
+					<IncludedMemoryFiles>
+						<File Id="491094595" Language="SFX">
+							<ShortName>UI_Hover [2022-11-21 165937].wav</ShortName>
+							<Path>SFX\UI_Hover [2022-11-21 165937]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2382194672" Name="UI_Play" ObjectPath="\Events\Title_Screen\UI_Play" DurationType="OneShot" DurationMin="0.380604" DurationMax="0.380604">
+					<IncludedMemoryFiles>
+						<File Id="286650089" Language="SFX">
+							<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
+							<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="192766873" Language="SFX">
+					<ShortName>UI_Back [2022-11-21 165940].wav</ShortName>
+					<Path>SFX\UI_Back [2022-11-21 165940]_10C4C929.wem</Path>
+				</File>
+				<File Id="286650089" Language="SFX">
+					<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
+					<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
+				</File>
+				<File Id="316207741" Language="SFX">
+					<ShortName>Prince Ralis is Saved - The Legend of Zelda： Twilight Princess.wav</ShortName>
+					<Path>SFX\Prince Ralis is Saved - The Legend of Zelda： Twilight Princess_D79FB2B7.wem</Path>
+				</File>
+				<File Id="321886356" Language="SFX">
+					<ShortName>UI_Click [2022-11-21 165938].wav</ShortName>
+					<Path>SFX\UI_Click [2022-11-21 165938]_10C4C929.wem</Path>
+				</File>
+				<File Id="491094595" Language="SFX">
+					<ShortName>UI_Hover [2022-11-21 165937].wav</ShortName>
+					<Path>SFX\UI_Hover [2022-11-21 165937]_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="1395019464" Name="Music_Fade_Out_Title_Screen" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Title_Screen"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1081171197	Stop_Footsteps_Room_Carpet			\Room\Stop_Footsteps_Room_Carpet	
 	2641191134	Footsteps_Room_Carpet			\Room\Footsteps_Room_Carpet	
+	3202361783	AMB_Room			\Room\AMB_Room	
+	3983758741	SFX_Play_Console			\Room\SFX_Play_Console	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3749487386	FS_RTPC			\Default Work Unit\FS_RTPC	

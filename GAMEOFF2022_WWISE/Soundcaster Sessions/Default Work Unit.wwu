@@ -9,6 +9,22 @@
 							<ObjectRef Name="Footsteps_Room_Carpet" ID="{103C80F4-57B4-4EE9-B0BD-B3F7B737982D}" WorkUnitID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Music_Title_Screen" ID="{FA3F4AC4-F9BC-4715-8CC0-93876BAFFC28}" WorkUnitID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Music_Title_Screen" ID="{2DEEF31B-54F9-4D8F-96D9-D7E865FF77CF}" WorkUnitID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Donjon" ID="{1DFF6941-3F1C-4E3C-BE57-AAFF2364C687}" WorkUnitID="{19BF1A09-2D37-4017-B8BC-325976FC9900}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Music_Donjon" ID="{E87455BA-5ABA-4857-931C-0DF6F1ED4670}" WorkUnitID="{19BF1A09-2D37-4017-B8BC-325976FC9900}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -16,8 +32,16 @@
 							<Value>6</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Music_Fade_Out_Title_Screen" ID="{C580AE71-DCDF-4300-8415-1EB67C1B614C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Playback_Rate" ID="{28387EE3-C13A-4316-B9C3-DB5C521624AF}"/>
 							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Fade_Out_Donjon" ID="{FB83A6DF-17FB-432C-B63F-68B2E917F170}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
@@ -52,6 +76,10 @@
 							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Music_Fade_Out_Boss" ID="{FE12A467-F15B-491B-86E9-81866DE166D9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
 							<Value>6</Value>
 						</RTPCValue>
@@ -60,8 +88,20 @@
 							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Music_Fade_Out_Forest" ID="{349FCA32-DE56-4DBA-B879-4BF797DD16D1}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
 							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Fade_Out_House" ID="{3E47F346-EA5E-4EF3-A5B3-486D75E954B0}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Master_Volume" ID="{0DFCE610-F255-4FF9-BEF6-4F440DCA6AED}"/>
+							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

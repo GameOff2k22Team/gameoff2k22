@@ -9,6 +9,37 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Music_Fade_Out_Title_Screen" ID="{C580AE71-DCDF-4300-8415-1EB67C1B614C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Music_Fade_Out_Donjon" ID="{FB83A6DF-17FB-432C-B63F-68B2E917F170}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Music_Fade_Out_Forest" ID="{349FCA32-DE56-4DBA-B879-4BF797DD16D1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Music_Fade_Out_House" ID="{3E47F346-EA5E-4EF3-A5B3-486D75E954B0}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Music_Fade_Out_Boss" ID="{FE12A467-F15B-491B-86E9-81866DE166D9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Master_Volume" ID="{0DFCE610-F255-4FF9-BEF6-4F440DCA6AED}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
