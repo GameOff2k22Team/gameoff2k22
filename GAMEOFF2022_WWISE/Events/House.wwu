@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Footsteps_House_Wood" ID="{0C47EA4A-3AEB-49F0-AF58-3C0E8DCB58CF}">
+					<ChildrenList>
+						<Action Name="" ID="{2EA36B98-3EE6-4383-92AF-CD89DBC3B3D6}" ShortID="458241306">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_House_Wood" ID="{38D17087-6070-42F6-8827-1506F15EED57}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

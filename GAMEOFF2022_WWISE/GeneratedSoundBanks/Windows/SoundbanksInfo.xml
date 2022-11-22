@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="2052190988">
+		<SoundBank Id="491961918" Language="SFX" Hash="2460982110">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -125,7 +125,7 @@
 			<ShortName>Boss</ShortName>
 			<Path>Boss.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2077253480" Language="SFX" Hash="3273271878">
+		<SoundBank Id="2077253480" Language="SFX" Hash="1510560997">
 			<ObjectPath>\SoundBanks\Default Work Unit\Room</ObjectPath>
 			<ShortName>Room</ShortName>
 			<Path>Room.bnk</Path>
@@ -138,7 +138,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2641191134" Name="Footsteps_Room_Carpet" ObjectPath="\Events\Room\Footsteps_Room_Carpet" MaxAttenuation="75." DurationType="Infinite">
+				<Event Id="2641191134" Name="Footsteps_Room_Carpet" ObjectPath="\Events\Room\Footsteps_Room_Carpet" MaxAttenuation="75." DurationType="OneShot" DurationMin="0.375" DurationMax="0.53125">
 					<IncludedMemoryFiles>
 						<File Id="24635894" Language="SFX">
 							<ShortName>FS_C_17 [2022-11-10 145212].wav</ShortName>
@@ -393,7 +393,7 @@
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="810466979">
+		<SoundBank Id="2891873417" Language="SFX" Hash="1971872159">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -502,11 +502,86 @@
 				<GameParameter Id="2668762309" Name="Music_Fade_Out_Donjon" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Donjon"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3720479411" Language="SFX" Hash="3848917431">
+		<SoundBank Id="3720479411" Language="SFX" Hash="1533713842">
 			<ObjectPath>\SoundBanks\Default Work Unit\House</ObjectPath>
 			<ShortName>House</ShortName>
 			<Path>House.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2433268977" Name="Footsteps_House_Wood" ObjectPath="\Events\House\Footsteps_House_Wood" DurationType="OneShot" DurationMin="0.322271" DurationMax="0.480479">
+					<IncludedMemoryFiles>
+						<File Id="3630669" Language="SFX">
+							<ShortName>FS_W_H_02 [2022-11-22 213610].wav</ShortName>
+							<Path>SFX\FS_W_H_02 [2022-11-22 213610]_10C4C929.wem</Path>
+						</File>
+						<File Id="106798364" Language="SFX">
+							<ShortName>FS_W_H_03 [2022-11-22 213610].wav</ShortName>
+							<Path>SFX\FS_W_H_03 [2022-11-22 213610]_10C4C929.wem</Path>
+						</File>
+						<File Id="163999892" Language="SFX">
+							<ShortName>FS_W_H_10 [2022-11-22 213616].wav</ShortName>
+							<Path>SFX\FS_W_H_10 [2022-11-22 213616]_10C4C929.wem</Path>
+						</File>
+						<File Id="192285609" Language="SFX">
+							<ShortName>FS_W_H_08 [2022-11-22 213614].wav</ShortName>
+							<Path>SFX\FS_W_H_08 [2022-11-22 213614]_10C4C929.wem</Path>
+						</File>
+						<File Id="245025989" Language="SFX">
+							<ShortName>FS_W_H_09 [2022-11-22 213615].wav</ShortName>
+							<Path>SFX\FS_W_H_09 [2022-11-22 213615]_10C4C929.wem</Path>
+						</File>
+						<File Id="255137983" Language="SFX">
+							<ShortName>FS_W_H_12 [2022-11-22 213618].wav</ShortName>
+							<Path>SFX\FS_W_H_12 [2022-11-22 213618]_10C4C929.wem</Path>
+						</File>
+						<File Id="279419807" Language="SFX">
+							<ShortName>FS_W_H_04 [2022-11-22 213611].wav</ShortName>
+							<Path>SFX\FS_W_H_04 [2022-11-22 213611]_10C4C929.wem</Path>
+						</File>
+						<File Id="353121879" Language="SFX">
+							<ShortName>FS_W_H_15 [2022-11-22 213621].wav</ShortName>
+							<Path>SFX\FS_W_H_15 [2022-11-22 213621]_10C4C929.wem</Path>
+						</File>
+						<File Id="402658092" Language="SFX">
+							<ShortName>FS_W_H_16 [2022-11-22 213630].wav</ShortName>
+							<Path>SFX\FS_W_H_16 [2022-11-22 213630]_10C4C929.wem</Path>
+						</File>
+						<File Id="455076761" Language="SFX">
+							<ShortName>FS_W_H_07 [2022-11-22 213613].wav</ShortName>
+							<Path>SFX\FS_W_H_07 [2022-11-22 213613]_10C4C929.wem</Path>
+						</File>
+						<File Id="553330927" Language="SFX">
+							<ShortName>FS_W_H_05 [2022-11-22 213612].wav</ShortName>
+							<Path>SFX\FS_W_H_05 [2022-11-22 213612]_10C4C929.wem</Path>
+						</File>
+						<File Id="734188328" Language="SFX">
+							<ShortName>FS_W_H_17 [2022-11-22 213631].wav</ShortName>
+							<Path>SFX\FS_W_H_17 [2022-11-22 213631]_10C4C929.wem</Path>
+						</File>
+						<File Id="749592962" Language="SFX">
+							<ShortName>FS_W_H_06 [2022-11-22 213613].wav</ShortName>
+							<Path>SFX\FS_W_H_06 [2022-11-22 213613]_10C4C929.wem</Path>
+						</File>
+						<File Id="848619306" Language="SFX">
+							<ShortName>FS_W_H_13 [2022-11-22 213619].wav</ShortName>
+							<Path>SFX\FS_W_H_13 [2022-11-22 213619]_10C4C929.wem</Path>
+						</File>
+						<File Id="910611396" Language="SFX">
+							<ShortName>FS_W_H_14 [2022-11-22 213619].wav</ShortName>
+							<Path>SFX\FS_W_H_14 [2022-11-22 213619]_10C4C929.wem</Path>
+						</File>
+						<File Id="1024254888" Language="SFX">
+							<ShortName>FS_W_H_11 [2022-11-22 213617].wav</ShortName>
+							<Path>SFX\FS_W_H_11 [2022-11-22 213617]_10C4C929.wem</Path>
+						</File>
+						<File Id="1040958072" Language="SFX">
+							<ShortName>FS_W_H_01 [2022-11-22 213609].wav</ShortName>
+							<Path>SFX\FS_W_H_01 [2022-11-22 213609]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2077253480" Name="Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="3574811899" Name="Music_House" ObjectPath="\Events\House\Music_House" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="17721100" Language="SFX">
@@ -531,7 +606,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3853285476" Language="SFX" Hash="3015729061">
+		<SoundBank Id="3853285476" Language="SFX" Hash="3942025495">
 			<ObjectPath>\SoundBanks\Default Work Unit\Title_Screen</ObjectPath>
 			<ShortName>Title_Screen</ShortName>
 			<Path>Title_Screen.bnk</Path>

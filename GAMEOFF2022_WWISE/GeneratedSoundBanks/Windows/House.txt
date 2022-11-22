@@ -1,7 +1,25 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2433268977	Footsteps_House_Wood			\House\Footsteps_House_Wood	
 	3574811899	Music_House			\House\Music_House	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3630669	FS_W_H_02	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_02 [2022-11-22 213610]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_02		72064
 	17721100	MS_Maison_Loop	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Maison_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_House\Music_House_Loop\MS_Maison_Loop		16384064
+	106798364	FS_W_H_03	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_03 [2022-11-22 213610]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_03		87064
+	163999892	FS_W_H_10	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_10 [2022-11-22 213616]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_10		85192
+	192285609	FS_W_H_08	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_08 [2022-11-22 213614]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_08		66064
+	245025989	FS_W_H_09	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_09 [2022-11-22 213615]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_09		69816
+	255137983	FS_W_H_12	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_12 [2022-11-22 213618]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_12		79564
+	279419807	FS_W_H_04	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_04 [2022-11-22 213611]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_04		72064
+	353121879	FS_W_H_15	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_15 [2022-11-22 213621]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_15		77316
+	402658092	FS_W_H_16	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_16 [2022-11-22 213630]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_16		70564
+	455076761	FS_W_H_07	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_07 [2022-11-22 213613]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_07		75064
+	553330927	FS_W_H_05	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_05 [2022-11-22 213612]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_05		75064
+	734188328	FS_W_H_17	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_17 [2022-11-22 213631]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_17		92316
+	749592962	FS_W_H_06	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_06 [2022-11-22 213613]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_06		74316
 	840043804	MS_Maison_Intro	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Maison_Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_House\Music_House_Intro\MS_Maison_Intro		170732
+	848619306	FS_W_H_13	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_13 [2022-11-22 213619]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_13		81816
+	910611396	FS_W_H_14	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_14 [2022-11-22 213619]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_14		61940
+	1024254888	FS_W_H_11	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_11 [2022-11-22 213617]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_11		81064
+	1040958072	FS_W_H_01	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_01 [2022-11-22 213609]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_House_Wood\FS_W_H_01		74316
 

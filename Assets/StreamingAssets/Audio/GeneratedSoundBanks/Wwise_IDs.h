@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_ROOM = 3202361783U;
+        static const AkUniqueID FOOTSTEPS_HOUSE_WOOD = 2433268977U;
         static const AkUniqueID FOOTSTEPS_ROOM_CARPET = 2641191134U;
         static const AkUniqueID MUSIC_DONJON = 611981041U;
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
