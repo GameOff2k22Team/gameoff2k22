@@ -10,6 +10,7 @@ public class UseObject : MonoBehaviour
     {
         public GoToReturnFromInventory objectToUse;
         public Vector3 position;
+        public Vector3 rotation;
     }
 
     public List<ObjectToUseInfo> objectsToUse;
@@ -25,7 +26,8 @@ public class UseObject : MonoBehaviour
             foreach (ObjectToUseInfo usedObject in objectsToUse)
             {
                 InventoryManager.Instance.RemoveObjectFromInventory(usedObject.objectToUse, 
-                                                                    usedObject.position);
+                                                                    usedObject.position,
+                                                                    usedObject.rotation);
             }
 
             OnUsedObject?.Invoke();
