@@ -23,5 +23,5 @@ public enum SceneName
     BedRoom,
     InHouse,
     Forest,
-    CastleHub
+    Castle_Hub
 }
