@@ -20,7 +20,6 @@ public class GoToReturnFromInventory : MonoBehaviour
     public UnityEvent OnRemovedDone;
 
     private int originalLayer;
-    private Transform originalParent;
     private Vector3 originalScale;
     private const string UILayer = "UI"; 
     private const float TIME_TO_WAIT = 0.1f;
@@ -31,7 +30,6 @@ public class GoToReturnFromInventory : MonoBehaviour
     {
         originalLayer = gameObject.layer;
         originalScale = transform.localScale;
-        originalParent = transform.parent;
     }
 
     public void GoToInventory()
@@ -55,9 +53,10 @@ public class GoToReturnFromInventory : MonoBehaviour
         }
     }
 
-    public void RemoveObjectFromInventory(Vector3 position)
+    public void RemoveObjectFromInventory(Vector3 position,
+                                          Vector3 rotation)
     {
-        StartCoroutine(RemoveObjectFromInventorySpace(position));
+        StartCoroutine(RemoveObjectFromInventorySpace(position, rotation));
     }
 
     IEnumerator ChangePosition(Vector3 position, Quaternion rotation, Vector3 scale)
@@ -79,12 +78,13 @@ public class GoToReturnFromInventory : MonoBehaviour
         }
     }
 
-    IEnumerator RemoveObjectFromInventorySpace(Vector3 position)
+    IEnumerator RemoveObjectFromInventorySpace(Vector3 position, 
+                                               Vector3 rotation)
     {
-        this.transform.SetParent(originalParent, true);
+        this.transform.SetParent(null, true);
 
         yield return ChangePosition(position, 
-                                    transform.rotation, 
+                                    Quaternion.EulerAngles(rotation), 
                                     originalScale);
 
         HandleCollider(true);
