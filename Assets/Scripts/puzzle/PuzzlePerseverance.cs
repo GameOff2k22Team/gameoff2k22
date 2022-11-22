@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+using Architecture;
 using UnityEngine;
 
 public class PuzzlePerseverance : MonoBehaviour
 {
+    public BoolVariable hasKey;
+    public Animator animator;
 
     private PuzzleManager _puzzleManager;
     private bool _isOpen = false;
@@ -15,23 +16,15 @@ public class PuzzlePerseverance : MonoBehaviour
         this._puzzleManager = PuzzleManager.Instance;
     }
 
-    // Update is called once per frame
-    //void Update()
-    //{
-
-    //    if (chest.isOpen == false)
-
-    //        this._puzzleManager.OpenChest(type, this.chest);
-
-    //}
-
-    private void OnTriggerEnter(Collider other)
+    public void OpenChest()
     {
-        if (this._isOpen == false && !this._puzzleManager.perseverancePuzzleIsEnd)
+        if (hasKey.Value &&
+            this._isOpen == false && 
+            !this._puzzleManager.perseverancePuzzleIsEnd)
         {
             this._isOpen = true;
             this._puzzleManager.OpenChest(type);
-            this.gameObject.SetActive(false); // This must be replaced by the opening chest animation
+            this.animator.enabled = true;
         }
     }
 }
