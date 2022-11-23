@@ -14,24 +14,36 @@ public class UseObject : MonoBehaviour
     }
 
     public List<ObjectToUseInfo> objectsToUse;
+    public bool useOnlyOnce;
 
     public UnityEvent OnUsedObject;
+    public UnityEvent OnObjectNotInInventory;
+    private bool alreadyUsed = false;
 
     public void UseObjects()
     {
         GoToReturnFromInventory[] objects = GetObjectsToReturn();
+        bool isInInventory = InventoryManager.Instance.AreObjectsInInventory(objects);
 
-        if (InventoryManager.Instance.AreObjectsInInventory(objects))
+        if (!useOnlyOnce || !alreadyUsed)
         {
-            foreach (ObjectToUseInfo usedObject in objectsToUse)
+            if (isInInventory)
             {
-                InventoryManager.Instance.RemoveObjectFromInventory(usedObject.objectToUse, 
-                                                                    usedObject.position,
-                                                                    usedObject.rotation);
-            }
+                foreach (ObjectToUseInfo usedObject in objectsToUse)
+                {
+                    InventoryManager.Instance.RemoveObjectFromInventory(usedObject.objectToUse, 
+                                                                        usedObject.position,
+                                                                        usedObject.rotation);
+                }
 
-            OnUsedObject?.Invoke();
-        }
+                alreadyUsed = true;
+                OnUsedObject?.Invoke();
+            }
+            else
+            {
+                OnObjectNotInInventory?.Invoke();
+            }
+        } 
         
     }
 
