@@ -1300,6 +1300,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 471254706}
+        m_TargetAssemblyTypeName: DialogTrigger, Assembly-CSharp
+        m_MethodName: LaunchDialog
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!135 &222738946
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3073,6 +3085,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 674340280032488212, guid: 85b5b46c3652b3848a0897d3c6012648, type: 3}
+--- !u!114 &471254706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471254700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cdd45ae82c262448982b813861c6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog: {fileID: 11400000, guid: 6761cca94f40e344db83b04d1eb266a2, type: 2}
 --- !u!1 &481214677
 GameObject:
   m_ObjectHideFlags: 0
