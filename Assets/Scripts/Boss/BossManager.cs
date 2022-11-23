@@ -6,30 +6,45 @@ using UnityEngine;
 
 public class BossManager : MonoBehaviour
 {
+    private enum BossState { phase1, phase2, phase3 }
+
     [SerializeField]
     private BossEnemy enemy;
-
-    [SerializeField]
-    private List<Spawner> P1SpawerPatern;
-
     public static List<BossEnemy> enemies = new List<BossEnemy>();
 
     private float _projectileSpeed = 7.0f;
 
     private float _spawningSpeed = 1.0f;
 
+    private float _timerBeforeStart = 3.0f;
+
     private int _numberOfEnemies;
 
     private int _currentDamage;
+
+
+    [Header("Phase 1")]
+    [Header("Step 1")]
+    [SerializeField]
+    private List<PatternBossP1> p1S1Pattern;
+    [SerializeField]
+    private int _numberOfPatternP1S1 = 1;
+    [Header("Step 2")]
+    [SerializeField]
+    private List<PatternBossP1> p1S2Pattern;
+    [SerializeField]
+    private int _numberOfPatternP1S2 = 10;
 
     private void Start()
     {
         UpdateBossPhase(BossState.phase1);
     }
-    private void SpawnEnemy(Transform tr, Vector3 direction)
+
+    #region Generic Method
+    private void SpawnEnemy(Transform tr, Vector3 direction, int projectileSpeedRatio)
     {
         BossEnemy _currentEnemy = Instantiate(enemy, tr.position, Quaternion.identity);
-        _currentEnemy.Initialize(direction, _projectileSpeed, _currentDamage);
+        _currentEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio/100), _currentDamage);
     }
 
     private void UpdateBossPhase(BossState state)
@@ -47,44 +62,46 @@ public class BossManager : MonoBehaviour
         }
     }
 
+    private IEnumerator WaitBeforeStart()
+    {
+        var i = 0;
+        while (i < _timerBeforeStart)
+        {
+            Debug.Log("Start in" + i);
+            yield return new WaitForSeconds(1.0f);
+            i += 1;
+        }
+
+    }
+    #endregion
+
+    #region P1 Boss
     private IEnumerator Phase1Coroutine()
     {
-        yield return new WaitForSeconds(1.0f);
-        Debug.Log("Boss start: 3");
-        yield return new WaitForSeconds(1.0f);
-        Debug.Log("Boss start: 2");
-        yield return new WaitForSeconds(1.0f);
-        Debug.Log("Boss start: 1");
-        yield return new WaitForSeconds(1.0f);
-        Debug.Log("Boss start: GO!");
-        yield return StartCoroutine(P1PatternCoroutine());
-        yield return StartCoroutine(P1PatternCoroutine());
-        yield return StartCoroutine(P1PatternCoroutine());
-        yield return StartCoroutine(P1PatternCoroutine());
-        yield return StartCoroutine(P1PatternCoroutine());
-        yield return StartCoroutine(P1PatternCoroutine());
+        yield return StartCoroutine(WaitBeforeStart());
+        yield return StartCoroutine(P1PatternCoroutine(p1S1Pattern, _numberOfPatternP1S1));
+        yield return StartCoroutine(P1PatternCoroutine(p1S2Pattern, _numberOfPatternP1S2));
     }
 
-    private IEnumerator P1PatternCoroutine()
+    private IEnumerator P1PatternCoroutine(List<PatternBossP1> BossPattern, int numberOfPattern)
     {
-        Spawner patern = GetRandomPatern();
-        foreach (SpawnManager.P1SpawnArea spawnArea in patern.SpawnArea)
+        var i = 0;
+        while(i < numberOfPattern)
         {
-            SpawnManager.BossP1SpawnPosition spawnAreaPosition = SpawnManager.Instance.GetSpawnAreaPositionByType(spawnArea);
-            SpawnEnemy(spawnAreaPosition.position, spawnAreaPosition.direction);
+            PatternBossP1 randomBossPattern = BossPattern[UnityEngine.Random.Range(0, BossPattern.Count)];
+            foreach (SpawnManager.P1SpawnArea spawnArea in randomBossPattern.SpawnArea)
+            {
+                SpawnManager.BossP1SpawnPattern spawnAreaPosition = SpawnManager.Instance.GetSpawnAreaPositionByType(spawnArea);
+                SpawnEnemy(spawnAreaPosition.position, spawnAreaPosition.direction, randomBossPattern.speed);
+            }
+            i += 1;
+            yield return new WaitForSecondsRealtime(_spawningSpeed);
         }
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-    }
 
-    private Spawner GetRandomPatern()
-    {
-        return P1SpawerPatern[UnityEngine.Random.Range(0, P1SpawerPatern.Count)];
     }
+    #endregion
 
-    private enum BossState
-    {
-        phase1,
-        phase2,
-        phase3,
-    }
+
+
+
 }

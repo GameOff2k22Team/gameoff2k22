@@ -1363,40 +1363,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bossP1Positions:
-  - type: 0
+  - area: 0
     position: {fileID: 1890531977}
     direction: {x: 0, y: -1, z: 0}
-  - type: 1
+  - area: 1
     position: {fileID: 990317720}
     direction: {x: 0, y: -1, z: 0}
-  - type: 2
+  - area: 2
     position: {fileID: 938847699}
     direction: {x: 0, y: -1, z: 0}
-  - type: 3
+  - area: 3
     position: {fileID: 1464393143}
     direction: {x: 1, y: 0, z: 0}
-  - type: 4
+  - area: 4
     position: {fileID: 1464393143}
     direction: {x: 1, y: 0, z: 0}
-  - type: 5
+  - area: 5
     position: {fileID: 1004005965}
     direction: {x: 1, y: 0, z: 0}
-  - type: 6
+  - area: 6
     position: {fileID: 100258642}
     direction: {x: 0, y: 1, z: 0}
-  - type: 7
+  - area: 7
     position: {fileID: 650207698}
     direction: {x: 0, y: 1, z: 0}
-  - type: 8
+  - area: 8
     position: {fileID: 24698041}
     direction: {x: 0, y: 1, z: 0}
-  - type: 9
+  - area: 9
     position: {fileID: 663629083}
     direction: {x: -1, y: 0, z: 0}
-  - type: 10
+  - area: 10
     position: {fileID: 1131541599}
     direction: {x: -1, y: 0, z: 0}
-  - type: 11
+  - area: 11
     position: {fileID: 1057219685}
     direction: {x: -1, y: 0, z: 0}
 --- !u!1 &1057219684
@@ -2719,12 +2719,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8500118781570255505, guid: 069bd3f31ddf7194095699b3383f151c, type: 3}
-  P1SpawerPatern:
-  - {fileID: 11400000, guid: a916344a790ac0548869c6a726faae89, type: 2}
-  - {fileID: 11400000, guid: 453d80c4d05e6294f8315905cd686c7b, type: 2}
-  - {fileID: 11400000, guid: 35956b5b7aeb88c4081162bf7d0316b2, type: 2}
-  - {fileID: 11400000, guid: 3789f5d6b6e1fc0458c08b5ea8ad9466, type: 2}
-  - {fileID: 11400000, guid: a916344a790ac0548869c6a726faae89, type: 2}
+  p1S1Pattern:
+  - {fileID: 11400000, guid: ba3af9b7f0cf3084cb3bd47fd2232c80, type: 2}
+  - {fileID: 11400000, guid: 90de3d92c79ec1349b9b724487fa062e, type: 2}
+  - {fileID: 11400000, guid: 224881748fc5a984d8c95aee659d0108, type: 2}
+  _numberOfPatternP1S1: 0
+  p1S2Pattern:
+  - {fileID: 11400000, guid: 109915aba127f4f43afa9d696620f07b, type: 2}
+  _numberOfPatternP1S2: 10
 --- !u!1 &1992969735
 GameObject:
   m_ObjectHideFlags: 0
