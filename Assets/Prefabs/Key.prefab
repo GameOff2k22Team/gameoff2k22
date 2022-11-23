@@ -187,6 +187,7 @@ MonoBehaviour:
   inventoryPosition: {x: 0, y: 0.46, z: 0.01}
   inventoryRotation: {x: -90, y: 0, z: 0}
   inventoryScale: {x: 2, y: 2, z: 2}
+  ease: 9
   OnRemovedDone:
     m_PersistentCalls:
       m_Calls: []

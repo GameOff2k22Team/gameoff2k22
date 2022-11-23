@@ -6,6 +6,8 @@ public class PuzzlePerseverance : MonoBehaviour
     public BoolVariable hasKey;
     public Animator animator;
 
+    public GameObject artefact;
+
     private PuzzleManager _puzzleManager;
     private bool _isOpen = false;
     private PuzzleManager.PuzzleType type = PuzzleManager.PuzzleType.PERSEVERANCE;
@@ -23,7 +25,7 @@ public class PuzzlePerseverance : MonoBehaviour
             !this._puzzleManager.perseverancePuzzleIsEnd)
         {
             this._isOpen = true;
-            this._puzzleManager.OpenChest(type);
+            this._puzzleManager.OpenChest(type, this);
             this.animator.enabled = true;
         }
     }
