@@ -51,15 +51,5 @@ public class EnsureAllTheTimeFocus : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-
-        //if (_settingsPanel.activeSelf && !_settingsButtons.Contains(EventSystem.current.currentSelectedGameObject))
-        //{
-        //    EventSystem.current.SetSelectedGameObject(_firstSettingsButton);
-        //}
-    }
 
 }
