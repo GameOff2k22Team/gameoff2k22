@@ -1,8 +1,20 @@
 fileFormatVersion: 2
-guid: fb862da808949f04ba358caf19d9bffe
+guid: e2a246d265b3c2f4ab7f0937c9e84be9
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 8020268222891163109
+    second: Armature|Mom_COOKING_IK
+  - first:
+      74: 8720096230333260388
+    second: Armature|Mom_IDLE_FK
+  - first:
+      74: 8222244387207710835
+    second: Armature|Mom_P2_ATTACK_IK
+  - first:
+      74: -8008347571949049688
+    second: Armature|Mom_REST_IK
   externalObjects: {}
   materials:
     materialImportMode: 2
