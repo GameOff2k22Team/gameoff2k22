@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 1332282550714635328}
   - component: {fileID: 1980871230021192573}
   - component: {fileID: 2019126782828147778}
+  - component: {fileID: 5265195106768054535}
   m_Layer: 0
   m_Name: ArtefactPiece
   m_TagString: Untagged
@@ -255,13 +256,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderToDeactivate: []
   interactOnlyOnce: 0
-  timeToAnimate: 5
+  timeToAnimate: 2
   inventoryPosition: {x: 0, y: 0, z: 0}
   inventoryRotation: {x: 0, y: 0, z: 0}
   inventoryScale: {x: 2, y: 2, z: 2}
+  ease: 9
   OnRemovedDone:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5265195106768054535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7562850912999721229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523bab04baaf4d64b8f00304d39f3095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnAnimationEndedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1980871230021192573}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnAnimationEndedEventWithDelay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2019126782828147778}
+        m_TargetAssemblyTypeName: GoToReturnFromInventory, Assembly-CSharp
+        m_MethodName: GoToInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7928695590831129847
 GameObject:
   m_ObjectHideFlags: 0
