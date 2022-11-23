@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DebugMode
   m_EditorClassIdentifier: 
   DeveloperDescription: 
-  DefaultValue: 0
-  Value: 0
+  DefaultValue: 1
+  Value: 1

@@ -9,43 +9,10 @@ public class BossManager : MonoBehaviour
     [SerializeField]
     private BossEnemy enemy;
 
+    [SerializeField]
+    private List<Spawner> P1SpawerPatern;
+
     public static List<BossEnemy> enemies = new List<BossEnemy>();
-
-    [SerializeField]
-    private Transform TopSpawnerCenter;
-
-    [SerializeField]
-    private Transform TopSpawnerLeft;
-
-    [SerializeField]
-    private Transform TopSpawnerRight;
-
-    [SerializeField]
-    private Transform BottomSpawnerCenter;
-
-    [SerializeField]
-    private Transform BottomSpawnerLeft;
-
-    [SerializeField]
-    private Transform BottomSpawnerRight;
-
-    [SerializeField]
-    private Transform LeftSpawnerUp;
-
-    [SerializeField]
-    private Transform LeftSpawnerMiddle;
-
-    [SerializeField]
-    private Transform LeftSpawnerDown;
-
-    [SerializeField]
-    private Transform RightSpawnerUp;
-
-    [SerializeField]
-    private Transform RightSpawnerMiddle;
-
-    [SerializeField]
-    private Transform RightSpawnerDown;
 
     private float _projectileSpeed = 7.0f;
 
@@ -90,100 +57,29 @@ public class BossManager : MonoBehaviour
         Debug.Log("Boss start: 1");
         yield return new WaitForSeconds(1.0f);
         Debug.Log("Boss start: GO!");
-        yield return StartCoroutine(DownPatternCoroutine());
-        yield return StartCoroutine(UpPatternCoroutine());
-        yield return StartCoroutine(LeftPatternCoroutine());
-        yield return StartCoroutine(RightPatternCoroutine());
-        yield return StartCoroutine(UpDownPatternCoroutine());
-        yield return StartCoroutine(LeftRightPatternCoroutine());
+        yield return StartCoroutine(P1PatternCoroutine());
+        yield return StartCoroutine(P1PatternCoroutine());
+        yield return StartCoroutine(P1PatternCoroutine());
+        yield return StartCoroutine(P1PatternCoroutine());
+        yield return StartCoroutine(P1PatternCoroutine());
+        yield return StartCoroutine(P1PatternCoroutine());
     }
 
-    private IEnumerator DownPatternCoroutine()
+    private IEnumerator P1PatternCoroutine()
     {
-        SpawnEnemy(TopSpawnerCenter, Vector3.down);
+        Spawner patern = GetRandomPatern();
+        foreach (SpawnManager.P1SpawnArea spawnArea in patern.SpawnArea)
+        {
+            SpawnManager.BossP1SpawnPosition spawnAreaPosition = SpawnManager.Instance.GetSpawnAreaPositionByType(spawnArea);
+            SpawnEnemy(spawnAreaPosition.position, spawnAreaPosition.direction);
+        }
         yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(TopSpawnerLeft, Vector3.down);
-        SpawnEnemy(TopSpawnerRight, Vector3.down);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(TopSpawnerCenter, Vector3.down);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(TopSpawnerLeft, Vector3.down);
-        SpawnEnemy(TopSpawnerRight, Vector3.down);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-
     }
 
-    private IEnumerator UpDownPatternCoroutine()
+    private Spawner GetRandomPatern()
     {
-        SpawnEnemy(TopSpawnerCenter, Vector3.down);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(BottomSpawnerLeft, Vector3.up);
-        SpawnEnemy(BottomSpawnerRight, Vector3.up);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(TopSpawnerCenter, Vector3.down);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(BottomSpawnerLeft, Vector3.up);
-        SpawnEnemy(BottomSpawnerRight, Vector3.up);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-
+        return P1SpawerPatern[UnityEngine.Random.Range(0, P1SpawerPatern.Count)];
     }
-
-    private IEnumerator UpPatternCoroutine()
-    {
-        SpawnEnemy(BottomSpawnerCenter, Vector3.up);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(BottomSpawnerLeft, Vector3.up);
-        SpawnEnemy(BottomSpawnerRight, Vector3.up);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(BottomSpawnerCenter, Vector3.up);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(BottomSpawnerLeft, Vector3.up);
-        SpawnEnemy(BottomSpawnerRight, Vector3.up);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-    }
-
-    private IEnumerator LeftPatternCoroutine()
-    {
-        SpawnEnemy(RightSpawnerMiddle, Vector3.left);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(RightSpawnerUp, Vector3.left);
-        SpawnEnemy(RightSpawnerDown, Vector3.left);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(RightSpawnerMiddle, Vector3.left);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(RightSpawnerUp, Vector3.left);
-        SpawnEnemy(RightSpawnerDown, Vector3.left);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-    }
-
-    private IEnumerator RightPatternCoroutine()
-    {
-        SpawnEnemy(LeftSpawnerMiddle, Vector3.right);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(LeftSpawnerUp, Vector3.right);
-        SpawnEnemy(LeftSpawnerDown, Vector3.right);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(LeftSpawnerMiddle, Vector3.right);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(LeftSpawnerUp, Vector3.right);
-        SpawnEnemy(LeftSpawnerDown, Vector3.right);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-    }
-
-    private IEnumerator LeftRightPatternCoroutine()
-    {
-        SpawnEnemy(LeftSpawnerMiddle, Vector3.right);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(RightSpawnerUp, Vector3.left);
-        SpawnEnemy(RightSpawnerDown, Vector3.left);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(LeftSpawnerMiddle, Vector3.right);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-        SpawnEnemy(RightSpawnerUp, Vector3.left);
-        SpawnEnemy(RightSpawnerDown, Vector3.left);
-        yield return new WaitForSecondsRealtime(_spawningSpeed);
-    }
-
 
     private enum BossState
     {
