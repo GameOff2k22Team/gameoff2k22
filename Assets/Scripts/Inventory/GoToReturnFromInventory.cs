@@ -10,10 +10,16 @@ public class GoToReturnFromInventory : MonoBehaviour
 
     [Header("Animation Information")]
     public float timeToAnimate;
+
+    [Header("Go To Inventory information")]
+    public Vector3 inventoryPosition = Vector3.zero;
+    public Vector3 inventoryRotation = Vector3.zero;
+    public Vector3 inventoryScale = Vector3.one;
+
+    [Header("Return from Inventory information")]
     public UnityEvent OnRemovedDone;
 
     private int originalLayer;
-    private Transform originalParent;
     private Vector3 originalScale;
     private const string UILayer = "UI"; 
     private const float TIME_TO_WAIT = 0.1f;
@@ -24,7 +30,6 @@ public class GoToReturnFromInventory : MonoBehaviour
     {
         originalLayer = gameObject.layer;
         originalScale = transform.localScale;
-        originalParent = transform.parent;
     }
 
     public void GoToInventory()
@@ -38,21 +43,20 @@ public class GoToReturnFromInventory : MonoBehaviour
         {
             ChangeSpaceToUICamera(inventorySlot);
 
-            Vector3 position = Vector3.zero;
-            Quaternion rotation = Quaternion.identity;
-            Vector3 scale = Vector3.one;
-
             HandleCollider(false);
 
-            StartCoroutine(ChangePosition(position, rotation, scale));
+            StartCoroutine(ChangePosition(inventoryPosition, 
+                                          Quaternion.Euler(inventoryRotation), 
+                                          inventoryScale));
 
             hasInteracted = true;
         }
     }
 
-    public void RemoveObjectFromInventory(Vector3 position)
+    public void RemoveObjectFromInventory(Vector3 position,
+                                          Vector3 rotation)
     {
-        StartCoroutine(RemoveObjectFromInventorySpace(position));
+        StartCoroutine(RemoveObjectFromInventorySpace(position, rotation));
     }
 
     IEnumerator ChangePosition(Vector3 position, Quaternion rotation, Vector3 scale)
@@ -74,12 +78,13 @@ public class GoToReturnFromInventory : MonoBehaviour
         }
     }
 
-    IEnumerator RemoveObjectFromInventorySpace(Vector3 position)
+    IEnumerator RemoveObjectFromInventorySpace(Vector3 position, 
+                                               Vector3 rotation)
     {
-        this.transform.SetParent(originalParent, true);
+        this.transform.SetParent(null, true);
 
         yield return ChangePosition(position, 
-                                    transform.rotation, 
+                                    Quaternion.EulerAngles(rotation), 
                                     originalScale);
 
         HandleCollider(true);

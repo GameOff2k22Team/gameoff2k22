@@ -46,6 +46,7 @@ public class GameManager : Singleton<GameManager>
             case GameState.SpawnCharacterStarts:
                 break;
             case GameState.LevelStart:
+                OnSceneLoaded.Raise();
                 break;
             case GameState.LevelComplete:
                 break;
@@ -68,9 +69,12 @@ public class GameManager : Singleton<GameManager>
                 {
                     OnGameLoaded.Raise();
                 }
-                OnSceneLoaded.Raise();
                 break;
             case GameState.OnMenuScene:
+                break;
+            case GameState.StartDialogue:
+                break;
+            case GameState.FinishDialogue:
                 break;
             default:
                 throw new ArgumentOutOfRangeException(

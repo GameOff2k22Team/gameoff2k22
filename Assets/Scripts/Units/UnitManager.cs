@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class UnitManager : Singleton<UnitManager>
+public class UnitManager : MonoBehaviour
 {
     [HideInInspector]
     public enum UnitType { PLAYER, MOTHER, FAIRY }
@@ -18,6 +18,20 @@ public class UnitManager : Singleton<UnitManager>
 
     public List<UnitByType> listOfUnitByType;
     private Dictionary<UnitType, GameObject> _unitByType = new Dictionary<UnitType, GameObject>();
+
+    public static UnitManager Instance { get; private set; }
+
+    public virtual void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()

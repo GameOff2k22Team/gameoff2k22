@@ -1,21 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using SpeechBubbleManager = VikingCrew.Tools.UI.SpeechBubbleManager;
 
 public class DialogTrigger : MonoBehaviour
 {
     public Dialog dialog;
-    private void OnTriggerEnter(Collider other)
+
+    private int currentMsgIdx = -1;
+    public void LaunchDialog()
     {
-        if (dialog.canBeTrigger)
+        if (dialog.canBeTrigger && currentMsgIdx == -1)
         {
-            DialogManager.Instance.StartDialog(dialog.listOfMessageByUnitType);
+            DialogManager.Instance.StartDialog(this);
             if (dialog.onlyOneTrigger)
             {
                 dialog.canBeTrigger = false;
             }
         }
-        
-        
+    }
+
+    public void NextMessage()
+    {
+        currentMsgIdx++;
+        if (currentMsgIdx >= dialog.listOfMessageByUnitType.Count)
+        {
+            DialogManager.Instance.FinishDialogue();
+            currentMsgIdx = -1;
+        }
+        else
+        {
+            DialogManager.MessageByUnit msg = 
+                    dialog.listOfMessageByUnitType[currentMsgIdx];
+            DialogManager.Instance.SaySomething(msg, 
+                                       SpeechBubbleManager.SpeechbubbleType.NORMAL);
+
+        }
     }
 }

@@ -20,6 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 03450cc46da198b43a2f09b799ca82d9,
-      type: 2}
+  - enabled: 1
+    path: Assets/Scenes/Castle_Hub.unity
+    guid: 581459e8a4bd74f47923dcb6547c1702
+  m_configObjects: {}
