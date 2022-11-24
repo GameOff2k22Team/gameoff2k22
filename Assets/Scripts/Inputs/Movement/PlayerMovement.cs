@@ -91,19 +91,21 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 inputVector = _playerInputs.Player.Move.ReadValue<Vector2>();
         
-        if (inputVector.magnitude > 0.8)
+        if (inputVector.magnitude < 0.03)
         {
-            _isRunning = true;
+            Idle();
+        }
+        else if (inputVector.magnitude > 0.9 ||
+                 _playerInputs.Player.Run.IsPressed())
+        {
+            Run();
         } else
         {
-            _isRunning = false;
+            Walk();
         }
 
         Utils.RecalculateVectorWithAngle(ref inputVector, _mainCamera.ReturnCameraAngleCalculationInDegrees());
         Vector3 movementVector = new Vector3(inputVector.x, 0, inputVector.y) * Time.deltaTime * PlayerSpeed;
-
-        float playerSpeed = movementVector.magnitude;
-        playerAnimator.SetFloat(ANIMATOR_SPEED_VARIABLE, playerSpeed);
 
         _controller.Move(movementVector);
 
@@ -111,6 +113,24 @@ public class PlayerMovement : MonoBehaviour
         {
             gameObject.transform.forward = movementVector;
         }
+    }
+
+    protected void Idle()
+    {
+        playerAnimator.SetFloat(ANIMATOR_SPEED_VARIABLE, 0);
+        _isRunning = false;
+    }
+
+    protected void Walk()
+    {
+        playerAnimator.SetFloat(ANIMATOR_SPEED_VARIABLE, 0.5f);
+        _isRunning = false;
+    }
+
+    protected void Run()
+    {
+        playerAnimator.SetFloat(ANIMATOR_SPEED_VARIABLE, 1);
+        _isRunning = true;
     }
 
     protected void OnJumpPerformed(InputAction.CallbackContext obj)

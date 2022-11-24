@@ -206,8 +206,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d1c4707bdfec6c4db6d4a1480bdf8e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedInside:
+    walkSpeed: 3
+    runSpeed: 5
+  speedOutside:
+    walkSpeed: 3
+    runSpeed: 5
+  isOutside: 0
+  playerAnimator: {fileID: 8349880553299434249}
   _isGroundedPlayer: 0
-  _playerSpeed: 3
 --- !u!95 &8349880553299434249
 Animator:
   serializedVersion: 4
@@ -217,11 +224,11 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013781569815868834}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 665d969d51473c44c877e93a229cf2f0, type: 3}
   m_Controller: {fileID: 9100000, guid: e534316ca67b5da4a8ad118173917b0d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
