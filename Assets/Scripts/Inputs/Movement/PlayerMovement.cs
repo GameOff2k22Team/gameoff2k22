@@ -1,25 +1,49 @@
-using System.Collections;
-using Unity.VisualScripting;
-using Unity.VisualScripting.InputSystem;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Serializable]
+    public struct Speed
+    {
+        [Range(0, 50f)]
+        public float walkSpeed;
+        [Range(0, 50f)]
+        public float runSpeed;
+    }
+
+    
+    public Speed speedInside;
+    public Speed speedOutside;
+    public bool isOutside;
+    public Animator playerAnimator;
+
     protected InputManager inputManager;
     protected PlayerInputActions _playerInputs;
     protected CharacterController _controller;
     protected Vector3 _playerVelocity;
     [SerializeField]
     protected bool _isGroundedPlayer;
-    [SerializeField, Range(0, 50f)]
-    protected float _playerSpeed = 2.0f;
     protected float _jumpHeight = 1.0f;
     protected float _gravityValue = -9.81f;
     private Camera _mainCamera;
     private Transform _mainCameraTr = null;
     private float _cameraAngle = 0f;
     public AkEvent FootstepSound;
+    private Speed _roomSpeed;
+    private const string ANIMATOR_SPEED_VARIABLE = "Speed";
+
+    private bool _isRunning;
+
+    protected float PlayerSpeed
+    {
+        get
+        {
+            float playerSpeed = _isRunning ? _roomSpeed.runSpeed : _roomSpeed.walkSpeed;
+            return playerSpeed;
+        }
+    }
 
 
     private void Awake()
@@ -30,6 +54,9 @@ public class PlayerMovement : MonoBehaviour
         {
             _controller = gameObject.AddComponent<CharacterController>();
         }
+
+        _roomSpeed = isOutside ? speedOutside : speedInside;
+
         _mainCamera = Camera.main; 
         _mainCameraTr = _mainCamera.transform;
         _cameraAngle = CameraAngleCalculation();
@@ -63,9 +90,21 @@ public class PlayerMovement : MonoBehaviour
     protected virtual void OnMovementPerformed()
     {
         Vector2 inputVector = _playerInputs.Player.Move.ReadValue<Vector2>();
-        Utils.RecalculateVectorWithAngle(ref inputVector, _mainCamera.ReturnCameraAngleCalculationInDegrees());
-        Vector3 movementVector = new Vector3(inputVector.x, 0, inputVector.y) * Time.deltaTime * _playerSpeed;
         
+        if (inputVector.magnitude > 0.8)
+        {
+            _isRunning = true;
+        } else
+        {
+            _isRunning = false;
+        }
+
+        Utils.RecalculateVectorWithAngle(ref inputVector, _mainCamera.ReturnCameraAngleCalculationInDegrees());
+        Vector3 movementVector = new Vector3(inputVector.x, 0, inputVector.y) * Time.deltaTime * PlayerSpeed;
+
+        float playerSpeed = movementVector.magnitude;
+        playerAnimator.SetFloat(ANIMATOR_SPEED_VARIABLE, playerSpeed);
+
         _controller.Move(movementVector);
 
         if (movementVector != Vector3.zero)
