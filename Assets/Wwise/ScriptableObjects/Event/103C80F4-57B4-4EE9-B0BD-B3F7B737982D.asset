@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3754c545f5a1d44bb50cd91d9c969b, type: 3}
   m_Name: 103C80F4-57B4-4EE9-B0BD-B3F7B737982D
   m_EditorClassIdentifier: 
-  objectName: Footsteps_Room_Carpet
-  id: 2641191134
+  objectName: Footsteps_House_Carpet
+  id: 3983452719
   guid: 103C80F4-57B4-4EE9-B0BD-B3F7B737982D

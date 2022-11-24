@@ -3,22 +3,6 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{EDB93510-2901-42B1-A633-9B33D402F006}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Room" ID="{04218C1F-1AD5-4FC6-926B-BA814037C089}">
-					<PropertyList>
-						<Property Name="Maximum" Type="int32">
-							<ValueList>
-								<Value>99951424</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ObjectInclusionList>
-						<ObjectRef Name="Room" ID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}" WorkUnitID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Room" ID="{F386346F-2FB4-4E23-BD7F-B920424052D1}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Room" ID="{9533AD64-D677-4E71-A9E6-DFDE5D554D49}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="Donjon" ID="{C89B4EA7-9F43-40DD-B855-D0CD54C7D92C}">
 					<PropertyList>
 						<Property Name="Maximum" Type="int32">
@@ -85,7 +69,7 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Menu" ID="{A8307242-58C4-4FE2-BA96-384BAAB7DBD6}">
+				<SoundBank Name="Boss" ID="{08533042-B152-4E40-812A-910FD3789B3A}">
 					<PropertyList>
 						<Property Name="Maximum" Type="int32">
 							<ValueList>
@@ -93,12 +77,11 @@
 							</ValueList>
 						</Property>
 					</PropertyList>
-					<ObjectInclusionList/>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Boss" ID="{08533042-B152-4E40-812A-910FD3789B3A}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Music_Boss" ID="{522ED282-1BB1-4159-94F6-FC6F2156A118}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Boss" ID="{DD5642B8-2453-4485-AFAD-02A2B661B6D8}" WorkUnitID="{DD5642B8-2453-4485-AFAD-02A2B661B6D8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Boss" ID="{DCC2E968-C85F-45AC-A192-F8ABB3839916}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

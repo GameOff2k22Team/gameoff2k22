@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="Test" ID="{D356C184-FC5F-41BF-9344-CFF4116EA920}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Footsteps_Room_Carpet" ID="{103C80F4-57B4-4EE9-B0BD-B3F7B737982D}" WorkUnitID="{279AB43C-3AF5-485A-BD43-7F5D49C47E37}"/>
+							<ObjectRef Name="Footsteps_House_Carpet" ID="{103C80F4-57B4-4EE9-B0BD-B3F7B737982D}" WorkUnitID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>

@@ -19,7 +19,7 @@
 						<Action Name="" ID="{9ABAC280-72C2-4BC1-B675-C1E22AD23CC9}" ShortID="102441227">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Donjon" ID="{D49DD18A-0897-41D1-BC37-DAC876F34FD5}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+									<ObjectRef Name="Music_Donjon" ID="{744F6BFB-48D0-43C9-8E02-6C8064ACF819}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -48,7 +48,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Donjon" ID="{D49DD18A-0897-41D1-BC37-DAC876F34FD5}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+									<ObjectRef Name="Music_Donjon_Start" ID="{D49DD18A-0897-41D1-BC37-DAC876F34FD5}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

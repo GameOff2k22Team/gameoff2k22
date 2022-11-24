@@ -12,7 +12,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	192766873	UI_Back	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\UI_Back [2022-11-21 165940]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Title_Screen\UI_Back		20608
 	286650089	UI_Play	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\UI_Play [2022-11-21 165939]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Title_Screen\UI_Play		73140
-	316207741	Music_Title_Screen_PH	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\Prince Ralis is Saved - The Legend of Zelda： Twilight Princess_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Title_Screen\Music_Title_Screen\Music_Title_Screen_PH		38414416
 	321886356	UI_Click	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\UI_Click [2022-11-21 165938]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Title_Screen\UI_Click		18364
+	420687696	MS_Title_Screen_Loop	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Title_Screen_Loop_9BBFD5C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Title_Screen\Music_Title_Screen_Loop\MS_Title_Screen_Loop		10215488
 	491094595	UI_Hover	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\UI_Hover [2022-11-21 165937]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Title_Screen\UI_Hover		12320
+	1044038537	menu [2022-11-24 133230]	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\menu [2022-11-24 133230]_9BBFD5C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Title_Screen\Music_Title_Screen_Start\menu [2022-11-24 133230]		811072
 
