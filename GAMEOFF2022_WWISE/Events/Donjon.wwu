@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{19BF1A09-2D37-4017-B8BC-325976FC9900}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Donjon" ID="{19BF1A09-2D37-4017-B8BC-325976FC9900}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music_Donjon" ID="{1DFF6941-3F1C-4E3C-BE57-AAFF2364C687}">
+					<ChildrenList>
+						<Action Name="" ID="{1C969368-EF48-4BAB-B787-E8038E704943}" ShortID="283111423">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_Donjon" ID="{FB83A6DF-17FB-432C-B63F-68B2E917F170}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9ABAC280-72C2-4BC1-B675-C1E22AD23CC9}" ShortID="102441227">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Donjon" ID="{D49DD18A-0897-41D1-BC37-DAC876F34FD5}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Donjon" ID="{E87455BA-5ABA-4857-931C-0DF6F1ED4670}">
+					<ChildrenList>
+						<Action Name="" ID="{495D50AE-1CF5-4D34-8DB8-0C975D46AEB5}" ShortID="116819328">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_Donjon" ID="{FB83A6DF-17FB-432C-B63F-68B2E917F170}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{62436659-18D8-4125-BFAD-DF7807476A39}" ShortID="892225411">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Donjon" ID="{D49DD18A-0897-41D1-BC37-DAC876F34FD5}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

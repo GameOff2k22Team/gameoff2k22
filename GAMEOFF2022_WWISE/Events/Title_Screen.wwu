@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Title_Screen" ID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music_Title_Screen" ID="{FA3F4AC4-F9BC-4715-8CC0-93876BAFFC28}">
+					<ChildrenList>
+						<Action Name="" ID="{205AB1F5-3C32-48E9-AAAF-41529A83BA77}" ShortID="52059852">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_Title_Screen" ID="{C580AE71-DCDF-4300-8415-1EB67C1B614C}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A609D90D-49FC-411C-97F6-F061175E37C4}" ShortID="29771744">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Title_Screen" ID="{A0F29A2C-5B2B-465C-B3A2-2886883A46AF}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Title_Screen" ID="{2DEEF31B-54F9-4D8F-96D9-D7E865FF77CF}">
+					<ChildrenList>
+						<Action Name="" ID="{F10879CC-8F8D-4835-ADED-E1FD0915ED23}" ShortID="18527936">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_Title_Screen" ID="{C580AE71-DCDF-4300-8415-1EB67C1B614C}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{86FC605D-D453-4390-B3FB-E8FA7FA5404E}" ShortID="326540791">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Title_Screen" ID="{7172514C-06D7-491A-AFCC-3ED62C0650BB}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Click" ID="{BCBF745E-8D0F-4DE5-BC77-555866D84515}">
+					<ChildrenList>
+						<Action Name="" ID="{5A5813E6-9CCA-4981-80BC-F84BA71527A0}" ShortID="967799313">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Click" ID="{DE5E98C2-970E-462F-BD72-8406138BB320}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Hover" ID="{E51E3507-A059-43CE-9707-B19EA75F3387}">
+					<ChildrenList>
+						<Action Name="" ID="{AA5D3D96-B5BE-4E68-A33E-FE86BB296A14}" ShortID="890362495">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Hover" ID="{2401A2BA-E7D9-42B7-A3EE-8A0C9B352425}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Back" ID="{67118D65-5EEE-4014-96D8-9CE210E08753}">
+					<ChildrenList>
+						<Action Name="" ID="{8159F4CC-9A89-430D-AEB5-68BBE7A8AE84}" ShortID="544954775">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Back" ID="{2E4FF358-750C-42C9-A127-E9DE43ED1629}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Play" ID="{6575DD0A-05EB-4C2A-B898-CA0ED8EE69D5}">
+					<ChildrenList>
+						<Action Name="" ID="{3203F888-7796-4619-8FC3-58C1F1D09E45}" ShortID="791538301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Play" ID="{3F3FB20F-5163-43EC-B1B5-8474EBADB4BD}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

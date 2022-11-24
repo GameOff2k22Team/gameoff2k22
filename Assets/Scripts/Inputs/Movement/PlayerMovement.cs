@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private Camera _mainCamera;
     private Transform _mainCameraTr = null;
     private float _cameraAngle = 0f;
+    public AkEvent FootstepSound;
 
 
     private void Awake()
@@ -32,6 +33,14 @@ public class PlayerMovement : MonoBehaviour
         _mainCamera = Camera.main; 
         _mainCameraTr = _mainCamera.transform;
         _cameraAngle = CameraAngleCalculation();
+    }
+
+    void Anim_Footstep()
+    {
+        if(FootstepSound != null)
+        {
+            FootstepSound.HandleEvent(gameObject);
+        }
     }
 
     private void OnEnable()
