@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3754c545f5a1d44bb50cd91d9c969b, type: 3}
   m_Name: 679494E2-8656-4534-AE04-3D6DA0153038
   m_EditorClassIdentifier: 
-  objectName: AMB_Room
-  id: 3202361783
+  objectName: AMB_House
+  id: 2678962602
   guid: 679494E2-8656-4534-AE04-3D6DA0153038

@@ -22,7 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Title_Screen" ID="{A0F29A2C-5B2B-465C-B3A2-2886883A46AF}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+									<ObjectRef Name="Music_Title_Screen" ID="{7172514C-06D7-491A-AFCC-3ED62C0650BB}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

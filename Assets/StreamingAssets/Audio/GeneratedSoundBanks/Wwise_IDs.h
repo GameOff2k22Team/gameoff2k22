@@ -13,9 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMB_ROOM = 3202361783U;
+        static const AkUniqueID AMB_HOUSE = 2678962602U;
+        static const AkUniqueID FOOTSTEPS_HOUSE_CARPET = 3983452719U;
         static const AkUniqueID FOOTSTEPS_HOUSE_WOOD = 2433268977U;
-        static const AkUniqueID FOOTSTEPS_ROOM_CARPET = 2641191134U;
+        static const AkUniqueID MUSIC_BOSS = 1090969866U;
         static const AkUniqueID MUSIC_DONJON = 611981041U;
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
         static const AkUniqueID MUSIC_HOUSE = 3574811899U;
@@ -60,8 +61,6 @@ namespace AK
         static const AkUniqueID DONJON = 2891873417U;
         static const AkUniqueID FOREST = 491961918U;
         static const AkUniqueID HOUSE = 3720479411U;
-        static const AkUniqueID MENU = 2607556080U;
-        static const AkUniqueID ROOM = 2077253480U;
         static const AkUniqueID TITLE_SCREEN = 3853285476U;
     } // namespace BANKS
 

@@ -19,7 +19,54 @@
 						<Action Name="" ID="{2EA36B98-3EE6-4383-92AF-CD89DBC3B3D6}" ShortID="458241306">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footsteps_House_Wood" ID="{38D17087-6070-42F6-8827-1506F15EED57}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+									<ObjectRef Name="Footsteps_Room_Wood" ID="{F0EAF49E-5D5A-434F-8091-92BAAB74814B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footsteps_House_Carpet" ID="{103C80F4-57B4-4EE9-B0BD-B3F7B737982D}">
+					<ChildrenList>
+						<Action Name="" ID="{E8BAE6E6-7F69-494C-903D-735BAEDDE77D}" ShortID="191751922">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Room_Carpet" ID="{BC7CFF72-8237-4A03-8FBD-A3AA79DB022A}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Footsteps_Room_Carpet" ID="{9285F3F7-F25C-4FEF-8177-7BD7DBBE5F41}">
+					<ChildrenList>
+						<Action Name="" ID="{BA8FC7DC-232F-4F51-A51F-426E9E538928}" ShortID="793458040">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Room_Carpet" ID="{BC7CFF72-8237-4A03-8FBD-A3AA79DB022A}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_House" ID="{679494E2-8656-4534-AE04-3D6DA0153038}">
+					<ChildrenList>
+						<Action Name="" ID="{60788FFF-84E2-4A84-B652-571F7126865C}" ShortID="543453121">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Room" ID="{763EB5FF-515A-47D1-8D26-449F17A38819}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Play_Console" ID="{91480BC0-11DE-4FB7-B8E8-61C1C1482089}">
+					<ChildrenList>
+						<Action Name="" ID="{8EFC5DF0-D8C6-4D08-84AB-1A59BCD1CB69}" ShortID="95404736">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Play_Console" ID="{A5CD1D48-619A-4E45-BB3E-D082FE0439FF}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
