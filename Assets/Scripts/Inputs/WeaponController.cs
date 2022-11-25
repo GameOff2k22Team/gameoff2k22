@@ -18,7 +18,7 @@ public class WeaponController : PlayerMovement
         Vector3 movementVector = new Vector3(inputVector.x, 0, inputVector.y);
 
         _controller.Move(movementVector * Time.deltaTime
-            * _playerSpeed);
+            * PlayerSpeed);
 
         if (movementVector != Vector3.zero)
         {

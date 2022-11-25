@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 6169263977598819925}
   - component: {fileID: 1848243570176786605}
   - component: {fileID: 8349880553299434249}
+  - component: {fileID: 7733745410692930100}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -206,8 +207,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d1c4707bdfec6c4db6d4a1480bdf8e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedInside:
+    walkSpeed: 3
+    runSpeed: 5
+  speedOutside:
+    walkSpeed: 3
+    runSpeed: 5
+  isOutside: 0
+  playerAnimator: {fileID: 8349880553299434249}
   _isGroundedPlayer: 0
-  _playerSpeed: 3
 --- !u!95 &8349880553299434249
 Animator:
   serializedVersion: 4
@@ -217,17 +225,57 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013781569815868834}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 665d969d51473c44c877e93a229cf2f0, type: 3}
   m_Controller: {fileID: 9100000, guid: e534316ca67b5da4a8ad118173917b0d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7733745410692930100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013781569815868834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c0cb41966201446a4e30a4fa965450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 039265f7aa000b045b1eb42f18d06523, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3518706160806438683}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8349880553299434249}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: HasSword
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1680088076096353821
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6478217431603623347
 Transform:
   m_ObjectHideFlags: 0
