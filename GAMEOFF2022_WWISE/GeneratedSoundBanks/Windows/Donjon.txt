@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	146415648	SFX_Door_Donjon			\Donjon\SFX_Door_Donjon	
 	611981041	Music_Donjon			\Donjon\Music_Donjon	
 	3111214772	Stop_Music_Donjon			\Donjon\Stop_Music_Donjon	
 

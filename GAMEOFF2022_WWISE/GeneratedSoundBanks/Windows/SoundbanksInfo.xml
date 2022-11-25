@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="2534563367">
+		<SoundBank Id="491961918" Language="SFX" Hash="158384416">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -112,7 +112,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1560169506" Language="SFX" Hash="2932185110">
+		<SoundBank Id="1560169506" Language="SFX" Hash="4165322525">
 			<ObjectPath>\SoundBanks\Default Work Unit\Boss</ObjectPath>
 			<ShortName>Boss</ShortName>
 			<Path>Boss.bnk</Path>
@@ -141,7 +141,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="2777532803">
+		<SoundBank Id="2891873417" Language="SFX" Hash="266672875">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -157,6 +157,21 @@
 							<Path>SFX\MS_Donjon_Start_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="146415648" Name="SFX_Door_Donjon" ObjectPath="\Events\Donjon\SFX_Door_Donjon" DurationType="OneShot" DurationMin="4.665354" DurationMax="4.665354">
+					<IncludedMemoryFiles>
+						<File Id="447295671" Language="SFX">
+							<ShortName>SFX_Door_Donjon_Open [2022-11-11 150946].wav</ShortName>
+							<Path>SFX\SFX_Door_Donjon_Open [2022-11-11 150946]_10C4C929.wem</Path>
+						</File>
+						<File Id="971204579" Language="SFX">
+							<ShortName>SFX_Door_Donjon_Close [2022-11-11 150947].wav</ShortName>
+							<Path>SFX\SFX_Door_Donjon_Close [2022-11-11 150947]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3111214772" Name="Stop_Music_Donjon" ObjectPath="\Events\Donjon\Stop_Music_Donjon" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
@@ -258,7 +273,7 @@
 				<GameParameter Id="2668762309" Name="Music_Fade_Out_Donjon" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Donjon"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3720479411" Language="SFX" Hash="2452959062">
+		<SoundBank Id="3720479411" Language="SFX" Hash="2094755801">
 			<ObjectPath>\SoundBanks\Default Work Unit\House</ObjectPath>
 			<ShortName>House</ShortName>
 			<Path>House.bnk</Path>
@@ -429,6 +444,21 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1739295053" Name="SFX_Door" ObjectPath="\Events\House\SFX_Door" DurationType="OneShot" DurationMin="2.262167" DurationMax="2.262167">
+					<IncludedMemoryFiles>
+						<File Id="656424530" Language="SFX">
+							<ShortName>SFX_Door_Room_Close [2022-11-11 152959].wav</ShortName>
+							<Path>SFX\SFX_Door_Room_Close [2022-11-11 152959]_10C4C929.wem</Path>
+						</File>
+						<File Id="833872633" Language="SFX">
+							<ShortName>SFX_Door_Open [2022-11-10 153019].wav</ShortName>
+							<Path>SFX\SFX_Door_Open [2022-11-10 153019]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2077253480" Name="Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="3983758741" Name="SFX_Play_Console" ObjectPath="\Events\House\SFX_Play_Console" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="960625662" Language="SFX">
@@ -452,7 +482,7 @@
 				<GameParameter Id="3749487386" Name="FS_RTPC" ObjectPath="\Game Parameters\Default Work Unit\FS_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3853285476" Language="SFX" Hash="3843456730">
+		<SoundBank Id="3853285476" Language="SFX" Hash="3486954778">
 			<ObjectPath>\SoundBanks\Default Work Unit\Title_Screen</ObjectPath>
 			<ShortName>Title_Screen</ShortName>
 			<Path>Title_Screen.bnk</Path>

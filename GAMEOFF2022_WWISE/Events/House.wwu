@@ -6,6 +6,9 @@
 				<Event Name="Music_House" ID="{8D07D16A-851F-421E-B002-3AACD3A00EDD}">
 					<ChildrenList>
 						<Action Name="" ID="{DD12D725-71BF-4F75-A051-695D5D21F34A}" ShortID="818513707">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="12.7"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Music_House" ID="{39592BD7-2F1D-438B-A662-77C257F5CE18}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
@@ -67,6 +70,27 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Play_Console" ID="{A5CD1D48-619A-4E45-BB3E-D082FE0439FF}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Door" ID="{375E615F-EFE0-4AE2-8830-ED482E878831}">
+					<ChildrenList>
+						<Action Name="" ID="{8B95E34E-CB00-4DC5-9436-1C64B04EA2C8}" ShortID="886156384">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Door_Room_Open" ID="{6141A69D-D172-43BF-9FCC-6E3A23753C15}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9AA1AD2C-FA19-4240-AE7A-7A22DC8D1A24}" ShortID="283417993">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Door_Room_Close" ID="{2896381F-7C61-43DC-969B-5F2BA217ECF2}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

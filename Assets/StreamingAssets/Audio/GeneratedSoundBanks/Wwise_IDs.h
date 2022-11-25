@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
         static const AkUniqueID MUSIC_HOUSE = 3574811899U;
         static const AkUniqueID MUSIC_TITLE_SCREEN = 4129491292U;
+        static const AkUniqueID SFX_DOOR = 1739295053U;
+        static const AkUniqueID SFX_DOOR_DONJON = 146415648U;
         static const AkUniqueID SFX_PLAY_CONSOLE = 3983758741U;
         static const AkUniqueID STOP_FOOTSTEPS_ROOM_CARPET = 1081171197U;
         static const AkUniqueID STOP_MUSIC_DONJON = 3111214772U;
