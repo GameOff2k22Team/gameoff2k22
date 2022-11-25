@@ -470,6 +470,9 @@
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="Donjon" ID="{BA35F715-2A1E-4EDC-8693-F78179A10CC2}" ShortID="771850253">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
@@ -477,21 +480,18 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Donjon" ID="{C7963102-7271-4310-A0C0-310F9B0321F9}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<ActorMixer Name="Footsteps" ID="{B4127910-2BFC-4D8D-AFBD-5BBBA986AFC2}" ShortID="672896136">
-									<PropertyList>
-										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Donjon" ID="{C7963102-7271-4310-A0C0-310F9B0321F9}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -507,7 +507,6 @@
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.33"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -922,18 +921,12 @@
 									<ObjectLists/>
 								</ActorMixer>
 								<ActorMixer Name="Door" ID="{B538F6DC-A574-42FE-825C-28F6B1468654}" ShortID="636306060">
-									<PropertyList>
-										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Donjon" ID="{C7963102-7271-4310-A0C0-310F9B0321F9}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -961,6 +954,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Door_Donjon_Open" ID="{756D9D86-1A9F-4845-9FAD-548C80864ACF}" ShortID="1005336820">
+											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
