@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
-public class PuzzleManager : Singleton<PuzzleManager>
+public class PuzzleManager : MonoBehaviour
 {
 
-    public enum PuzzleType { PERSEVERANCE, SPEED, FOCUS }
+    public enum PuzzleType { PERSEVERANCE, FOCUS, BABA }
+    public static PuzzleManager Instance { get; private set; }
 
     public struct PerseverancePuzzle
     {
@@ -18,17 +22,20 @@ public class PuzzleManager : Singleton<PuzzleManager>
             this.type = pType;
             this.numberOfTryRequired = nbTryRequried;
             this.numberOfTry = 1;
-
         }
 
     }
+
+
     [Header("Perseverance Puzzle")]
+    public GameObject perseverancePuzzleObject;
     public int perseverancePuzzleNumberOfTryRequired = 15;
     public PerseverancePuzzle perseverancePuzzle;
     [HideInInspector]
     public bool perseverancePuzzleIsEnd = false;
     [Space(10)]
     [Header("Focus Puzzle")]
+    public GameObject focusPuzzleObject;
     [SerializeField]
     private GameObject _sceneLight;
     [SerializeField]
@@ -37,13 +44,77 @@ public class PuzzleManager : Singleton<PuzzleManager>
     private List<GameObject> _focusKeys;
     [SerializeField]
     private GameObject _fakeKey;
+    [Space(10)]
+    [Header("Baba Puzzle")]
+    public GameObject babaPuzzleObject;
 
-    // Start is called before the first frame update
+    private Dictionary<PuzzleType, GameObject> puzzleObjects = new Dictionary<PuzzleType, GameObject>();
+    private PuzzleType currentPuzzleType;
+    private Animator loadManagerAnimator;
+    private bool isFirstPuzzle = true;
+    private const string FADE_IN_TRIGGER = "FadeIn";
+    private const string FADE_OUT_TRIGGER = "FadeOut";
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this as PuzzleManager;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        loadManagerAnimator = LoadManager.Instance.gameObject.GetComponent<Animator>();
+
+        puzzleObjects.Add(PuzzleType.PERSEVERANCE, perseverancePuzzleObject);
+        puzzleObjects.Add(PuzzleType.FOCUS, focusPuzzleObject);
+        puzzleObjects.Add(PuzzleType.BABA, babaPuzzleObject);
+
+        SetPuzzleType(PuzzleType.PERSEVERANCE);
+
+    }
+
     void Start()
     {
         perseverancePuzzle = new PerseverancePuzzle(PuzzleType.PERSEVERANCE, perseverancePuzzleNumberOfTryRequired);
         if(_lightingRoad)
             this.EnsureLightingRoadIsActive();
+    }
+
+    private void SetPuzzleType(PuzzleType type)
+    {
+        if (puzzleObjects.TryGetValue(currentPuzzleType, out GameObject currentGOPuzzle))
+        {
+            currentGOPuzzle.SetActive(false);
+        }
+
+        currentPuzzleType = type;
+
+        if (puzzleObjects.TryGetValue(currentPuzzleType, out currentGOPuzzle))
+        {
+            currentGOPuzzle.SetActive(true);
+        }
+    }
+
+    public void NextPuzzle()
+    {
+        loadManagerAnimator.SetTrigger(FADE_OUT_TRIGGER);
+        LoadManager.Instance.OnFadeOutCompleted.AddListener(FadeOut);
+    }
+
+    public void SetNextPuzzle()
+    {
+        int nextTypeIdx = ((int)currentPuzzleType + 1) % 3;
+        PuzzleType nextType = (PuzzleType)nextTypeIdx;
+        SetPuzzleType(nextType);
+    }
+
+    private void FadeOut()
+    {
+        loadManagerAnimator.SetTrigger(FADE_IN_TRIGGER);
+        SetNextPuzzle();
+        LoadManager.Instance.OnFadeOutCompleted.RemoveListener(FadeOut);
     }
 
     public void OpenChest(PuzzleType puzzleType, PuzzleBase chest)
@@ -56,7 +127,7 @@ public class PuzzleManager : Singleton<PuzzleManager>
             case PuzzleType.FOCUS:
                 this.GiveArtefact(chest);
                 break;
-            case PuzzleType.SPEED:
+            case PuzzleType.BABA:
                 this.GiveArtefact(chest);
                 break;
             default: break;
@@ -142,3 +213,26 @@ public class PuzzleManager : Singleton<PuzzleManager>
     }
 
 }
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(PuzzleManager))]
+[CanEditMultipleObjects]
+public class PuzzleManagerEditor : Editor
+{
+    PuzzleManager puzzleManager;
+    private void Awake()
+    {
+        puzzleManager = target as PuzzleManager;
+    }
+
+    public override void OnInspectorGUI()
+    {
+        serializedObject.Update();
+        base.OnInspectorGUI();
+        if (GUILayout.Button("Next Puzzle")) {
+            puzzleManager.NextPuzzle();
+        }
+        serializedObject.ApplyModifiedProperties();
+    }
+}
+#endif

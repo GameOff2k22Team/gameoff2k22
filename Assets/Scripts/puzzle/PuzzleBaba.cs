@@ -3,6 +3,6 @@ public class PuzzleBaba : PuzzleBase
     protected override void Start()
     {
         base.Start();
-        type = PuzzleManager.PuzzleType.SPEED;
+        type = PuzzleManager.PuzzleType.BABA;
     }
 }
