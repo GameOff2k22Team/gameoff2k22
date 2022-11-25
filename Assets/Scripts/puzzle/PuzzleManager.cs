@@ -46,7 +46,7 @@ public class PuzzleManager : Singleton<PuzzleManager>
             this.EnsureLightingRoadIsActive();
     }
 
-    public void OpenChest(PuzzleType puzzleType, PuzzlePerseverance chest)
+    public void OpenChest(PuzzleType puzzleType, PuzzleBase chest)
     {
         switch (puzzleType)
         {
@@ -56,11 +56,14 @@ public class PuzzleManager : Singleton<PuzzleManager>
             case PuzzleType.FOCUS:
                 this.GiveArtefact(chest);
                 break;
+            case PuzzleType.SPEED:
+                this.GiveArtefact(chest);
+                break;
             default: break;
         }
     }
 
-    private void OpenChestPerseverance(PuzzlePerseverance chest)
+    private void OpenChestPerseverance(PuzzleBase chest)
     {
         if (this.perseverancePuzzle.numberOfTry == this.perseverancePuzzle.numberOfTryRequired)
         {
@@ -81,7 +84,7 @@ public class PuzzleManager : Singleton<PuzzleManager>
         this.perseverancePuzzle.numberOfTry += 1;
     }
     
-    private void GiveArtefact(PuzzlePerseverance chest)
+    private void GiveArtefact(PuzzleBase chest)
     {
         chest.artefact.SetActive(true);
     }
