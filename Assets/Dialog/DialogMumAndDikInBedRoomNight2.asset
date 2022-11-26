@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84bae8eb726e0ee42b22059d6195f8c5, type: 3}
-  m_Name: DialogMumAndDikInBedRoom
+  m_Name: DialogMumAndDikInBedRoomNight2
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
   - type: 1
