@@ -26,6 +26,7 @@ public class PuzzleManager : MonoBehaviour
 
     }
 
+    public Transform playerTransform;
 
     [Header("Perseverance Puzzle")]
     public GameObject perseverancePuzzleObject;
@@ -51,9 +52,9 @@ public class PuzzleManager : MonoBehaviour
     private Dictionary<PuzzleType, GameObject> puzzleObjects = new Dictionary<PuzzleType, GameObject>();
     private PuzzleType currentPuzzleType;
     private Animator loadManagerAnimator;
-    private bool isFirstPuzzle = true;
     private const string FADE_IN_TRIGGER = "FadeIn";
     private const string FADE_OUT_TRIGGER = "FadeOut";
+    private Transform spawnSpot;
 
     private void Awake()
     {
@@ -72,7 +73,12 @@ public class PuzzleManager : MonoBehaviour
         puzzleObjects.Add(PuzzleType.BABA, babaPuzzleObject);
 
         SetPuzzleType(PuzzleType.PERSEVERANCE);
-
+        
+        spawnSpot = new GameObject().transform;
+        spawnSpot.position = playerTransform.position;
+        Debug.Log(spawnSpot.position);
+        spawnSpot.rotation = playerTransform.rotation;
+        spawnSpot.localScale = playerTransform.localScale;
     }
 
     void Start()
@@ -107,7 +113,19 @@ public class PuzzleManager : MonoBehaviour
     {
         int nextTypeIdx = ((int)currentPuzzleType + 1) % 3;
         PuzzleType nextType = (PuzzleType)nextTypeIdx;
+
+        RespawnPlayer();
+
         SetPuzzleType(nextType);
+    }
+
+    private void RespawnPlayer()
+    {
+        playerTransform.gameObject.SetActive(false);
+        playerTransform.position = spawnSpot.position;
+        playerTransform.rotation = spawnSpot.rotation;
+        playerTransform.localScale = spawnSpot.localScale;
+        playerTransform.gameObject.SetActive(true);
     }
 
     private void FadeOut()
