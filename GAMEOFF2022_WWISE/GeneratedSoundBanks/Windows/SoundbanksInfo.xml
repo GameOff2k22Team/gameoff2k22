@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="158384416">
+		<SoundBank Id="491961918" Language="SFX" Hash="2776187587">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -24,6 +24,45 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1831562812" Name="SFX_Carpet_Forest" ObjectPath="\Events\Forest\SFX_Carpet_Forest" DurationType="OneShot" DurationMin="1.352854" DurationMax="1.352854">
+					<IncludedMemoryFiles>
+						<File Id="122182384" Language="SFX">
+							<ShortName>SFX_Carpet_Forest [2022-11-26 180204].wav</ShortName>
+							<Path>SFX\SFX_Carpet_Forest [2022-11-26 180204]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="285337003" Name="SFX_Door_Donjon_Open" ObjectPath="\Events\Forest\SFX_Door_Donjon_Open" DurationType="OneShot" DurationMin="2.9" DurationMax="2.9">
+					<IncludedMemoryFiles>
+						<File Id="447295671" Language="SFX">
+							<ShortName>SFX_Door_Donjon_Open [2022-11-11 150946].wav</ShortName>
+							<Path>SFX\SFX_Door_Donjon_Open [2022-11-11 150946]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1091244002" Name="SFX_Key_Forest" ObjectPath="\Events\Forest\SFX_Key_Forest" DurationType="OneShot" DurationMin="0.354688" DurationMax="0.354688">
+					<IncludedMemoryFiles>
+						<File Id="461939034" Language="SFX">
+							<ShortName>SFX_Key_Forest [2022-11-26 170537].wav</ShortName>
+							<Path>SFX\SFX_Key_Forest [2022-11-26 170537]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3571398045" Name="SFX_Key_Forest_Open" ObjectPath="\Events\Forest\SFX_Key_Forest_Open" DurationType="OneShot" DurationMin="2.556102" DurationMax="2.556102">
+					<IncludedMemoryFiles>
+						<File Id="824006898" Language="SFX">
+							<ShortName>SFX_Key_Forest_Open  [2022-11-26 173029].wav</ShortName>
+							<Path>SFX\SFX_Key_Forest_Open  [2022-11-26 173029]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="285337003" Name="SFX_Door_Donjon_Open" ObjectPath="\Events\Forest\SFX_Door_Donjon_Open"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="2506571047" Name="Stop_Music_Forest" ObjectPath="\Events\Forest\Stop_Music_Forest" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="16990621" Language="SFX">
@@ -37,6 +76,10 @@
 				<File Id="114234725" Language="SFX">
 					<ShortName>FS_G_08 [2022-11-10 104223].wav</ShortName>
 					<Path>SFX\FS_G_08 [2022-11-10 104223]_10C4C929.wem</Path>
+				</File>
+				<File Id="122182384" Language="SFX">
+					<ShortName>SFX_Carpet_Forest [2022-11-26 180204].wav</ShortName>
+					<Path>SFX\SFX_Carpet_Forest [2022-11-26 180204]_10C4C929.wem</Path>
 				</File>
 				<File Id="188235433" Language="SFX">
 					<ShortName>FS_G_14 [2022-11-10 104226].wav</ShortName>
@@ -62,9 +105,17 @@
 					<ShortName>FS_G_09 [2022-11-10 104223].wav</ShortName>
 					<Path>SFX\FS_G_09 [2022-11-10 104223]_10C4C929.wem</Path>
 				</File>
+				<File Id="447295671" Language="SFX">
+					<ShortName>SFX_Door_Donjon_Open [2022-11-11 150946].wav</ShortName>
+					<Path>SFX\SFX_Door_Donjon_Open [2022-11-11 150946]_10C4C929.wem</Path>
+				</File>
 				<File Id="460425779" Language="SFX">
 					<ShortName>MS_Forest_Loop.wav</ShortName>
 					<Path>SFX\MS_Forest_Loop_D79FB2B7.wem</Path>
+				</File>
+				<File Id="461939034" Language="SFX">
+					<ShortName>SFX_Key_Forest [2022-11-26 170537].wav</ShortName>
+					<Path>SFX\SFX_Key_Forest [2022-11-26 170537]_10C4C929.wem</Path>
 				</File>
 				<File Id="509737433" Language="SFX">
 					<ShortName>FS_G_16 [2022-11-10 104229].wav</ShortName>
@@ -86,6 +137,10 @@
 					<ShortName>FS_G_12 [2022-11-10 104225].wav</ShortName>
 					<Path>SFX\FS_G_12 [2022-11-10 104225]_10C4C929.wem</Path>
 				</File>
+				<File Id="824006898" Language="SFX">
+					<ShortName>SFX_Key_Forest_Open  [2022-11-26 173029].wav</ShortName>
+					<Path>SFX\SFX_Key_Forest_Open  [2022-11-26 173029]_10C4C929.wem</Path>
+				</File>
 				<File Id="856571331" Language="SFX">
 					<ShortName>FS_G_15 [2022-11-10 104228].wav</ShortName>
 					<Path>SFX\FS_G_15 [2022-11-10 104228]_10C4C929.wem</Path>
@@ -94,11 +149,18 @@
 					<ShortName>FS_G_10 [2022-11-10 104224].wav</ShortName>
 					<Path>SFX\FS_G_10 [2022-11-10 104224]_10C4C929.wem</Path>
 				</File>
+				<File Id="971204579" Language="SFX">
+					<ShortName>SFX_Door_Donjon_Close [2022-11-11 150947].wav</ShortName>
+					<Path>SFX\SFX_Door_Donjon_Close [2022-11-11 150947]_10C4C929.wem</Path>
+				</File>
 				<File Id="1058741125" Language="SFX">
 					<ShortName>FS_G_04 [2022-11-10 104220].wav</ShortName>
 					<Path>SFX\FS_G_04 [2022-11-10 104220]_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="2802239154" Name="Music_Fade_Out_Forest" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Forest"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="2804550160">
 			<ObjectPath>Init</ObjectPath>
@@ -141,7 +203,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="266672875">
+		<SoundBank Id="2891873417" Language="SFX" Hash="3161978600">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -158,22 +220,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="146415648" Name="SFX_Door_Donjon" ObjectPath="\Events\Donjon\SFX_Door_Donjon" DurationType="OneShot" DurationMin="4.665354" DurationMax="4.665354">
-					<IncludedMemoryFiles>
-						<File Id="447295671" Language="SFX">
-							<ShortName>SFX_Door_Donjon_Open [2022-11-11 150946].wav</ShortName>
-							<Path>SFX\SFX_Door_Donjon_Open [2022-11-11 150946]_10C4C929.wem</Path>
-						</File>
-						<File Id="971204579" Language="SFX">
-							<ShortName>SFX_Door_Donjon_Close [2022-11-11 150947].wav</ShortName>
-							<Path>SFX\SFX_Door_Donjon_Close [2022-11-11 150947]_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<AuxBusSends>
-						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
-					</AuxBusSends>
-				</Event>
 				<Event Id="3111214772" Name="Stop_Music_Donjon" ObjectPath="\Events\Donjon\Stop_Music_Donjon" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2506571047" Name="Stop_Music_Forest" ObjectPath="\Events\Forest\Stop_Music_Forest" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="57875454" Language="SFX">
@@ -203,10 +251,6 @@
 				<File Id="421264799" Language="SFX">
 					<ShortName>FS_S_02 [2022-11-10 150442].wav</ShortName>
 					<Path>SFX\FS_S_02 [2022-11-10 150442]_10C4C929.wem</Path>
-				</File>
-				<File Id="447295671" Language="SFX">
-					<ShortName>SFX_Door_Donjon_Open [2022-11-11 150946].wav</ShortName>
-					<Path>SFX\SFX_Door_Donjon_Open [2022-11-11 150946]_10C4C929.wem</Path>
 				</File>
 				<File Id="473109578" Language="SFX">
 					<ShortName>FS_S_08 [2022-11-10 150446].wav</ShortName>
@@ -255,10 +299,6 @@
 				<File Id="952383554" Language="SFX">
 					<ShortName>MS_Donjon_Start.wav</ShortName>
 					<Path>SFX\MS_Donjon_Start_D79FB2B7.wem</Path>
-				</File>
-				<File Id="971204579" Language="SFX">
-					<ShortName>SFX_Door_Donjon_Close [2022-11-11 150947].wav</ShortName>
-					<Path>SFX\SFX_Door_Donjon_Close [2022-11-11 150947]_10C4C929.wem</Path>
 				</File>
 				<File Id="992431545" Language="SFX">
 					<ShortName>FS_S_10 [2022-11-10 150448].wav</ShortName>

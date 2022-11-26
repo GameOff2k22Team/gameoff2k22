@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3754c545f5a1d44bb50cd91d9c969b, type: 3}
+  m_Name: E5BF5705-4DAD-47D7-A7D6-9209C0FAD3DB
+  m_EditorClassIdentifier: 
+  objectName: SFX_Key_Forest_Open
+  id: 3571398045
+  guid: E5BF5705-4DAD-47D7-A7D6-9209C0FAD3DB
