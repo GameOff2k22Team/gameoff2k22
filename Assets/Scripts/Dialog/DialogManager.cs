@@ -9,7 +9,7 @@ public class DialogManager : Singleton<DialogManager>
     [Serializable]
     public struct MessageByUnit{
         public UnitManager.UnitType type;
-        [TextArea]
+        [TextAreaAttribute(1,10)]
         public string message;
     }
 
@@ -31,9 +31,10 @@ public class DialogManager : Singleton<DialogManager>
         GameManager.Instance.UpdateGameState(GameState.FinishDialogue);
     }
 
-    public void SaySomething(MessageByUnit dialogInfo, SpeechBubbleManager.SpeechbubbleType speechbubbleType)
+    public void SaySomething(MessageByUnit dialogInfo, Vector3 pannelScale, SpeechBubbleManager.SpeechbubbleType speechbubbleType)
     {
             SpeechBubbleManager.Instance.Clear();
-            SpeechBubbleManager.Instance.AddSpeechBubble(UnitManager.Instance.GetUnitByType(dialogInfo.type).transform.position , dialogInfo.message, speechbubbleType);
+            SpeechBubbleManager.Instance.AddSpeechBubble(UnitManager.Instance.GetUnitByType(dialogInfo.type).transform.position, 
+                                                         pannelScale, dialogInfo.message, speechbubbleType);
     }
 }

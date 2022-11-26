@@ -5,7 +5,10 @@ public class DialogTrigger : MonoBehaviour
 {
     public Dialog dialog;
 
+    public Vector3 pannelScale = new Vector3(0.01f, 0.01f, 0.01f);
     private int currentMsgIdx = -1;
+
+
     public void LaunchDialog()
     {
         if (dialog.canBeTrigger && currentMsgIdx == -1)
@@ -30,7 +33,8 @@ public class DialogTrigger : MonoBehaviour
         {
             DialogManager.MessageByUnit msg = 
                     dialog.listOfMessageByUnitType[currentMsgIdx];
-            DialogManager.Instance.SaySomething(msg, 
+            DialogManager.Instance.SaySomething(msg,
+                                                pannelScale,
                                        SpeechBubbleManager.SpeechbubbleType.NORMAL);
 
         }
