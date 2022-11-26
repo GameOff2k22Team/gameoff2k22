@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3693009626872767556}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 887384855692263408}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CTRL-TWEAK--CHEST
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7636516442078394228}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TGT-ARM.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 1848243570176786605}
   - component: {fileID: 8349880553299434249}
   - component: {fileID: 7733745410692930100}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -216,6 +216,7 @@ MonoBehaviour:
   isOutside: 0
   playerAnimator: {fileID: 8349880553299434249}
   _isGroundedPlayer: 0
+  FootstepSound: {fileID: 0}
 --- !u!95 &8349880553299434249
 Animator:
   serializedVersion: 4
@@ -286,7 +287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4617087742100264953}
   - component: {fileID: 4192748138745161226}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4315430348155647927}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MCH-SNAP--SWORDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4853036685201073007}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CTRL-TWEAK-SPINE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4548330298993335410}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CTRL-TORSO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5065206816394748078}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-TOE.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 985594089344977762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-ARM.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8007562596327471187}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-PALM-C.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2978835915047961020}
   - component: {fileID: 4977106501340325900}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dik.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,7 +731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3772874623341671605}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-SHIN.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -761,7 +762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8682456242990242016}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-LEG.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,7 +793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 493988116383465562}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-FOOT.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,7 +825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6478217431603623347}
   - component: {fileID: 1751770403758265190}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SWORDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +949,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6276472125504399168}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-HEAD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -979,7 +980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099404090365518139}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MCH-SNAP--SWORDO-HAND.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,7 +1011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 93823885485912505}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-FORARM.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1041,7 +1042,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 765564533867068794}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-THUMB01.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1072,7 +1073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4426263721368490058}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-LEG.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1103,7 +1104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8686639978636400465}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-HAND.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8354671368862959156}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-THUMB01.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1165,7 +1166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3415945749086193637}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-HAND.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1196,7 +1197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8539262101078703052}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CTRL-PALM.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,7 +1229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6212052230774813276}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-SWORDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1259,7 +1260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1125459164566519699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-HIPS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1290,7 +1291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8470913557760795117}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CTRL-SWORDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3293248239818121484}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TGT-FORARM.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1353,7 +1354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2086329477817412329}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-SPINE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1384,7 +1385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8488750340153680373}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-TOE.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1415,7 +1416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899881098160165564}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TGT-SHOULDER.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1447,7 +1448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8785019879270776710}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1482,7 +1483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6854003101416776743}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TGT-HAND.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,7 +1515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6928046532494831861}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-SHIN.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1545,7 +1546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2448954795733199089}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-CHEST
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1577,7 +1578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3767450886780572036}
   - component: {fileID: 3056000155798404848}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3975633792610820845}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-PALM-C.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1732,7 +1733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4299683617744449629}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-SHOULDER.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1763,7 +1764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7413338702188414019}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TGT-SWORDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1794,7 +1795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7652346515752210908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-FORARM.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1825,7 +1826,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417516805748256898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-SHOULDER.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1856,7 +1857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 850165446434205731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-NECK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1887,7 +1888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1562048046731777897}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-ARM.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1918,7 +1919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9068567420923685297}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DEF-FOOT.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1947,10 +1948,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 385757452505067288}
     m_Modifications:
+    - target: {fileID: 221452205458331074, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 221452206172278671, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 221452206320457593, guid: 740268dc86ee31942a79f4e0a5d7e74f,
         type: 3}
       propertyPath: m_Name
       value: Fae_Slot
+      objectReference: {fileID: 0}
+    - target: {fileID: 221452206320457593, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 221452206320457598, guid: 740268dc86ee31942a79f4e0a5d7e74f,
         type: 3}
@@ -2006,6 +2022,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 221452207408918077, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 847568026836187094, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101439781090120406, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140440168508616431, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026041354064488164, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107153679067173030, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897719151902847174, guid: 740268dc86ee31942a79f4e0a5d7e74f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 740268dc86ee31942a79f4e0a5d7e74f, type: 3}
