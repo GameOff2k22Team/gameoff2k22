@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -8,7 +9,7 @@ using UnityEditor;
 public class PuzzleManager : MonoBehaviour
 {
 
-    public enum PuzzleType { PERSEVERANCE, FOCUS, BABA }
+    public enum PuzzleType { PERSEVERANCE, BABA, FOCUS}
     public static PuzzleManager Instance { get; private set; }
 
     public struct PerseverancePuzzle
@@ -48,12 +49,16 @@ public class PuzzleManager : MonoBehaviour
     [Space(10)]
     [Header("Baba Puzzle")]
     public GameObject babaPuzzleObject;
+    [Space(10)]
+    public UnityEvent OnHasAllArtefactPieces;
 
     private Dictionary<PuzzleType, GameObject> puzzleObjects = new Dictionary<PuzzleType, GameObject>();
     private PuzzleType currentPuzzleType;
     private Animator loadManagerAnimator;
     private const string FADE_IN_TRIGGER = "FadeIn";
     private const string FADE_OUT_TRIGGER = "FadeOut";
+    private const int NUMBER_OF_PUZZLE = 2;
+    private bool canGoToNextRoom = false;
     private Transform spawnSpot;
 
     private void Awake()
@@ -76,7 +81,6 @@ public class PuzzleManager : MonoBehaviour
         
         spawnSpot = new GameObject().transform;
         spawnSpot.position = playerTransform.position;
-        Debug.Log(spawnSpot.position);
         spawnSpot.rotation = playerTransform.rotation;
         spawnSpot.localScale = playerTransform.localScale;
     }
@@ -103,6 +107,18 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
+    public void GoToNextRoom()
+    {
+        bool isLastPuzzle = GetNextPuzzleIdx() == 0;
+        
+        if (canGoToNextRoom &&
+            !isLastPuzzle)
+        {
+            NextPuzzle();
+            canGoToNextRoom = false;
+        }
+    }
+
     public void NextPuzzle()
     {
         loadManagerAnimator.SetTrigger(FADE_OUT_TRIGGER);
@@ -111,12 +127,17 @@ public class PuzzleManager : MonoBehaviour
 
     public void SetNextPuzzle()
     {
-        int nextTypeIdx = ((int)currentPuzzleType + 1) % 3;
+        int nextTypeIdx = ((int)currentPuzzleType + 1) % NUMBER_OF_PUZZLE;
         PuzzleType nextType = (PuzzleType)nextTypeIdx;
 
         RespawnPlayer();
 
         SetPuzzleType(nextType);
+    }
+
+    private int GetNextPuzzleIdx()
+    {
+        return ((int)currentPuzzleType + 1) % 2;
     }
 
     private void RespawnPlayer()
@@ -176,6 +197,18 @@ public class PuzzleManager : MonoBehaviour
     private void GiveArtefact(PuzzleBase chest)
     {
         chest.artefact.SetActive(true);
+        canGoToNextRoom = true;
+
+        if(chest.TryGetComponent(out UseObject useObject))
+        {
+            useObject.UseObjects();
+        }
+
+        bool isLastPuzzle = GetNextPuzzleIdx() == 0;
+        if (isLastPuzzle)
+        {
+            OnHasAllArtefactPieces?.Invoke();
+        }
     }
 
     public void ClickOnLightSwitch()

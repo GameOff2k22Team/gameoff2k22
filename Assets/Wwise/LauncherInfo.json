@@ -1,5 +1,5 @@
 {
-    "originalSdkFolder": "G:\\Wwise 2021.1.10.7883\\SDK",
+    "originalSdkFolder": "D:\\Manon\\AudioKinetic\\Soft\\SDK",
     "currentVersion": {
         "build": 2429,
         "major": 1,
@@ -8,6 +8,26 @@
         "year": 2021
     },
     "installedBundleGroups": [
+        {
+            "id": "Packages",
+            "valueId": "Unity"
+        },
+        {
+            "id": "Packages",
+            "valueId": "Extensions"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Mac"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Windows"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "WindowsStore"
+        },
         {
             "id": "Packages",
             "valueId": "Unity"

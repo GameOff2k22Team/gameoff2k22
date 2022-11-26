@@ -102,6 +102,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1589128552091165379}
+  - {fileID: 5039951150593267991}
   - {fileID: 1262994175470482374}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -117,7 +118,6 @@ GameObject:
   - component: {fileID: 1262994175470482374}
   - component: {fileID: 1262994175470482376}
   - component: {fileID: 1262994175470482377}
-  - component: {fileID: 1262994175470482379}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -136,10 +136,9 @@ Transform:
   m_LocalPosition: {x: 1.553, y: 0, z: -0.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1262994175707783865}
+  m_Children: []
   m_Father: {fileID: 1262994174775694184}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &1262994175470482376
 MeshFilter:
@@ -192,40 +191,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1262994175470482379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262994175470482375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9514b672e0cb14046a08d275c6727926, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderToDeactivate: []
-  interactOnlyOnce: 0
-  timeToAnimate: 2
-  inventoryPosition: {x: 0, y: 0, z: 0}
-  inventoryRotation: {x: 0, y: 180, z: 90}
-  inventoryScale: {x: 1.5, y: 1.5, z: 1.5}
-  ease: 9
-  OnRemovedDone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1262994175470482375}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1262994175707783862
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,8 +221,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1262994175470482374}
-  m_RootOrder: 0
+  m_Father: {fileID: 5039951150593267991}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1262994175707783864
 BoxCollider:
@@ -287,7 +252,7 @@ MonoBehaviour:
   OnInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1262994175470482379}
+      - m_Target: {fileID: 6109407478973928471}
         m_TargetAssemblyTypeName: GoToReturnFromInventory, Assembly-CSharp
         m_MethodName: GoToInventory
         m_Mode: 1
@@ -322,6 +287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ArtefactPiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824661365916171894, guid: 91f12856bf368ca469614bf63511387c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7735880997440102978, guid: 91f12856bf368ca469614bf63511387c,
         type: 3}
@@ -487,6 +457,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &692439475457487589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109487082645977209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e29046dac5fb81a4c936a7ec24af9e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToUse:
+  - objectToUse: {fileID: 6109407478973928471}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+  useOnlyOnce: 1
+  OnUsedObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5672935135391941549}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnObjectNotInInventory:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1262994175410991136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,3 +507,118 @@ MonoBehaviour:
   hasKey: {fileID: 11400000, guid: a9909d24122005e4d8bb35039df83623, type: 2}
   animator: {fileID: 1262994175410991137}
   artefact: {fileID: 636539557400681627}
+--- !u!1001 &4790486001398300412
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1262994174775694184}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.053
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0049999207
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b1317601e5444fb45b7417637ce2f8a1,
+        type: 3}
+      propertyPath: m_Name
+      value: Chest
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1317601e5444fb45b7417637ce2f8a1, type: 3}
+--- !u!4 &5039951150593267991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b1317601e5444fb45b7417637ce2f8a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4790486001398300412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5672935135391941549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b1317601e5444fb45b7417637ce2f8a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4790486001398300412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6109407478973928471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672935135391941549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9514b672e0cb14046a08d275c6727926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderToDeactivate: []
+  interactOnlyOnce: 0
+  timeToAnimate: 2
+  inventoryPosition: {x: 0, y: -0.5, z: 0}
+  inventoryRotation: {x: 0, y: 0, z: 0}
+  inventoryScale: {x: 1.5, y: 1.5, z: 1.5}
+  ease: 9
+  OnRemovedDone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5672935135391941549}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

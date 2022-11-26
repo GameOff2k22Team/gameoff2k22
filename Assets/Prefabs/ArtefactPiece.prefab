@@ -122,9 +122,9 @@ MonoBehaviour:
   colliderToDeactivate: []
   interactOnlyOnce: 0
   timeToAnimate: 2
-  inventoryPosition: {x: 0, y: 0, z: 0}
-  inventoryRotation: {x: 0, y: 0, z: 0}
-  inventoryScale: {x: 2, y: 2, z: 2}
+  inventoryPosition: {x: 0, y: -0.5, z: 0}
+  inventoryRotation: {x: -90, y: 0, z: 0}
+  inventoryScale: {x: 3, y: 3, z: 3}
   ease: 9
   OnRemovedDone:
     m_PersistentCalls:
