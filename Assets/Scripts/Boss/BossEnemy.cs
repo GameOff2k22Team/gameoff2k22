@@ -3,33 +3,33 @@ using UnityEngine;
 
 public class BossEnemy : MonoBehaviour
 {
-    private Vector3 _direction;
+    protected Vector3 _direction;
 
-    private float _movementSpeed;
+    protected float _movementSpeed;
 
-    private bool _isAlive = false;
+    protected bool _isAlive = false;
 
-    private int _damage = 1;
+    protected int _damage = 1;
 
-    private void Awake()
+    protected void Awake()
     {
         BossManager.enemies.Add(this);
         _isAlive = true;
     }
 
-    private void OnDisable()
+    protected void OnDisable()
     {
         BossManager.enemies.Remove(this);
     }
 
-    public void Initialize(Vector3 dir, float movSpeed, int dmg)
+    public virtual void Initialize(Vector3 dir, float movSpeed, int dmg)
     {
         _direction = dir;
         _movementSpeed = movSpeed;
         _damage = dmg;
     }
 
-    public IEnumerator Start()
+    protected virtual IEnumerator Start()
     {
         while(_isAlive)
         {
@@ -44,6 +44,7 @@ public class BossEnemy : MonoBehaviour
         if(col.TryGetComponent<PlayerMovement2D>(out PlayerMovement2D player))
         {
             player.GetComponent<Player2D>().RemoveHP(_damage);
+            //player.GetComponent<Rigidbody2D>().AddForce(_direction);
             _isAlive = false;
         }
         else if(col.TryGetComponent<DespawnArea>(out DespawnArea area))
@@ -52,4 +53,10 @@ public class BossEnemy : MonoBehaviour
             _isAlive=false;
         }
     }
+}
+
+public enum EnemyType
+{
+    normal,
+    zigzag,
 }

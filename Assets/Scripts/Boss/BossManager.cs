@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class BossManager : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class BossManager : MonoBehaviour
 
     [SerializeField]
     private BossEnemy enemy;
+
+    [SerializeField]
+    private ZigZagEnemy zigZagEnemy;
+
     public static List<BossEnemy> enemies = new List<BossEnemy>();
 
     private float _projectileSpeed = 7.0f;
@@ -34,6 +39,11 @@ public class BossManager : MonoBehaviour
     private List<PatternBossP1> p1S2Pattern;
     [SerializeField]
     private int _numberOfPatternP1S2 = 10;
+    [Header("Step 2")]
+    [SerializeField]
+    private List<PatternBossP1> p1S3Pattern;
+    [SerializeField]
+    private int _numberOfPatternP1S3 = 10;
 
     private void Start()
     {
@@ -41,16 +51,24 @@ public class BossManager : MonoBehaviour
     }
 
     #region Generic Method
-    private void SpawnEnemy(Transform tr, Vector3 direction, int projectileSpeedRatio)
+    private void SpawnEnemy(EnemyType enemyType ,Transform tr, Vector3 direction, int projectileSpeedRatio, float freq, float amp)
     {
-        BossEnemy _currentEnemy = Instantiate(enemy, tr.position, Quaternion.identity);
-        _currentEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio/100), _currentDamage);
+        if(enemyType == EnemyType.normal)
+        {
+            BossEnemy _currentEnemy = Instantiate(enemy, tr.position, Quaternion.identity);
+            _currentEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage);
+        }
+        else
+        {
+            ZigZagEnemy _currentEnemy = Instantiate(zigZagEnemy, tr.position, Quaternion.identity);
+            _currentEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage, freq, amp);
+        }
+        
     }
 
     private void UpdateBossPhase(BossState state)
     {
-        switch (state
-)
+        switch (state)
         {
             case BossState.phase1:
                 StartCoroutine(Phase1Coroutine());
@@ -79,28 +97,44 @@ public class BossManager : MonoBehaviour
     private IEnumerator Phase1Coroutine()
     {
         yield return StartCoroutine(WaitBeforeStart());
-        yield return StartCoroutine(P1PatternCoroutine(p1S1Pattern, _numberOfPatternP1S1));
-        yield return StartCoroutine(P1PatternCoroutine(p1S2Pattern, _numberOfPatternP1S2));
+        yield return StartCoroutine(P1PatternCoroutine(p1S1Pattern, _numberOfPatternP1S1, true, _spawningSpeed));
+        yield return StartCoroutine(P1PatternCoroutine(p1S2Pattern, _numberOfPatternP1S2, true, _spawningSpeed));
+        yield return StartCoroutine(P1PatternCoroutine(p1S3Pattern, _numberOfPatternP1S3, false, _spawningSpeed * 2));
+        UpdateBossPhase(BossState.phase2);
     }
 
-    private IEnumerator P1PatternCoroutine(List<PatternBossP1> BossPattern, int numberOfPattern)
+    private IEnumerator P1PatternCoroutine(List<PatternBossP1> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)
     {
         var i = 0;
         while(i < numberOfPattern)
         {
-            PatternBossP1 randomBossPattern = BossPattern[UnityEngine.Random.Range(0, BossPattern.Count)];
-            foreach (SpawnManager.P1SpawnArea spawnArea in randomBossPattern.SpawnArea)
+            PatternBossP1 bossPattern = isRandom ? BossPatterns[UnityEngine.Random.Range(0, BossPatterns.Count)] : BossPatterns[i];
+            
+            foreach (SpawnManager.P1SpawnArea spawnArea in bossPattern.SpawnArea)
             {
                 SpawnManager.BossP1SpawnPattern spawnAreaPosition = SpawnManager.Instance.GetSpawnAreaPositionByType(spawnArea);
-                SpawnEnemy(spawnAreaPosition.position, spawnAreaPosition.direction, randomBossPattern.speed);
+                SpawnEnemy(bossPattern.enemyType, 
+                    spawnAreaPosition.position, 
+                    spawnAreaPosition.direction, 
+                    bossPattern.speed,
+                    bossPattern.freq, 
+                    bossPattern.amp);
             }
+
             i += 1;
-            yield return new WaitForSecondsRealtime(_spawningSpeed);
+            yield return new WaitForSecondsRealtime(spawningSpeed);
         }
 
     }
     #endregion
 
+
+    // Refaire avec sinusoides et amplitude
+    // P2 Zones qui rebondissent et qui te rentrent dedans
+    // P3 lasers  )))))))))))))))))))))))))))))))
+    // 2 ligne en abscisse et ordonnée
+    // E2 : 3 Lignes  2 carrés de libre
+    // E3 : 4 Lignes 1 carré de libre
 
 
 
