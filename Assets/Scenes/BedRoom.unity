@@ -977,6 +977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: 81bbb84ba888ba54187ac902799da0ac, type: 2}
+  pannelScale: {x: 0.01, y: 0.01, z: 0.01}
 --- !u!114 &289830022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6706,6 +6707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: 363d7b996466eea4d93385044a3b12d6, type: 2}
+  pannelScale: {x: 0.01, y: 0.01, z: 0.01}
 --- !u!4 &1346698060
 Transform:
   m_ObjectHideFlags: 0
@@ -8006,6 +8008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: 31960edbf546bdf46bf8c4192404224b, type: 2}
+  pannelScale: {x: 0.005, y: 0.005, z: 0.005}
 --- !u!114 &1733801630
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -120,12 +120,14 @@ namespace VikingCrew.Tools.UI {
         /// <param name="type"></param>
         /// <param name="timeToLive"></param>
         /// <param name="color"></param>
-        public SpeechBubbleBase AddSpeechBubble(Vector3 position, string text, SpeechbubbleType type = SpeechbubbleType.NORMAL, float timeToLive = 0, Color color = default(Color))
+        public SpeechBubbleBase AddSpeechBubble(Vector3 position, Vector3 pannelScale, 
+                                                string text, SpeechbubbleType type = SpeechbubbleType.NORMAL, 
+                                                float timeToLive = 0, Color color = default(Color))
         {
             if (timeToLive == 0) timeToLive = _defaultTimeToLive;
             if (color == default) color = _defaultColor;
             SpeechBubbleBase bubbleBehaviour = GetBubble(type);
-            bubbleBehaviour.Setup(position, text, timeToLive, color, Cam);
+            bubbleBehaviour.Setup(position, pannelScale, text, timeToLive, color, Cam);
             _speechBubbleQueueDict[type].Enqueue(bubbleBehaviour);
             return bubbleBehaviour;
         }
@@ -279,7 +281,7 @@ namespace VikingCrew.Tools.UI {
         [ContextMenu("Test")]
         public void DebugAddSpeechBubble()
         {
-            Instance.AddSpeechBubble(Vector3.zero, "TEST TEST\nTEST TEST\nTEST TEST\n", SpeechbubbleType.NORMAL, 5);
+            Instance.AddSpeechBubble(Vector3.zero, Vector3.one, "TEST TEST\nTEST TEST\nTEST TEST\n", SpeechbubbleType.NORMAL, 5);
         }
     }
 }

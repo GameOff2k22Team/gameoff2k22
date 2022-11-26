@@ -132,12 +132,14 @@ namespace VikingCrew.Tools.UI
         /// <param name="text"></param>
         /// <param name="timeToLive"></param>
         /// <param name="color"></param>
-        public void Setup(Vector3 position, string text, float timeToLive, Color color, Camera cam)
+        public void Setup(Vector3 position, Vector3 pannelScale, 
+                          string text, float timeToLive, Color color, Camera cam)
         {
             Setup(text, timeToLive, color, cam);
 
             transform.position = position;
             transform.rotation = Cam.transform.rotation;
+            transform.localScale = pannelScale;
 
             FollowedObject = null;
             _originalOffset = Vector3.zero;
