@@ -65,10 +65,6 @@ public class GameManager : Singleton<GameManager>
             case GameState.GameOver:
                 break;
             case GameState.LoadNextScene:
-                if(_previousState == GameState.OnMenuScene)
-                {
-                    OnGameLoaded.Raise();
-                }
                 break;
             case GameState.OnMenuScene:
                 break;
