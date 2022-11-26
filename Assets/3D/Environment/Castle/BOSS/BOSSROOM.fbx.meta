@@ -3,7 +3,32 @@ guid: 8d558f4078f36fb4c9f49c61fd45b7ea
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Castle
+    second: {fileID: 2100000, guid: f6acb0db8f4bdf14c86751c8629fb048, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: c8e06b1a3f0634b439c7a73b4bb8e693, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalGold
+    second: {fileID: 2100000, guid: ef2915993a13ef04bb8c0765ba94e945, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Grey
+    second: {fileID: 2100000, guid: 3e7b5d86917f2c448b64326128667aab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 890715f776c100b47985532c9e0de2b3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

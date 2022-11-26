@@ -22,5 +22,7 @@ public enum SceneName
     Menu_scene,
     BedRoom,
     InHouse,
-    Forest
+    Forest,
+    Castle_Hub,
+    BossRoom
 }

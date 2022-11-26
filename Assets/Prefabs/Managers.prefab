@@ -423,6 +423,24 @@ PrefabInstance:
       propertyPath: _defaultTimeToLive
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013829348910, guid: aa93536123924f34bb7610df895940b7,
+        type: 3}
+      propertyPath: _prefabs.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 114000011035964664, guid: 5db8c9d4fc49b23418555e36ef59302d,
+        type: 3}
+    - target: {fileID: 114000013829348910, guid: aa93536123924f34bb7610df895940b7,
+        type: 3}
+      propertyPath: _prefabs.Array.data[2].prefab
+      value: 
+      objectReference: {fileID: 114000011035964664, guid: 5db8c9d4fc49b23418555e36ef59302d,
+        type: 3}
+    - target: {fileID: 114000013829348910, guid: aa93536123924f34bb7610df895940b7,
+        type: 3}
+      propertyPath: _prefabs.Array.data[3].prefab
+      value: 
+      objectReference: {fileID: 114000011035964664, guid: 5db8c9d4fc49b23418555e36ef59302d,
+        type: 3}
     - target: {fileID: 223000013049386044, guid: aa93536123924f34bb7610df895940b7,
         type: 3}
       propertyPath: m_Camera

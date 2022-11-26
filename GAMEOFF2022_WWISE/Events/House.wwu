@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="House" ID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music_House" ID="{8D07D16A-851F-421E-B002-3AACD3A00EDD}">
+					<ChildrenList>
+						<Action Name="" ID="{DD12D725-71BF-4F75-A051-695D5D21F34A}" ShortID="818513707">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="12.7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_House" ID="{39592BD7-2F1D-438B-A662-77C257F5CE18}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footsteps_House_Wood" ID="{0C47EA4A-3AEB-49F0-AF58-3C0E8DCB58CF}">
+					<ChildrenList>
+						<Action Name="" ID="{2EA36B98-3EE6-4383-92AF-CD89DBC3B3D6}" ShortID="458241306">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Room_Wood" ID="{F0EAF49E-5D5A-434F-8091-92BAAB74814B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footsteps_House_Carpet" ID="{103C80F4-57B4-4EE9-B0BD-B3F7B737982D}">
+					<ChildrenList>
+						<Action Name="" ID="{E8BAE6E6-7F69-494C-903D-735BAEDDE77D}" ShortID="191751922">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Room_Carpet" ID="{BC7CFF72-8237-4A03-8FBD-A3AA79DB022A}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Footsteps_Room_Carpet" ID="{9285F3F7-F25C-4FEF-8177-7BD7DBBE5F41}">
+					<ChildrenList>
+						<Action Name="" ID="{BA8FC7DC-232F-4F51-A51F-426E9E538928}" ShortID="793458040">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Room_Carpet" ID="{BC7CFF72-8237-4A03-8FBD-A3AA79DB022A}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_House" ID="{679494E2-8656-4534-AE04-3D6DA0153038}">
+					<ChildrenList>
+						<Action Name="" ID="{60788FFF-84E2-4A84-B652-571F7126865C}" ShortID="543453121">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Room" ID="{763EB5FF-515A-47D1-8D26-449F17A38819}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Play_Console" ID="{91480BC0-11DE-4FB7-B8E8-61C1C1482089}">
+					<ChildrenList>
+						<Action Name="" ID="{8EFC5DF0-D8C6-4D08-84AB-1A59BCD1CB69}" ShortID="95404736">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Play_Console" ID="{A5CD1D48-619A-4E45-BB3E-D082FE0439FF}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Door" ID="{375E615F-EFE0-4AE2-8830-ED482E878831}">
+					<ChildrenList>
+						<Action Name="" ID="{8B95E34E-CB00-4DC5-9436-1C64B04EA2C8}" ShortID="886156384">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Door_Room_Open" ID="{6141A69D-D172-43BF-9FCC-6E3A23753C15}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9AA1AD2C-FA19-4240-AE7A-7A22DC8D1A24}" ShortID="283417993">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Door_Room_Close" ID="{2896381F-7C61-43DC-969B-5F2BA217ECF2}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5923B2A3-BE43-4B09-9DC5-3FBB43642E86}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Music" ID="{5923B2A3-BE43-4B09-9DC5-3FBB43642E86}" PersistMode="Standalone"/>
+	</Events>
+</WwiseDocument>

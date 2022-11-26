@@ -1,4 +1,4 @@
-using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -16,22 +16,19 @@ public class GoToReturnFromInventory : MonoBehaviour
     public Vector3 inventoryRotation = Vector3.zero;
     public Vector3 inventoryScale = Vector3.one;
 
+    public Ease ease;
     [Header("Return from Inventory information")]
     public UnityEvent OnRemovedDone;
 
     private int originalLayer;
-    private Transform originalParent;
     private Vector3 originalScale;
     private const string UILayer = "UI"; 
-    private const float TIME_TO_WAIT = 0.1f;
-    private YieldInstruction yieldInstruction = new WaitForSeconds(TIME_TO_WAIT);
     private bool hasInteracted;
 
     protected void Awake()
     {
         originalLayer = gameObject.layer;
-        originalScale = transform.localScale;
-        originalParent = transform.parent;
+        originalScale = gameObject.transform.localScale;
     }
 
     public void GoToInventory()
@@ -47,50 +44,22 @@ public class GoToReturnFromInventory : MonoBehaviour
 
             HandleCollider(false);
 
-            StartCoroutine(ChangePosition(inventoryPosition, 
-                                          Quaternion.Euler(inventoryRotation), 
-                                          inventoryScale));
+            transform.DOLocalMove(inventoryPosition, timeToAnimate).SetEase(ease);
+            transform.DOLocalRotate(inventoryRotation, timeToAnimate).SetEase(ease);
+            transform.DOScale(inventoryScale, timeToAnimate).SetEase(ease);
 
             hasInteracted = true;
         }
     }
 
-    public void RemoveObjectFromInventory(Vector3 position)
+    public void RemoveObjectFromInventory(Vector3 position,
+                                          Vector3 rotation)
     {
-        StartCoroutine(RemoveObjectFromInventorySpace(position));
-    }
+        transform.SetParent(null, true);
 
-    IEnumerator ChangePosition(Vector3 position, Quaternion rotation, Vector3 scale)
-    {
-        float time = 0;
-
-        while (time < timeToAnimate)
-        {
-            this.transform.localPosition = Vector3.Lerp(this.transform.localPosition,
-                                                        position, time / timeToAnimate);
-            this.transform.localRotation = Quaternion.Lerp(this.transform.localRotation,
-                                                           rotation, time / timeToAnimate);
-            this.transform.localScale = Vector3.Lerp(this.transform.localScale,
-                                                     scale, time / timeToAnimate);
-
-            yield return yieldInstruction;
-
-            time += TIME_TO_WAIT;
-        }
-    }
-
-    IEnumerator RemoveObjectFromInventorySpace(Vector3 position)
-    {
-        this.transform.SetParent(originalParent, true);
-
-        yield return ChangePosition(position, 
-                                    transform.rotation, 
-                                    originalScale);
-
-        HandleCollider(true);
-        ResetLayer();
-
-        OnRemovedDone?.Invoke();
+        transform.DOLocalMove(position, timeToAnimate).SetEase(ease).OnComplete(CompleteRemoval);
+        transform.DOLocalRotate(rotation, timeToAnimate).SetEase(ease);
+        transform.DOScale(originalScale, timeToAnimate).SetEase(ease);
     }
 
     void ChangeSpaceToUICamera(Transform inventorySlot)
@@ -99,14 +68,29 @@ public class GoToReturnFromInventory : MonoBehaviour
         ChangeLayerToUI();
     }
 
+    void CompleteRemoval()
+    {
+        HandleCollider(true);
+        ResetLayer();
+        OnRemovedDone?.Invoke();
+    }
+
     void ChangeLayerToUI()
     {
         gameObject.layer = LayerMask.NameToLayer(UILayer);
+        foreach (Transform child in transform)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer(UILayer);
+        }
     }
 
     private void ResetLayer()
     {
         gameObject.layer = originalLayer;
+        foreach (Transform child in transform)
+        {
+            child.gameObject.layer = originalLayer;
+        }
     }
 
     private void HandleCollider(bool activate)

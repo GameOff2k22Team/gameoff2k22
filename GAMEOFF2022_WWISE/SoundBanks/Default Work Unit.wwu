@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EDB93510-2901-42B1-A633-9B33D402F006}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{EDB93510-2901-42B1-A633-9B33D402F006}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Donjon" ID="{C89B4EA7-9F43-40DD-B855-D0CD54C7D92C}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99951424</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Donjon" ID="{19BF1A09-2D37-4017-B8BC-325976FC9900}" WorkUnitID="{19BF1A09-2D37-4017-B8BC-325976FC9900}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Donjon" ID="{B91AA276-5BA3-4268-9B2B-0047ADB5B389}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Donjon" ID="{744F6BFB-48D0-43C9-8E02-6C8064ACF819}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Donjon" ID="{BA35F715-2A1E-4EDC-8693-F78179A10CC2}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="House" ID="{49F006FF-6BFF-4918-8915-2CAA4C8F5537}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99951424</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="House" ID="{0D5A762D-DEF7-4227-A0BE-22BEE70DBB97}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_House" ID="{39592BD7-2F1D-438B-A662-77C257F5CE18}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="House" ID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" WorkUnitID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Title_Screen" ID="{387ABFEE-A8DD-4225-8266-E02E36387DD8}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99951424</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="UI" ID="{6225E61F-723F-4364-9C76-E660CE1E75A5}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Title_Screen" ID="{7172514C-06D7-491A-AFCC-3ED62C0650BB}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Title_Screen" ID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}" WorkUnitID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Forest" ID="{6B041F84-558C-4D68-BE15-1354CE5068CE}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99951424</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Forest" ID="{A9D44A85-C804-472A-8614-34E5ADE086F1}" WorkUnitID="{A9D44A85-C804-472A-8614-34E5ADE086F1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Forest" ID="{C982A0C5-B8FA-4AE2-A868-DF6CE551380B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Forest" ID="{8C2122C2-AE26-4C98-8D6F-8AA4AB6DFD64}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Forest" ID="{8C6679DA-4557-4FEF-A7C5-D580987FB725}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Boss" ID="{08533042-B152-4E40-812A-910FD3789B3A}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99951424</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Music_Boss" ID="{522ED282-1BB1-4159-94F6-FC6F2156A118}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Boss" ID="{DD5642B8-2453-4485-AFAD-02A2B661B6D8}" WorkUnitID="{DD5642B8-2453-4485-AFAD-02A2B661B6D8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Boss" ID="{DCC2E968-C85F-45AC-A192-F8ABB3839916}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

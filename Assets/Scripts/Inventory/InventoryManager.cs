@@ -25,9 +25,9 @@ public class InventoryManager : Singleton<InventoryManager>
     }
 
     public void RemoveObjectFromInventory(GoToReturnFromInventory objectToRemove, 
-                                          Vector3 position)
+                                          Vector3 position, Vector3 rotation)
     {
-        objectToRemove.RemoveObjectFromInventory(position);
+        objectToRemove.RemoveObjectFromInventory(position, rotation);
 
         bool objectIsRemoved = linkSlotObject.Remove(objectToRemove);
 

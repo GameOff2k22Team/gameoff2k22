@@ -1,37 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PuzzlePerseverance : MonoBehaviour
+public class PuzzlePerseverance : PuzzleBase
 {
-
-    private PuzzleManager _puzzleManager;
-    private bool _isOpen = false;
-    private PuzzleManager.PuzzleType type = PuzzleManager.PuzzleType.PERSEVERANCE;
-
-    // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
-        this._puzzleManager = PuzzleManager.Instance;
+        base.Start();
+        type = PuzzleManager.PuzzleType.PERSEVERANCE;
     }
 
-    // Update is called once per frame
-    //void Update()
-    //{
-
-    //    if (chest.isOpen == false)
-
-    //        this._puzzleManager.OpenChest(type, this.chest);
-
-    //}
-
-    private void OnTriggerEnter(Collider other)
+    protected override bool CheckIfCanBeOpened()
     {
-        if (this._isOpen == false && !this._puzzleManager.perseverancePuzzleIsEnd)
-        {
-            this._isOpen = true;
-            this._puzzleManager.OpenChest(type);
-            this.gameObject.SetActive(false); // This must be replaced by the opening chest animation
-        }
+        return base.CheckIfCanBeOpened() &&
+            !this._puzzleManager.perseverancePuzzleIsEnd;
     }
 }
