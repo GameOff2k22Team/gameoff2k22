@@ -9,7 +9,7 @@ public class DialogManager : Singleton<DialogManager>
     [Serializable]
     public struct MessageByUnit{
         public UnitManager.UnitType type;
-        [TextArea]
+        [TextAreaAttribute(1,10)]
         public string message;
     }
 
