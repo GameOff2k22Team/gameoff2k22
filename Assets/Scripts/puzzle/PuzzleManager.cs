@@ -199,6 +199,11 @@ public class PuzzleManager : MonoBehaviour
         chest.artefact.SetActive(true);
         canGoToNextRoom = true;
 
+        if(chest.TryGetComponent(out UseObject useObject))
+        {
+            useObject.UseObjects();
+        }
+
         bool isLastPuzzle = GetNextPuzzleIdx() == 0;
         if (isLastPuzzle)
         {
