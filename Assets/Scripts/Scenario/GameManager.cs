@@ -80,6 +80,11 @@ public class GameManager : Singleton<GameManager>
         OnGameStateChanged?.Invoke(newState);
     }
 
+    public void UpdateGameState(int newStateIdx)
+    {
+        UpdateGameState((GameState)newStateIdx);
+    }
+
     private void HandleLoadNextScene()
     {
     }

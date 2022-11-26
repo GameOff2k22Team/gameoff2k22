@@ -566,6 +566,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3189609122891604171}
     m_Modifications:
+    - target: {fileID: 5473895969643898968, guid: d012df199a690d24bb436a4de06eb18c,
+        type: 3}
+      propertyPath: OnFadeInCompleted.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473895969643898968, guid: d012df199a690d24bb436a4de06eb18c,
+        type: 3}
+      propertyPath: OnFadeInCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473895969643898968, guid: d012df199a690d24bb436a4de06eb18c,
+        type: 3}
+      propertyPath: OnFadeInCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3189609122891604169}
+    - target: {fileID: 5473895969643898968, guid: d012df199a690d24bb436a4de06eb18c,
+        type: 3}
+      propertyPath: OnFadeInCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473895969643898968, guid: d012df199a690d24bb436a4de06eb18c,
+        type: 3}
+      propertyPath: OnFadeInCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateGameState
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473895969643898968, guid: d012df199a690d24bb436a4de06eb18c,
+        type: 3}
+      propertyPath: OnFadeInCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473895969643898968, guid: d012df199a690d24bb436a4de06eb18c,
+        type: 3}
+      propertyPath: OnFadeInCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473895969643898968, guid: d012df199a690d24bb436a4de06eb18c,
+        type: 3}
+      propertyPath: OnFadeInCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5473895969643898969, guid: d012df199a690d24bb436a4de06eb18c,
         type: 3}
       propertyPath: m_RootOrder
