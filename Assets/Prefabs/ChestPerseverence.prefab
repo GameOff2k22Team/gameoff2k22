@@ -385,6 +385,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArtefactPiece
       objectReference: {fileID: 0}
+    - target: {fileID: 1824661365916171894, guid: 91f12856bf368ca469614bf63511387c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7735880997440102978, guid: 91f12856bf368ca469614bf63511387c,
         type: 3}
       propertyPath: m_RootOrder

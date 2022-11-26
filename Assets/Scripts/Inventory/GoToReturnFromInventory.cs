@@ -78,11 +78,19 @@ public class GoToReturnFromInventory : MonoBehaviour
     void ChangeLayerToUI()
     {
         gameObject.layer = LayerMask.NameToLayer(UILayer);
+        foreach (Transform child in transform)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer(UILayer);
+        }
     }
 
     private void ResetLayer()
     {
         gameObject.layer = originalLayer;
+        foreach (Transform child in transform)
+        {
+            child.gameObject.layer = originalLayer;
+        }
     }
 
     private void HandleCollider(bool activate)
