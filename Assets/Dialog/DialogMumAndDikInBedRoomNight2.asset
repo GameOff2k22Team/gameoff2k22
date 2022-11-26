@@ -14,10 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
   - type: 1
-    message: "Dinner\u2019s ready! \nStop playing with your artifact \nand come eating!"
-  - type: 0
-    message: ...
-  - type: 1
     message: "No, I said right now! \nPause the game and \ncome right at this moment."
   onlyOneTrigger: 0
   canBeTrigger: 1
