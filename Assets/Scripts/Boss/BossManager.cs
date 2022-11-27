@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using static Unity.Burst.Intrinsics.X86.Avx;
@@ -56,9 +57,16 @@ public class BossManager : MonoBehaviour
     private int _numberOfPatternP2S1 = 1;
     private float _phase2ModifierSpawnSpeed = 5;
 
+    [Header("Phase 3")]
+    [Header("Step 1")]
+    [SerializeField]
+    private List<PatternBossP3> p3S1Pattern;
+    [SerializeField]
+    private int _numberOfPatternP3S1 = 1;
+
     private void Start()
     {
-        UpdateBossPhase(BossState.phase2);
+        UpdateBossPhase(BossState.phase3);
     }
 
     #region Generic Method
@@ -68,15 +76,15 @@ public class BossManager : MonoBehaviour
         {
             case EnemyType.normal:
                 BossEnemy _currentEnemy = Instantiate(enemy, tr.position, Quaternion.identity);
-                _currentEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage);
+                _currentEnemy.Initialize(direction, _projectileSpeed * ((float)projectileSpeedRatio / 100f), _currentDamage);
                 break;
             case EnemyType.zigzag:
                 ZigZagEnemy _currentZigEnemy = Instantiate(zigZagEnemy, tr.position, Quaternion.identity);
-                _currentZigEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage, freq, amp);
+                _currentZigEnemy.Initialize(direction, _projectileSpeed * ((float)projectileSpeedRatio / 100f), _currentDamage, freq, amp);
                 break;
             case EnemyType.splitter:
                 NewBouncerSplitEnemy _currentSplitEnemy = Instantiate(splitterEnemy, tr.position, Quaternion.identity);
-                _currentSplitEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage, true);
+                _currentSplitEnemy.Initialize(direction, _projectileSpeed * ((float)projectileSpeedRatio / 100f), _currentDamage, true);
                 break;
         }
         
@@ -94,6 +102,7 @@ public class BossManager : MonoBehaviour
                 StartCoroutine(Phase2Coroutine());
                 break;
             case BossState.phase3:
+                StartCoroutine(Phase3Coroutine());
                 break;
         }
     }
@@ -178,11 +187,34 @@ public class BossManager : MonoBehaviour
     }
 
     #endregion
+
+
+    #region P3 Boss
+
+    private IEnumerator Phase3Coroutine()
+    {
+        yield return StartCoroutine(WaitBeforeStart());
+        yield return StartCoroutine(P3PatternCoroutine(p3S1Pattern, _numberOfPatternP3S1, false));
+    }
+
+    private IEnumerator P3PatternCoroutine(List<PatternBossP3> BossPatterns, int numberOfPattern, bool isRandom)
+    {
+        var i = 0;
+        while (i < numberOfPattern)
+        {
+            PatternBossP3 currentBossPattern = BossPatterns[i];
+            LineAreaManager.Instance.EnableLines(currentBossPattern.nbOfVertLines, currentBossPattern.nbOfHorLines);
+            i += 1;
+            yield return new WaitForSecondsRealtime(currentBossPattern.timeToWait);
+        }
+    }
+    
+    #endregion
     // Refaire avec sinusoides et amplitude
     // P2 Zones qui rebondissent et qui te rentrent dedans
     // P3 lasers  )))))))))))))))))))))))))))))))
     // 2 ligne en abscisse et ordonnée
-    // E2 : 3 Lignes  2 carrés de libre
+    // E2 : 3 Lignes 2 carrés de libre
     // E3 : 4 Lignes 1 carré de libre
 
 
