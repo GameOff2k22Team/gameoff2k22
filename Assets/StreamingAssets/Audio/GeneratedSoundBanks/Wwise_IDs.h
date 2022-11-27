@@ -21,11 +21,15 @@ namespace AK
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
         static const AkUniqueID MUSIC_HOUSE = 3574811899U;
         static const AkUniqueID MUSIC_TITLE_SCREEN = 4129491292U;
+        static const AkUniqueID SFX_CARPET_FOREST = 1831562812U;
         static const AkUniqueID SFX_DOOR = 1739295053U;
-        static const AkUniqueID SFX_DOOR_DONJON = 146415648U;
+        static const AkUniqueID SFX_DOOR_DONJON_OPEN = 285337003U;
+        static const AkUniqueID SFX_KEY_FOREST = 1091244002U;
+        static const AkUniqueID SFX_KEY_FOREST_OPEN = 3571398045U;
         static const AkUniqueID SFX_PLAY_CONSOLE = 3983758741U;
         static const AkUniqueID STOP_FOOTSTEPS_ROOM_CARPET = 1081171197U;
         static const AkUniqueID STOP_MUSIC_DONJON = 3111214772U;
+        static const AkUniqueID STOP_MUSIC_FOREST = 2506571047U;
         static const AkUniqueID STOP_MUSIC_TITLE_SCREEN = 2271500369U;
         static const AkUniqueID UI_BACK = 2024222415U;
         static const AkUniqueID UI_CLICK = 2249769530U;

@@ -132,6 +132,34 @@
 				<MusicPlaylistContainer Name="Music_Forest" ID="{8C6679DA-4557-4FEF-A7C5-D580987FB725}" ShortID="355402332">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="76"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{269327F4-D9E7-4010-B886-A51B2EE1B75D}" ShortID="197047583">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Music_Fade_Out_Forest" ID="{349FCA32-DE56-4DBA-B879-4BF797DD16D1}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{ED3B677F-E68A-4493-8161-222FC7521C0B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

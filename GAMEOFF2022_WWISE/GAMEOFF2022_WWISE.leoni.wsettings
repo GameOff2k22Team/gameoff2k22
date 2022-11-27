@@ -12,6 +12,7 @@
 				<Property Name="Event Action List\{2DEEF31B-54F9-4D8F-96D9-D7E865FF77CF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{375E615F-EFE0-4AE2-8830-ED482E878831}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{43AF63C6-6901-46B0-82B0-DEF92C626D4B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4C1148CD-4BA8-410D-972F-7FE6BDAD0F5E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5DF70809-DFEE-4E2A-BBA8-56B070ACC53C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6575DD0A-05EB-4C2A-B898-CA0ED8EE69D5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{67118D65-5EEE-4014-96D8-9CE210E08753}\x64_Expand States" Type="string" Value=""/>
@@ -25,11 +26,15 @@
 				<Property Name="Event Action List\{A2A225E9-CEED-4734-B231-A77AA1BA5582}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B40D1DA1-E123-40F6-AC70-26311D7B54D5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BCBF745E-8D0F-4DE5-BC77-555866D84515}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C02633B4-237F-476F-9AEC-72893E0B388F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DAFF8595-4373-4B7C-9E60-363CE8252815}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E2492297-205E-4BA9-BD73-5AB1E17F3312}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E51E3507-A059-43CE-9707-B19EA75F3387}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E5BF5705-4DAD-47D7-A7D6-9209C0FAD3DB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E87455BA-5ABA-4857-931C-0DF6F1ED4670}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F937F509-A294-44A6-A57B-DBB22F207463}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{FA3F4AC4-F9BC-4715-8CC0-93876BAFFC28}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FF7221AB-9D4B-4C94-A60A-34B404D42788}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -106,14 +111,14 @@
 				<Property Name="PluginUserAcknowledge\iZotope Hybrid Reverb" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{01148E96-C4BC-41A0-BBD7-1004C014F982}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{8C2122C2-AE26-4C98-8D6F-8AA4AB6DFD64}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_7_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_9_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
 				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value="gtIuUrEbWUGU9vxvIVahGIrRndSXCNFBvDfayHbzT9XXK1k5HS+LQ6Zid8JX9c4Y+2tPdNBIyUOOAmyAZKz4GS6Px3+WmoVGtGNx2CkpftFMUXJx1wYaSa/MPtYsBlC7S6pHu9qFSU2lTPdF8y74vtp5ZoxXRe9Pp8XVgJh/tyU="/>
+				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value="gtIuUrEbWUGU9vxvIVahGIrRndSXCNFBvDfayHbzT9XXK1k5HS+LQ6Zid8JX9c4Y+2tPdNBIyUOOAmyAZKz4GS6Px3+WmoVGtGNx2CkpftFMUXJx1wYaSa/MPtYsBlC7tQy2I/V/P02tghZYH1J2i0uqR7vahUlNpUz3RfMu+L7aeWaMV0XvT6fF1YCYf7cl"/>
 				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_16_1" Type="string" Value=""/>
@@ -125,7 +130,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ8ztwk6KXwZ1PuQANmHkhb/E="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="OLGq2dB/b0Col4uhtzZrzpaOFAG8xKBBu9cQBMAU+YLc9ji1dKX+QoJcKPaxRoZUH+YlYj9yZEOcduZgzh51pVhpp1ch8LdEtAd31PvYGGW2Nca8s4y+R5ha9iNxNZIUBTltiaV7zkeDO7bD5qxV1vVDL1gU26hKlJEbwZdo7taD/AIQeZOBS6VzLtJSOTnWEHkStPwrjU2vvVu7qYavwmStM5V31nFOqebf3l1VTUk9XOGcboPOTocNAjxWLU+mFfc1uh4q3E6Gk/eBeaEMwlYurr5EM9pPl9sqBHCsdDQ="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="OLGq2dB/b0Col4uhtzZrzpaOFAG8xKBBu9cQBMAU+YLc9ji1dKX+QoJcKPaxRoZUH+YlYj9yZEOcduZgzh51pSPa+4SD54NDk7RKBifiGCVYaadXIfC3RLQHd9T72BhltjXGvLOMvkeYWvYjcTWSFAU5bYmle85Hgzu2w+asVdb1Qy9YFNuoSpSRG8GXaO7WxaCCyfq44kqoaN9s5VE4C4P8AhB5k4FLpXMu0lI5OdYQeRK0/CuNTa+9W7uphq/CZK0zlXfWcU6p5t/eXVVNST1c4Zxug85Ohw0CPFYtT6YV9zW6HircToaT94F5oQzCVi6uvkQz2k+X2yoEcKx0NA=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="CRq/GTctF0C4vDJZdvyZALcE7UKVYNhBl/OwEIMA2xW4QlbdUySFRK+tAqK2YbbYhUrUqQTIKkeGFDTlreCG8YoCiqQqLzJHhmxPJuMIw6ejsiNZQ74JS53FP7tDZC6GQVylUByNOEuy/Bx5G1krpA=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
