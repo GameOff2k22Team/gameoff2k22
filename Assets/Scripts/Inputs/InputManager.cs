@@ -71,9 +71,14 @@ public class InputManager : Singleton<InputManager>
             case GameState.FinishDialogue:
                 EnableMovement();
                 break;
+            case GameState.OnStartKinematic:
+                DisableMovement();
+                break;
+            case GameState.OnEndKinematic:
+                EnableMovement();
+                break;
         }
     }
-
 
     void EnableUI()
     {
@@ -91,6 +96,7 @@ public class InputManager : Singleton<InputManager>
 
     void DisableMovement()
     {
+        Debug.Log("Stop Move");
         _playerInputs.Player.Move.Disable();
 
     }

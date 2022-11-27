@@ -72,11 +72,14 @@ public class GameManager : Singleton<GameManager>
                 break;
             case GameState.FinishDialogue:
                 break;
+            case GameState.OnStartKinematic:
+                break;
+            case GameState.OnEndKinematic:
+                break;
             default:
                 throw new ArgumentOutOfRangeException(
                                 nameof(newState), newState, null);
         }
-
         OnGameStateChanged?.Invoke(newState);
     }
 
@@ -105,5 +108,7 @@ public enum GameState
     OnMenuScene,
     StartDialogue,
     FinishDialogue,
-    BossCombat
+    BossCombat,
+    OnStartKinematic,
+    OnEndKinematic,
 }
