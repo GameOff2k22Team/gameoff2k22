@@ -62,6 +62,7 @@
 					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Forest" ID="{A9D44A85-C804-472A-8614-34E5ADE086F1}" WorkUnitID="{A9D44A85-C804-472A-8614-34E5ADE086F1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX_Key_Forest" ID="{C02633B4-237F-476F-9AEC-72893E0B388F}" WorkUnitID="{A9D44A85-C804-472A-8614-34E5ADE086F1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Forest" ID="{C982A0C5-B8FA-4AE2-A868-DF6CE551380B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Forest" ID="{8C2122C2-AE26-4C98-8D6F-8AA4AB6DFD64}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Forest" ID="{8C6679DA-4557-4FEF-A7C5-D580987FB725}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
