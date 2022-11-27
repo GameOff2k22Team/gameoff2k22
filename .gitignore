@@ -117,6 +117,10 @@ WwiseUnityIntegration_*_Src.zip
 
 # Mac stuff
 .DS_store
+Assets/Wwise/API/Runtime/AkSoundEngine.extensions.cs
+Assets/Wwise/LauncherInfo.json
+Assets/WwiseSettings.xml
+logRunSetup.txt
 
 # Jetbrains Rider IDE (C# IDE), adds a plugin to Unity
 # Assets/Plugins/Editor.meta
