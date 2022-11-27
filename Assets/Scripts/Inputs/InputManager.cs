@@ -1,8 +1,5 @@
 using Architecture;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 
 public class InputManager : Singleton<InputManager>
@@ -46,24 +43,34 @@ public class InputManager : Singleton<InputManager>
     }
     void UpdateInputsOnGameManagerStateChanged(GameState state)
     {
-        if (state == GameState.OnMenuScene ||
-            state == GameState.Pause )
+        switch (state)
         {
-            EnableUI();
-        }
-        else if (state == GameState.SpawnCharacterStarts ||
-                 state == GameState.UnPause)
-        {
-            EnablePlayer();
-        }
-
-        else if (state == GameState.StartDialogue)
-        {
-            DisableMovement();
-        }
-        else if (state == GameState.FinishDialogue)
-        {
-            EnableMovement();
+            case GameState.OnMenuScene:
+                EnableUI();
+                break;
+            case GameState.Pause:
+                EnableUI();
+                break;
+            case GameState.SpawnCharacterStarts:
+                EnablePlayer();
+                break;
+            case GameState.UnPause:
+                EnablePlayer();
+                break;
+            case GameState.LevelStart:
+                Debug.Log("Enable");
+                _playerInputs.Player.Enable();
+                break;
+            case GameState.LevelEnd:
+                Debug.Log("Disable");
+                _playerInputs.Player.Disable();
+                break;
+            case GameState.StartDialogue:
+                DisableMovement();
+                break;
+            case GameState.FinishDialogue:
+                EnableMovement();
+                break;
         }
     }
 

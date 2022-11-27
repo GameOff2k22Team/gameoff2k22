@@ -37,6 +37,8 @@ public class LoadManager : Singleton<LoadManager>
     {
         _fadeAnimator.SetTrigger("FadeOut");
 
+        GameManager.Instance.UpdateGameState(
+                    GameState.LevelEnd);
         StartCoroutine(WaitToLoadLevel(scene));
 
         // If we want to use a LoadScene --> Load it here
@@ -78,7 +80,5 @@ public class LoadManager : Singleton<LoadManager>
         _fadeOutCompleted = false;
 
         yield return null;
-        GameManager.Instance.UpdateGameState(
-                    GameState.LevelStart);
     }
 }
