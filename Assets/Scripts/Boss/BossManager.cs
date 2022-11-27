@@ -66,7 +66,7 @@ public class BossManager : MonoBehaviour
 
     private void Start()
     {
-        UpdateBossPhase(BossState.phase3);
+        UpdateBossPhase(BossState.phase1);
     }
 
     #region Generic Method
@@ -99,9 +99,11 @@ public class BossManager : MonoBehaviour
                 StartCoroutine(Phase1Coroutine());
                 break;
             case BossState.phase2:
+                ClearEnemies();
                 StartCoroutine(Phase2Coroutine());
                 break;
             case BossState.phase3:
+                ClearEnemies();
                 StartCoroutine(Phase3Coroutine());
                 break;
         }
@@ -128,6 +130,17 @@ public class BossManager : MonoBehaviour
         yield return StartCoroutine(P1PatternCoroutine(p1S2Pattern, _numberOfPatternP1S2, true, _spawningSpeed));
         yield return StartCoroutine(P1PatternCoroutine(p1S3Pattern, _numberOfPatternP1S3, false, _spawningSpeed * 2));
         UpdateBossPhase(BossState.phase2);
+    }
+
+    private static void ClearEnemies()
+    {
+        foreach (BossEnemy enemy in enemies)
+        {
+            if(enemy.gameObject != null)
+            {
+                Destroy(enemy.gameObject);
+            }
+        }
     }
 
     private IEnumerator P1PatternCoroutine(List<PatternBossP1> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)
@@ -160,6 +173,8 @@ public class BossManager : MonoBehaviour
     {
         yield return StartCoroutine(WaitBeforeStart());
         yield return StartCoroutine(P2PatternCoroutine(p2S1Pattern, _numberOfPatternP2S1, true, _spawningSpeed * _phase2ModifierSpawnSpeed));
+        UpdateBossPhase(BossState.phase3);
+
     }
 
     private IEnumerator P2PatternCoroutine(List<PatternBossP2> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)

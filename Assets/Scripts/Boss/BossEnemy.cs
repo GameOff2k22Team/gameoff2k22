@@ -18,7 +18,7 @@ public class BossEnemy : MonoBehaviour
         _isAlive = true;
     }
 
-    protected void OnDisable()
+    protected void OnDestroy()
     {
         BossManager.enemies.Remove(this);
     }

@@ -8,6 +8,7 @@ public class LineAreaDamage : MonoBehaviour
     private float _timeWithDamage = 2.0f;
     private Renderer _renderer;
     private BoxCollider2D _boxCollider;
+    private int _damage;
 
     private void Awake()
     {
@@ -49,5 +50,14 @@ public class LineAreaDamage : MonoBehaviour
     public void OnDisable()
     {
         StopAllCoroutines();
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent<PlayerMovement2D>(out PlayerMovement2D player))
+        {
+            player.GetComponent<Player2D>().RemoveHP(_damage);
+
+        }
     }
 }
