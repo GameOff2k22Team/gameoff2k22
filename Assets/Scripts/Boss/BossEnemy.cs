@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossEnemy : MonoBehaviour
@@ -11,7 +12,7 @@ public class BossEnemy : MonoBehaviour
 
     protected int _damage = 1;
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         BossManager.enemies.Add(this);
         _isAlive = true;
@@ -39,7 +40,7 @@ public class BossEnemy : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    protected virtual void OnTriggerEnter2D(Collider2D col)
     {
         if(col.TryGetComponent<PlayerMovement2D>(out PlayerMovement2D player))
         {
