@@ -10,12 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84bae8eb726e0ee42b22059d6195f8c5, type: 3}
-  m_Name: DialogMumAndKid
+  m_Name: DialogFairyAndDikInCastle
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
-  - type: 1
-    message: Ca va
-  - type: 0
-    message: Oui et toi?.....................................................................................................
-  onlyOneTrigger: 1
+  - type: 2
+    message: "Wow! \nThe force just got \na lot stronger. Yes, you!"
+  - type: 2
+    message: "I can feel it on the other side \nof that big door."
+  - type: 2
+    message: "But it seems to be locked \nby a 3 piece mechanism."
+  - type: 2
+    message: We need to find them.
+  onlyOneTrigger: 0
   canBeTrigger: 1

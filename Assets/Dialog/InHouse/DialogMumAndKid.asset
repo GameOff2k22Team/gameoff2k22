@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bae8eb726e0ee42b22059d6195f8c5, type: 3}
+  m_Name: DialogMumAndKid
+  m_EditorClassIdentifier: 
+  listOfMessageByUnitType:
+  - type: 1
+    message: "There you are\u2026 \nI\u2019m really sad \nthat you spent your night
+      playing \nand didn\u2019t come eat dinner with me\u2026"
+  - type: 0
+    message: ...
+  - type: 1
+    message: "Really, your artifact was stolen? \nOh that\u2019s terrible..."
+  - type: 1
+    message: "Well at least, \nit gives you a reason to finally go out \nand enjoy
+      the sun!"
+  - type: 1
+    message: Blessed be that mysterious thief!
+  - type: 0
+    message: ...
+  - type: 1
+    message: "Oh you want to go look for it? \nWell, you can go \nbut don\u2019t
+      go too far please\u2026"
+  onlyOneTrigger: 1
+  canBeTrigger: 1
