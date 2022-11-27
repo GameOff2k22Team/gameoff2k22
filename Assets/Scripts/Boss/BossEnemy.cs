@@ -60,4 +60,6 @@ public enum EnemyType
 {
     normal,
     zigzag,
+    splitter,
 }
+

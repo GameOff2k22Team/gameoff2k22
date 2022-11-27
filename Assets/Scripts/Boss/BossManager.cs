@@ -15,9 +15,12 @@ public class BossManager : MonoBehaviour
     [SerializeField]
     private ZigZagEnemy zigZagEnemy;
 
+    [SerializeField]
+    private NewBouncerSplitEnemy splitterEnemy;
+
     public static List<BossEnemy> enemies = new List<BossEnemy>();
 
-    private float _projectileSpeed = 7.0f;
+    private float _projectileSpeed = 3.0f;
 
     private float _spawningSpeed = 1.0f;
 
@@ -45,25 +48,39 @@ public class BossManager : MonoBehaviour
     [SerializeField]
     private int _numberOfPatternP1S3 = 10;
 
+    [Header("Phase 2")]
+    [Header("Step 1")]
+    [SerializeField]
+    private List<PatternBossP2> p2S1Pattern;
+    [SerializeField]
+    private int _numberOfPatternP2S1 = 1;
+    private float _phase2ModifierSpawnSpeed = 5;
+
     private void Start()
     {
-        UpdateBossPhase(BossState.phase1);
+        UpdateBossPhase(BossState.phase2);
     }
 
     #region Generic Method
     private void SpawnEnemy(EnemyType enemyType ,Transform tr, Vector3 direction, int projectileSpeedRatio, float freq, float amp)
     {
-        if(enemyType == EnemyType.normal)
+        switch (enemyType)
         {
-            BossEnemy _currentEnemy = Instantiate(enemy, tr.position, Quaternion.identity);
-            _currentEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage);
-        }
-        else
-        {
-            ZigZagEnemy _currentEnemy = Instantiate(zigZagEnemy, tr.position, Quaternion.identity);
-            _currentEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage, freq, amp);
+            case EnemyType.normal:
+                BossEnemy _currentEnemy = Instantiate(enemy, tr.position, Quaternion.identity);
+                _currentEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage);
+                break;
+            case EnemyType.zigzag:
+                ZigZagEnemy _currentZigEnemy = Instantiate(zigZagEnemy, tr.position, Quaternion.identity);
+                _currentZigEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage, freq, amp);
+                break;
+            case EnemyType.splitter:
+                NewBouncerSplitEnemy _currentSplitEnemy = Instantiate(splitterEnemy, tr.position, Quaternion.identity);
+                _currentSplitEnemy.Initialize(direction, _projectileSpeed * (projectileSpeedRatio / 100), _currentDamage, true);
+                break;
         }
         
+
     }
 
     private void UpdateBossPhase(BossState state)
@@ -74,6 +91,7 @@ public class BossManager : MonoBehaviour
                 StartCoroutine(Phase1Coroutine());
                 break;
             case BossState.phase2:
+                StartCoroutine(Phase2Coroutine());
                 break;
             case BossState.phase3:
                 break;
@@ -128,7 +146,38 @@ public class BossManager : MonoBehaviour
     }
     #endregion
 
+    #region P2 Boss
+    private IEnumerator Phase2Coroutine()
+    {
+        yield return StartCoroutine(WaitBeforeStart());
+        yield return StartCoroutine(P2PatternCoroutine(p2S1Pattern, _numberOfPatternP2S1, true, _spawningSpeed * _phase2ModifierSpawnSpeed));
+    }
 
+    private IEnumerator P2PatternCoroutine(List<PatternBossP2> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)
+    {
+        var i = 0;
+        while (i < numberOfPattern)
+        {
+            PatternBossP2 bossPattern = isRandom ? BossPatterns[UnityEngine.Random.Range(0, BossPatterns.Count)] : BossPatterns[i];
+
+            foreach (SpawnManager.P2SpawnArea spawnArea in bossPattern.SpawnArea)
+            {
+                SpawnManager.BossP2SpawnPattern spawnAreaPosition = SpawnManager.Instance.GetSpawnAreaPositionByTypeP2(spawnArea);
+                SpawnEnemy(bossPattern.enemyType,
+                    spawnAreaPosition.position,
+                    spawnAreaPosition.direction,
+                    bossPattern.speed,
+                    bossPattern.freq,
+                    bossPattern.amp);
+            }
+
+            i += 1;
+            yield return new WaitForSecondsRealtime(spawningSpeed);
+        }
+
+    }
+
+    #endregion
     // Refaire avec sinusoides et amplitude
     // P2 Zones qui rebondissent et qui te rentrent dedans
     // P3 lasers  )))))))))))))))))))))))))))))))
