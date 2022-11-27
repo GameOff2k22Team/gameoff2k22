@@ -118,7 +118,9 @@ WwiseUnityIntegration_*_Src.zip
 # Mac stuff
 .DS_store
 Assets/Wwise/API/Runtime/AkSoundEngine.extensions.cs
+Assets/Wwise/API/Runtime/AkSoundEngine.extensions.cs.meta
 Assets/Wwise/LauncherInfo.json
+Assets/Wwise/LauncherInfo.json.meta
 Assets/WwiseSettings.xml
 logRunSetup.txt
 
