@@ -194,16 +194,16 @@ public class BossManager : MonoBehaviour
     private IEnumerator Phase3Coroutine()
     {
         yield return StartCoroutine(WaitBeforeStart());
-        yield return StartCoroutine(P3PatternCoroutine(p3S1Pattern, _numberOfPatternP3S1, false));
+        yield return StartCoroutine(P3PatternCoroutine(p3S1Pattern));
     }
 
-    private IEnumerator P3PatternCoroutine(List<PatternBossP3> BossPatterns, int numberOfPattern, bool isRandom)
+    private IEnumerator P3PatternCoroutine(List<PatternBossP3> BossPatterns)
     {
         var i = 0;
-        while (i < numberOfPattern)
+        while (i < BossPatterns.Count)
         {
             PatternBossP3 currentBossPattern = BossPatterns[i];
-            LineAreaManager.Instance.EnableLines(currentBossPattern.nbOfVertLines, currentBossPattern.nbOfHorLines);
+            LineAreaManager.Instance.ToggleLines(currentBossPattern.nbOfVertLines, currentBossPattern.nbOfHorLines,true);
             i += 1;
             yield return new WaitForSecondsRealtime(currentBossPattern.timeToWait);
         }

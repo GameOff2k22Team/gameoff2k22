@@ -14,12 +14,19 @@ public class LineAreaDamage : MonoBehaviour
         _renderer = GetComponent<Renderer>();
         _boxCollider = GetComponent<BoxCollider2D>();
         _boxCollider.enabled = false;
+
     }
 
-    public IEnumerator Start()
+    public void OnEnable()
     {
-        float timer = 0f;
+        StartCoroutine(AppearCoroutine());
+    }
+
+    public IEnumerator AppearCoroutine()
+    {
         _renderer.material.color = new Color(1f, 1f, 1f, 0.5f);
+
+        float timer = 0f;
         while (timer < _timeBeforeDamage)
         {
             timer += Time.deltaTime;
@@ -35,7 +42,12 @@ public class LineAreaDamage : MonoBehaviour
             yield return null;
         }
         _boxCollider.enabled = false;
+        gameObject.SetActive(false);
+        
+    }
 
-        this.gameObject.SetActive(false);
+    public void OnDisable()
+    {
+        StopAllCoroutines();
     }
 }

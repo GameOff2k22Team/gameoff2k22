@@ -1046,25 +1046,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!1 &1188816969 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2494362161405228921, guid: 89f026904df694c40ba5f88dfa8eb250,
-    type: 3}
-  m_PrefabInstance: {fileID: 2494362163355096834}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1188816973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188816969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29ab51731815a4641be8dc97cadf3b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
 --- !u!1 &1380682755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2080,7 @@ PrefabInstance:
     - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
       propertyPath: _numberOfPatternP3S1
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
@@ -2109,7 +2090,7 @@ PrefabInstance:
     - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
       propertyPath: p3S1Pattern.Array.size
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
@@ -2163,7 +2144,25 @@ PrefabInstance:
         type: 3}
       propertyPath: p3S1Pattern.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: ec3f356e1cefdd845bec075306c84fd0,
+      objectReference: {fileID: 11400000, guid: b30396b93d43f4a4c9977d45b9bea548,
+        type: 2}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p3S1Pattern.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: e313bf54e9d25e04d9c5af4a67f68c44,
+        type: 2}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p3S1Pattern.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5591c2910ba2fd0458d0b7adf47483f2,
+        type: 2}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p3S1Pattern.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: dacbd8dee1f4eea47b43b2b041f08649,
         type: 2}
     - target: {fileID: 2494362161405228927, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
