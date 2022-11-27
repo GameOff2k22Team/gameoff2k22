@@ -63,6 +63,10 @@ MonoBehaviour:
   animator: {fileID: 3268100977465491899}
   openAnimation: {fileID: 7400000, guid: ed4335924dbc6f8469799b20c972f107, type: 2}
   artefact: {fileID: 7562850912999721229}
+  fallAnimationClip: {fileID: 7400000, guid: f47a02a01d23f064187b674b501f5263, type: 2}
+  isAlreadyInRoom: 0
+  minimumTimeToWait: 2
+  maximumTimeToWait: 5
 --- !u!1 &7928695590831129847
 GameObject:
   m_ObjectHideFlags: 0
