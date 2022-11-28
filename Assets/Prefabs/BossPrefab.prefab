@@ -1408,6 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb28ca898de1d24bb49e390092dcc14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPlayer2DDeath: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa, type: 2}
 --- !u!61 &2494362163355096836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1539,6 +1540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e660b5b101c817140b7257fd187d3dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPlayerDeath:
+    Event: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa, type: 2}
   enemy: {fileID: 8500118781570255505, guid: 069bd3f31ddf7194095699b3383f151c, type: 3}
   zigZagEnemy: {fileID: -271683245168513361, guid: fece696e65799164e8ae0dd77c681ec7,
     type: 3}

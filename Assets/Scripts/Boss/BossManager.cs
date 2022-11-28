@@ -1,14 +1,17 @@
+using Architecture;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
-using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class BossManager : MonoBehaviour
 {
     private enum BossState { phase1, phase2, phase3 }
+
+    [SerializeField]
+    private GameEventListener OnPlayerDeath;
 
     [SerializeField]
     private BossEnemy enemy;
@@ -100,6 +103,23 @@ public class BossManager : MonoBehaviour
     private List<PatternBossP3> p3S2Pattern;
     [SerializeField]
     private List<PatternBossP3> p3S3Pattern;
+
+    private void Awake()
+    {
+        OnPlayerDeath.RegisterListener(CallWhenPlayerDies);
+    }
+
+    private void OnDisable()
+    {
+        OnPlayerDeath.UnregisterListener(CallWhenPlayerDies);
+    }
+
+    private void CallWhenPlayerDies()
+    {
+        StopAllCoroutines();
+        ClearEnemies();
+        UpdateBossPhase(BossState.phase1);
+    }
 
     private void Start()
     {

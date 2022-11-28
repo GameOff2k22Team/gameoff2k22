@@ -582,82 +582,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2494362161363474700, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: OnPlayer2DDeath
+      value: 
+      objectReference: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa,
+        type: 2}
     - target: {fileID: 2494362161405228921, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
       propertyPath: m_Name
       value: BossPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: b5e4c449173d9ce4e9ee2bfc8c749dfe,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: b238256e90d84b04e9a4845edf071be9,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 6407890cedca17f4598c003f0ad4d356,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 8ab8cb3e1e65fe74e9517e8e2b419603,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: b5e4c449173d9ce4e9ee2bfc8c749dfe,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: 02996f1f0a75ca7428aca676b409f987,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: 140ef08f8ac82cb41be14790e5ff9b10,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: 8ab8cb3e1e65fe74e9517e8e2b419603,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: b5e4c449173d9ce4e9ee2bfc8c749dfe,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[9]
-      value: 
-      objectReference: {fileID: 11400000, guid: 6407890cedca17f4598c003f0ad4d356,
-        type: 2}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: p3S3Pattern.Array.data[10]
-      value: 
-      objectReference: {fileID: 11400000, guid: 02996f1f0a75ca7428aca676b409f987,
-        type: 2}
     - target: {fileID: 2494362161405228927, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
       propertyPath: m_RootOrder
