@@ -506,6 +506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasKey: {fileID: 11400000, guid: a9909d24122005e4d8bb35039df83623, type: 2}
   animator: {fileID: 1262994175410991137}
+  openAnimation: {fileID: 0}
   artefact: {fileID: 636539557400681627}
 --- !u!1001 &4790486001398300412
 PrefabInstance:

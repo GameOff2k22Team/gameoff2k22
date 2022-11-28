@@ -11,7 +11,7 @@ public abstract class PuzzleBase : MonoBehaviour
     public GameObject artefact;
 
     protected PuzzleManager _puzzleManager;
-    private bool _isOpen = false;
+    public bool _isOpen = false;
     protected PuzzleManager.PuzzleType type;
 
     protected virtual void Start()
