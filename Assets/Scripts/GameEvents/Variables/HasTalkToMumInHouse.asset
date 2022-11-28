@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HasTalkToMumInHouse
   m_EditorClassIdentifier: 
   DeveloperDescription: 
-  DefaultValue: 1
-  Value: 1
+  DefaultValue: 0
+  Value: 0
