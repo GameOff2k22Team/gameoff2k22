@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09d3572d27ae404fb25d6062974bada, type: 3}
+  m_Name: ADF30922-C8E6-4F32-984A-9F253133D47B
+  m_EditorClassIdentifier: 
+  objectName: Voice
+  id: 3170124113
+  guid: ADF30922-C8E6-4F32-984A-9F253133D47B

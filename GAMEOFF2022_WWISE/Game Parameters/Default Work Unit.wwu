@@ -40,6 +40,26 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="VOICE_Hero_RTPC" ID="{B36738BA-5852-47B8-87A1-0B26645BED85}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VOICE_Mother_RTPC" ID="{F5B72B02-814F-4083-B4F9-00FF76D67DA3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VOICE_Fairy_RTPC" ID="{CAA2EB3B-A5E2-481A-AE91-033409AF07A6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VOICE_RTPC" ID="{5C119F57-5F53-4C94-86CD-55278D1F9972}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

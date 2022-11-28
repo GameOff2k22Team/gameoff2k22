@@ -6,6 +6,37 @@
 				<MusicPlaylistContainer Name="Music_House" ID="{39592BD7-2F1D-438B-A662-77C257F5CE18}" ShortID="251197249">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="56"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{46E7CAA6-D53A-41FE-BE8D-13F19AF6F459}" ShortID="856344066">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Music_Fade_Out_House" ID="{3E47F346-EA5E-4EF3-A5B3-486D75E954B0}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{662A99CE-E56F-4019-AB06-DE1BB41AB054}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -293,7 +324,7 @@
 						<Property Name="Tempo" Type="Real64" Value="117"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-9</Value>
 							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{06528F84-5F33-4E61-B551-C431644E7E3A}" ShortID="464192399">

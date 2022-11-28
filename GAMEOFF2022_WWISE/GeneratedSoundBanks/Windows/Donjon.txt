@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	611981041	Music_Donjon			\Donjon\Music_Donjon	
+	2226439152	Stop_Music_House			\House\Stop_Music_House	
 	2506571047	Stop_Music_Forest			\Forest\Stop_Music_Forest	
 	3111214772	Stop_Music_Donjon			\Donjon\Stop_Music_Donjon	
 

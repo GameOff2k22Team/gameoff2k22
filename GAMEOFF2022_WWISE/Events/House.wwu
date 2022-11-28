@@ -5,9 +5,21 @@
 			<ChildrenList>
 				<Event Name="Music_House" ID="{8D07D16A-851F-421E-B002-3AACD3A00EDD}">
 					<ChildrenList>
+						<Action Name="" ID="{F982E27E-6243-487F-9A20-54CC3A677CD0}" ShortID="528536619">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_House" ID="{3E47F346-EA5E-4EF3-A5B3-486D75E954B0}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{DD12D725-71BF-4F75-A051-695D5D21F34A}" ShortID="818513707">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="12.7"/>
+								<Property Name="Delay" Type="Real64" Value="12.9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -55,10 +67,13 @@
 				</Event>
 				<Event Name="AMB_House" ID="{679494E2-8656-4534-AE04-3D6DA0153038}">
 					<ChildrenList>
-						<Action Name="" ID="{60788FFF-84E2-4A84-B652-571F7126865C}" ShortID="543453121">
+						<Action Name="" ID="{AC45F5CC-6C37-42B6-AC94-F0B61EB462FA}" ShortID="498940750">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="AMB_Room" ID="{763EB5FF-515A-47D1-8D26-449F17A38819}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+									<ObjectRef Name="AMB_House" ID="{D4CE934E-8A47-40ED-9577-28F58F27CA8B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -91,6 +106,93 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Door_Room_Close" ID="{2896381F-7C61-43DC-969B-5F2BA217ECF2}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Stairs_Room" ID="{44286C08-AD0E-46B6-8A59-BA496D259B45}">
+					<ChildrenList>
+						<Action Name="" ID="{E356264B-8F03-4217-8789-D4137694CE94}" ShortID="58579131">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Stairs_Room" ID="{C8A2C1B7-A35B-46C1-91E5-37E70A698202}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_House" ID="{5399CFFB-7067-4106-9302-5F44CC7CA798}">
+					<ChildrenList>
+						<Action Name="" ID="{700E4925-A976-46A9-A545-7355354F7374}" ShortID="73998120">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_House" ID="{3E47F346-EA5E-4EF3-A5B3-486D75E954B0}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{17D5C353-285C-41A1-814B-FAEEADA0707D}" ShortID="120834423">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Donjon_Start" ID="{D49DD18A-0897-41D1-BC37-DAC876F34FD5}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Bed_Cover" ID="{73F09973-6975-452E-800B-72F89029FF42}">
+					<ChildrenList>
+						<Action Name="" ID="{2F3BB8E0-6BCE-4C74-9697-AA7AA19C13C2}" ShortID="1012506501">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Bed_Cover" ID="{CBF37432-2EF5-48B0-BAAD-FC704227CF52}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Dik_Intro_Cinematique" ID="{E2665D15-ADA5-4211-BDC5-4ED49630F8E9}">
+					<ChildrenList>
+						<Action Name="" ID="{50AD1988-7C0F-4B06-8A48-2132C0AC59F6}" ShortID="756108136">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="25"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_House" ID="{3E47F346-EA5E-4EF3-A5B3-486D75E954B0}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{46BA5DA9-BE36-4C46-BB87-F6DA35BCF817}" ShortID="667668941">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Dik_Intro_Cinematique" ID="{2E8C0DC3-A711-459F-8132-6F5DE299841C}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4566C31E-E540-4304-9A88-614A7EE4AEC2}" ShortID="200002691">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Delay" Type="Real64" Value="59"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_House" ID="{3E47F346-EA5E-4EF3-A5B3-486D75E954B0}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

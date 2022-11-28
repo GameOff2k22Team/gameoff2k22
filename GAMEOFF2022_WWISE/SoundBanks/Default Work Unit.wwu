@@ -30,8 +30,10 @@
 					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="House" ID="{0D5A762D-DEF7-4227-A0BE-22BEE70DBB97}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps_Room_Wood" ID="{F0EAF49E-5D5A-434F-8091-92BAAB74814B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_House" ID="{39592BD7-2F1D-438B-A662-77C257F5CE18}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="House" ID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" WorkUnitID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps_House_Wood" ID="{0C47EA4A-3AEB-49F0-AF58-3C0E8DCB58CF}" WorkUnitID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -82,6 +84,21 @@
 						<ObjectRef Name="Music_Boss" ID="{522ED282-1BB1-4159-94F6-FC6F2156A118}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Boss" ID="{DD5642B8-2453-4485-AFAD-02A2B661B6D8}" WorkUnitID="{DD5642B8-2453-4485-AFAD-02A2B661B6D8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Boss" ID="{DCC2E968-C85F-45AC-A192-F8ABB3839916}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Voice" ID="{ADF30922-C8E6-4F32-984A-9F253133D47B}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99951424</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="VOICE" ID="{582F43F5-DB14-4AA8-9491-1BC19768EED6}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Voice" ID="{68184BA7-D9EF-4DD5-9A8D-7832C51051A7}" WorkUnitID="{68184BA7-D9EF-4DD5-9A8D-7832C51051A7}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
