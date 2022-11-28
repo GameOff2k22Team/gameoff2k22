@@ -180,6 +180,9 @@ public class PuzzleManager : MonoBehaviour
         }
         else
         {
+            PuzzlePerseverance chestPerseverence = chest as PuzzlePerseverance;
+            chestPerseverence.animator.enabled = true;
+            chestPerseverence.animator.Play(chestPerseverence.openAnimation.name);
             this.AddTry();
         }
     }
@@ -191,7 +194,7 @@ public class PuzzleManager : MonoBehaviour
     
     private void GiveArtefact(PuzzleBase chest)
     {
-        chest.artefact.SetActive(true);
+        chest.openChestWithArtefact.LaunchPlayable();
         canGoToNextRoom = true;
 
         if(chest.TryGetComponent(out UseObject useObject))

@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class PuzzleBase : MonoBehaviour
 {
     public BoolVariable hasKey;
-    public Animator animator;
-    public AnimationClip openAnimation;
+
+    public PlayableLaunch openChestWithArtefact;
 
     public GameObject artefact;
 
@@ -25,8 +25,6 @@ public abstract class PuzzleBase : MonoBehaviour
         {
             this._isOpen = true;
             this._puzzleManager.OpenChest(type, this);
-            this.animator.enabled = true;
-            this.animator.Play(this.openAnimation.name);
         }
     }
 
