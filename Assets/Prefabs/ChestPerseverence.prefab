@@ -98,10 +98,10 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -1340264659634006778, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
-    value: {fileID: 3268100977465491899}
   - key: {fileID: -9118531354101153566, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
     value: {fileID: 7562850912999721229}
+  - key: {fileID: -1340264659634006778, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
+    value: {fileID: 3268100977465491899}
   - key: {fileID: -6543596320972875457, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
