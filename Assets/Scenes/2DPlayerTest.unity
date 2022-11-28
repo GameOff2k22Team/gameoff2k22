@@ -587,6 +587,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p1S2Pattern.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p1S2Pattern.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d64a84631f82814b9b183c9c40543eb,
+        type: 2}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p1S2Pattern.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: c51c5abff03fd52438738d68cdf35e32,
+        type: 2}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p1S2Pattern.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d64a84631f82814b9b183c9c40543eb,
+        type: 2}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p1S2Pattern.Array.data[16]
+      value: 
+      objectReference: {fileID: 11400000, guid: c51c5abff03fd52438738d68cdf35e32,
+        type: 2}
+    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
+        type: 3}
+      propertyPath: p1S2Pattern.Array.data[17]
+      value: 
+      objectReference: {fileID: 11400000, guid: 05178ec76f30c744ba65461dbb44721e,
+        type: 2}
     - target: {fileID: 2494362161405228927, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
       propertyPath: m_RootOrder
