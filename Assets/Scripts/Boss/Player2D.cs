@@ -23,13 +23,14 @@ public class Player2D : MonoBehaviour
     {
         if(!_isInvincible)
         {
-            _playerHP -= damage;
+            _playerHP -= 1;
             StartCoroutine(DamageInvincibilityCoroutine());
         }
 
         if (_playerHP == 0)
         {
             OnPlayer2DDeath.Raise();
+            _playerHP = 5;
         }
     }
 

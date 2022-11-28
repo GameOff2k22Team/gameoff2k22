@@ -582,12 +582,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2494362161363474700, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: OnPlayer2DDeath
-      value: 
-      objectReference: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa,
-        type: 2}
     - target: {fileID: 2494362161405228921, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
       propertyPath: m_Name
