@@ -7,6 +7,6 @@ public class PuzzleFocus : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PuzzleManager.Instance.ClickOnLightSwitch();
+        //PuzzleManager.Instance.OpenChest(PuzzleManager.PuzzleType.FOCUS, );
     }
 }

@@ -9,7 +9,7 @@ using UnityEditor;
 public class PuzzleManager : MonoBehaviour
 {
 
-    public enum PuzzleType { PERSEVERANCE, BABA, FOCUS}
+    public enum PuzzleType {PERSEVERANCE, FOCUS, BABA }
     public static PuzzleManager Instance { get; private set; }
 
     public struct PerseverancePuzzle
@@ -39,13 +39,9 @@ public class PuzzleManager : MonoBehaviour
     [Header("Focus Puzzle")]
     public GameObject focusPuzzleObject;
     [SerializeField]
-    private GameObject _sceneLight;
+    private GameObject _hiddenChest;
     [SerializeField]
-    private GameObject _lightingRoad;
-    [SerializeField]
-    private List<GameObject> _focusKeys;
-    [SerializeField]
-    private GameObject _fakeKey;
+    private Transform _spawnPoint;
     [Space(10)]
     [Header("Baba Puzzle")]
     public GameObject babaPuzzleObject;
@@ -57,7 +53,7 @@ public class PuzzleManager : MonoBehaviour
     private Animator loadManagerAnimator;
     private const string FADE_IN_TRIGGER = "FadeIn";
     private const string FADE_OUT_TRIGGER = "FadeOut";
-    private const int NUMBER_OF_PUZZLE = 2;
+    private const int NUMBER_OF_PUZZLE = 3;
     private bool canGoToNextRoom = false;
     private Transform spawnSpot;
 
@@ -88,8 +84,6 @@ public class PuzzleManager : MonoBehaviour
     void Start()
     {
         perseverancePuzzle = new PerseverancePuzzle(PuzzleType.PERSEVERANCE, perseverancePuzzleNumberOfTryRequired);
-        if(_lightingRoad)
-            this.EnsureLightingRoadIsActive();
     }
 
     private void SetPuzzleType(PuzzleType type)
@@ -158,13 +152,14 @@ public class PuzzleManager : MonoBehaviour
 
     public void OpenChest(PuzzleType puzzleType, PuzzleBase chest)
     {
+        Debug.Log("JE PASSE ICI");
         switch (puzzleType)
         {
             case PuzzleType.PERSEVERANCE:
                 this.OpenChestPerseverance(chest);
                 break;
             case PuzzleType.FOCUS:
-                this.GiveArtefact(chest);
+                this.OpenFocusChest(chest);
                 break;
             case PuzzleType.BABA:
                 this.GiveArtefact(chest);
@@ -211,58 +206,21 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
-    public void ClickOnLightSwitch()
+    private void OpenFocusChest(PuzzleBase chest)
     {
-        this.ShowRandomKey();
-        this.EnsureLightingRoadIsNotActive();
-        this._fakeKey.SetActive(false);
-        _sceneLight.SetActive(false);
-        var timeLeft = 5.0f;
-        StartCoroutine(this.TimerBeforeReset(timeLeft));
-    }
-
-    public void ResetFocusEnigme()
-    {
-        this.EnsureLightingRoadIsActive();
-        _sceneLight.SetActive(true);
-        this._fakeKey.SetActive(true);
-        this.HideAllKeys();
-    }
-
-    private void EnsureLightingRoadIsActive()
-    {
-        _lightingRoad.SetActive(true);
-    }
-
-    private void EnsureLightingRoadIsNotActive()
-    {
-        _lightingRoad.SetActive(false);
-    }
-
-    private void ShowRandomKey()
-    {
-        var selectedKey = Random.Range(0, _focusKeys.Count);
-        _focusKeys[selectedKey].SetActive(true);
-    }
-
-    private void HideAllKeys()
-    {
-        foreach(GameObject key in _focusKeys)
+        PuzzleHidden chestHidden = chest as PuzzleHidden;
+        if (!chestHidden._realChest)
         {
-            key.SetActive(false);
+            _hiddenChest.transform.position = _spawnPoint.position;
+            _hiddenChest.transform.rotation = _spawnPoint.rotation;
+            chestHidden._realChest = true;
+            
+        }
+        else
+        {
+            this.GiveArtefact(chest);
         }
     }
-    IEnumerator TimerBeforeReset(float timeLeft)
-    {
-        while (timeLeft > 0)
-        {
-            timeLeft -= Time.deltaTime;
-            yield return null;
-
-        }
-        this.ResetFocusEnigme();
-    }
-
 }
 
 #if UNITY_EDITOR
