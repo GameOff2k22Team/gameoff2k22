@@ -46,7 +46,7 @@ public class BossEnemy : MonoBehaviour
         {
             player.GetComponent<Player2D>().RemoveHP(_damage);
             //player.GetComponent<Rigidbody2D>().AddForce(_direction);
-            _isAlive = false;
+            //_isAlive = false;
         }
         else if(col.TryGetComponent<DespawnArea>(out DespawnArea area))
         {

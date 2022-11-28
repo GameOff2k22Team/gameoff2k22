@@ -1,14 +1,17 @@
+using Architecture;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
-using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class BossManager : MonoBehaviour
 {
     private enum BossState { phase1, phase2, phase3 }
+
+    [SerializeField]
+    private GameEventListener OnPlayerDeath;
 
     [SerializeField]
     private BossEnemy enemy;
@@ -21,7 +24,7 @@ public class BossManager : MonoBehaviour
 
     public static List<BossEnemy> enemies = new List<BossEnemy>();
 
-    private float _projectileSpeed = 3.0f;
+    private float _projectileSpeed = 5.0f;
 
     private float _spawningSpeed = 1.0f;
 
@@ -35,19 +38,36 @@ public class BossManager : MonoBehaviour
     [Header("Phase 1")]
     [Header("Step 1")]
     [SerializeField]
+    private bool isP1S1Random;
+    [SerializeField]
     private List<PatternBossP1> p1S1Pattern;
     [SerializeField]
     private int _numberOfPatternP1S1 = 1;
     [Header("Step 2")]
     [SerializeField]
+    private bool isP1S2Random;
+    [SerializeField]
     private List<PatternBossP1> p1S2Pattern;
     [SerializeField]
     private int _numberOfPatternP1S2 = 10;
-    [Header("Step 2")]
+    [Header("Step 3")]
+    [SerializeField]
+    private bool isP1S3Random;
     [SerializeField]
     private List<PatternBossP1> p1S3Pattern;
     [SerializeField]
     private int _numberOfPatternP1S3 = 10;
+    [SerializeField, Range(0f, 5f)]
+    private float _P1S3SpawningSpeed;
+    [Header("Step 4")]
+    [SerializeField]
+    private bool isP1S4Random;
+    [SerializeField]
+    private List<PatternBossP1> p1S4Pattern;
+    [SerializeField]
+    private int _numberOfPatternP1S4 = 10;
+    [SerializeField, Range(0f, 5f)]
+    private float _P1S4SpawningSpeed;
 
     [Header("Phase 2")]
     [Header("Step 1")]
@@ -56,6 +76,22 @@ public class BossManager : MonoBehaviour
     [SerializeField]
     private int _numberOfPatternP2S1 = 1;
     private float _phase2ModifierSpawnSpeed = 5;
+    [SerializeField, Range(0f, 5f)]
+    private float _P2S1SpawningSpeed;
+    [Header("Step 2")]
+    [SerializeField]
+    private List<PatternBossP2> p2S2Pattern;
+    [SerializeField]
+    private int _numberOfPatternP2S2 = 1;
+    [SerializeField, Range(0f, 5f)]
+    private float _P2S2SpawningSpeed;
+    [Header("Step 3")]
+    [SerializeField]
+    private List<PatternBossP2> p2S3Pattern;
+    [SerializeField]
+    private int _numberOfPatternP2S3 = 1;
+    [SerializeField, Range(0f, 5f)]
+    private float _P2S3SpawningSpeed;
 
     [Header("Phase 3")]
     [Header("Step 1")]
@@ -63,6 +99,27 @@ public class BossManager : MonoBehaviour
     private List<PatternBossP3> p3S1Pattern;
     [SerializeField]
     private int _numberOfPatternP3S1 = 1;
+    [SerializeField]
+    private List<PatternBossP3> p3S2Pattern;
+    [SerializeField]
+    private List<PatternBossP3> p3S3Pattern;
+
+    private void Awake()
+    {
+        OnPlayerDeath.RegisterListener(CallWhenPlayerDies);
+    }
+
+    private void OnDisable()
+    {
+        OnPlayerDeath.UnregisterListener(CallWhenPlayerDies);
+    }
+
+    private void CallWhenPlayerDies()
+    {
+        StopAllCoroutines();
+        ClearEnemies();
+        UpdateBossPhase(BossState.phase1);
+    }
 
     private void Start()
     {
@@ -126,9 +183,17 @@ public class BossManager : MonoBehaviour
     private IEnumerator Phase1Coroutine()
     {
         yield return StartCoroutine(WaitBeforeStart());
-        yield return StartCoroutine(P1PatternCoroutine(p1S1Pattern, _numberOfPatternP1S1, true, _spawningSpeed));
-        yield return StartCoroutine(P1PatternCoroutine(p1S2Pattern, _numberOfPatternP1S2, true, _spawningSpeed));
-        yield return StartCoroutine(P1PatternCoroutine(p1S3Pattern, _numberOfPatternP1S3, false, _spawningSpeed * 2));
+        yield return StartCoroutine(P1PatternCoroutine(p1S1Pattern, _numberOfPatternP1S1, isP1S1Random, _spawningSpeed));
+        yield return StartCoroutine(WaitBeforeStart());
+
+        yield return StartCoroutine(P1PatternCoroutine(p1S2Pattern, _numberOfPatternP1S2, isP1S2Random, _spawningSpeed));
+        yield return StartCoroutine(WaitBeforeStart());
+
+        yield return StartCoroutine(P1PatternCoroutine(p1S3Pattern, _numberOfPatternP1S3, isP1S3Random, _P1S3SpawningSpeed));
+
+        yield return StartCoroutine(P1PatternCoroutine(p1S4Pattern, _numberOfPatternP1S4, isP1S4Random, _P1S4SpawningSpeed));
+        yield return StartCoroutine(WaitBeforeStart());
+
         UpdateBossPhase(BossState.phase2);
     }
 
@@ -146,24 +211,28 @@ public class BossManager : MonoBehaviour
     private IEnumerator P1PatternCoroutine(List<PatternBossP1> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)
     {
         var i = 0;
-        while(i < numberOfPattern)
+        
+        int countNumber = isRandom ? numberOfPattern : BossPatterns.Count;
+        while (i < countNumber)
         {
             PatternBossP1 bossPattern = isRandom ? BossPatterns[UnityEngine.Random.Range(0, BossPatterns.Count)] : BossPatterns[i];
-            
+
             foreach (SpawnManager.P1SpawnArea spawnArea in bossPattern.SpawnArea)
             {
                 SpawnManager.BossP1SpawnPattern spawnAreaPosition = SpawnManager.Instance.GetSpawnAreaPositionByType(spawnArea);
-                SpawnEnemy(bossPattern.enemyType, 
-                    spawnAreaPosition.position, 
-                    spawnAreaPosition.direction, 
+                SpawnEnemy(bossPattern.enemyType,
+                    spawnAreaPosition.position,
+                    spawnAreaPosition.direction,
                     bossPattern.speed,
-                    bossPattern.freq, 
+                    bossPattern.freq,
                     bossPattern.amp);
             }
 
             i += 1;
             yield return new WaitForSecondsRealtime(spawningSpeed);
         }
+        
+        
 
     }
     #endregion
@@ -172,7 +241,13 @@ public class BossManager : MonoBehaviour
     private IEnumerator Phase2Coroutine()
     {
         yield return StartCoroutine(WaitBeforeStart());
-        yield return StartCoroutine(P2PatternCoroutine(p2S1Pattern, _numberOfPatternP2S1, true, _spawningSpeed * _phase2ModifierSpawnSpeed));
+        yield return StartCoroutine(P2PatternCoroutine(p2S1Pattern, _numberOfPatternP2S1, false, _P2S1SpawningSpeed));
+        yield return new WaitForSecondsRealtime(10f);
+        yield return StartCoroutine(P2PatternCoroutine(p2S2Pattern, _numberOfPatternP2S2, false, _P2S2SpawningSpeed));
+        yield return new WaitForSecondsRealtime(10f);
+        yield return StartCoroutine(P2PatternCoroutine(p2S3Pattern, _numberOfPatternP2S3, false, _P2S3SpawningSpeed));
+        yield return new WaitForSecondsRealtime(10f);
+
         UpdateBossPhase(BossState.phase3);
 
     }
@@ -180,7 +255,8 @@ public class BossManager : MonoBehaviour
     private IEnumerator P2PatternCoroutine(List<PatternBossP2> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)
     {
         var i = 0;
-        while (i < numberOfPattern)
+        int countNumber = isRandom ? numberOfPattern : BossPatterns.Count;
+        while (i < countNumber)
         {
             PatternBossP2 bossPattern = isRandom ? BossPatterns[UnityEngine.Random.Range(0, BossPatterns.Count)] : BossPatterns[i];
 
@@ -210,6 +286,13 @@ public class BossManager : MonoBehaviour
     {
         yield return StartCoroutine(WaitBeforeStart());
         yield return StartCoroutine(P3PatternCoroutine(p3S1Pattern));
+        yield return StartCoroutine(WaitBeforeStart());
+        yield return StartCoroutine(P3PatternCoroutine(p3S2Pattern));
+        yield return StartCoroutine(WaitBeforeStart());
+        yield return StartCoroutine(P3PatternCoroutine(p3S3Pattern));
+        yield return StartCoroutine(WaitBeforeStart());
+
+
     }
 
     private IEnumerator P3PatternCoroutine(List<PatternBossP3> BossPatterns)
@@ -218,7 +301,10 @@ public class BossManager : MonoBehaviour
         while (i < BossPatterns.Count)
         {
             PatternBossP3 currentBossPattern = BossPatterns[i];
-            LineAreaManager.Instance.ToggleLines(currentBossPattern.nbOfVertLines, currentBossPattern.nbOfHorLines,true);
+            LineAreaManager.Instance.ToggleLines(currentBossPattern.nbOfVertLines, 
+                currentBossPattern.nbOfHorLines, 
+                currentBossPattern.timeForActivation,
+                currentBossPattern.timeActivated);
             i += 1;
             yield return new WaitForSecondsRealtime(currentBossPattern.timeToWait);
         }

@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿using Architecture;
+using System.Collections;
 using UnityEngine;
 
 public class Player2D : MonoBehaviour
 {
-    private int _playerHP;
+    [SerializeField]
+    private GameEvent OnPlayer2DDeath;
+
+    private int _playerHP = 5;
 
     private bool _isInvincible = false;
 
@@ -19,8 +23,14 @@ public class Player2D : MonoBehaviour
     {
         if(!_isInvincible)
         {
-            _playerHP -= damage;
+            _playerHP -= 1;
             StartCoroutine(DamageInvincibilityCoroutine());
+        }
+
+        if (_playerHP == 0)
+        {
+            OnPlayer2DDeath.Raise();
+            _playerHP = 5;
         }
     }
 

@@ -6,7 +6,7 @@ public class PatternBossP3 : ScriptableObject
 {
     public List<int> nbOfHorLines = new List<int>();
     public List<int> nbOfVertLines = new List<int>();
-    public float timeForActivation = 2f;
-    public float timeActivated = 2f;
-    public float timeToWait = 6f;
+    public float timeForActivation = 1.5f;
+    public float timeActivated = 1f;
+    public float timeToWait = 4f;
 }

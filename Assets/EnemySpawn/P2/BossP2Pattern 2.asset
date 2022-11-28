@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 2
   SpawnArea: 01000000
-  speed: 100
+  speed: 50
   size: 100
   freq: 2
   amp: 0.05
