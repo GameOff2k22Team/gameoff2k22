@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InventoryManager : Singleton<InventoryManager>
 {
+    public GameObject inventory;
+
     public Transform[] inventorySlotIcons;
     private Dictionary<GoToReturnFromInventory, Transform> linkSlotObject 
         = new Dictionary<GoToReturnFromInventory, Transform>();
@@ -13,6 +15,36 @@ public class InventoryManager : Singleton<InventoryManager>
         base.Awake();
 
         DontDestroyOnLoad(this.gameObject);
+
+        GameManager.OnGameStateChanged += UpdateInventoryDisplayOnGameManagerStateChanged;
+    }
+
+    public void OnDestroy()
+    {
+        GameManager.OnGameStateChanged -= UpdateInventoryDisplayOnGameManagerStateChanged;
+    }
+
+    private void UpdateInventoryDisplayOnGameManagerStateChanged(GameState state)
+    {
+        switch (state)
+        {
+            case GameState.OnStartKinematic:
+                HideInventory();
+                break;
+            case GameState.OnEndKinematic:
+                DisplayInventory();
+                break;
+        }
+    }
+        
+    public void DisplayInventory()
+    {
+        inventory.SetActive(true);
+    }
+
+    public void HideInventory()
+    {
+        inventory.SetActive(false);
     }
 
     public void PlaceObjectInInventory(GoToReturnFromInventory objectToPlace)
