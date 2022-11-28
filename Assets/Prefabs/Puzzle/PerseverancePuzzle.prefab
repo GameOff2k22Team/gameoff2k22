@@ -1220,6 +1220,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5867872209555402765}
     m_Modifications:
+    - target: {fileID: 2904698050737913347, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: isAlreadyInRoom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913347, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: maximumTimeToWait
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913347, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: minimumTimeToWait
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_RootOrder
