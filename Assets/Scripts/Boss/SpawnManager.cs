@@ -89,10 +89,10 @@ public class SpawnManager : Singleton<SpawnManager>
     [Header("Boss P2")]
     [SerializeField]
     private List<BossP2SpawnPattern> _bossP2Positions = new() {
-        new BossP2SpawnPattern(P2SpawnArea.TopLeftCorner, null, Vector3.Normalize(Vector3.down+ Vector3.right)) ,
-        new BossP2SpawnPattern(P2SpawnArea.TopRightCorner, null, Vector3.Normalize(Vector3.down+ Vector3.left)),
-        new BossP2SpawnPattern(P2SpawnArea.BottomLeftCorner, null, Vector3.Normalize(Vector3.up+ Vector3.right)) ,
-        new BossP2SpawnPattern(P2SpawnArea.BottomRightCorner, null, Vector3.Normalize(Vector3.up+ Vector3.left)),
+        new BossP2SpawnPattern(P2SpawnArea.TopLeftCorner, null, Vector3.Normalize(0.5f*Vector3.down+ Vector3.right)) ,
+        new BossP2SpawnPattern(P2SpawnArea.TopRightCorner, null, Vector3.Normalize(0.5f*Vector3.down+ Vector3.left)),
+        new BossP2SpawnPattern(P2SpawnArea.BottomLeftCorner, null, Vector3.Normalize(0.5f*Vector3.up+ Vector3.right)) ,
+        new BossP2SpawnPattern(P2SpawnArea.BottomRightCorner, null, Vector3.Normalize(0.5f*Vector3.up+ Vector3.left)),
     };
 
     private Dictionary<P2SpawnArea, BossP2SpawnPattern> _spawnPatternByAreaP2 = new Dictionary<P2SpawnArea, BossP2SpawnPattern>();

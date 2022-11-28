@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eeb9f474fbf0974aa6bf0419abddaba, type: 3}
+  m_Name: TopLeftBotMid
+  m_EditorClassIdentifier: 
+  nbOfHorLines: 0000000002000000
+  nbOfVertLines: 00000000
+  timeForActivation: 1
+  timeActivated: 1
+  timeToWait: 2.5

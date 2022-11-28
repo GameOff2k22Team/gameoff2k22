@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nbOfHorLines: 0100000000000000
   nbOfVertLines: 00000000
-  timeForActivation: 2
-  timeActivated: 2
-  timeToWait: 6
+  timeForActivation: 0.75
+  timeActivated: 0.75
+  timeToWait: 3

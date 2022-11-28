@@ -23,6 +23,12 @@ public class LineAreaDamage : MonoBehaviour
         StartCoroutine(AppearCoroutine());
     }
 
+    public void Initialize(float timeBeforeDamage, float timeWithDamage)
+    {
+        _timeBeforeDamage = timeBeforeDamage;
+        _timeWithDamage = timeWithDamage;
+    }
+
     public IEnumerator AppearCoroutine()
     {
         _renderer.material.color = new Color(1f, 1f, 1f, 0.5f);

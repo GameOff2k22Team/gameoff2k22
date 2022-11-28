@@ -10,15 +10,17 @@ public class LineAreaManager : Singleton<LineAreaManager>
     private List<GameObject> tempListVert = new List<GameObject>();
 
 
-    public void ToggleLines(List<int> VertLines, List<int> HorLines, bool enable = true)
+    public void ToggleLines(List<int> VertLines, List<int> HorLines, float timeBeforeDamage, float timeWithDamage,bool enable = true)
     {
         
         for(int i=0; i < VertLines.Count; i++)
         {
+            LineAreaDamageVertical[VertLines[i]].GetComponent<LineAreaDamage>().Initialize(timeBeforeDamage, timeWithDamage);
             LineAreaDamageVertical[VertLines[i]].SetActive(enable);
         }
         for(int j=0; j<HorLines.Count; j++)
         {
+            LineAreaDamageHorizontal[HorLines[j]].GetComponent<LineAreaDamage>().Initialize(timeBeforeDamage, timeWithDamage);
             LineAreaDamageHorizontal[HorLines[j]].SetActive(enable);
         }
     }
