@@ -5,6 +5,10 @@ public class PuzzlePerseverance : PuzzleBase
 {
     [Header("Falling chest")]
     public AnimationClip fallAnimationClip;
+
+    public Animator animator;
+    public AnimationClip openAnimation;
+
     public bool isAlreadyInRoom = false;
     public float minimumTimeToWait = 0.5f;
     public float maximumTimeToWait = 3;
@@ -29,7 +33,7 @@ public class PuzzlePerseverance : PuzzleBase
         animator.speed = 0;
 
         float timeToWait = GetTimeToWait();
-        Debug.Log(timeToWait);
+
         yield return new WaitForSecondsRealtime(timeToWait);
         animator.speed = originalAnimatorSpeed;
     }

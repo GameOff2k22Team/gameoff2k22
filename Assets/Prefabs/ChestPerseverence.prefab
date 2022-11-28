@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2904698050737913348}
   - component: {fileID: 2904698050737913350}
   - component: {fileID: 2904698050737913347}
+  - component: {fileID: 8435246228264033991}
+  - component: {fileID: 2570917552434384040}
   m_Layer: 0
   m_Name: ChestPerseverence
   m_TagString: Untagged
@@ -60,13 +62,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasKey: {fileID: 11400000, guid: c09ae36843425634a8844e981679fd39, type: 2}
-  animator: {fileID: 3268100977465491899}
-  openAnimation: {fileID: 7400000, guid: ed4335924dbc6f8469799b20c972f107, type: 2}
+  openChestWithArtefact: {fileID: 8435246228264033991}
   artefact: {fileID: 7562850912999721229}
   fallAnimationClip: {fileID: 7400000, guid: f47a02a01d23f064187b674b501f5263, type: 2}
+  animator: {fileID: 3268100977465491899}
+  openAnimation: {fileID: 7400000, guid: ed4335924dbc6f8469799b20c972f107, type: 2}
   isAlreadyInRoom: 0
   minimumTimeToWait: 2
   maximumTimeToWait: 5
+--- !u!114 &8435246228264033991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2904698050737913349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418d18593f23a42b21a9e3e158ab74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 2570917552434384040}
+--- !u!320 &2570917552434384040
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2904698050737913349}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -9118531354101153566, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
+    value: {fileID: 7562850912999721229}
+  - key: {fileID: -1340264659634006778, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
+    value: {fileID: 3268100977465491899}
+  - key: {fileID: -6543596320972875457, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &7928695590831129847
 GameObject:
   m_ObjectHideFlags: 0

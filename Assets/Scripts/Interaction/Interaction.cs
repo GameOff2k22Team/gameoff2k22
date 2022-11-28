@@ -10,7 +10,7 @@ public class Interaction : MonoBehaviour
     }
 
     public UnityEvent OnInteraction;
-    protected Action<InputAction.CallbackContext> LambdaHandler { 
+    protected virtual Action<InputAction.CallbackContext> LambdaHandler { 
         get => context => OnInteraction?.Invoke(); 
     }
 
