@@ -21,16 +21,26 @@ namespace AK
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
         static const AkUniqueID MUSIC_HOUSE = 3574811899U;
         static const AkUniqueID MUSIC_TITLE_SCREEN = 4129491292U;
+        static const AkUniqueID PLAY_VOICE_FAIRY = 1662371690U;
+        static const AkUniqueID PLAY_VOICE_HERO = 1490786435U;
+        static const AkUniqueID PLAY_VOICE_MOTHER = 2092731998U;
+        static const AkUniqueID SFX_BED_COVER = 3739131574U;
         static const AkUniqueID SFX_CARPET_FOREST = 1831562812U;
+        static const AkUniqueID SFX_DIK_INTRO_CINEMATIQUE = 3567259750U;
         static const AkUniqueID SFX_DOOR = 1739295053U;
         static const AkUniqueID SFX_DOOR_DONJON_OPEN = 285337003U;
         static const AkUniqueID SFX_KEY_FOREST = 1091244002U;
         static const AkUniqueID SFX_KEY_FOREST_OPEN = 3571398045U;
         static const AkUniqueID SFX_PLAY_CONSOLE = 3983758741U;
+        static const AkUniqueID SFX_STAIRS_ROOM = 4209853719U;
         static const AkUniqueID STOP_FOOTSTEPS_ROOM_CARPET = 1081171197U;
         static const AkUniqueID STOP_MUSIC_DONJON = 3111214772U;
         static const AkUniqueID STOP_MUSIC_FOREST = 2506571047U;
+        static const AkUniqueID STOP_MUSIC_HOUSE = 2226439152U;
         static const AkUniqueID STOP_MUSIC_TITLE_SCREEN = 2271500369U;
+        static const AkUniqueID STOP_VOICE_FAIRY = 163236292U;
+        static const AkUniqueID STOP_VOICE_HERO = 2473492081U;
+        static const AkUniqueID STOP_VOICE_MOTHER = 856997892U;
         static const AkUniqueID UI_BACK = 2024222415U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_HOVER = 2118900976U;
@@ -58,6 +68,10 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID VOICE_FAIRY_RTPC = 332755759U;
+        static const AkUniqueID VOICE_HERO_RTPC = 3362203734U;
+        static const AkUniqueID VOICE_MOTHER_RTPC = 1551770265U;
+        static const AkUniqueID VOICE_RTPC = 1199740901U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -68,6 +82,7 @@ namespace AK
         static const AkUniqueID FOREST = 491961918U;
         static const AkUniqueID HOUSE = 3720479411U;
         static const AkUniqueID TITLE_SCREEN = 3853285476U;
+        static const AkUniqueID VOICE = 3170124113U;
     } // namespace BANKS
 
     namespace BUSSES

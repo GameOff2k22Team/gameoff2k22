@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{68184BA7-D9EF-4DD5-9A8D-7832C51051A7}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Voice" ID="{68184BA7-D9EF-4DD5-9A8D-7832C51051A7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_VOICE_Hero" ID="{20840457-2EDD-4B51-9C7F-F87F84D8F8FB}">
+					<ChildrenList>
+						<Action Name="" ID="{F4096958-C5BF-4AC6-BF60-5C2E77A39485}" ShortID="856708438">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VOICE_Hero" ID="{91145EEF-0CF1-411B-85D1-979C0C4F02C0}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_VOICE_Mother" ID="{497FA92A-B2AF-4519-BC3B-2344DB3A716C}">
+					<ChildrenList>
+						<Action Name="" ID="{DC7724C1-F83A-4A98-BEEA-D32F1160DFCC}" ShortID="917084222">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VOICE_Mother" ID="{20A647D3-F6A4-4350-8B5C-B2B42CCA5229}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_VOICE_Fairy" ID="{5FBF94A3-DE94-4D84-A2EE-AF3DE9713827}">
+					<ChildrenList>
+						<Action Name="" ID="{5CDCD027-9CAB-4293-B27C-32BFECEF4A0B}" ShortID="761795379">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VOICE_Fairy" ID="{31025E90-C4A2-4C6B-9FE3-639EE8E672A5}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_VOICE_Hero" ID="{C53A515A-2BF0-43F3-993B-FD00E45BA85E}">
+					<ChildrenList>
+						<Action Name="" ID="{954A64D0-A591-4FBA-A440-1901C9A59C46}" ShortID="683320611">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VOICE_Hero" ID="{91145EEF-0CF1-411B-85D1-979C0C4F02C0}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_VOICE_Mother" ID="{E1EACD2E-A226-4F1C-9797-ADEB7565BE07}">
+					<ChildrenList>
+						<Action Name="" ID="{2B8D902D-3B14-4370-95D5-EF690C00B1AF}" ShortID="524788145">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VOICE_Mother" ID="{20A647D3-F6A4-4350-8B5C-B2B42CCA5229}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_VOICE_Fairy" ID="{A3EA385B-BB3A-4EFF-B6BB-19B538ACE7D9}">
+					<ChildrenList>
+						<Action Name="" ID="{E1090358-0768-4BA3-9E2E-BC569E96E5DA}" ShortID="935528687">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VOICE_Fairy" ID="{31025E90-C4A2-4C6B-9FE3-639EE8E672A5}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
