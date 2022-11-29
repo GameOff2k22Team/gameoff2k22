@@ -17,6 +17,9 @@ public class GameManager : Singleton<GameManager>
     public GameEvent OnGamePaused;
     public GameEvent OnGameUnpaused;
 
+    public GameEvent OnCinematicStart;
+    public GameEvent OnCinematicEnd;
+
     [Space]
     [Header("Listeners")]
     public GameEventListener<SceneName> OnSceneChanged;
@@ -73,8 +76,10 @@ public class GameManager : Singleton<GameManager>
             case GameState.FinishDialogue:
                 break;
             case GameState.OnStartKinematic:
+                OnCinematicStart?.Raise();
                 break;
             case GameState.OnEndKinematic:
+                OnCinematicEnd?.Raise();
                 break;
             default:
                 throw new ArgumentOutOfRangeException(
