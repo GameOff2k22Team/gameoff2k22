@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class OnGameLoaded : MonoBehaviour
+public class OnSceneStart : MonoBehaviour
 {
     public UnityEvent OnGameLoadedEvent;
 

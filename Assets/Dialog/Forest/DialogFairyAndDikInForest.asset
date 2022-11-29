@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: DialogFairyAndDikInForest
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
-  - type: 2
+  - type: 3
     message: "I can feel a force \ncoming from that castle over there."
-  - type: 2
+  - type: 3
     message: "The artifact must be inside. \nLet\u2019s go!"
   - type: 0
     message: ...
-  - type: 2
+  - type: 3
     message: "Oh yes you\u2019re right, \nI almost forgot"
-  - type: 2
+  - type: 3
     message: "Like any hero, \nyou will most likely need a weapon\n to accomplish
       your quest."
   onlyOneTrigger: 0
