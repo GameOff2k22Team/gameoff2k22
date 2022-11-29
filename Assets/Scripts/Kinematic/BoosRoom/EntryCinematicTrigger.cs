@@ -8,6 +8,8 @@ public class EntryCinematicTrigger : MonoBehaviour
 {
     public PlayableDirector entryCinematic ;
     private CinematicManager _CinematicManager;
+    [SerializeField]
+    private AK.Wwise.Event SFXCinematic = null;
 
     private void Start()
     {
@@ -19,6 +21,7 @@ public class EntryCinematicTrigger : MonoBehaviour
         if (other.GetComponent<PlayerMovement>() != null)
         {
             _CinematicManager.StartCinemactic(entryCinematic);
+            SFXCinematic.Post(gameObject);
         }
     }
 }
