@@ -21,7 +21,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	87575895	SFX_Bed_Cover	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Sleep_Time [2022-11-10 150926]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Bed\SFX_Bed_Cover		240064
 	123417940	FS_W_14	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_14 [2022-11-10 102822]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_Room_Wood\FS_W_14		102064
 	132043613	FS_W_H_16	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_16 [2022-11-22 213630]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_Room_Carpet\FS_W_H_16		70564
-	240016342	AMB_House	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\AMB_House [2022-11-28 183026]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\House\AMB_House		5760064
+	240016342	AMB_House	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\AMB_House [2022-11-28 183026]_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\House\AMB_House		5760064
 	310289398	FS_W_H_17	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_H_17 [2022-11-22 213631]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_Room_Carpet\FS_W_H_17		92316
 	337230916	FS_W_06	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_06 [2022-11-10 102750]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_Room_Wood\FS_W_06		108064
 	396332714	FS_W_03	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_W_03 [2022-11-10 102747]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Footsteps\Footsteps_Room_Wood\FS_W_03		90064

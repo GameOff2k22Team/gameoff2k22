@@ -657,7 +657,7 @@ public partial class AkSoundEngine {
 
   public static AKRESULT SetState(uint in_stateGroup, uint in_state) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SetState__SWIG_0(in_stateGroup, in_state); }
 
-  public static AKRESULT SetState(string in_pszStateGroup, string in_pszState) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SetState__SWIG_1(in_pszStateGroup, in_pszState); }
+  public static AKRESULT SetState(string in_pszStateGroup, string in_pszState, UnityEngine.GameObject character) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SetState__SWIG_1(in_pszStateGroup, in_pszState); }
 
   public static AKRESULT SetGameObjectAuxSendValues(ulong in_gameObjectID, AkAuxSendArray in_aAuxSendValues, uint in_uNumSendValues) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SetGameObjectAuxSendValues(in_gameObjectID, in_aAuxSendValues.GetBuffer(), in_uNumSendValues); }
 
