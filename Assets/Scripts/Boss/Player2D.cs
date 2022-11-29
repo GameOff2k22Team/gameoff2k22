@@ -34,13 +34,13 @@ public class Player2D : MonoBehaviour
     }
     public void RemoveHP(int damage)
     {
-        if(!_isInvincible)
+        if(!_isInvincible && PlayerHP > 1)
         {
             PlayerHP -= 1;
             StartCoroutine(DamageInvincibilityCoroutine());
         }
 
-        if (PlayerHP == 0)
+        else if (PlayerHP == 1)
         {
             OnPlayer2DDeath.Raise();
             PlayerHP = 5;
@@ -53,7 +53,7 @@ public class Player2D : MonoBehaviour
         _renderer.material.color = new Color(_renderer.material.color.r,
                                                _renderer.material.color.g,
                                                _renderer.material.color.b,
-                                               0.5f);
+                                               0.3f);
         yield return new WaitForSeconds(_invincibilityTimer);
         _renderer.material.color = new Color(_renderer.material.color.r,
                                                _renderer.material.color.g,

@@ -1409,6 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnPlayer2DDeath: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa, type: 2}
+  PlayerHPChanged: {fileID: 11400000, guid: 84aee348d17c1be479612779e971dbdb, type: 2}
 --- !u!61 &2494362163355096836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1547,6 +1548,7 @@ MonoBehaviour:
     type: 3}
   splitterEnemy: {fileID: 1168830573054995149, guid: ad58ce2dddd0c094e81e1424e461c653,
     type: 3}
+  OnPhase1End: {fileID: 0}
   isP1S1Random: 0
   p1S1Pattern:
   - {fileID: 11400000, guid: ec78ee83da59e4a4bbcd28d5e05b74a9, type: 2}
@@ -1622,6 +1624,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db3d5b152b85dff4a960181081fada4e, type: 2}
   _numberOfPatternP1S4: 10
   _P1S4SpawningSpeed: 1
+  OnPhase2End: {fileID: 0}
   p2S1Pattern:
   - {fileID: 11400000, guid: 6a1997c86cf8b07489620b6738bbe913, type: 2}
   _numberOfPatternP2S1: 6
@@ -1636,6 +1639,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5a6cd54b02edf574fadc8c8e944e8a97, type: 2}
   _numberOfPatternP2S3: 1
   _P2S3SpawningSpeed: 1.02
+  OnPhase3End: {fileID: 0}
   p3S1Pattern:
   - {fileID: 11400000, guid: fd250f94ef11afa40bc4ba9516b7269e, type: 2}
   - {fileID: 11400000, guid: 0a4500a4566051c48a50492f8d9b40b4, type: 2}
