@@ -121,6 +121,8 @@ MonoBehaviour:
   OnSceneLoaded: {fileID: 11400000, guid: 034b0c463720bf445988568b7f49468c, type: 2}
   OnGamePaused: {fileID: 11400000, guid: 98e197aee4dca7e4085df98f345fdde9, type: 2}
   OnGameUnpaused: {fileID: 11400000, guid: 9b46f692f6e111548b9ee8c3f48a2354, type: 2}
+  OnCinematicStart: {fileID: 11400000, guid: 373fe82a4825d894dbb66c968656e5c9, type: 2}
+  OnCinematicEnd: {fileID: 11400000, guid: f6c5898d3f942f34d86952c18b2c27dc, type: 2}
   OnSceneChanged:
     Event: {fileID: 11400000, guid: 290275ccbd19cd947b389bb6811ae057, type: 2}
 --- !u!114 &1407035940227112907

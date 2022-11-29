@@ -36,6 +36,12 @@ public class PlayerManager : MonoBehaviour
             playerMovement2D.enabled = true;
         }
     }
+
+    public void Disable3DMovement()
+    {
+        playerMovement3D.enabled = false;
+        playerMovement2D.enabled = true;
+    }
     // Update is called once per frame
     void Update()
     {
