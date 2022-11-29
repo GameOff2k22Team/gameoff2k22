@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 117388864229972988}
   - component: {fileID: 8500118781570255505}
   - component: {fileID: -3648886577837112543}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossEnemyPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
