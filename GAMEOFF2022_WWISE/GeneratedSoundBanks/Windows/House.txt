@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	760246352	AMB_Forest_Birds			\Forest\AMB_Forest_Birds	
 	1081171197	Stop_Footsteps_Room_Carpet			\House\Stop_Footsteps_Room_Carpet	
 	1739295053	SFX_Door			\House\SFX_Door	
 	2226439152	Stop_Music_House			\House\Stop_Music_House	
