@@ -117,7 +117,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Dirt" ID="{33F59E69-6AE9-4C60-B091-C0E94EA4B9A6}"/>
+						<CurrentStateRef Name="Stone" ID="{0A79D22A-2F22-488A-9937-4B4A63915622}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

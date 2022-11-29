@@ -1,12 +1,20 @@
 Event	ID	Name			Wwise Object Path	Notes
 	611981041	Music_Donjon			\Donjon\Music_Donjon	
+	1129913841	SFX_Open_Right_Door			\Donjon\SFX_Open_Right_Door	
+	1261070616	SFX_Fall_Chest			\Donjon\SFX_Fall_Chest	
+	2240776526	SFX_Open_Boss_Door			\Donjon\SFX_Open_Boss_Door	
+	2452784151	SFX_Key_Get			\Donjon\SFX_Key_Get	
 	2506571047	Stop_Music_Forest			\Forest\Stop_Music_Forest	
+	2847197441	Footsteps_Donjon			\Donjon\Footsteps_Donjon	
 	3111214772	Stop_Music_Donjon			\Donjon\Stop_Music_Donjon	
+	3378814075	SFX_Open_Chest			\Donjon\SFX_Open_Chest	
+	3670362726	SFX_Open_Left_Door			\Donjon\SFX_Open_Left_Door	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2668762309	Music_Fade_Out_Donjon			\Default Work Unit\Music_Fade_Out_Donjon	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	34542244	SFX_Open_Chest	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Open_Chest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Chest\SFX_Open_Chest		252064
 	57875454	FS_S_05	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_05 [2022-11-10 150445]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_05		102064
 	148846490	FS_S_03	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_03 [2022-11-10 150443]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_03		117064
 	235742843	FS_S_07	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_07 [2022-11-10 150446]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_07		110316
@@ -14,18 +22,21 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	372058969	FS_S_14	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_14 [2022-11-10 150450]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_14		114816
 	387345076	FS_S_13	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_13 [2022-11-10 150450]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_13		147064
 	421264799	FS_S_02	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_02 [2022-11-10 150442]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_02		103564
+	424466670	SFX_Fall_Chest	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Fall_Chest [2022-11-29 020521]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Chest\SFX_Fall_Chest		22748
 	473109578	FS_S_08	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_08 [2022-11-10 150446]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_08		102064
 	506451451	FS_S_16	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_16 [2022-11-10 150452]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_16		103564
+	531157984	SFX_Open_Boss_Door	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Open_Boss_Door_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Door\SFX_Open_Boss_Door		480064
 	548146792	FS_S_15	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_15 [2022-11-10 150451]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_15		108064
+	597390306	SFX_Open_Left_Door	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Open_Left_Door_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Door\SFX_Open_Left_Door		204064
 	619464935	FS_S_06	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_06 [2022-11-10 150445]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_06		112192
 	641518225	FS_S_12	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_12 [2022-11-10 150449]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_12		108816
-	677850272	SFX_Key_Donjon	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Key_Donjon [2022-11-21 164400]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Key\SFX_Key_Donjon		85564
+	677850272	SFX_Key_Get	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Key_Donjon [2022-11-21 164400]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Key\SFX_Key_Get		85564
 	679062465	FS_S_11	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_11 [2022-11-10 150448]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_11		111816
 	722308116	FS_S_09	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_09 [2022-11-10 150447]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_09		100564
 	732914951	FS_S_01	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_01 [2022-11-10 150442]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_01		79564
 	770750123	Music_Donjon_Loop	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Donjon_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Donjon\Music_Donjon_Loop\Music_Donjon_Loop		14288440
-	903955383	SFX_Chest_Donjon	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Chest_Donjon [2022-11-21 164350]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Chest\SFX_Chest_Donjon		250884
 	952383554	Music_Donjon_Start	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Donjon_Start_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Donjon\Music_Donjon_Start\Music_Donjon_Start		2947044
 	992431545	FS_S_10	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_10 [2022-11-10 150448]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_10		114064
 	993366977	FS_S_17	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_S_17 [2022-11-10 150452]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Footsteps\Footsteps_Donjon_Stone\FS_S_17		109548
+	997043440	SFX_Open_Right_Door	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Open_Right_Door_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Donjon\Door\SFX_Open_Right_Door		192064
 

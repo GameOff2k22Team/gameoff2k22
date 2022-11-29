@@ -54,6 +54,83 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Footsteps_Donjon" ID="{5F96F6FF-45C8-4B2F-B5CD-7D3DABA9163A}">
+					<ChildrenList>
+						<Action Name="" ID="{C8816224-F813-4EB1-B24C-F1D3CC145A63}" ShortID="351652659">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Donjon_Stone" ID="{BEAE2E56-3344-4FDA-97DB-2A0470AC7434}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Fall_Chest" ID="{BC797F45-0FCA-49D6-910D-5D6C41E68AB9}">
+					<ChildrenList>
+						<Action Name="" ID="{F2475570-2F74-4DEC-928C-3C34C0F6263E}" ShortID="533499831">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Fall_Chest" ID="{E1B04A54-A5F4-4671-B852-0FBCC4155D7C}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Open_Chest" ID="{02E5C991-0661-43B5-838B-CFA06399D04B}">
+					<ChildrenList>
+						<Action Name="" ID="{6BB6634D-A8D7-4CA8-83E7-69FB781B0ED7}" ShortID="445042578">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Open_Chest" ID="{C8E611F2-24B8-4F30-B081-D911EE04D6AA}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Key_Get" ID="{A6590E41-B327-4187-9137-FBDAFB15A452}">
+					<ChildrenList>
+						<Action Name="" ID="{9B252ED9-CEB1-4050-9FA6-77FAB5760C71}" ShortID="193215237">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Key_Get" ID="{BF09AACC-38D2-4458-8B82-2F5E1D29F105}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Open_Left_Door" ID="{A2B551FB-BDC3-43BB-A463-03B6ED60EED3}">
+					<ChildrenList>
+						<Action Name="" ID="{7215A0A8-ED7E-4143-8379-69235C7E300C}" ShortID="755019028">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Open_Left_Door" ID="{F19F13E8-09A2-4913-98F2-4461546D3B0F}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Open_Right_Door" ID="{1298B78E-2BD0-4017-975C-7FDE1C4DE759}">
+					<ChildrenList>
+						<Action Name="" ID="{AE730F5C-0F88-4DDD-8898-4D6922A9A73C}" ShortID="947608452">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Open_Right_Door" ID="{B3AB6718-4AF9-413E-80A8-E499DD003C39}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Open_Boss_Door" ID="{CAAA4803-B248-45F1-AAD5-8350C3B5B1AB}">
+					<ChildrenList>
+						<Action Name="" ID="{748F3CBB-E499-437D-B585-E246A14082D5}" ShortID="938360690">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Open_Boss_Door" ID="{C9182C14-4A11-4135-A09D-344495433F62}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

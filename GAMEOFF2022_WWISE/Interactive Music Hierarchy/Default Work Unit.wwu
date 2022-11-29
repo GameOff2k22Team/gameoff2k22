@@ -578,7 +578,7 @@
 						<Property Name="Tempo" Type="Real64" Value="129"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-10</Value>
 							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{5F0DBC0E-EEAC-409B-8348-29CE3259A869}" ShortID="688101217">
