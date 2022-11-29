@@ -7,6 +7,9 @@ public class Player2D : MonoBehaviour
     [SerializeField]
     private GameEvent OnPlayer2DDeath;
 
+    [SerializeField]
+    private GameEvent PlayerHPChanged;
+
     private int _playerHP = 5;
 
     private bool _isInvincible = false;
@@ -14,6 +17,16 @@ public class Player2D : MonoBehaviour
     private float _invincibilityTimer = 2.0f;
 
     private Renderer _renderer;
+
+    private int PlayerHP
+    {
+        get => _playerHP;
+        set
+        {
+            _playerHP = value;
+            PlayerHPChanged.Raise<int>(_playerHP);
+        }
+    }
 
     private void Awake()
     {
@@ -23,14 +36,14 @@ public class Player2D : MonoBehaviour
     {
         if(!_isInvincible)
         {
-            _playerHP -= 1;
+            PlayerHP -= 1;
             StartCoroutine(DamageInvincibilityCoroutine());
         }
 
-        if (_playerHP == 0)
+        if (PlayerHP == 0)
         {
             OnPlayer2DDeath.Raise();
-            _playerHP = 5;
+            PlayerHP = 5;
         }
     }
 
