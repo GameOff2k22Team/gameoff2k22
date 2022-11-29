@@ -2086,6 +2086,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &793890508 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2494362161363474696, guid: 89f026904df694c40ba5f88dfa8eb250,
+    type: 3}
+  m_PrefabInstance: {fileID: 116773615}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37c3bfc17883374a84b8dbec998f1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &828141144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2249,6 +2261,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1783842147}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &926514092 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1848243570176786605, guid: e2b28dbb7954177479ec203660781dfe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1783842147}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926514089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1c4707bdfec6c4db6d4a1480bdf8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &960257531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4483,6 +4507,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe3cbbfd55ba1dc449d17c3a7236d750, type: 3}
+--- !u!1 &1917118647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1917118649}
+  - component: {fileID: 1917118648}
+  - component: {fileID: 1917118650}
+  m_Layer: 0
+  m_Name: PlayerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1917118648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917118647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c65c82f75541345806581873c6abdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement3D: {fileID: 926514092}
+  playerMovement2D: {fileID: 793890508}
+--- !u!4 &1917118649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917118647}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 43.04599, y: 2.6626854, z: -2.262001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917118650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917118647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 4e60b229134fc6749b23c2cd7fcf3d98, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1917118648}
+          m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
+          m_MethodName: Disable3DMovement
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1926547258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4851,6 +4952,8 @@ PlayableDirector:
     value: {fileID: 960257531}
   - key: {fileID: -712733317287378136, guid: 0eda56e90e0d45a4ea58114b7fff7118, type: 2}
     value: {fileID: 1027390992}
+  - key: {fileID: -3861431028853920461, guid: 0eda56e90e0d45a4ea58114b7fff7118, type: 2}
+    value: {fileID: 1917118650}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2139122605
@@ -5734,6 +5837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495145600329527302, guid: 6b4bd51bb72a6e94998e055d0c9a18d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8495145600329527303, guid: 6b4bd51bb72a6e94998e055d0c9a18d8,
         type: 3}
