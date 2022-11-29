@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: DialogFairyAndDikInForest2
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
-  - type: 2
+  - type: 3
     message: "There you go, don\u2019t thank me. \nPick it up and let\u2019s go."
   - type: 0
     message: ...
-  - type: 2
+  - type: 3
     message: "What? It\u2019s too HeAvY?\n Well you should have thought \nabout that
       before.."
-  - type: 2
+  - type: 3
     message: and trained you muscles a little more.
-  - type: 2
+  - type: 3
     message: "Stop being so lazy and let\u2019s go.\nI can\u2019t get you anything
       else anyway."
   onlyOneTrigger: 0

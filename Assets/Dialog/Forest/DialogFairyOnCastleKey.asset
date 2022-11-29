@@ -16,5 +16,5 @@ MonoBehaviour:
   - type: 2
     message: "What\u2019s the point of building \nsuch a big castle for protection
       \nto leave the key under the rug\u2026"
-  onlyOneTrigger: 0
+  onlyOneTrigger: 1
   canBeTrigger: 1
