@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Footsteps_Forest" ID="{706E2BDE-0506-4056-A9C6-B7427ABDBFAD}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Music_Title_Screen" ID="{FA3F4AC4-F9BC-4715-8CC0-93876BAFFC28}" WorkUnitID="{50A55C41-8D1C-4B38-B2FC-1C791B592BA4}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -112,7 +116,9 @@
 							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Dirt" ID="{33F59E69-6AE9-4C60-B091-C0E94EA4B9A6}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

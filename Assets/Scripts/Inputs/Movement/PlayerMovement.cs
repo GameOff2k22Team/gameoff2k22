@@ -62,6 +62,10 @@ public class PlayerMovement : MonoBehaviour
         _cameraAngle = CameraAngleCalculation();
     }
 
+    void Start()
+    {
+        AkSoundEngine.RegisterGameObj(gameObject);
+    }
     void Anim_Footstep()
     {
         if(FootstepSound != null)

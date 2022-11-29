@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{492E5DE1-8AEB-49AF-B6D1-FEBABC25B0AE}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{492E5DE1-8AEB-49AF-B6D1-FEBABC25B0AE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{492E5DE1-8AEB-49AF-B6D1-FEBABC25B0AE}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Footsteps_Forest_State" ID="{4BF3F467-6940-43B1-ADF2-0ED2B0F1F149}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="Dirt" ID="{33F59E69-6AE9-4C60-B091-C0E94EA4B9A6}"/>
+						<State Name="Grass" ID="{2BB6DBED-1A19-468F-B77E-3F960692E09A}"/>
+						<State Name="Stone" ID="{0A79D22A-2F22-488A-9937-4B4A63915622}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMB_FOREST_BIRDS = 760246352U;
+        static const AkUniqueID AMB_FOREST_WIND = 3351128722U;
         static const AkUniqueID AMB_HOUSE = 2678962602U;
         static const AkUniqueID FOOTSTEPS_HOUSE_CARPET = 3983452719U;
         static const AkUniqueID FOOTSTEPS_HOUSE_WOOD = 2433268977U;
@@ -21,6 +23,7 @@ namespace AK
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
         static const AkUniqueID MUSIC_HOUSE = 3574811899U;
         static const AkUniqueID MUSIC_TITLE_SCREEN = 4129491292U;
+        static const AkUniqueID PLAY_FOOTSTEPS_FOREST = 3445709805U;
         static const AkUniqueID PLAY_VOICE_FAIRY = 1662371690U;
         static const AkUniqueID PLAY_VOICE_HERO = 1490786435U;
         static const AkUniqueID PLAY_VOICE_MOTHER = 2092731998U;
@@ -32,7 +35,9 @@ namespace AK
         static const AkUniqueID SFX_KEY_FOREST = 1091244002U;
         static const AkUniqueID SFX_KEY_FOREST_OPEN = 3571398045U;
         static const AkUniqueID SFX_PLAY_CONSOLE = 3983758741U;
+        static const AkUniqueID SFX_SHEEP = 2933853842U;
         static const AkUniqueID SFX_STAIRS_ROOM = 4209853719U;
+        static const AkUniqueID SFX_SWORD = 2452502980U;
         static const AkUniqueID STOP_FOOTSTEPS_ROOM_CARPET = 1081171197U;
         static const AkUniqueID STOP_MUSIC_DONJON = 3111214772U;
         static const AkUniqueID STOP_MUSIC_FOREST = 2506571047U;
@@ -46,6 +51,39 @@ namespace AK
         static const AkUniqueID UI_HOVER = 2118900976U;
         static const AkUniqueID UI_PLAY = 2382194672U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace FOOTSTEPS_FOREST_STATE
+        {
+            static const AkUniqueID GROUP = 1897164952U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace STATE
+        } // namespace FOOTSTEPS_FOREST_STATE
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEPS_FOREST_SWITCH
+        {
+            static const AkUniqueID GROUP = 3254856989U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPS_FOREST_SWITCH
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

@@ -138,14 +138,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{17D5C353-285C-41A1-814B-FAEEADA0707D}" ShortID="120834423">
+						<Action Name="" ID="{02A8F4AB-D72C-4B5D-A73A-10BDA3AF0143}" ShortID="21306661">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Delay" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Donjon_Start" ID="{D49DD18A-0897-41D1-BC37-DAC876F34FD5}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+									<ObjectRef Name="AMB_House" ID="{D4CE934E-8A47-40ED-9577-28F58F27CA8B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
