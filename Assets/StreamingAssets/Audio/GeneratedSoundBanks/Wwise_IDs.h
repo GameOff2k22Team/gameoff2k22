@@ -30,10 +30,12 @@ namespace AK
         static const AkUniqueID PLAY_VOICE_MOTHER = 2092731998U;
         static const AkUniqueID SFX_BED_COVER = 3739131574U;
         static const AkUniqueID SFX_CARPET_FOREST = 1831562812U;
+        static const AkUniqueID SFX_DEAD = 1905497203U;
         static const AkUniqueID SFX_DIK_INTRO_CINEMATIQUE = 3567259750U;
         static const AkUniqueID SFX_DOOR = 1739295053U;
         static const AkUniqueID SFX_DOOR_DONJON_OPEN = 285337003U;
         static const AkUniqueID SFX_FALL_CHEST = 1261070616U;
+        static const AkUniqueID SFX_HIT = 615152896U;
         static const AkUniqueID SFX_KEY_FOREST = 1091244002U;
         static const AkUniqueID SFX_KEY_FOREST_OPEN = 3571398045U;
         static const AkUniqueID SFX_KEY_GET = 2452784151U;

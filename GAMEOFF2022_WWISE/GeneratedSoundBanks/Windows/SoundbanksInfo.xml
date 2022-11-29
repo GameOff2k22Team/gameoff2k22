@@ -653,7 +653,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1560169506" Language="SFX" Hash="4165322525">
+		<SoundBank Id="1560169506" Language="SFX" Hash="3091796469">
 			<ObjectPath>\SoundBanks\Default Work Unit\Boss</ObjectPath>
 			<ShortName>Boss</ShortName>
 			<Path>Boss.bnk</Path>
@@ -670,11 +670,35 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1905497203" Name="SFX_Dead" ObjectPath="\Events\Boss\SFX_Dead" DurationType="OneShot" DurationMin="1.25" DurationMax="1.25">
+					<IncludedMemoryFiles>
+						<File Id="636525220" Language="SFX">
+							<ShortName>SFX_Dead.wav</ShortName>
+							<Path>SFX\SFX_Dead_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="615152896" Name="SFX_Hit" ObjectPath="\Events\Boss\SFX_Hit" DurationType="OneShot" DurationMin="0.608167" DurationMax="0.608167">
+					<IncludedMemoryFiles>
+						<File Id="774942894" Language="SFX">
+							<ShortName>SFX_Hit.wav</ShortName>
+							<Path>SFX\SFX_Hit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="65038811" Language="SFX">
 					<ShortName>MS_Boss_Start.wav</ShortName>
 					<Path>SFX\MS_Boss_Start_D79FB2B7.wem</Path>
+				</File>
+				<File Id="636525220" Language="SFX">
+					<ShortName>SFX_Dead.wav</ShortName>
+					<Path>SFX\SFX_Dead_10C4C929.wem</Path>
+				</File>
+				<File Id="774942894" Language="SFX">
+					<ShortName>SFX_Hit.wav</ShortName>
+					<Path>SFX\SFX_Hit_10C4C929.wem</Path>
 				</File>
 				<File Id="817062100" Language="SFX">
 					<ShortName>MS_Boss_Loop.wav</ShortName>
@@ -682,7 +706,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="56905654">
+		<SoundBank Id="2891873417" Language="SFX" Hash="915277654">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>

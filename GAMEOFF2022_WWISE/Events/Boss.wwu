@@ -6,9 +6,34 @@
 				<Event Name="Music_Boss" ID="{B40D1DA1-E123-40F6-AC70-26311D7B54D5}">
 					<ChildrenList>
 						<Action Name="" ID="{4AF7CCD7-9A7B-44BF-AFB2-060BC157096C}" ShortID="583860577">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="13"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Music_Boss" ID="{522ED282-1BB1-4159-94F6-FC6F2156A118}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Dead" ID="{9AD4C2E7-947B-49BF-AC56-C34DDC1E43F8}">
+					<ChildrenList>
+						<Action Name="" ID="{6BC89E76-3F1A-4987-A22E-446296017811}" ShortID="888292601">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Dead" ID="{96D5A4F9-38FB-4AD2-905E-673EB5125EEE}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Hit" ID="{32317FF0-5543-49BF-9FA3-15E85B7AFC9A}">
+					<ChildrenList>
+						<Action Name="" ID="{BDF2C225-9924-4C36-9010-3A730A2E2EF5}" ShortID="765545596">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Hit" ID="{5096DB93-1B0D-41F7-B9B2-BC9F1360F591}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

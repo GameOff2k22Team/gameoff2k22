@@ -14,6 +14,11 @@ public class HPDisplay : MonoBehaviour
     private int _currentHPIdx;
     private int _maximumHPIdx;
 
+    [SerializeField]
+    private AK.Wwise.Event SFXHit = null;
+    [SerializeField]
+    private AK.Wwise.Event SFXDead = null;
+
     private void Awake()
     {
         OnPlayerHPChange.RegisterListener(UpdateHPDisplay);
@@ -29,12 +34,14 @@ public class HPDisplay : MonoBehaviour
             for (int i = _currentHPIdx; i > nbrOfLives - 1; i--)
             {
                 _healthImage[i].enabled = false;
+                SFXHit.Post(gameObject);
             }
         } else
         {
             for (int i = _currentHPIdx; i < nbrOfLives; i++)
             {
                 _healthImage[i].enabled = true;
+                SFXDead.Post(gameObject);
             }
         }
         _currentHPIdx = nbrOfLives - 1;

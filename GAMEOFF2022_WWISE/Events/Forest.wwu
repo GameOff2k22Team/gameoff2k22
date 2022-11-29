@@ -183,19 +183,6 @@
 				</Event>
 				<Event Name="SFX_Sword" ID="{5E485854-1C82-46B8-935F-F143148996FC}">
 					<ChildrenList>
-						<Action Name="" ID="{92B6D17B-F01E-4916-8B03-46FA46BA7BCF}" ShortID="502534952">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="FadeInCurve" Type="int16" Value="6"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="50"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Fade_Out_Forest" ID="{349FCA32-DE56-4DBA-B879-4BF797DD16D1}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{55743CC5-156E-49FF-9D55-99A34E3B8088}" ShortID="597832322">
 							<PropertyList>
 								<Property Name="Delay" Type="Real64" Value="5"/>
@@ -203,20 +190,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Sword" ID="{AA03CCB9-8298-421E-B15A-1BA6DC338FD9}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{CF1B8A62-D926-4632-9C83-11A3C77FFAA3}" ShortID="500891974">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="Delay" Type="Real64" Value="9"/>
-								<Property Name="FadeInCurve" Type="int16" Value="6"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Fade_Out_Forest" ID="{349FCA32-DE56-4DBA-B879-4BF797DD16D1}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
