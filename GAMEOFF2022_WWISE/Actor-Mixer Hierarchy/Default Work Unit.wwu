@@ -2164,13 +2164,34 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SFX_Chest_Donjon" ID="{C8E611F2-24B8-4F30-B081-D911EE04D6AA}" ShortID="876603751">
+										<Sound Name="SFX_Open_Chest" ID="{C8E611F2-24B8-4F30-B081-D911EE04D6AA}" ShortID="876603751">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Donjon" ID="{C7963102-7271-4310-A0C0-310F9B0321F9}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2181,10 +2202,69 @@
 														<MediaID ID="903955383"/>
 													</MediaIDList>
 												</AudioFileSource>
+												<AudioFileSource Name="SFX_Open_Chest" ID="{4897CE94-C387-47E9-A995-F82B97C000D7}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Open_Chest.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="34542244"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="SFX_Chest_Donjon [2022-11-21 164350]" ID="{CA8A3B66-980B-466E-A216-89531386F492}" Platform="Linked"/>
+												<ActiveSource Name="SFX_Open_Chest" ID="{4897CE94-C387-47E9-A995-F82B97C000D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Fall_Chest" ID="{E1B04A54-A5F4-4671-B852-0FBCC4155D7C}" ShortID="428929612">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Donjon" ID="{C7963102-7271-4310-A0C0-310F9B0321F9}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Fall_Chest [2022-11-29 020521]" ID="{09BDCC47-474F-4ADB-8C9A-F9F68937FA07}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Fall_Chest [2022-11-29 020521].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="424466670"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Fall_Chest [2022-11-29 020521]" ID="{09BDCC47-474F-4ADB-8C9A-F9F68937FA07}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -2204,7 +2284,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SFX_Key_Donjon" ID="{BF09AACC-38D2-4458-8B82-2F5E1D29F105}" ShortID="511027960">
+										<Sound Name="SFX_Key_Get" ID="{BF09AACC-38D2-4458-8B82-2F5E1D29F105}" ShortID="511027960">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
@@ -2225,6 +2312,109 @@
 											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="SFX_Key_Donjon [2022-11-21 164400]" ID="{27CBA8B4-1E81-4E5E-8F20-E953A3A3EB09}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Door" ID="{4D887AF4-7243-4E9E-AD09-80F0B78B094E}" ShortID="324325456">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Open_Left_Door" ID="{F19F13E8-09A2-4913-98F2-4461546D3B0F}" ShortID="182573436">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Open_Left_Door" ID="{B67B7708-34C3-4788-BB37-D4D4C5FFF877}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Open_Left_Door.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="597390306"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Open_Left_Door" ID="{B67B7708-34C3-4788-BB37-D4D4C5FFF877}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Open_Right_Door" ID="{B3AB6718-4AF9-413E-80A8-E499DD003C39}" ShortID="6673670">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Open_Right_Door" ID="{83D58FF8-EBA9-4FAC-939F-C1EA49103B2D}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Open_Right_Door.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="997043440"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Open_Right_Door" ID="{83D58FF8-EBA9-4FAC-939F-C1EA49103B2D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Open_Boss_Door" ID="{C9182C14-4A11-4135-A09D-344495433F62}" ShortID="174900770">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A293703B-C197-4F9D-B900-0D9879216FF1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Open_Boss_Door" ID="{72816058-B888-4C83-AFC9-C4F7C6E9CDD2}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Open_Boss_Door.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="531157984"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Open_Boss_Door" ID="{72816058-B888-4C83-AFC9-C4F7C6E9CDD2}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

@@ -7,6 +7,9 @@ public class Player2D : MonoBehaviour
     [SerializeField]
     private GameEvent OnPlayer2DDeath;
 
+    [SerializeField]
+    private GameEvent PlayerHPChanged;
+
     private int _playerHP = 5;
 
     private bool _isInvincible = false;
@@ -15,22 +18,32 @@ public class Player2D : MonoBehaviour
 
     private Renderer _renderer;
 
+    private int PlayerHP
+    {
+        get => _playerHP;
+        set
+        {
+            _playerHP = value;
+            PlayerHPChanged.Raise<int>(_playerHP);
+        }
+    }
+
     private void Awake()
     {
         _renderer  = GetComponent<Renderer>();
     }
     public void RemoveHP(int damage)
     {
-        if(!_isInvincible)
+        if(!_isInvincible && PlayerHP > 1)
         {
-            _playerHP -= 1;
+            PlayerHP -= 1;
             StartCoroutine(DamageInvincibilityCoroutine());
         }
 
-        if (_playerHP == 0)
+        else if (PlayerHP == 1)
         {
             OnPlayer2DDeath.Raise();
-            _playerHP = 5;
+            PlayerHP = 5;
         }
     }
 
@@ -40,7 +53,7 @@ public class Player2D : MonoBehaviour
         _renderer.material.color = new Color(_renderer.material.color.r,
                                                _renderer.material.color.g,
                                                _renderer.material.color.b,
-                                               0.5f);
+                                               0.3f);
         yield return new WaitForSeconds(_invincibilityTimer);
         _renderer.material.color = new Color(_renderer.material.color.r,
                                                _renderer.material.color.g,

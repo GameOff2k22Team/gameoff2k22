@@ -2,13 +2,13 @@ using Architecture;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class BossManager : MonoBehaviour
 {
-    private enum BossState { phase1, phase2, phase3 }
+    private enum BossState { phase1 = 1, 
+                             phase2 = 2, 
+                             phase3 = 3}
 
     [SerializeField]
     private GameEventListener OnPlayerDeath;
@@ -36,6 +36,8 @@ public class BossManager : MonoBehaviour
 
 
     [Header("Phase 1")]
+    [SerializeField]
+    private GameEvent OnPhase1End;
     [Header("Step 1")]
     [SerializeField]
     private bool isP1S1Random;
@@ -69,7 +71,10 @@ public class BossManager : MonoBehaviour
     [SerializeField, Range(0f, 5f)]
     private float _P1S4SpawningSpeed;
 
+    [Space(10)]
     [Header("Phase 2")]
+    [SerializeField]
+    private GameEvent OnPhase2End;
     [Header("Step 1")]
     [SerializeField]
     private List<PatternBossP2> p2S1Pattern;
@@ -93,7 +98,10 @@ public class BossManager : MonoBehaviour
     [SerializeField, Range(0f, 5f)]
     private float _P2S3SpawningSpeed;
 
+    [Space(10)]
     [Header("Phase 3")]
+    [SerializeField]
+    private GameEvent OnPhase3End;
     [Header("Step 1")]
     [SerializeField]
     private List<PatternBossP3> p3S1Pattern;
@@ -166,6 +174,12 @@ public class BossManager : MonoBehaviour
         }
     }
 
+    public void UpdateBossPhase(int stateIdx)
+    {
+        BossState bossState = (BossState)stateIdx;
+        UpdateBossPhase(bossState);
+    }
+
     private IEnumerator WaitBeforeStart()
     {
         var i = 0;
@@ -194,7 +208,7 @@ public class BossManager : MonoBehaviour
         yield return StartCoroutine(P1PatternCoroutine(p1S4Pattern, _numberOfPatternP1S4, isP1S4Random, _P1S4SpawningSpeed));
         yield return StartCoroutine(WaitBeforeStart());
 
-        UpdateBossPhase(BossState.phase2);
+        OnPhase1End?.Raise();
     }
 
     private static void ClearEnemies()
@@ -248,8 +262,7 @@ public class BossManager : MonoBehaviour
         yield return StartCoroutine(P2PatternCoroutine(p2S3Pattern, _numberOfPatternP2S3, false, _P2S3SpawningSpeed));
         yield return new WaitForSecondsRealtime(10f);
 
-        UpdateBossPhase(BossState.phase3);
-
+        OnPhase2End?.Raise();
     }
 
     private IEnumerator P2PatternCoroutine(List<PatternBossP2> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)
@@ -292,7 +305,7 @@ public class BossManager : MonoBehaviour
         yield return StartCoroutine(P3PatternCoroutine(p3S3Pattern));
         yield return StartCoroutine(WaitBeforeStart());
 
-
+        OnPhase3End?.Raise();
     }
 
     private IEnumerator P3PatternCoroutine(List<PatternBossP3> BossPatterns)

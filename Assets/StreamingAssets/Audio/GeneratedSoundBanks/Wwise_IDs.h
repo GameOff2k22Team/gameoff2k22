@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMB_FOREST_BIRDS = 760246352U;
         static const AkUniqueID AMB_FOREST_WIND = 3351128722U;
         static const AkUniqueID AMB_HOUSE = 2678962602U;
+        static const AkUniqueID FOOTSTEPS_DONJON = 2847197441U;
         static const AkUniqueID FOOTSTEPS_HOUSE_CARPET = 3983452719U;
         static const AkUniqueID FOOTSTEPS_HOUSE_WOOD = 2433268977U;
         static const AkUniqueID MUSIC_BOSS = 1090969866U;
@@ -32,8 +33,14 @@ namespace AK
         static const AkUniqueID SFX_DIK_INTRO_CINEMATIQUE = 3567259750U;
         static const AkUniqueID SFX_DOOR = 1739295053U;
         static const AkUniqueID SFX_DOOR_DONJON_OPEN = 285337003U;
+        static const AkUniqueID SFX_FALL_CHEST = 1261070616U;
         static const AkUniqueID SFX_KEY_FOREST = 1091244002U;
         static const AkUniqueID SFX_KEY_FOREST_OPEN = 3571398045U;
+        static const AkUniqueID SFX_KEY_GET = 2452784151U;
+        static const AkUniqueID SFX_OPEN_BOSS_DOOR = 2240776526U;
+        static const AkUniqueID SFX_OPEN_CHEST = 3378814075U;
+        static const AkUniqueID SFX_OPEN_LEFT_DOOR = 3670362726U;
+        static const AkUniqueID SFX_OPEN_RIGHT_DOOR = 1129913841U;
         static const AkUniqueID SFX_PLAY_CONSOLE = 3983758741U;
         static const AkUniqueID SFX_SHEEP = 2933853842U;
         static const AkUniqueID SFX_STAIRS_ROOM = 4209853719U;
@@ -68,22 +75,6 @@ namespace AK
         } // namespace FOOTSTEPS_FOREST_STATE
 
     } // namespace STATES
-
-    namespace SWITCHES
-    {
-        namespace FOOTSTEPS_FOREST_SWITCH
-        {
-            static const AkUniqueID GROUP = 3254856989U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID DIRT = 2195636714U;
-                static const AkUniqueID GRASS = 4248645337U;
-                static const AkUniqueID STONE = 1216965916U;
-            } // namespace SWITCH
-        } // namespace FOOTSTEPS_FOREST_SWITCH
-
-    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
