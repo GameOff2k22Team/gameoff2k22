@@ -74,7 +74,7 @@ PrefabInstance:
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.45
+      value: -4.45
       objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
@@ -306,7 +306,7 @@ PrefabInstance:
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.15
+      value: -2.15
       objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
@@ -654,7 +654,7 @@ PrefabInstance:
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.2
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
@@ -755,7 +755,7 @@ PrefabInstance:
     - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
@@ -763,6 +763,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -277902788267725620, guid: 7f9ae3a46977d14428c0f7eb10636808,
         type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].key
+      value: 
+      objectReference: {fileID: -936467952545977370, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[5].key
+      value: 
+      objectReference: {fileID: -4153083847598765623, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].value
+      value: 
+      objectReference: {fileID: 4468884248916487096}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[5].value
+      value: 
+      objectReference: {fileID: 5588256554599279048}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -781,7 +803,7 @@ PrefabInstance:
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.69
+      value: 4.69
       objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
@@ -823,8 +845,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest1
       objectReference: {fileID: 0}
+    - target: {fileID: 7562850912999721229, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
+--- !u!1 &4468884248916487096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7562850912999721229, guid: 570b5215202d5394fb7c4982731434f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6264522861274669749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5588256554599279048 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1980871230021192573, guid: 570b5215202d5394fb7c4982731434f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6264522861274669749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9133160566311328944 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
@@ -897,7 +936,7 @@ PrefabInstance:
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.3
+      value: -3.3000002
       objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
@@ -1054,6 +1093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
@@ -2097,7 +2141,7 @@ PrefabInstance:
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.47
+      value: 3.47
       objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
