@@ -1167,6 +1167,45 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Menu"",
+            ""id"": ""c5dc1361-2010-4d85-987a-248392eaf003"",
+            ""actions"": [
+                {
+                    ""name"": ""Open/Close"",
+                    ""type"": ""Button"",
+                    ""id"": ""c32d12a0-b231-4cb6-8ea3-9099541663db"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""b49eff3e-d56b-446b-a436-be252e9911ae"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Open/Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""26f60caa-cb40-4d4b-9e0c-111452079d36"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Open/Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -1255,6 +1294,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         // Dialogue
         m_Dialogue = asset.FindActionMap("Dialogue", throwIfNotFound: true);
         m_Dialogue_Next = m_Dialogue.FindAction("Next", throwIfNotFound: true);
+        // Menu
+        m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
+        m_Menu_OpenClose = m_Menu.FindAction("Open/Close", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1521,6 +1563,39 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         }
     }
     public DialogueActions @Dialogue => new DialogueActions(this);
+
+    // Menu
+    private readonly InputActionMap m_Menu;
+    private IMenuActions m_MenuActionsCallbackInterface;
+    private readonly InputAction m_Menu_OpenClose;
+    public struct MenuActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public MenuActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @OpenClose => m_Wrapper.m_Menu_OpenClose;
+        public InputActionMap Get() { return m_Wrapper.m_Menu; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MenuActions set) { return set.Get(); }
+        public void SetCallbacks(IMenuActions instance)
+        {
+            if (m_Wrapper.m_MenuActionsCallbackInterface != null)
+            {
+                @OpenClose.started -= m_Wrapper.m_MenuActionsCallbackInterface.OnOpenClose;
+                @OpenClose.performed -= m_Wrapper.m_MenuActionsCallbackInterface.OnOpenClose;
+                @OpenClose.canceled -= m_Wrapper.m_MenuActionsCallbackInterface.OnOpenClose;
+            }
+            m_Wrapper.m_MenuActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @OpenClose.started += instance.OnOpenClose;
+                @OpenClose.performed += instance.OnOpenClose;
+                @OpenClose.canceled += instance.OnOpenClose;
+            }
+        }
+    }
+    public MenuActions @Menu => new MenuActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -1591,5 +1666,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     public interface IDialogueActions
     {
         void OnNext(InputAction.CallbackContext context);
+    }
+    public interface IMenuActions
+    {
+        void OnOpenClose(InputAction.CallbackContext context);
     }
 }

@@ -31,7 +31,6 @@ public class EnsureAllTheTimeFocus : MonoBehaviour
         Debug.Log("Test");
         lambdaHandler = context => SetFocus();
         InputManager.Instance._playerInputs.UI.Navigate.performed += lambdaHandler;
-        EventSystem.current.SetSelectedGameObject(_firstButton);
     }
 
     private void OnDisable()
@@ -41,14 +40,18 @@ public class EnsureAllTheTimeFocus : MonoBehaviour
 
     private void SetFocus()
     {
-         if (!_buttons.Contains(EventSystem.current.currentSelectedGameObject))
+        if (EventSystem.current != null)
         {
-            EventSystem.current.SetSelectedGameObject(_lastSelectedGameObject);
+            if (EventSystem.current.currentSelectedGameObject == null || !_buttons.Contains(EventSystem.current.currentSelectedGameObject))
+            {
+                EventSystem.current.SetSelectedGameObject(_lastSelectedGameObject);
+            }
+            if (_lastSelectedGameObject != EventSystem.current.currentSelectedGameObject)
+            {
+                _lastSelectedGameObject = EventSystem.current.currentSelectedGameObject;
+            }
         }
-        if (_lastSelectedGameObject != EventSystem.current.currentSelectedGameObject)
-        {
-            _lastSelectedGameObject = EventSystem.current.currentSelectedGameObject;
-        }
+      
     }
 
 
