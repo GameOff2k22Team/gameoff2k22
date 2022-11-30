@@ -131,7 +131,7 @@ public class PuzzleManager : MonoBehaviour
 
     private int GetNextPuzzleIdx()
     {
-        return ((int)currentPuzzleType + 1) % 2;
+        return ((int)currentPuzzleType + 1) % 3;
     }
 
     private void RespawnPlayer()
@@ -152,7 +152,6 @@ public class PuzzleManager : MonoBehaviour
 
     public void OpenChest(PuzzleType puzzleType, PuzzleBase chest)
     {
-        Debug.Log("JE PASSE ICI");
         switch (puzzleType)
         {
             case PuzzleType.PERSEVERANCE:

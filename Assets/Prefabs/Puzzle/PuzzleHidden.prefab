@@ -291,12 +291,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2904698050737913347, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
---- !u!95 &2907117603305627341 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3268100977465491899, guid: 570b5215202d5394fb7c4982731434f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 361001041507983222}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3264274049947246962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
@@ -357,8 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasKey: {fileID: 11400000, guid: da2518314881ea54c95a1c2524c149f4, type: 2}
-  animator: {fileID: 2907117603305627341}
-  openAnimation: {fileID: 7400000, guid: ed4335924dbc6f8469799b20c972f107, type: 2}
+  openChestWithArtefact: {fileID: 8075670225028153777}
   artefact: {fileID: 7923569373224588923}
   _isOpen: 0
   _realChest: 0
@@ -368,3 +361,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 361001041507983222}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8075670225028153777 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8435246228264033991, guid: 570b5215202d5394fb7c4982731434f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 361001041507983222}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264274049947246963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418d18593f23a42b21a9e3e158ab74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
