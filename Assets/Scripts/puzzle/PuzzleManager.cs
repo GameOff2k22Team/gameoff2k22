@@ -28,6 +28,8 @@ public class PuzzleManager : MonoBehaviour
     }
 
     public Transform playerTransform;
+    public Interaction leftDoor;
+    public Interaction rightDoor;
 
     [Header("Perseverance Puzzle")]
     public GameObject perseverancePuzzleObject;
@@ -115,6 +117,8 @@ public class PuzzleManager : MonoBehaviour
 
     public void NextPuzzle()
     {
+        rightDoor.UnregisterToAction();
+        leftDoor.UnregisterToAction();
         loadManagerAnimator.SetTrigger(FADE_OUT_TRIGGER);
         LoadManager.Instance.OnFadeOutCompleted.AddListener(FadeOut);
     }

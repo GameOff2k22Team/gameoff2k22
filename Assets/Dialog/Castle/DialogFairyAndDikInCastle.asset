@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
   - type: 2
-    message: "Wow! \nThe force just got \na lot stronger. Yes, you!"
+    message: "Wow! \nThe force just got \na lot stronger. "
   - type: 2
     message: "I can feel it on the other side \nof that big door."
   - type: 2

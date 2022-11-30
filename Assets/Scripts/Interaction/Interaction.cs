@@ -28,8 +28,13 @@ public class Interaction : MonoBehaviour
     {
         if (CheckPlayer(other))
         {
-            input.Player.Use.performed -= LambdaHandler;
+            UnregisterToAction();
         }
+    }
+
+    public void UnregisterToAction()
+    {
+        input.Player.Use.performed -= LambdaHandler;
     }
 
     protected bool CheckPlayer(Collider other)
