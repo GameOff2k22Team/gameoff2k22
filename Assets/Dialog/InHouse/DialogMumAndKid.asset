@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
   - type: 1
-    message: "There you are\u2026 \nI\u2019m really sad \nthat you spent your night
+    message: "There you are\u2026 \nI\u2019m really sad \nthat you spent the night
       playing \nand didn\u2019t come eat dinner with me\u2026"
   - type: 0
     message: ...
