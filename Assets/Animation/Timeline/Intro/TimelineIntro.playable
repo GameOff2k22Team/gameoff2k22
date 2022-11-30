@@ -15337,7 +15337,7 @@ MonoBehaviour:
   m_Time: 37.35
   m_Retroactive: 0
   m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: c8ecfed6e6f3dec4fb87c955a6f32b1c, type: 2}
+  m_Asset: {fileID: 11400000, guid: 0ef4f764d23d33b44b2d3adbf192d4d6, type: 2}
 --- !u!74 &-5484878130176221003
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -19193,7 +19193,7 @@ MonoBehaviour:
   m_Time: 14.633333333333333
   m_Retroactive: 0
   m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: c8ecfed6e6f3dec4fb87c955a6f32b1c, type: 2}
+  m_Asset: {fileID: 11400000, guid: 0ef4f764d23d33b44b2d3adbf192d4d6, type: 2}
 --- !u!114 &868922212427265546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19319,7 +19319,7 @@ MonoBehaviour:
   m_Time: 62.35
   m_Retroactive: 0
   m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: c8ecfed6e6f3dec4fb87c955a6f32b1c, type: 2}
+  m_Asset: {fileID: 11400000, guid: 0ef4f764d23d33b44b2d3adbf192d4d6, type: 2}
 --- !u!114 &1066710444215173985
 MonoBehaviour:
   m_ObjectHideFlags: 1
