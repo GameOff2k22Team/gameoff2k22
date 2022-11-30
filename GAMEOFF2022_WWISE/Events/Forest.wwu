@@ -192,6 +192,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="SFX_Sword_Drag" ID="{62450651-6B37-4007-A798-2950450409FC}">
+					<ChildrenList>
+						<Action Name="" ID="{16165D7B-A7E5-4519-9E1D-315F6F02A67A}" ShortID="99427280">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sword_Drag" ID="{2E268BE9-B0F1-41BB-8700-B2BA1820245C}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Sword_Drag_Stop" ID="{6BFA53C8-C722-4BFB-ACAC-59F401ED7102}">
+					<ChildrenList>
+						<Action Name="" ID="{0227B220-A842-4497-9A1A-DB22DC39E6BC}" ShortID="722469661">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sword_Drag" ID="{2E268BE9-B0F1-41BB-8700-B2BA1820245C}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

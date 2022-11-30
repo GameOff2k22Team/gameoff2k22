@@ -1,11 +1,16 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1897164952	Footsteps_Forest_State			\Default Work Unit\Footsteps_Forest_State	
+	2186369235	Sword_Drag_State_Group			\Default Work Unit\Sword_Drag_State_Group	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Footsteps_Forest_State			
 	1216965916	Stone	Footsteps_Forest_State			
 	2195636714	Dirt	Footsteps_Forest_State			
 	4248645337	Grass	Footsteps_Forest_State			
+	748895195	None	Sword_Drag_State_Group			
+	1216965916	Stone	Sword_Drag_State_Group			
+	2195636714	Dirt	Sword_Drag_State_Group			
+	4248645337	Grass	Sword_Drag_State_Group			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	

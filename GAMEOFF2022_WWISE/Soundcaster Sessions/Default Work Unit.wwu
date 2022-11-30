@@ -88,6 +88,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Sword_Drag_RTPC" ID="{235B78A6-308F-4A2A-AF64-7AB539274C62}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
 							<Value>6</Value>
 						</RTPCValue>
@@ -118,6 +122,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Stone" ID="{0A79D22A-2F22-488A-9937-4B4A63915622}"/>
+						<CurrentStateRef Name="Stone" ID="{19EFA3FD-C82E-4746-8742-17D1FD6D2D26}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

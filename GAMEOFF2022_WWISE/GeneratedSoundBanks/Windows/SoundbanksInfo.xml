@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="1549709774">
+		<SoundBank Id="491961918" Language="SFX" Hash="2666644639">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -375,6 +375,41 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4193343421" Name="SFX_Sword_Drag" ObjectPath="\Events\Forest\SFX_Sword_Drag" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="336698677" Language="SFX">
+							<ShortName>SFX_Sword_Drag_Dirt.wav</ShortName>
+							<Path>SFX\SFX_Sword_Drag_Dirt_D79FB2B7.wem</Path>
+						</File>
+						<File Id="486865210" Language="SFX">
+							<ShortName>SFX_Sword_Drag_Stone.wav</ShortName>
+							<Path>SFX\SFX_Sword_Drag_Stone_D79FB2B7.wem</Path>
+						</File>
+						<File Id="596479926" Language="SFX">
+							<ShortName>SFX_Sword_Drag_Grass.wav</ShortName>
+							<Path>SFX\SFX_Sword_Drag_Grass_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{A03E8574-83A5-40CF-BD0A-709F7068A9DF}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{E62BCD30-579E-4E68-984F-E9BFE54FF5BB}">
+							<Media>
+								<File Id="596479926"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A03E8574-83A5-40CF-BD0A-709F7068A9DF}">
+							<Media>
+								<File Id="336698677"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{19EFA3FD-C82E-4746-8742-17D1FD6D2D26}">
+							<Media>
+								<File Id="486865210"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1704546832" Name="SFX_Sword_Drag_Stop" ObjectPath="\Events\Forest\SFX_Sword_Drag_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2506571047" Name="Stop_Music_Forest" ObjectPath="\Events\Forest\Stop_Music_Forest" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -462,6 +497,10 @@
 					<ShortName>FS_F_S_14 [2022-11-28 212407].wav</ShortName>
 					<Path>SFX\FS_F_S_14 [2022-11-28 212407]_10C4C929.wem</Path>
 				</File>
+				<File Id="336698677" Language="SFX">
+					<ShortName>SFX_Sword_Drag_Dirt.wav</ShortName>
+					<Path>SFX\SFX_Sword_Drag_Dirt_D79FB2B7.wem</Path>
+				</File>
 				<File Id="351255117" Language="SFX">
 					<ShortName>FS_G_09 [2022-11-10 104223].wav</ShortName>
 					<Path>SFX\FS_G_09 [2022-11-10 104223]_10C4C929.wem</Path>
@@ -494,6 +533,10 @@
 					<ShortName>SFX_Key_Forest [2022-11-26 170537].wav</ShortName>
 					<Path>SFX\SFX_Key_Forest [2022-11-26 170537]_10C4C929.wem</Path>
 				</File>
+				<File Id="486865210" Language="SFX">
+					<ShortName>SFX_Sword_Drag_Stone.wav</ShortName>
+					<Path>SFX\SFX_Sword_Drag_Stone_D79FB2B7.wem</Path>
+				</File>
 				<File Id="499012861" Language="SFX">
 					<ShortName>FS_F_D_11 [2022-11-28 212431].wav</ShortName>
 					<Path>SFX\FS_F_D_11 [2022-11-28 212431]_10C4C929.wem</Path>
@@ -525,6 +568,10 @@
 				<File Id="589985005" Language="SFX">
 					<ShortName>FS_F_S_04 [2022-11-28 212359].wav</ShortName>
 					<Path>SFX\FS_F_S_04 [2022-11-28 212359]_10C4C929.wem</Path>
+				</File>
+				<File Id="596479926" Language="SFX">
+					<ShortName>SFX_Sword_Drag_Grass.wav</ShortName>
+					<Path>SFX\SFX_Sword_Drag_Grass_D79FB2B7.wem</Path>
 				</File>
 				<File Id="618595984" Language="SFX">
 					<ShortName>FS_F_S_16 [2022-11-28 212408].wav</ShortName>
@@ -628,6 +675,7 @@
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
+				<GameParameter Id="1329731385" Name="Sword_Drag_RTPC" ObjectPath="\Game Parameters\Default Work Unit\Sword_Drag_RTPC"/>
 				<GameParameter Id="2802239154" Name="Music_Fade_Out_Forest" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Forest"/>
 			</GameParameters>
 			<StateGroups>
@@ -639,9 +687,17 @@
 						<State Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footsteps_Forest_State\Stone" GUID="{0A79D22A-2F22-488A-9937-4B4A63915622}"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="2186369235" Name="Sword_Drag_State_Group" ObjectPath="\States\Default Work Unit\Sword_Drag_State_Group" GUID="{AB11650E-3EA4-4C14-A43E-5F13B01C5F53}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Sword_Drag_State_Group\None" GUID="{89FF728F-EA17-4E12-A6EF-479397826A04}"/>
+						<State Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Sword_Drag_State_Group\Dirt" GUID="{A03E8574-83A5-40CF-BD0A-709F7068A9DF}"/>
+						<State Id="4248645337" Name="Grass" ObjectPath="\States\Default Work Unit\Sword_Drag_State_Group\Grass" GUID="{E62BCD30-579E-4E68-984F-E9BFE54FF5BB}"/>
+						<State Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Sword_Drag_State_Group\Stone" GUID="{19EFA3FD-C82E-4746-8742-17D1FD6D2D26}"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2894708268">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3275724695">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

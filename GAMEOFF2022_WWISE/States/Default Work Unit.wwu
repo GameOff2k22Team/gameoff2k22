@@ -14,6 +14,17 @@
 						<State Name="Stone" ID="{0A79D22A-2F22-488A-9937-4B4A63915622}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Sword_Drag_State_Group" ID="{AB11650E-3EA4-4C14-A43E-5F13B01C5F53}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{89FF728F-EA17-4E12-A6EF-479397826A04}"/>
+						<State Name="Dirt" ID="{A03E8574-83A5-40CF-BD0A-709F7068A9DF}"/>
+						<State Name="Grass" ID="{E62BCD30-579E-4E68-984F-E9BFE54FF5BB}"/>
+						<State Name="Stone" ID="{19EFA3FD-C82E-4746-8742-17D1FD6D2D26}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
