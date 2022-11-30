@@ -4292,6 +4292,16 @@ PrefabInstance:
       propertyPath: openChestWithArtefact
       value: 
       objectReference: {fileID: 1084511680}
+    - target: {fileID: 2787503234808943582, guid: 195aa26ee3edf56479d631310c15df17,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[2].value
+      value: 
+      objectReference: {fileID: 1629259882}
+    - target: {fileID: 2787503234808943582, guid: 195aa26ee3edf56479d631310c15df17,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[3].value
+      value: 
+      objectReference: {fileID: 1167025750}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aa26ee3edf56479d631310c15df17, type: 3}
 --- !u!1 &1861999940
