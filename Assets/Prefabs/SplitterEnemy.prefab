@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1168830573054995190}
   - component: {fileID: 1168830573054995149}
   - component: {fileID: -4402271682493196265}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: SplitterEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,9 +123,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.02, y: -0.02}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.2
 --- !u!114 &1168830573054995190
 MonoBehaviour:
   m_ObjectHideFlags: 0
