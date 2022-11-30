@@ -3366,6 +3366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1155209292}
+  leftDoor: {fileID: 525674092}
+  rightDoor: {fileID: 1982509223}
   perseverancePuzzleObject: {fileID: 2051674502}
   perseverancePuzzleNumberOfTryRequired: 3
   perseverancePuzzleIsEnd: 0
