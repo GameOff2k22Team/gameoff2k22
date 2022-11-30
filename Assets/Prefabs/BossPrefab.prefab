@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 316010665}
   - component: {fileID: 316010666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Top Left Corner '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316010664}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 504094014}
   - component: {fileID: 504094013}
   - component: {fileID: 504094015}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BounceActivator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675774493}
   - component: {fileID: 675774494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Zones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,8 @@ GameObject:
   - component: {fileID: 965782658}
   - component: {fileID: 965782657}
   - component: {fileID: 965782659}
-  m_Layer: 0
+  - component: {fileID: 324147002}
+  m_Layer: 10
   m_Name: RightLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +297,7 @@ Transform:
   m_GameObject: {fileID: 965782655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.33333, y: 0, z: 0}
-  m_LocalScale: {x: 0.33333, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 675774493}
@@ -343,9 +344,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
-  m_Color: {r: 0.5596995, g: 0.8584906, b: 0.376602, a: 1}
+  m_Sprite: {fileID: -1737249874, guid: 179aeb4b70dd5f74fbdf5144f73ee2da, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -372,7 +372,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9, y: 0.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -393,6 +393,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b3462c00d0cf47ac649e32030d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &324147002
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965782655}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e03f13b408b6914683e0572e443b39a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1081557030
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +425,8 @@ GameObject:
   - component: {fileID: 1081557033}
   - component: {fileID: 1081557032}
   - component: {fileID: 1081557034}
-  m_Layer: 0
+  - component: {fileID: 1395502687}
+  m_Layer: 10
   m_Name: MidLineHor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +442,7 @@ Transform:
   m_GameObject: {fileID: 1081557030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.33333, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 675774493}
@@ -468,9 +489,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
-  m_Color: {r: 0.7075472, g: 0.23028658, b: 0.3974536, a: 1}
+  m_Sprite: {fileID: -1737249874, guid: 179aeb4b70dd5f74fbdf5144f73ee2da, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -497,7 +517,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9, y: 0.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -518,6 +538,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b3462c00d0cf47ac649e32030d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1395502687
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081557030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e03f13b408b6914683e0572e443b39a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1380682755
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +570,8 @@ GameObject:
   - component: {fileID: 1380682758}
   - component: {fileID: 1380682757}
   - component: {fileID: 1380682759}
-  m_Layer: 0
+  - component: {fileID: 555564184}
+  m_Layer: 10
   m_Name: MidLineVert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +587,7 @@ Transform:
   m_GameObject: {fileID: 1380682755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.33333, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 675774493}
@@ -593,9 +634,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
-  m_Color: {r: 0.5596995, g: 0.8584906, b: 0.376602, a: 1}
+  m_Sprite: {fileID: -1737249874, guid: 179aeb4b70dd5f74fbdf5144f73ee2da, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -622,7 +662,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9, y: 0.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -643,6 +683,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b3462c00d0cf47ac649e32030d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &555564184
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380682755}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e03f13b408b6914683e0572e443b39a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1398194920
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1398194921}
   - component: {fileID: 1398194922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Bot Right Corner  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +742,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398194920}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -740,7 +800,8 @@ GameObject:
   - component: {fileID: 1411857541}
   - component: {fileID: 1411857540}
   - component: {fileID: 1411857542}
-  m_Layer: 0
+  - component: {fileID: 77159659}
+  m_Layer: 10
   m_Name: LeftLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -756,7 +817,7 @@ Transform:
   m_GameObject: {fileID: 1411857538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.33333, y: 0, z: 0}
-  m_LocalScale: {x: 0.33333, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 675774493}
@@ -803,9 +864,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
-  m_Color: {r: 0.5596995, g: 0.8584906, b: 0.376602, a: 1}
+  m_Sprite: {fileID: -1737249874, guid: 179aeb4b70dd5f74fbdf5144f73ee2da, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -832,7 +892,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9, y: 0.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -853,6 +913,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b3462c00d0cf47ac649e32030d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &77159659
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411857538}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e03f13b408b6914683e0572e443b39a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1597398402
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,7 +945,8 @@ GameObject:
   - component: {fileID: 1597398405}
   - component: {fileID: 1597398404}
   - component: {fileID: 1597398406}
-  m_Layer: 0
+  - component: {fileID: 1014330688}
+  m_Layer: 10
   m_Name: BotLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +962,7 @@ Transform:
   m_GameObject: {fileID: 1597398402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.33333, z: 0}
-  m_LocalScale: {x: 1, y: 0.33333, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 675774493}
@@ -928,9 +1009,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
-  m_Color: {r: 0.7075472, g: 0.23028658, b: 0.3974536, a: 1}
+  m_Sprite: {fileID: -1737249874, guid: 179aeb4b70dd5f74fbdf5144f73ee2da, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -957,7 +1037,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9, y: 0.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -978,6 +1058,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b3462c00d0cf47ac649e32030d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1014330688
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597398402}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e03f13b408b6914683e0572e443b39a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1705801941
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +1090,8 @@ GameObject:
   - component: {fileID: 1705801944}
   - component: {fileID: 1705801943}
   - component: {fileID: 1705801945}
-  m_Layer: 0
+  - component: {fileID: 1089255871}
+  m_Layer: 10
   m_Name: TopLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1006,7 +1107,7 @@ Transform:
   m_GameObject: {fileID: 1705801941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.33333, z: 0}
-  m_LocalScale: {x: 1, y: 0.33333, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 675774493}
@@ -1053,9 +1154,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
-  m_Color: {r: 0.7075472, g: 0.23028658, b: 0.3974536, a: 1}
+  m_Sprite: {fileID: -1737249874, guid: 179aeb4b70dd5f74fbdf5144f73ee2da, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1082,7 +1182,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9, y: 0.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1103,6 +1203,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b3462c00d0cf47ac649e32030d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1089255871
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705801941}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e03f13b408b6914683e0572e443b39a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1852046646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1852046647}
   - component: {fileID: 1852046648}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Top Right Corner  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1142,7 +1262,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852046646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1198,7 +1318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2088644879}
   - component: {fileID: 2088644880}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Bot Left Corner '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1347,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088644878}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1287,7 +1407,8 @@ GameObject:
   - component: {fileID: 2494362161363474703}
   - component: {fileID: 2494362161363474700}
   - component: {fileID: 2494362163355096836}
-  m_Layer: 0
+  - component: {fileID: 1653187095}
+  m_Layer: 10
   m_Name: Player2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1350,8 +1471,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: bd199b448c4527f4ab85423959c1f36d, type: 3}
-  m_Color: {r: 0.10791205, g: 0.5325875, b: 0.9150943, a: 1}
+  m_Sprite: {fileID: -1006874041, guid: b7dc340440cc41b4e9d077890832a5f1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1427,7 +1548,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.18, y: 0.18}
+    oldSize: {x: 0.16, y: 0.11}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1436,6 +1557,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!95 &1653187095
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494362161363474693}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 660152aa414d7164eabe1c415ffe4f1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2494362161405228921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,7 +1589,10 @@ GameObject:
   - component: {fileID: 2494362161405228926}
   - component: {fileID: 2494362161405228924}
   - component: {fileID: 5296360245284406367}
-  m_Layer: 0
+  - component: {fileID: 1865077602}
+  - component: {fileID: 1865077603}
+  - component: {fileID: 1865077604}
+  m_Layer: 10
   m_Name: BossPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1519,7 +1663,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1548,7 +1692,7 @@ MonoBehaviour:
     type: 3}
   splitterEnemy: {fileID: 1168830573054995149, guid: ad58ce2dddd0c094e81e1424e461c653,
     type: 3}
-  OnPhase1End: {fileID: 0}
+  OnPhase1End: {fileID: 11400000, guid: 68d68b7bf6d561e4f8f07beaf9f5c59d, type: 2}
   isP1S1Random: 0
   p1S1Pattern:
   - {fileID: 11400000, guid: ec78ee83da59e4a4bbcd28d5e05b74a9, type: 2}
@@ -1624,7 +1768,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db3d5b152b85dff4a960181081fada4e, type: 2}
   _numberOfPatternP1S4: 10
   _P1S4SpawningSpeed: 1
-  OnPhase2End: {fileID: 0}
+  OnPhase2End: {fileID: 11400000, guid: 7923ec41730310646b5a9e04164d54ac, type: 2}
   p2S1Pattern:
   - {fileID: 11400000, guid: 6a1997c86cf8b07489620b6738bbe913, type: 2}
   _numberOfPatternP2S1: 6
@@ -1639,7 +1783,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5a6cd54b02edf574fadc8c8e944e8a97, type: 2}
   _numberOfPatternP2S3: 1
   _P2S3SpawningSpeed: 1.02
-  OnPhase3End: {fileID: 0}
+  OnPhase3End: {fileID: 11400000, guid: 1400140c047c6254dbba136cd8947054, type: 2}
   p3S1Pattern:
   - {fileID: 11400000, guid: fd250f94ef11afa40bc4ba9516b7269e, type: 2}
   - {fileID: 11400000, guid: 0a4500a4566051c48a50492f8d9b40b4, type: 2}
@@ -1731,6 +1875,131 @@ MonoBehaviour:
   - area: 3
     position: {fileID: 1398194921}
     direction: {x: -1, y: 1, z: 0}
+--- !u!114 &1865077602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494362161405228921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 03d6d8a82e631ba4c85f755323734e8c, type: 2}
+    - {fileID: 11400000, guid: f3e54d1f4837ec946b0f4bbbf8b9b76a, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2494362161405228924}
+          m_TargetAssemblyTypeName: BossManager, Assembly-CSharp
+          m_MethodName: UpdateBossPhase
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2494362161405228924}
+          m_TargetAssemblyTypeName: BossManager, Assembly-CSharp
+          m_MethodName: UpdateBossPhase
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1865077603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494362161405228921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c0cb41966201446a4e30a4fa965450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: f6c5898d3f942f34d86952c18b2c27dc, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2494362161405228926}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2494362161363474702}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1865077604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494362161405228921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c0cb41966201446a4e30a4fa965450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 373fe82a4825d894dbb66c968656e5c9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2494362161405228926}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2494362161363474702}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2494362161410247405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +2009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2494362161410247410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1788,7 +2057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362161466027403}
   - component: {fileID: 2494362161466027400}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top Spawner left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1817,7 +2086,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362161466027402}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1876,7 +2145,7 @@ GameObject:
   - component: {fileID: 2494362161487559409}
   - component: {fileID: 8107840631280175164}
   - component: {fileID: 2073911727}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1891,8 +2160,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362161487559411}
   m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: 0.47900003, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.046500005, z: 1}
+  m_LocalPosition: {x: 0.5234, y: 0, z: 0}
+  m_LocalScale: {x: 1.0376, y: 0.046500005, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2494362163255252668}
@@ -1905,7 +2174,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362161487559411}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2022,7 +2291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2494362161631339548}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Despawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2061,7 +2330,7 @@ GameObject:
   - component: {fileID: 2494362161735255000}
   - component: {fileID: 6301007694498806650}
   - component: {fileID: 1133567193}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BotWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2076,8 +2345,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362161735255002}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.475, z: 0}
-  m_LocalScale: {x: 1, y: 0.046500005, z: 1}
+  m_LocalPosition: {x: 0, y: -0.52325, z: 0}
+  m_LocalScale: {x: 1.025, y: 0.046500005, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2494362163255252668}
@@ -2090,7 +2359,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362161735255002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2208,7 +2477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362161891789493}
   - component: {fileID: 2494362161891789498}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left Spawner Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2237,7 +2506,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362161891789492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2296,7 +2565,7 @@ GameObject:
   - component: {fileID: 2494362161904234822}
   - component: {fileID: 2494362161904234820}
   - component: {fileID: 2494362161904234821}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DespawnRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2325,7 +2594,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362161904234816}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2443,7 +2712,7 @@ GameObject:
   - component: {fileID: 2494362161924312252}
   - component: {fileID: 2494362161924312259}
   - component: {fileID: 2494362161924312258}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DespawnTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2472,7 +2741,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362161924312254}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2590,7 +2859,7 @@ GameObject:
   - component: {fileID: 2494362162134066060}
   - component: {fileID: 624960456898213181}
   - component: {fileID: 581781589}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2605,8 +2874,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162134066062}
   m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: -0.476, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.046500005, z: 1}
+  m_LocalPosition: {x: -0.5235, y: -0, z: 0}
+  m_LocalScale: {x: 1.0376, y: 0.046500005, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2494362163255252668}
@@ -2619,7 +2888,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162134066062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2740,7 +3009,7 @@ GameObject:
   - component: {fileID: 2494362162214540223}
   - component: {fileID: 4223527604432433453}
   - component: {fileID: 294150185}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TopWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2755,8 +3024,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162214540217}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.47675, z: 0}
-  m_LocalScale: {x: 1, y: 0.046500005, z: 1}
+  m_LocalPosition: {x: 0, y: 0.52337, z: 0}
+  m_LocalScale: {x: 1.0125, y: 0.046500005, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2494362163255252668}
@@ -2769,7 +3038,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162214540217}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2888,7 +3157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162223735645}
   - component: {fileID: 2494362162223735650}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right Spawner Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,7 +3186,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162223735644}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2973,7 +3242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162298319719}
   - component: {fileID: 2494362162298319716}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right Spawner Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3002,7 +3271,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162298319718}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3058,7 +3327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162351537487}
   - component: {fileID: 2494362162351537484}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left Spawner Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3087,7 +3356,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162351537486}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3143,7 +3412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162365176730}
   - component: {fileID: 2494362162365176731}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top Spawner Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3172,7 +3441,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162365176725}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3228,7 +3497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162416401105}
   - component: {fileID: 2494362162416401110}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top Spawner Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3257,7 +3526,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162416401104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3316,7 +3585,7 @@ GameObject:
   - component: {fileID: 2494362162479020445}
   - component: {fileID: 2494362162479020451}
   - component: {fileID: 2494362162479020448}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DespawnLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3345,7 +3614,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162479020447}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3460,7 +3729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162692799001}
   - component: {fileID: 2494362162692799006}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right Spawner Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3489,7 +3758,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162692799000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3545,7 +3814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162705069776}
   - component: {fileID: 2494362162705069777}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bot Spawner Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3574,7 +3843,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162705069779}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3630,7 +3899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162888412821}
   - component: {fileID: 2494362162888412826}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left Spawner Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3659,7 +3928,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362162888412820}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3715,7 +3984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362163255252668}
   - component: {fileID: 1504658831}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3776,7 +4045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362163256050768}
   - component: {fileID: 2494362163256050769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Bot Spawner left '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3805,7 +4074,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362163256050771}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3864,7 +4133,7 @@ GameObject:
   - component: {fileID: 2494362163324349913}
   - component: {fileID: 2494362163324349919}
   - component: {fileID: 2494362163324349916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DespawnBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3893,7 +4162,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362163324349915}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4008,7 +4277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362163331484603}
   - component: {fileID: 2494362163331484600}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Bot Spawner Right '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4037,7 +4306,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494362163331484602}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

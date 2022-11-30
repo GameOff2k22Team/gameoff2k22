@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8500118781570255505}
   - component: {fileID: -3648886577837112543}
   - component: {fileID: -271683245168513361}
+  - component: {fileID: -122036013226513087}
   m_Layer: 10
   m_Name: ZigZagEnemy
   m_TagString: Untagged
@@ -137,3 +138,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85624fd3712a1144c85a7a342b44de78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &-122036013226513087
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2411571292217011617}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a433fb8f9f2c394d880f1d985642b3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
