@@ -2862,10 +2862,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -737896201607906719, guid: fb862da808949f04ba358caf19d9bffe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb862da808949f04ba358caf19d9bffe,
         type: 3}
       propertyPath: m_Name
       value: Daronne
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469598168559132031, guid: fb862da808949f04ba358caf19d9bffe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb862da808949f04ba358caf19d9bffe, type: 3}
