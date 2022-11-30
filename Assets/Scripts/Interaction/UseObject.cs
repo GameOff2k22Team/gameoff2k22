@@ -47,6 +47,26 @@ public class UseObject : MonoBehaviour
         
     }
 
+    public void AddObjectToUse(GoToReturnFromInventory objectToReturn, Vector3 objPosition, Vector3 objRotation)
+    {
+        ObjectToUseInfo objectToUseInfo = new ObjectToUseInfo() { objectToUse = objectToReturn,
+                                                                  position = objPosition,
+                                                                  rotation = objRotation};
+        objectsToUse.Add(objectToUseInfo);
+    }
+
+    public void AddObjectToUse(GoToReturnFromInventory objectToReturn)
+    {
+        Vector3 position = Vector3.zero; 
+        Vector3 rotation = Vector3.zero; 
+        if (objectsToUse.Count != 0)
+        {
+            position = objectsToUse[0].position;
+            rotation = objectsToUse[0].rotation;
+        }
+        AddObjectToUse(objectToReturn, position, rotation);
+    }
+
     private GoToReturnFromInventory[] GetObjectsToReturn()
     {
         List<GoToReturnFromInventory> gos = new List<GoToReturnFromInventory>();
