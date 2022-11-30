@@ -5,7 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(CapsuleCollider))]
 public class WW_Material_Switch : MonoBehaviour
 {
-    public string StateGroup = "Footsteps_Forest_State";
+    public string FSStateGroup = "Footsteps_Forest_State";
+    public string SFXSwordStateGroup = "Sword_Drag_State_Group";
     public string State = "Grass";
     public string ExitState = "Dirt";
     public GameObject Character;
@@ -16,13 +17,15 @@ public class WW_Material_Switch : MonoBehaviour
     {
         if (other.tag != "Player") { return; }
         if (Debug_Enabled) { Debug.Log(State + " switch set"); }
-        AkSoundEngine.SetState(StateGroup, State, Character);
+        AkSoundEngine.SetState(FSStateGroup, State, Character);
+        AkSoundEngine.SetState(SFXSwordStateGroup, State, Character);
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.tag != "Player") { return; }
         if (Debug_Enabled) { Debug.Log(ExitState + " switch set"); }
-        AkSoundEngine.SetState(StateGroup, ExitState, Character);
+        AkSoundEngine.SetState(FSStateGroup, ExitState, Character);
+        AkSoundEngine.SetState(SFXSwordStateGroup, ExitState, Character);
     }
 }

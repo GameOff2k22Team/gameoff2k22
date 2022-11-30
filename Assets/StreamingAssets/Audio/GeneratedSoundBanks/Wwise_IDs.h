@@ -47,6 +47,8 @@ namespace AK
         static const AkUniqueID SFX_SHEEP = 2933853842U;
         static const AkUniqueID SFX_STAIRS_ROOM = 4209853719U;
         static const AkUniqueID SFX_SWORD = 2452502980U;
+        static const AkUniqueID SFX_SWORD_DRAG = 4193343421U;
+        static const AkUniqueID SFX_SWORD_DRAG_STOP = 1704546832U;
         static const AkUniqueID STOP_FOOTSTEPS_ROOM_CARPET = 1081171197U;
         static const AkUniqueID STOP_MUSIC_DONJON = 3111214772U;
         static const AkUniqueID STOP_MUSIC_FOREST = 2506571047U;
@@ -76,6 +78,19 @@ namespace AK
             } // namespace STATE
         } // namespace FOOTSTEPS_FOREST_STATE
 
+        namespace SWORD_DRAG_STATE_GROUP
+        {
+            static const AkUniqueID GROUP = 2186369235U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace STATE
+        } // namespace SWORD_DRAG_STATE_GROUP
+
     } // namespace STATES
 
     namespace GAME_PARAMETERS
@@ -99,6 +114,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID SWORD_DRAG_RTPC = 1329731385U;
         static const AkUniqueID VOICE_FAIRY_RTPC = 332755759U;
         static const AkUniqueID VOICE_HERO_RTPC = 3362203734U;
         static const AkUniqueID VOICE_MOTHER_RTPC = 1551770265U;

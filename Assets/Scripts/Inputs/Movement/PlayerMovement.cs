@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     private Transform _mainCameraTr = null;
     private float _cameraAngle = 0f;
     public AkEvent FootstepSound;
+    public AkEvent SFXSword;
+    public AkEvent SFXSwordStop;
     private Speed _roomSpeed;
     private const string ANIMATOR_SPEED_VARIABLE = "Speed";
 
@@ -74,6 +76,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void Anim_Sword_Drag()
+    {
+        if(SFXSword != null)
+        {
+            SFXSword.HandleEvent(gameObject);
+        }
+    }
+
+    
+
     private void OnEnable()
     {
         _playerInputs.Player.Enable();
@@ -98,14 +110,18 @@ public class PlayerMovement : MonoBehaviour
         if (inputVector.magnitude < 0.03)
         {
             Idle();
+            AkSoundEngine.SetRTPCValue("Sword_Drag_RTPC", 100);
+            SFXSwordStop.HandleEvent(gameObject);
         }
         else if (inputVector.magnitude > 0.9 ||
                  _playerInputs.Player.Run.IsPressed())
         {
             Run();
+            AkSoundEngine.SetRTPCValue("Sword_Drag_RTPC", 0);
         } else
         {
             Walk();
+            AkSoundEngine.SetRTPCValue("Sword_Drag_RTPC", 50);
         }
 
         Utils.RecalculateVectorWithAngle(ref inputVector, _mainCamera.ReturnCameraAngleCalculationInDegrees());
