@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="1569714348">
+		<SoundBank Id="491961918" Language="SFX" Hash="1549709774">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -367,7 +367,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2452502980" Name="SFX_Sword" ObjectPath="\Events\Forest\SFX_Sword" DurationType="OneShot" DurationMin="8.298687" DurationMax="8.298687">
+				<Event Id="2452502980" Name="SFX_Sword" ObjectPath="\Events\Forest\SFX_Sword" DurationType="OneShot" DurationMin="3.298687" DurationMax="3.298687">
 					<IncludedMemoryFiles>
 						<File Id="540030879" Language="SFX">
 							<ShortName>SFX_Sword.wav</ShortName>
@@ -653,7 +653,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1560169506" Language="SFX" Hash="3091796469">
+		<SoundBank Id="1560169506" Language="SFX" Hash="3116913960">
 			<ObjectPath>\SoundBanks\Default Work Unit\Boss</ObjectPath>
 			<ShortName>Boss</ShortName>
 			<Path>Boss.bnk</Path>
