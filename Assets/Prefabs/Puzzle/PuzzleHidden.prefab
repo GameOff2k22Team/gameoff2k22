@@ -213,6 +213,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361001040511402580}
     m_Modifications:
+    - target: {fileID: 1332282550714635328, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef2915993a13ef04bb8c0765ba94e945, type: 2}
+    - target: {fileID: 1332282550714635328, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a68b228ede886d4cbb386c755de062c, type: 2}
+    - target: {fileID: 1944857718691271993, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944857718691271993, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944857718691271993, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019126782828147778, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: inventoryPosition.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019126782828147778, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: inventoryPosition.y
+      value: -0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -273,6 +308,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
+    - target: {fileID: 4096803725758709119, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4720005243545652566, guid: fe3cbbfd55ba1dc449d17c3a7236d750,
+        type: 3}
     - target: {fileID: 8573483511166760607, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: OnInteraction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
