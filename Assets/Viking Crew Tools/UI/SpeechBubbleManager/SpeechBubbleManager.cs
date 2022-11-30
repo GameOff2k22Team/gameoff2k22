@@ -2,13 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.Serialization;
 
 using Random = UnityEngine.Random;
 
 namespace VikingCrew.Tools.UI {
-    public class SpeechBubbleManager : MonoBehaviour
+    public class SpeechBubbleManager : Singleton<SpeechBubbleManager>
     {
         public enum SpeechbubbleType
         {
@@ -60,14 +59,6 @@ namespace VikingCrew.Tools.UI {
         private readonly Dictionary<SpeechbubbleType, Queue<SpeechBubbleBase>> _speechBubbleQueueDict = new Dictionary<SpeechbubbleType, Queue<SpeechBubbleBase>>();
         private readonly Dictionary<Transform, List<SpeechBubbleBase>> _actorBubblesMapping = new Dictionary<Transform, List<SpeechBubbleBase>>();
 
-        private static SpeechBubbleManager _instance;
-        public static SpeechBubbleManager Instance {
-            get {
-                Assert.IsNotNull(_instance, "The static variable for Instance has not been set. Did you do this call before Awake() has finished or unchecked \"Is Singleton\" maybe?");
-                return _instance;
-            }
-        }
-
         public Camera Cam
         {
             get
@@ -88,14 +79,12 @@ namespace VikingCrew.Tools.UI {
             }
         }
 
-        protected void Awake()
+        public override void Awake()
         {
+            base.Awake();
+
             if (_cam == null) _cam = Camera.main;
 
-            if (_isSingleton) {
-                Assert.IsNull(_instance, "_intance was not null. Do you maybe have several Speech Bubble Managers in your scene, all trying to be singletons?");
-                _instance = this;
-            }
             _prefabsDict.Clear();
             _speechBubbleQueueDict.Clear();
             foreach (var prefab in _prefabs)
