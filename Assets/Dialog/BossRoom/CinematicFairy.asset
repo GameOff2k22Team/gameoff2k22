@@ -15,12 +15,5 @@ MonoBehaviour:
   listOfMessageByUnitType:
   - type: 2
     message: Hey! I can see the artifact
-  - type: 2
-    message: Oh! Who on earth is that?!?
-  - type: 2
-    message: "I can feel very negative forces\n coming from that individual\u2026"
-  - type: 2
-    message: "I\u2019m not feeling very good\u2026 \nI think it\u2019s attacking
-      me!"
   onlyOneTrigger: 0
   canBeTrigger: 1

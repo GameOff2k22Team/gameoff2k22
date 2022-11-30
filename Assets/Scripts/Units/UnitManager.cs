@@ -7,7 +7,7 @@ using UnityEngine;
 public class UnitManager : MonoBehaviour
 {
     [HideInInspector]
-    public enum UnitType { PLAYER, MOTHER, FAIRY , FAKE_FAIRY_FOREST}
+    public enum UnitType { PLAYER, MOTHER, FAIRY , FAKE_FAIRY_FOREST, FAIRY_BOSS, FAIRY_BOSS_PLAYER}
     
     [Serializable]
     public struct UnitByType
