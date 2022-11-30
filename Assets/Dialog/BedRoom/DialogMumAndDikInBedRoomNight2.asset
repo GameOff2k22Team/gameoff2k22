@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
   - type: 1
-    message: "No, I said right now! \nPause the game and \ncome right at this moment."
+    message: "No, I said right now! \nPause the game and \ncome down right now!"
   onlyOneTrigger: 0
   canBeTrigger: 1
