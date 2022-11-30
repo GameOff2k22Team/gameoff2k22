@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: DialogPhase1
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
-  - type: 2
-    message: "I think she\u2019s your mother\u2026"
-  - type: 0
-    message: ...
+  - type: 5
+    message: "I think she\u2019s \nyour mother\u2026"
   - type: 1
     message: "It is me indeed! \nI got tired of seeing you \ngetting absorbed alive
       by that thing."
@@ -27,11 +25,10 @@ MonoBehaviour:
     message: "You are ruining \nyour eyes with this thing. \nIt\u2019s for children
       anyway."
   - type: 1
-    message: When I was your age I was outside all the time. Young people are so
-      lazy nowadays.
-  - type: 1
-    message: When I was your age I was outside all the time. Young people are so
-      lazy nowadays.
+    message: 'When I was your age I was outside all the time.
+
+      Young people
+      are so lazy nowadays.'
   - type: 1
     message: "You\u2019re completely addicted to this thing \nand it\u2019s getting
       worse by the minute."

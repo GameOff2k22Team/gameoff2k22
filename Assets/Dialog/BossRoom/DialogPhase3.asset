@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84bae8eb726e0ee42b22059d6195f8c5, type: 3}
-  m_Name: DialogPhase2
+  m_Name: DialogPhase3
   m_EditorClassIdentifier: 
   listOfMessageByUnitType:
   - type: 1
-    message: "I can\u2019t bear seeing you play \nwith this thing. \nIt drives me
-      crazy!"
+    message: "What can I do anyway\u2026"
   - type: 1
-    message: "You need to find friends \nand go out with them."
+    message: If I take it away, you will find it again.
   - type: 1
-    message: "You have no ambition. \nWhen I was your age \nI was studying very hard."
+    message: Or you will find something else in the end
   - type: 1
-    message: "If you keep playing instead of studying, \nyou will end as a fat and
-      lazy useless boy."
+    message: "You never listen to me. \nI\u2019m so disappointed"
+  - type: 1
+    message: "I do everything for you \nand that\u2019s how you thank me\u2026"
   onlyOneTrigger: 0
   canBeTrigger: 1
