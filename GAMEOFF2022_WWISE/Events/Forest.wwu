@@ -184,9 +184,6 @@
 				<Event Name="SFX_Sword" ID="{5E485854-1C82-46B8-935F-F143148996FC}">
 					<ChildrenList>
 						<Action Name="" ID="{55743CC5-156E-49FF-9D55-99A34E3B8088}" ShortID="597832322">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="5"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Sword" ID="{AA03CCB9-8298-421E-B15A-1BA6DC338FD9}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
