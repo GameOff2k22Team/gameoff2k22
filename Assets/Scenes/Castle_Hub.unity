@@ -3559,6 +3559,21 @@ PrefabInstance:
       propertyPath: FootstepSound
       value: 
       objectReference: {fileID: 300081440}
+    - target: {fileID: 6354469213959220429, guid: e2b28dbb7954177479ec203660781dfe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6430983282566795328, guid: e2b28dbb7954177479ec203660781dfe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349880553299434249, guid: e2b28dbb7954177479ec203660781dfe,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 42df4abc8908d384e850c88dc4b9ca6b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2b28dbb7954177479ec203660781dfe, type: 3}
 --- !u!1 &1629259881 stripped
