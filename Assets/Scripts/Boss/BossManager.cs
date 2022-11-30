@@ -131,7 +131,7 @@ public class BossManager : MonoBehaviour
 
     private void Start()
     {
-        UpdateBossPhase(BossState.phase1);
+
     }
 
     #region Generic Method
