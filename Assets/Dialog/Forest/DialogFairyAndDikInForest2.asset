@@ -18,10 +18,10 @@ MonoBehaviour:
   - type: 0
     message: ...
   - type: 3
-    message: "What? It\u2019s too HeAvY?\n Well you should have thought \nabout that
+    message: "What? It\u2019s too HeAvY?\nWell you should have thought \nabout that
       before.."
   - type: 3
-    message: and trained you muscles a little more.
+    message: and trained your muscles a little more.
   - type: 3
     message: "Stop being so lazy and let\u2019s go.\nI can\u2019t get you anything
       else anyway."

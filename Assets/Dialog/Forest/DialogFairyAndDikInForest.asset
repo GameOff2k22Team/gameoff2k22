@@ -20,9 +20,9 @@ MonoBehaviour:
   - type: 0
     message: ...
   - type: 3
-    message: "Oh yes you\u2019re right, \nI almost forgot"
+    message: "Oh yes you\u2019re right, \nI almost forgot..."
   - type: 3
-    message: "Like any hero, \nyou will most likely need a weapon\n to accomplish
+    message: "Like any hero, \nyou will most likely need a weapon\nto accomplish
       your quest."
   onlyOneTrigger: 0
   canBeTrigger: 1
