@@ -1323,7 +1323,7 @@
 				<GameParameter Id="1199740901" Name="VOICE_RTPC" ObjectPath="\Game Parameters\Default Work Unit\VOICE_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3261888876" Language="SFX" Hash="1668122377">
+		<SoundBank Id="3261888876" Language="SFX" Hash="2164271983">
 			<ObjectPath>\SoundBanks\Default Work Unit\Cinematique</ObjectPath>
 			<ShortName>Cinematique</ShortName>
 			<Path>Cinematique.bnk</Path>
@@ -1617,7 +1617,7 @@
 				<GameParameter Id="4010851776" Name="SFX_Fire_Loop_RTPC" ObjectPath="\Game Parameters\Default Work Unit\SFX_Fire_Loop_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3720479411" Language="SFX" Hash="2456566544">
+		<SoundBank Id="3720479411" Language="SFX" Hash="2679706839">
 			<ObjectPath>\SoundBanks\Default Work Unit\House</ObjectPath>
 			<ShortName>House</ShortName>
 			<Path>House.bnk</Path>

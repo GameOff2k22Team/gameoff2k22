@@ -234,7 +234,7 @@ MonoBehaviour:
   akEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d34f70f856bef184dad691e1dcac045f,
+    WwiseObjectReference: {fileID: 11400000, guid: c2556ae803399304397ff74e9a8d08ab,
       type: 2}
   blendInCurve: 4
   blendOutCurve: 4
