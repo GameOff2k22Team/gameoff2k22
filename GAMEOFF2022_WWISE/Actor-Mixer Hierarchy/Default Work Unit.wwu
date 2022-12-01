@@ -2633,6 +2633,11 @@
 										<Sound Name="SFX_Key_Get" ID="{BF09AACC-38D2-4458-8B82-2F5E1D29F105}" ShortID="511027960">
 											<PropertyList>
 												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">

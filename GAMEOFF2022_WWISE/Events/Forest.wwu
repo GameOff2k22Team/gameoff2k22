@@ -85,6 +85,28 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{1315CE83-70C5-4429-BEDE-5391B3586D90}" ShortID="1057506585">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Forest_Birds" ID="{647AD4B6-5061-4289-A071-A840159E2132}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{99B546C2-2929-4D6B-BCB1-C2C81185F32C}" ShortID="5101128">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Forest_Wind" ID="{4C93B11D-C950-4C59-A587-9DCACB14FA44}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="SFX_Key_Forest_Open" ID="{E5BF5705-4DAD-47D7-A7D6-9209C0FAD3DB}">

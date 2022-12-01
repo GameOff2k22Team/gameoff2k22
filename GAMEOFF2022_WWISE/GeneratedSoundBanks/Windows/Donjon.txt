@@ -14,6 +14,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2240776526	SFX_Open_Boss_Door			\Donjon\SFX_Open_Boss_Door	
 	2452784151	SFX_Key_Get			\Donjon\SFX_Key_Get	
 	2506571047	Stop_Music_Forest			\Forest\Stop_Music_Forest	
+	2756585315	SFX_Doors_Closed			\Donjon\SFX_Doors_Closed	
 	2847197441	Footsteps_Donjon			\Donjon\Footsteps_Donjon	
 	3111214772	Stop_Music_Donjon			\Donjon\Stop_Music_Donjon	
 	3378814075	SFX_Open_Chest			\Donjon\SFX_Open_Chest	
