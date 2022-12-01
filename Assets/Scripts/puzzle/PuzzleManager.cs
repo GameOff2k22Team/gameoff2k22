@@ -58,6 +58,7 @@ public class PuzzleManager : MonoBehaviour
     private const int NUMBER_OF_PUZZLE = 3;
     private bool canGoToNextRoom = false;
     private Transform spawnSpot;
+    public AkEvent SFXChestPop;
 
     private void Awake()
     {
@@ -220,6 +221,8 @@ public class PuzzleManager : MonoBehaviour
             _hiddenChest.transform.position = _spawnPoint.position;
             _hiddenChest.transform.rotation = _spawnPoint.rotation;
             chestHidden._realChest = true;
+            SFXChestPop.HandleEvent(gameObject);
+           
             
         }
         else

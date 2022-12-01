@@ -6,7 +6,7 @@ public class SFX_Chest : MonoBehaviour
 {
     public AkEvent SFXFallChest;
     public AkEvent SFXOpenChest;
-    
+
     void Anim_Fall_Chest()
     {
         SFXFallChest.HandleEvent(gameObject);
@@ -15,5 +15,7 @@ public class SFX_Chest : MonoBehaviour
     {
         SFXOpenChest.HandleEvent(gameObject);
     }
+
+
 
 }

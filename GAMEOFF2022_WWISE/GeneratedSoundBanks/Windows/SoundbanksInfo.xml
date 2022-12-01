@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="2666644639">
+		<SoundBank Id="491961918" Language="SFX" Hash="3639996684">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -697,7 +697,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3275724695">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1496497957">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -762,7 +762,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="915277654">
+		<SoundBank Id="2891873417" Language="SFX" Hash="3032780981">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -854,6 +854,51 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1295230719" Name="SFX_Artefact" ObjectPath="\Events\Donjon\SFX_Artefact" DurationType="OneShot" DurationMin="2.75" DurationMax="2.75">
+					<IncludedMemoryFiles>
+						<File Id="949032456" Language="SFX">
+							<ShortName>SFX_Artefact.wav</ShortName>
+							<Path>SFX\SFX_Artefact_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2007898709" Name="SFX_Artefact_Anim" ObjectPath="\Events\Donjon\SFX_Artefact_Anim" DurationType="OneShot" DurationMin="5.25" DurationMax="5.25">
+					<IncludedMemoryFiles>
+						<File Id="917035686" Language="SFX">
+							<ShortName>SFX_Artefact_Anim.wav</ShortName>
+							<Path>SFX\SFX_Artefact_Anim_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="194056412" Name="SFX_Chest_Inv" ObjectPath="\Events\Donjon\SFX_Chest_Inv" DurationType="OneShot" DurationMin="0.4375" DurationMax="0.4375">
+					<IncludedMemoryFiles>
+						<File Id="207820761" Language="SFX">
+							<ShortName>SFX_Chest_Inv [2022-12-01 014340].wav</ShortName>
+							<Path>SFX\SFX_Chest_Inv [2022-12-01 014340]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="751704620" Name="SFX_Chest_Pop" ObjectPath="\Events\Donjon\SFX_Chest_Pop" DurationType="OneShot" DurationMin="1.0625" DurationMax="1.0625">
+					<IncludedMemoryFiles>
+						<File Id="264460474" Language="SFX">
+							<ShortName>SFX_Chest_Pop.wav</ShortName>
+							<Path>SFX\SFX_Chest_Pop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="999550235" Name="SFX_Chest_Pop_Stop" ObjectPath="\Events\Donjon\SFX_Chest_Pop_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1261070616" Name="SFX_Fall_Chest" ObjectPath="\Events\Donjon\SFX_Fall_Chest" DurationType="OneShot" DurationMin="0.118146" DurationMax="0.118146">
 					<IncludedMemoryFiles>
 						<File Id="424466670" Language="SFX">
@@ -876,6 +921,18 @@
 						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="941231893" Name="SFX_Key_Nope" ObjectPath="\Events\Donjon\SFX_Key_Nope" DurationType="OneShot" DurationMin="0.28125" DurationMax="0.28125">
+					<IncludedMemoryFiles>
+						<File Id="311114611" Language="SFX">
+							<ShortName>SFX_Key_Nope [2022-12-01 012131].wav</ShortName>
+							<Path>SFX\SFX_Key_Nope [2022-12-01 012131]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="921616632" Name="SFX_Key_Nope_Stop" ObjectPath="\Events\Donjon\SFX_Key_Nope_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2240776526" Name="SFX_Open_Boss_Door" ObjectPath="\Events\Donjon\SFX_Open_Boss_Door" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<IncludedMemoryFiles>
 						<File Id="531157984" Language="SFX">
@@ -898,7 +955,7 @@
 						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3670362726" Name="SFX_Open_Left_Door" ObjectPath="\Events\Donjon\SFX_Open_Left_Door" DurationType="OneShot" DurationMin="1.0625" DurationMax="1.0625">
+				<Event Id="3670362726" Name="SFX_Open_Left_Door" ObjectPath="\Events\Donjon\SFX_Open_Left_Door" DurationType="OneShot" DurationMin="1.3625" DurationMax="1.3625">
 					<IncludedMemoryFiles>
 						<File Id="597390306" Language="SFX">
 							<ShortName>SFX_Open_Left_Door.wav</ShortName>
@@ -920,6 +977,18 @@
 						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="439170446" Name="SFX_Sword_Drag_Stone_Donjon" ObjectPath="\Events\Donjon\SFX_Sword_Drag_Stone_Donjon" MaxAttenuation="15." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1058479865" Language="SFX">
+							<ShortName>SFX_Sword_Drag_Stone_Donjon.wav</ShortName>
+							<Path>SFX\SFX_Sword_Drag_Stone_Donjon_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2891873417" Name="Donjon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Donjon"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1168412621" Name="SFX_Sword_Drag_Stone_Donjon_Stop" ObjectPath="\Events\Donjon\SFX_Sword_Drag_Stone_Donjon_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3111214772" Name="Stop_Music_Donjon" ObjectPath="\Events\Donjon\Stop_Music_Donjon" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2506571047" Name="Stop_Music_Forest" ObjectPath="\Events\Forest\Stop_Music_Forest" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
@@ -936,6 +1005,10 @@
 					<ShortName>FS_S_03 [2022-11-10 150443].wav</ShortName>
 					<Path>SFX\FS_S_03 [2022-11-10 150443]_10C4C929.wem</Path>
 				</File>
+				<File Id="207820761" Language="SFX">
+					<ShortName>SFX_Chest_Inv [2022-12-01 014340].wav</ShortName>
+					<Path>SFX\SFX_Chest_Inv [2022-12-01 014340]_10C4C929.wem</Path>
+				</File>
 				<File Id="235742843" Language="SFX">
 					<ShortName>FS_S_07 [2022-11-10 150446].wav</ShortName>
 					<Path>SFX\FS_S_07 [2022-11-10 150446]_10C4C929.wem</Path>
@@ -943,6 +1016,14 @@
 				<File Id="248025989" Language="SFX">
 					<ShortName>FS_S_04 [2022-11-10 150444].wav</ShortName>
 					<Path>SFX\FS_S_04 [2022-11-10 150444]_10C4C929.wem</Path>
+				</File>
+				<File Id="264460474" Language="SFX">
+					<ShortName>SFX_Chest_Pop.wav</ShortName>
+					<Path>SFX\SFX_Chest_Pop_10C4C929.wem</Path>
+				</File>
+				<File Id="311114611" Language="SFX">
+					<ShortName>SFX_Key_Nope [2022-12-01 012131].wav</ShortName>
+					<Path>SFX\SFX_Key_Nope [2022-12-01 012131]_10C4C929.wem</Path>
 				</File>
 				<File Id="372058969" Language="SFX">
 					<ShortName>FS_S_14 [2022-11-10 150450].wav</ShortName>
@@ -1008,6 +1089,14 @@
 					<ShortName>MS_Donjon_Loop.wav</ShortName>
 					<Path>SFX\MS_Donjon_Loop_D79FB2B7.wem</Path>
 				</File>
+				<File Id="917035686" Language="SFX">
+					<ShortName>SFX_Artefact_Anim.wav</ShortName>
+					<Path>SFX\SFX_Artefact_Anim_10C4C929.wem</Path>
+				</File>
+				<File Id="949032456" Language="SFX">
+					<ShortName>SFX_Artefact.wav</ShortName>
+					<Path>SFX\SFX_Artefact_10C4C929.wem</Path>
+				</File>
 				<File Id="952383554" Language="SFX">
 					<ShortName>MS_Donjon_Start.wav</ShortName>
 					<Path>SFX\MS_Donjon_Start_D79FB2B7.wem</Path>
@@ -1020,13 +1109,24 @@
 					<ShortName>FS_S_17 [2022-11-10 150452].wav</ShortName>
 					<Path>SFX\FS_S_17 [2022-11-10 150452]_10C4C929.wem</Path>
 				</File>
+				<File Id="993863948" Language="SFX">
+					<ShortName>SFX_Artefact_Inv [2022-12-01 014401].wav</ShortName>
+					<Path>SFX\SFX_Artefact_Inv [2022-12-01 014401]_10C4C929.wem</Path>
+				</File>
 				<File Id="997043440" Language="SFX">
 					<ShortName>SFX_Open_Right_Door.wav</ShortName>
 					<Path>SFX\SFX_Open_Right_Door_10C4C929.wem</Path>
 				</File>
+				<File Id="1058479865" Language="SFX">
+					<ShortName>SFX_Sword_Drag_Stone_Donjon.wav</ShortName>
+					<Path>SFX\SFX_Sword_Drag_Stone_Donjon_D79FB2B7.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
+				<GameParameter Id="1045480886" Name="SFX_Right_Door_RTPC" ObjectPath="\Game Parameters\Default Work Unit\SFX_Right_Door_RTPC"/>
 				<GameParameter Id="2668762309" Name="Music_Fade_Out_Donjon" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Donjon"/>
+				<GameParameter Id="3074675057" Name="SFX_Key_Nope_RTPC" ObjectPath="\Game Parameters\Default Work Unit\SFX_Key_Nope_RTPC"/>
+				<GameParameter Id="4004428957" Name="SFX_Left_Door_RTPC" ObjectPath="\Game Parameters\Default Work Unit\SFX_Left_Door_RTPC"/>
 			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="3170124113" Language="SFX" Hash="4065412007">

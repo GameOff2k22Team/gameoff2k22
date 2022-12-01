@@ -9,12 +9,14 @@ public class PuzzleHidden : PuzzleBase
     {
         base.Start();
         type = PuzzleManager.PuzzleType.FOCUS;
+        
     }
 
     public override void OpenChest()
     {
         base.OpenChest();
         this._isOpen = false;
+
 
     }
 }
