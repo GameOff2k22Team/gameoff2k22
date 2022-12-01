@@ -4432,7 +4432,7 @@ MonoBehaviour:
   leftDoor: {fileID: 525674092}
   rightDoor: {fileID: 1982509223}
   perseverancePuzzleObject: {fileID: 2051674502}
-  perseverancePuzzleNumberOfTryRequired: 3
+  perseverancePuzzleNumberOfTryRequired: 7
   perseverancePuzzleIsEnd: 0
   focusPuzzleObject: {fileID: 1943811603}
   _hiddenChest: {fileID: 1084511675}
