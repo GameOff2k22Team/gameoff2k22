@@ -111,8 +111,24 @@
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="UI_Dialog" ID="{1E8E6BEF-A4D8-4229-B7E6-37D30742D831}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Menu" ID="{896D3905-7BA5-47CE-833B-B6C3E6AC55D6}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Menu" ID="{8635B51D-2E4A-4A39-B663-2E8EBFFC8687}" WorkUnitID="{8635B51D-2E4A-4A39-B663-2E8EBFFC8687}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Cinematique" ID="{F51943A3-FFC9-49F2-B800-7EC0F9D0285C}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99951424</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Cinematique" ID="{FB91E366-A4AF-4871-A98D-AE48E3A39CB7}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cinematique" ID="{AD38EC7B-9FFE-4A52-9737-771CED1261F8}" WorkUnitID="{AD38EC7B-9FFE-4A52-9737-771CED1261F8}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
