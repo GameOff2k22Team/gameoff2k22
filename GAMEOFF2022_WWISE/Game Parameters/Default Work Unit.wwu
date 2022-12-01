@@ -95,6 +95,7 @@
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="SFX_FS_Forest_RTPC" ID="{55565D60-0FF6-4942-A2F9-DF261248C87B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

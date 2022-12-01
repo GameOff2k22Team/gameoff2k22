@@ -30,6 +30,7 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1329731385	Sword_Drag_RTPC			\Default Work Unit\Sword_Drag_RTPC	
 	2802239154	Music_Fade_Out_Forest			\Default Work Unit\Music_Fade_Out_Forest	
+	3603286834	SFX_FS_Forest_RTPC			\Default Work Unit\SFX_FS_Forest_RTPC	
 
 Effect plug-ins	ID	Name	Type				Notes
 	305931877	Wwise Time Stretch (Custom)	Wwise Time Stretch			

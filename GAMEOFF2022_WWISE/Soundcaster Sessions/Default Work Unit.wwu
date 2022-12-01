@@ -112,6 +112,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="SFX_FS_Forest_RTPC" ID="{55565D60-0FF6-4942-A2F9-DF261248C87B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Sword_Drag_RTPC" ID="{235B78A6-308F-4A2A-AF64-7AB539274C62}"/>
 							<Value>0</Value>
 						</RTPCValue>
