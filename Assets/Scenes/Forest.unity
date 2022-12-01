@@ -8796,10 +8796,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: 6761cca94f40e344db83b04d1eb266a2, type: 2}
   pannelScale: {x: 0.02, y: 0.02, z: 0.02}
-  SFXDialogPop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &471254709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9981,10 +9977,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: 19b1ae14e4549be4dba5baf2a2b6d127, type: 2}
   pannelScale: {x: 0.02, y: 0.02, z: 0.02}
-  SFXDialogPop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &544501693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15319,6 +15311,65 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2228417370725966487, guid: 3c5d0297e64d43948bb190ec55d7526f, type: 3}
+--- !u!1 &1110921438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110921440}
+  - component: {fileID: 1110921439}
+  m_Layer: 0
+  m_Name: OnTimelineEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1110921439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110921438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6419708c42e1b0d40935bb51bc8315f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGameLoadedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 517c38e53f2977e49810accc05fb5c08, type: 2}
+        m_TargetAssemblyTypeName: Architecture.GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1110921440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110921438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 47.714, y: 1.0780001, z: 0.048999786}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1123126108
 GameObject:
   m_ObjectHideFlags: 0
@@ -16301,6 +16352,8 @@ PlayableDirector:
     value: {fileID: 2033984369}
   - key: {fileID: 6579042285034129235, guid: 931009c7347409344b627924a64a66b2, type: 2}
     value: {fileID: 313392115}
+  - key: {fileID: 3086589950840042463, guid: 931009c7347409344b627924a64a66b2, type: 2}
+    value: {fileID: 1110921438}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1178435012
@@ -20597,10 +20650,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: b1fe4706b0b13384b9c537ba727a9b4d, type: 2}
   pannelScale: {x: 0.02, y: 0.02, z: 0.02}
-  SFXDialogPop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &1626506536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22560,10 +22609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: 65823b2943251b046928aeafd40930a7, type: 2}
   pannelScale: {x: 0.02, y: 0.02, z: 0.02}
-  SFXDialogPop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &1887796853
 PrefabInstance:
   m_ObjectHideFlags: 0

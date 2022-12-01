@@ -17,6 +17,16 @@ public class HUDManager : Singleton<HUDManager>
         listener.RegisterListener(SetNewUICamera);
     }
 
+    public void Start()
+    {
+        SetNewUICamera();
+    }
+
+    public void ChangeActivateState()
+    {
+        gameObject.SetActive(!gameObject.activeSelf);
+    }
+
     public void SetNewUICamera()
     {
         foreach (Camera camera in Camera.allCameras)
