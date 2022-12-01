@@ -144,7 +144,6 @@ public class BossManager : MonoBehaviour
 
     private void CallWhenPlayerDies()
     {
-        Debug.Log("iscalled");
         ClearEnemies();
         StopAllCoroutines();
     }
@@ -224,12 +223,10 @@ public class BossManager : MonoBehaviour
     private static void ClearEnemies()
     {
         
-        Debug.Log("Clearing enemies " + enemies);
         foreach (BossEnemy enemy in enemies)
         {
             if (enemy.gameObject != null)
             {
-                Debug.Log("Clearing enemies " + enemy.gameObject);
                 Destroy(enemy.gameObject);
             }
         }
