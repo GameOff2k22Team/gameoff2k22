@@ -8,6 +8,9 @@ public class Player2D : MonoBehaviour
     private GameEvent OnPlayer2DDeath;
 
     [SerializeField]
+    private GameEventListener OnPlayerMustNotDie;
+
+    [SerializeField]
     private GameEvent PlayerHPChanged;
 
     private int _playerHP = 5;
@@ -17,6 +20,8 @@ public class Player2D : MonoBehaviour
     private float _invincibilityTimer = 2.0f;
 
     private Renderer _renderer;
+
+    private bool _playerMustNotDie;
 
     private int PlayerHP
     {
@@ -31,11 +36,35 @@ public class Player2D : MonoBehaviour
     private void Awake()
     {
         _renderer  = GetComponent<Renderer>();
+        OnPlayerMustNotDie.RegisterListener(SetPlayerMustNotDie);
+
+    }
+
+    private void OnDestroy()
+    {
+        OnPlayerMustNotDie.UnregisterListener(SetPlayerMustNotDie);
+
+    }
+
+    private void SetPlayerMustNotDie()
+    {
+        _playerMustNotDie = true;
     }
     public void RemoveHP(int damage)
     {
-        if(!_isInvincible && PlayerHP > 1)
+
+        if (!_isInvincible && _playerMustNotDie)
         {
+            //_isInvincible = true;
+            StartCoroutine(DamageInvincibilityCoroutine());
+
+            PlayerHP = 0;
+            return;
+        }
+        else if(!_isInvincible && PlayerHP > 1)
+        {
+            //_isInvincible = true;
+
             PlayerHP -= 1;
             StartCoroutine(DamageInvincibilityCoroutine());
         }
@@ -44,6 +73,14 @@ public class Player2D : MonoBehaviour
         {
             OnPlayer2DDeath.Raise();
             PlayerHP = 5;
+        }
+    }
+
+    public void AddHP(int heal)
+    {
+        if(PlayerHP < 5)
+        {
+            PlayerHP += 1;
         }
     }
 

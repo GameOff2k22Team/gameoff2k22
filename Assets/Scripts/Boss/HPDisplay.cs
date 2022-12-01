@@ -28,6 +28,9 @@ public class HPDisplay : MonoBehaviour
 
     private void UpdateHPDisplay(int nbrOfLives)
     {
+        Debug.Log("nb of lives " +nbrOfLives);
+        Debug.Log("current hp" +  _currentHPIdx);
+
         bool hasPlayerLooseLife = nbrOfLives < _currentHPIdx + 1;
         if (hasPlayerLooseLife)
         {
@@ -35,10 +38,10 @@ public class HPDisplay : MonoBehaviour
             {
                 _healthImage[i].enabled = false;
                 SFXHit.Post(gameObject);
-            }
+            }            
         } else
         {
-            for (int i = _currentHPIdx; i < nbrOfLives; i++)
+            for (int i = _currentHPIdx +1 ; i < nbrOfLives; i++)
             {
                 _healthImage[i].enabled = true;
                 SFXDead.Post(gameObject);
