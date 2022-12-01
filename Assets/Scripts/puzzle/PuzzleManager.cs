@@ -59,6 +59,7 @@ public class PuzzleManager : MonoBehaviour
     private bool canGoToNextRoom = false;
     private Transform spawnSpot;
     public AkEvent SFXChestPop;
+    public AkEvent RTPCDoorClosed;
 
     private void Awake()
     {
@@ -122,6 +123,7 @@ public class PuzzleManager : MonoBehaviour
         leftDoor.UnregisterToAction();
         loadManagerAnimator.SetTrigger(FADE_OUT_TRIGGER);
         LoadManager.Instance.OnFadeOutCompleted.AddListener(FadeOut);
+        
     }
 
     public void SetNextPuzzle()
@@ -132,6 +134,8 @@ public class PuzzleManager : MonoBehaviour
         RespawnPlayer();
 
         SetPuzzleType(nextType);
+
+        RTPCDoorClosed.HandleEvent(gameObject);
     }
 
     private int GetNextPuzzleIdx()

@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="3639996684">
+		<SoundBank Id="491961918" Language="SFX" Hash="1944152207">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -819,7 +819,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="3973699621">
+		<SoundBank Id="2891873417" Language="SFX" Hash="2564207797">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -956,6 +956,7 @@
 					</AuxBusSends>
 				</Event>
 				<Event Id="999550235" Name="SFX_Chest_Pop_Stop" ObjectPath="\Events\Donjon\SFX_Chest_Pop_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2756585315" Name="SFX_Doors_Closed" ObjectPath="\Events\Donjon\SFX_Doors_Closed" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1261070616" Name="SFX_Fall_Chest" ObjectPath="\Events\Donjon\SFX_Fall_Chest" DurationType="OneShot" DurationMin="0.118146" DurationMax="0.118146">
 					<IncludedMemoryFiles>
 						<File Id="424466670" Language="SFX">

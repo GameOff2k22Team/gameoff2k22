@@ -39,6 +39,7 @@ namespace AK
         static const AkUniqueID SFX_DIK_INTRO_CINEMATIQUE = 3567259750U;
         static const AkUniqueID SFX_DOOR = 1739295053U;
         static const AkUniqueID SFX_DOOR_DONJON_OPEN = 285337003U;
+        static const AkUniqueID SFX_DOORS_CLOSED = 2756585315U;
         static const AkUniqueID SFX_FALL_CHEST = 1261070616U;
         static const AkUniqueID SFX_HIT = 615152896U;
         static const AkUniqueID SFX_KEY_FOREST = 1091244002U;

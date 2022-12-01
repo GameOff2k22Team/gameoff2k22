@@ -273,6 +273,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="SFX_Doors_Closed" ID="{C8236554-F464-4B97-A743-90DC00AC6A21}">
+					<ChildrenList>
+						<Action Name="" ID="{40375E54-777F-4416-A340-F62B7F962ED9}" ShortID="1031403445">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Left_Door_RTPC" ID="{AB975339-D243-4319-A43B-B04669B3C988}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D2356E96-B26D-423F-8303-03AB115B2B66}" ShortID="287351741">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Right_Door_RTPC" ID="{BAF22ECF-EC81-400B-8411-0A589F937066}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
