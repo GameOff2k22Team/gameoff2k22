@@ -40,6 +40,7 @@ public class InputManager : Singleton<InputManager>
         {
             _playerInputs.Player.Enable();
         }
+        _playerInputs.Menu.Enable();
     }
     void UpdateInputsOnGameManagerStateChanged(GameState state)
     {
