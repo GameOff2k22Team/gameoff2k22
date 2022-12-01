@@ -150,6 +150,7 @@ namespace AK
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID SFX_FIRE_LOOP_RTPC = 4010851776U;
+        static const AkUniqueID SFX_FS_FOREST_RTPC = 3603286834U;
         static const AkUniqueID SFX_HIT_RTPC = 3688824786U;
         static const AkUniqueID SFX_KEY_NOPE_RTPC = 3074675057U;
         static const AkUniqueID SFX_LEFT_DOOR_RTPC = 4004428957U;

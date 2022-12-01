@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="491961918" Language="SFX" Hash="1944152207">
+		<SoundBank Id="491961918" Language="SFX" Hash="3811484733">
 			<ObjectPath>\SoundBanks\Default Work Unit\Forest</ObjectPath>
 			<ShortName>Forest</ShortName>
 			<Path>Forest.bnk</Path>
@@ -677,6 +677,7 @@
 			<GameParameters>
 				<GameParameter Id="1329731385" Name="Sword_Drag_RTPC" ObjectPath="\Game Parameters\Default Work Unit\Sword_Drag_RTPC"/>
 				<GameParameter Id="2802239154" Name="Music_Fade_Out_Forest" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Forest"/>
+				<GameParameter Id="3603286834" Name="SFX_FS_Forest_RTPC" ObjectPath="\Game Parameters\Default Work Unit\SFX_FS_Forest_RTPC"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1897164952" Name="Footsteps_Forest_State" ObjectPath="\States\Default Work Unit\Footsteps_Forest_State" GUID="{4BF3F467-6940-43B1-ADF2-0ED2B0F1F149}">
@@ -697,7 +698,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="461398295">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3887736980">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

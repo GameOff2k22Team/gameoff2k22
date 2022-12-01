@@ -50,6 +50,32 @@
 													<ValueList>
 														<Value>-5</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{5C81B85B-1D4C-467B-AC40-01575E7F9742}" ShortID="504784194">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SFX_FS_Forest_RTPC" ID="{55565D60-0FF6-4942-A2F9-DF261248C87B}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E8BBC535-0B9D-4699-A500-BC35357573BE}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
