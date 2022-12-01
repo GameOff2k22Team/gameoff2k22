@@ -69,9 +69,10 @@ public class Player2D : MonoBehaviour
             StartCoroutine(DamageInvincibilityCoroutine());
         }
 
-        else if (PlayerHP == 1)
+        else if (!_isInvincible && PlayerHP == 1)
         {
             OnPlayer2DDeath.Raise();
+            _isInvincible = false;
             PlayerHP = 5;
         }
     }
