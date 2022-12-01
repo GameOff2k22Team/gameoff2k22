@@ -144,9 +144,9 @@ public class BossManager : MonoBehaviour
 
     private void CallWhenPlayerDies()
     {
-        StopAllCoroutines();
+        Debug.Log("iscalled");
         ClearEnemies();
-        UpdateBossPhase(BossState.phase1);
+        StopAllCoroutines();
     }
 
     private void Start()
@@ -223,10 +223,13 @@ public class BossManager : MonoBehaviour
     #endregion
     private static void ClearEnemies()
     {
+        
+        Debug.Log("Clearing enemies " + enemies);
         foreach (BossEnemy enemy in enemies)
         {
             if (enemy.gameObject != null)
             {
+                Debug.Log("Clearing enemies " + enemy.gameObject);
                 Destroy(enemy.gameObject);
             }
         }
@@ -273,7 +276,7 @@ public class BossManager : MonoBehaviour
             }
 
             i += 1;
-            yield return new WaitForSecondsRealtime(spawningSpeed);
+            yield return new WaitForSeconds(spawningSpeed);
         }
         
         
@@ -286,11 +289,11 @@ public class BossManager : MonoBehaviour
     {
         yield return StartCoroutine(WaitBeforeStart());
         yield return StartCoroutine(P2PatternCoroutine(p2S1Pattern, _numberOfPatternP2S1, false, _P2S1SpawningSpeed));
-        yield return new WaitForSecondsRealtime(10f);
+        yield return new WaitForSeconds(10f);
         yield return StartCoroutine(P2PatternCoroutine(p2S2Pattern, _numberOfPatternP2S2, false, _P2S2SpawningSpeed));
-        yield return new WaitForSecondsRealtime(10f);
+        yield return new WaitForSeconds(10f);
         yield return StartCoroutine(P2PatternCoroutine(p2S3Pattern, _numberOfPatternP2S3, false, _P2S3SpawningSpeed));
-        yield return new WaitForSecondsRealtime(10f);
+        yield return new WaitForSeconds(10f);
         ClearEnemies();
         OnPhase2End?.Raise();
     }
@@ -315,7 +318,7 @@ public class BossManager : MonoBehaviour
             }
 
             i += 1;
-            yield return new WaitForSecondsRealtime(spawningSpeed);
+            yield return new WaitForSeconds(spawningSpeed);
         }
 
     }
@@ -350,7 +353,7 @@ public class BossManager : MonoBehaviour
                 currentBossPattern.timeForActivation,
                 currentBossPattern.timeActivated);
             i += 1;
-            yield return new WaitForSecondsRealtime(currentBossPattern.timeToWait);
+            yield return new WaitForSeconds(currentBossPattern.timeToWait);
         }
     }
 
@@ -387,7 +390,7 @@ public class BossManager : MonoBehaviour
             }
 
             i += 1;
-            yield return new WaitForSecondsRealtime(spawningSpeed);
+            yield return new WaitForSeconds(spawningSpeed);
         }
 
 
