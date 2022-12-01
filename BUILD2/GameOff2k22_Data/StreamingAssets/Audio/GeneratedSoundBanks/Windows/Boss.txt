@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	85250538	SFX_Bounce_P2			\Boss\SFX_Bounce_P2	
+	615152896	SFX_Hit			\Boss\SFX_Hit	
+	819129657	Music_Boss_Stop			\Boss\Music_Boss_Stop	
+	1090969866	Music_Boss			\Boss\Music_Boss	
+	1905497203	SFX_Dead			\Boss\SFX_Dead	
+	3084689728	SFX_Projectile_P3			\Boss\SFX_Projectile_P3	
+	3084689729	SFX_Projectile_P2			\Boss\SFX_Projectile_P2	
+	3084689730	SFX_Projectile_P1			\Boss\SFX_Projectile_P1	
+	3084689735	SFX_Projectile_P4			\Boss\SFX_Projectile_P4	
+	3309721871	SFX_Heal			\Boss\SFX_Heal	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	580948670	Music_Fade_Out_Boss			\Default Work Unit\Music_Fade_Out_Boss	
+	3688824786	SFX_Hit_RTPC			\Default Work Unit\SFX_Hit_RTPC	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1588715066	Echoes_Linear	Wwise Delay			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	7169808	SFX_Projectile_P1_1	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Projectile_P1_1 [2022-12-01 082057]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Projectiles\SFX_Projectile_P1_1		96064
+	65038811	Music_Boss_Start	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Boss_Start_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Boss\Music_Boss_Start\Music_Boss_Start		256064
+	85600990	SFX_Projectile_P2	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Projectile_P2 [2022-12-01 082100]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Projectiles\SFX_Projectile_P2		107600
+	341657247	SFX_Projectile_P4	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Projectile_P4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Projectiles\SFX_Projectile_P4		96064
+	362198152	SFX_Heal	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Heal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Heal\SFX_Heal		240064
+	475410730	SFX_Bounce_P2	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Bounce_P2 [2022-12-01 082102]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Projectiles\SFX_Bounce_P2		69356
+	636525220	SFX_Dead	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Dead_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Dead\SFX_Dead		240064
+	638373655	SFX_Projectile_P3	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Projectile_P3 [2022-12-01 082105]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Projectiles\SFX_Projectile_P3		504064
+	774942894	SFX_Hit	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Get_Hit\SFX_Hit		116832
+	817062100	Music_Boss_Loop	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Boss_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Boss\Music_Boss_Loop\Music_Boss_Loop		20480064
+	1003499590	SFX_Projectile_P1_2	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Projectile_P1_2 [2022-12-01 082058]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Boss\Projectiles\SFX_Projectile_P1_2		56364
+

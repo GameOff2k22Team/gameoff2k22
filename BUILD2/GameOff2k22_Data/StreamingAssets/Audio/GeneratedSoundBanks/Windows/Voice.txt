@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	163236292	Stop_VOICE_Fairy			\Voice\Stop_VOICE_Fairy	
+	856997892	Stop_VOICE_Mother			\Voice\Stop_VOICE_Mother	
+	1490786435	Play_VOICE_Hero			\Voice\Play_VOICE_Hero	
+	1662371690	Play_VOICE_Fairy			\Voice\Play_VOICE_Fairy	
+	2092731998	Play_VOICE_Mother			\Voice\Play_VOICE_Mother	
+	2473492081	Stop_VOICE_Hero			\Voice\Stop_VOICE_Hero	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1199740901	VOICE_RTPC			\Default Work Unit\VOICE_RTPC	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	532069323	VOICE_Mother	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\VOICE_Mother [2022-11-28 000201]_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Mother\VOICE_Mother		451716
+	570409859	VOICE_Fairy	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\VOICE_Fairy [2022-11-28 000200]_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Fairy\VOICE_Fairy		444064
+	917728635	VOICE_Hero	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\VOICE_Hero [2022-11-28 000159]_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Hero\VOICE_Hero		444064
+

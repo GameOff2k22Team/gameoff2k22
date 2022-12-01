@@ -157,6 +157,119 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="SFX_Evol_1" ID="{7370BF47-7DB5-40CA-A1B1-BC239641CA9A}">
+					<ChildrenList>
+						<Action Name="" ID="{72D338FD-5B5C-4C42-9E4B-24100025A9FB}" ShortID="10812278">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Evol_1" ID="{D5930378-0BD8-4D4F-92FE-EA92E2FECD1A}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_you_died" ID="{BE07184D-C8FA-4A2D-8B56-206626D72CAC}">
+					<ChildrenList>
+						<Action Name="" ID="{9215BB38-4B5E-49B7-BD42-E1C654383450}" ShortID="835202334">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_you_died" ID="{38719445-FD2D-4BCB-8E48-6FA0786651C5}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_De_evol_3" ID="{656FF395-26C6-416C-A6B7-DCBA840A1534}">
+					<ChildrenList>
+						<Action Name="" ID="{A628F419-A3E4-4060-9048-ABBCDF4C20FC}" ShortID="1057299044">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_De_evol_3" ID="{D085E911-0921-443C-82A0-C5C02E708C6A}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_De_evol_1" ID="{D1D441E6-FAFA-46F6-AECD-A3C8B6356AD7}">
+					<ChildrenList>
+						<Action Name="" ID="{69280C4F-AA78-460F-A126-5C6EE0B708CD}" ShortID="80366263">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_De_evol_1" ID="{FB358024-35D2-4776-B7E2-2E4C2BBCDDFB}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Toupie" ID="{89F4160A-01F3-4764-8BD3-CE02548DD58E}">
+					<ChildrenList>
+						<Action Name="" ID="{348F4D94-2654-456B-8D56-C5D08DBD7511}" ShortID="733891295">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Toupie" ID="{639EC932-CFC4-45AA-9A48-C18FE1AE2A1C}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Magic_Swipe" ID="{60F12C38-16D8-43ED-BC55-9D7D24EDD0E8}">
+					<ChildrenList>
+						<Action Name="" ID="{AF2297ED-C59C-44CE-AFAE-6025FA9916A2}" ShortID="879239638">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Magic_Swipe" ID="{86678DEE-65F8-4290-A407-D8FEDB95DA27}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_De_evol_2" ID="{8E535C1F-3D1C-403F-BB4E-090564BF9A8A}">
+					<ChildrenList>
+						<Action Name="" ID="{455E6BF7-7476-4FE8-9C0A-095A37A6FBE8}" ShortID="324702833">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_De_evol_2" ID="{E1CC21E9-2960-4EE0-8411-6EC65820D7D3}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Fire" ID="{E05756C2-F8DA-4CCD-BE40-6EF93B5440E2}">
+					<ChildrenList>
+						<Action Name="" ID="{CDFE4D6D-F5C7-46F8-A1D0-E3BF309FFF10}" ShortID="62749286">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="15"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Fire" ID="{3A98E477-2AD1-4501-A1CB-89B48ABF28C6}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Evol_2" ID="{80903FF3-5B52-40E0-B8FD-9570604F74EB}">
+					<ChildrenList>
+						<Action Name="" ID="{B8BDA58A-76AA-451B-A932-DEF978657864}" ShortID="814574269">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Evol_2" ID="{45ADD9FE-5B7D-4166-A8A6-BB9B2A318776}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Evil_Presence" ID="{3F266DD0-C7C4-42C9-8006-25201784F237}">
+					<ChildrenList>
+						<Action Name="" ID="{6C612FEF-DF31-4994-A424-F37E49C228F4}" ShortID="42643630">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Evil_Presence" ID="{28F250FA-376F-4C72-9ABC-DDA4A2D2CF9F}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

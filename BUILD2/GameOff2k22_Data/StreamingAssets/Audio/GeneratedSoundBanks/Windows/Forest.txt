@@ -1,0 +1,103 @@
+Event	ID	Name			Wwise Object Path	Notes
+	285337003	SFX_Door_Donjon_Open			\Forest\SFX_Door_Donjon_Open	
+	760246352	AMB_Forest_Birds			\Forest\AMB_Forest_Birds	
+	1091244002	SFX_Key_Forest			\Forest\SFX_Key_Forest	
+	1704546832	SFX_Sword_Drag_Stop			\Forest\SFX_Sword_Drag_Stop	
+	1831562812	SFX_Carpet_Forest			\Forest\SFX_Carpet_Forest	
+	2181728358	Music_Forest			\Forest\Music_Forest	
+	2452502980	SFX_Sword			\Forest\SFX_Sword	
+	2506571047	Stop_Music_Forest			\Forest\Stop_Music_Forest	
+	2933853842	SFX_Sheep			\Forest\SFX_Sheep	
+	3351128722	AMB_Forest_Wind			\Forest\AMB_Forest_Wind	
+	3445709805	Play_Footsteps_Forest			\Forest\Play_Footsteps_Forest	
+	3571398045	SFX_Key_Forest_Open			\Forest\SFX_Key_Forest_Open	
+	4193343421	SFX_Sword_Drag			\Forest\SFX_Sword_Drag	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1897164952	Footsteps_Forest_State			\Default Work Unit\Footsteps_Forest_State	
+	2186369235	Sword_Drag_State_Group			\Default Work Unit\Sword_Drag_State_Group	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Footsteps_Forest_State			
+	1216965916	Stone	Footsteps_Forest_State			
+	2195636714	Dirt	Footsteps_Forest_State			
+	4248645337	Grass	Footsteps_Forest_State			
+	748895195	None	Sword_Drag_State_Group			
+	1216965916	Stone	Sword_Drag_State_Group			
+	2195636714	Dirt	Sword_Drag_State_Group			
+	4248645337	Grass	Sword_Drag_State_Group			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1329731385	Sword_Drag_RTPC			\Default Work Unit\Sword_Drag_RTPC	
+	2802239154	Music_Fade_Out_Forest			\Default Work Unit\Music_Fade_Out_Forest	
+
+Effect plug-ins	ID	Name	Type				Notes
+	305931877	Wwise Time Stretch (Custom)	Wwise Time Stretch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	8335901	FS_F_D_03	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_03 [2022-11-28 212425]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_03		103564
+	16990621	FS_G_01	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_01 [2022-11-10 104218]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_01		84064
+	56970132	FS_G_06	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_06 [2022-11-10 104222]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_06		108064
+	57548007	FS_F_S_11	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_11 [2022-11-28 212404]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_11		83316
+	76086931	FS_F_S_09	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_09 [2022-11-28 212403]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_09		93064
+	93353790	SFX_Sheep_03	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Sheep_03 [2022-11-28 235455]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Sheep\SFX_Sheep\SFX_Sheep_03		92224
+	105143430	FS_F_D_10	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_10 [2022-11-28 212431]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_10		91564
+	114234725	FS_G_08	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_08 [2022-11-10 104223]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_08		108064
+	122182384	SFX_Carpet_Forest	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Carpet_Forest [2022-11-26 180204]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Carpet\SFX_Carpet_Forest		259812
+	150065558	FS_F_D_13	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_13 [2022-11-28 212433]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_13		111816
+	188235433	FS_G_14	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_14 [2022-11-10 104226]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_14		120064
+	194854972	FS_G_13	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_13 [2022-11-10 104226]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_13		132064
+	200235434	FS_F_D_06	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_06 [2022-11-28 212427]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_06		91564
+	201489506	FS_G_05	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_05 [2022-11-10 104221]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_05		108064
+	207953179	FS_F_S_03	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_03 [2022-11-28 212356]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_03		84064
+	248743014	FS_F_D_17	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_17 [2022-11-28 212441]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_17		91564
+	260575531	FS_G_02	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_02 [2022-11-10 104219]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_02		108064
+	289580017	FS_F_D_15	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_15 [2022-11-28 212434]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_15		88564
+	293773881	FS_F_D_04	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_04 [2022-11-28 212425]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_04		96064
+	297071322	FS_G_07	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_07 [2022-11-10 104222]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_07		120064
+	321592035	FS_F_S_14	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_14 [2022-11-28 212407]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_14		79564
+	336698677	SFX_Sword_Drag_Dirt	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Sword_Drag_Dirt_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Sword\Sword_Drag\SFX_Sword_Drag_Dirt		624064
+	351255117	FS_G_09	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_09 [2022-11-10 104223]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_09		96064
+	379522214	FS_F_S_06	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_06 [2022-11-28 212401]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_06		79564
+	392020527	FS_F_D_05	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_05 [2022-11-28 212426]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_05		90064
+	432367158	FS_F_S_07	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_07 [2022-11-28 212401]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_07		86316
+	447215346	FS_F_S_17	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_17 [2022-11-28 212417]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_17		80316
+	447295671	SFX_Door_Donjon_Open	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Door_Donjon_Open [2022-11-11 150946]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Door\SFX_Door_Donjon_Open		278464
+	460425779	MS_Forest_Loop	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\MS_Forest_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Forest\Music_Forest_Loop\MS_Forest_Loop		9701120
+	461939034	SFX_Key_Forest	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Key_Forest [2022-11-26 170537]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Key\SFX_Key_Forest		34114
+	486865210	SFX_Sword_Drag_Stone	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Sword_Drag_Stone_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Sword\Sword_Drag\SFX_Sword_Drag_Stone		960064
+	499012861	FS_F_D_11	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_11 [2022-11-28 212431]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_11		96064
+	505105908	FS_F_D_07	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_07 [2022-11-28 212428]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_07		105064
+	509737433	FS_G_16	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_16 [2022-11-10 104229]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_16		108064
+	540030879	SFX_Sword	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Sword_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Sword\SFX_Sword		633412
+	555602783	FS_F_S_02	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_02 [2022-11-28 212355]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_02		78064
+	560465127	FS_F_S_13	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_13 [2022-11-28 212406]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_13		111064
+	579703896	FS_F_D_08	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_08 [2022-11-28 212429]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_08		84064
+	589985005	FS_F_S_04	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_04 [2022-11-28 212359]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_04		67940
+	596479926	SFX_Sword_Drag_Grass	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Sword_Drag_Grass_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Sword\Sword_Drag\SFX_Sword_Drag_Grass		960064
+	618595984	FS_F_S_16	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_16 [2022-11-28 212408]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_16		78064
+	634811331	FS_G_17	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_17 [2022-11-10 104230]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_17		108064
+	644131015	FS_F_D_14	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_14 [2022-11-28 212434]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_14		88564
+	663564149	FS_G_11	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_11 [2022-11-10 104225]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_11		120064
+	679786309	FS_F_S_10	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_10 [2022-11-28 212403]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_10		91564
+	736289165	FS_F_S_15	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_15 [2022-11-28 212408]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_15		77316
+	740620277	FS_F_S_08	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_08 [2022-11-28 212402]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_08		90064
+	743538883	FS_G_03	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_03 [2022-11-10 104219]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_03		120064
+	755749943	FS_G_12	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_12 [2022-11-10 104225]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_12		108064
+	824006898	SFX_Key_Forest_Open	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Key_Forest_Open  [2022-11-26 173029]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Key\SFX_Key_Forest_Open		48178
+	839536700	FS_F_S_12	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_12 [2022-11-28 212405]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_12		78064
+	856571331	FS_G_15	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_15 [2022-11-10 104228]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_15		108064
+	873935811	SFX_Sheep_02	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Sheep_02 [2022-11-28 235454]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Sheep\SFX_Sheep\SFX_Sheep_02		192064
+	891394400	FS_F_D_02	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_02 [2022-11-28 212424]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_02		102064
+	896997164	FS_F_D_16	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_16 [2022-11-28 212440]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_16		94564
+	900007380	FS_G_10	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_10 [2022-11-10 104224]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_10		120064
+	915101858	AMB_Forest_Birds	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\AMB_Forest_Birds_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\Forest\AMB_Forest_Birds		7296064
+	922311477	FS_F_S_01	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_01 [2022-11-28 212354]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_01		80316
+	926724468	FS_F_D_01	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_01 [2022-11-28 212423]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_01		98316
+	971204579	SFX_Door_Donjon_Close	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Door_Donjon_Close [2022-11-11 150947]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Door\SFX_Door_Donjon_Close		207938
+	991125941	FS_F_D_12	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_12 [2022-11-28 212432]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_12		90064
+	1008068995	AMB_Forest_Wind	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\AMB_Forest_Wind_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\Forest\AMB_Forest_Wind		5376064
+	1014850392	FS_F_S_05	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_S_05 [2022-11-28 212400]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Stone\FS_F_S_05		71316
+	1058741125	FS_G_04	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_G_04 [2022-11-10 104220]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Grass\FS_G_04		120064
+	1059344956	FS_F_D_09	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\FS_F_D_09 [2022-11-28 212430]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Forest\Footsteps\Footsteps_Forest\Footsteps_Forest_Dirt\FS_F_D_09		96064
+

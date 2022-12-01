@@ -973,6 +973,7 @@ GameObject:
   - component: {fileID: 213281375}
   - component: {fileID: 213281376}
   - component: {fileID: 213281377}
+  - component: {fileID: 213281378}
   m_Layer: 0
   m_Name: TimelinePhase2
   m_TagString: Untagged
@@ -1030,6 +1031,10 @@ PlayableDirector:
     value: {fileID: 878087140}
   - key: {fileID: 5172412054542266761, guid: 74398b9ed39856f4ab5e7b85ffad4500, type: 2}
     value: {fileID: 1402384418}
+  - key: {fileID: 3388260983390660146, guid: 74398b9ed39856f4ab5e7b85ffad4500, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2484976140270717347, guid: 74398b9ed39856f4ab5e7b85ffad4500, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &213281374
@@ -1075,6 +1080,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 418161096}
+        m_TargetAssemblyTypeName: AkAmbient, AK.Wwise.Unity.MonoBehaviour
+        m_MethodName: HandleEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 418161093}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &213281376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,7 +1104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09cdd45ae82c262448982b813861c6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 11400000, guid: 5690d858dd005ee428589d7da59a6ac8, type: 2}
+  dialog: {fileID: 11400000, guid: f015b25ffc0fa524fbc5eafdc6525200, type: 2}
   pannelScale: {x: 0.003, y: 0.003, z: 0.003}
 --- !u!114 &213281377
 MonoBehaviour:
@@ -1134,6 +1151,28 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &213281378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213281371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468b59eb91b60bd4f90c62a68d2c5731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &213924170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,6 +2094,113 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &418161093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 418161094}
+  - component: {fileID: 418161097}
+  - component: {fileID: 418161096}
+  - component: {fileID: 418161095}
+  m_Layer: 0
+  m_Name: SFX_Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &418161094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418161093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1705668302}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &418161095
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418161093}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &418161096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418161093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82fc8b6848095a4daafe4a6a43f9b22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 72d04a9f52f4e6942983c29a8fae9bca,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []
+--- !u!114 &418161097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418161093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468b59eb91b60bd4f90c62a68d2c5731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &457309204 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3120474364327567374, guid: 6b4bd51bb72a6e94998e055d0c9a18d8,
@@ -2424,6 +2570,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1795660069567400891, guid: 5041a13e1132c2e4ebe1e749c31de3de,
+        type: 3}
+      propertyPath: SFXDialogPop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 0959cb3d453f2334986db0765c74667f,
+        type: 2}
     - target: {fileID: 3189609122891604165, guid: 5041a13e1132c2e4ebe1e749c31de3de,
         type: 3}
       propertyPath: m_Name
@@ -3662,6 +3814,7 @@ GameObject:
   - component: {fileID: 983779489}
   - component: {fileID: 983779491}
   - component: {fileID: 983779490}
+  - component: {fileID: 983779492}
   m_Layer: 0
   m_Name: TimelinePhase1
   m_TagString: Untagged
@@ -3703,6 +3856,8 @@ PlayableDirector:
     value: {fileID: 1865077602}
   - key: {fileID: -3599553499354318745, guid: 2cb71dda9b2284c43b2b70d4ca8e1746, type: 2}
     value: {fileID: 983779490}
+  - key: {fileID: 7420307779431895912, guid: 2cb71dda9b2284c43b2b70d4ca8e1746, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &983779488
@@ -3807,6 +3962,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: 30ead9c1f8e242e409882735b4d96417, type: 2}
   pannelScale: {x: 0.003, y: 0.003, z: 0.003}
+--- !u!114 &983779492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983779485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468b59eb91b60bd4f90c62a68d2c5731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1027390992
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,6 +4614,7 @@ GameObject:
   - component: {fileID: 1313530892}
   - component: {fileID: 1313530893}
   - component: {fileID: 1313530894}
+  - component: {fileID: 1313530895}
   m_Layer: 0
   m_Name: TimelinePhase3
   m_TagString: Untagged
@@ -4492,6 +4670,14 @@ PlayableDirector:
     value: {fileID: 1865077602}
   - key: {fileID: 8179628490453727933, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
     value: {fileID: 372669960}
+  - key: {fileID: -5555828023729831119, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5272829892529066194, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4734451638602300183, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1430713306947734121, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1313530891
@@ -4596,6 +4782,28 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1313530895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313530888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468b59eb91b60bd4f90c62a68d2c5731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1356066542
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,6 +5572,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1373593645}
+        m_TargetAssemblyTypeName: AkAmbient, AK.Wwise.Unity.MonoBehaviour
+        m_MethodName: HandleEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1373593642}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1579932711
 GameObject:
   m_ObjectHideFlags: 0
@@ -5552,6 +5772,7 @@ Transform:
   - {fileID: 1974716239}
   - {fileID: 550100010}
   - {fileID: 372669961}
+  - {fileID: 418161094}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6332,6 +6553,8 @@ GameObject:
   - component: {fileID: 1926547259}
   - component: {fileID: 1926547262}
   - component: {fileID: 1926547261}
+  - component: {fileID: 1926547263}
+  - component: {fileID: 1926547264}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -6423,6 +6646,56 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: acfeac4858cd3df4082b892890194be3,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &1926547263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926547258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea0298d2d1b17f4a837ecb9a4a65e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 395376443e13af04fa3f3209db1af770,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &1926547264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926547258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea0298d2d1b17f4a837ecb9a4a65e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ead3556ed43c4934385a6a31cdad9862,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -6841,6 +7114,7 @@ GameObject:
   - component: {fileID: 2139122607}
   - component: {fileID: 2139122609}
   - component: {fileID: 2139122608}
+  - component: {fileID: 2139122610}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -6895,6 +7169,12 @@ PlayableDirector:
     value: {fileID: 878087140}
   - key: {fileID: -4222400699920634109, guid: 0eda56e90e0d45a4ea58114b7fff7118, type: 2}
     value: {fileID: 1035138245}
+  - key: {fileID: 8534854630907199851, guid: 0eda56e90e0d45a4ea58114b7fff7118, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7561774721247881432, guid: 0eda56e90e0d45a4ea58114b7fff7118, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6923759736340039115, guid: 0eda56e90e0d45a4ea58114b7fff7118, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2139122605
@@ -7073,6 +7353,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2139122610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139122603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468b59eb91b60bd4f90c62a68d2c5731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &8495145600534866724
 PrefabInstance:
   m_ObjectHideFlags: 0
