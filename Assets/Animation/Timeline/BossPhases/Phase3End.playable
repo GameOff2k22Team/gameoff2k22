@@ -474,7 +474,7 @@ MonoBehaviour:
   akEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 04714225fdbdc5e4f8acc0eefe890b2c,
+    WwiseObjectReference: {fileID: 11400000, guid: 7c76912f3726d8d49a681a4b1edcd9fe,
       type: 2}
   blendInCurve: 4
   blendOutCurve: 4
@@ -1226,7 +1226,7 @@ MonoBehaviour:
   akEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 90e2a5100e7253c45bf03805ab407633,
+    WwiseObjectReference: {fileID: 11400000, guid: 4f396dffb779fc046a8b81232699de5d,
       type: 2}
   blendInCurve: 4
   blendOutCurve: 4
@@ -1547,7 +1547,7 @@ MonoBehaviour:
   RTPC:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 02cd13c2c2102034a9f91852ef9d88f9,
+    WwiseObjectReference: {fileID: 11400000, guid: e54aa2763674b80489c59db6a1762e69,
       type: 2}
   setGlobally: 1
   template:
@@ -2917,7 +2917,7 @@ MonoBehaviour:
   akEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 94e99ba4e09337749b042cfabe1fa808,
+    WwiseObjectReference: {fileID: 11400000, guid: cf9675f780c3be74c948879d7fb36eb9,
       type: 2}
   blendInCurve: 4
   blendOutCurve: 4
