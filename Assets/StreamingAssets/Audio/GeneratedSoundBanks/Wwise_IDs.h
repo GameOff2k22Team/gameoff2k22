@@ -28,8 +28,13 @@ namespace AK
         static const AkUniqueID PLAY_VOICE_FAIRY = 1662371690U;
         static const AkUniqueID PLAY_VOICE_HERO = 1490786435U;
         static const AkUniqueID PLAY_VOICE_MOTHER = 2092731998U;
+        static const AkUniqueID SFX_ARTEFACT = 1295230719U;
+        static const AkUniqueID SFX_ARTEFACT_ANIM = 2007898709U;
         static const AkUniqueID SFX_BED_COVER = 3739131574U;
         static const AkUniqueID SFX_CARPET_FOREST = 1831562812U;
+        static const AkUniqueID SFX_CHEST_INV = 194056412U;
+        static const AkUniqueID SFX_CHEST_POP = 751704620U;
+        static const AkUniqueID SFX_CHEST_POP_STOP = 999550235U;
         static const AkUniqueID SFX_DEAD = 1905497203U;
         static const AkUniqueID SFX_DIK_INTRO_CINEMATIQUE = 3567259750U;
         static const AkUniqueID SFX_DOOR = 1739295053U;
@@ -39,6 +44,8 @@ namespace AK
         static const AkUniqueID SFX_KEY_FOREST = 1091244002U;
         static const AkUniqueID SFX_KEY_FOREST_OPEN = 3571398045U;
         static const AkUniqueID SFX_KEY_GET = 2452784151U;
+        static const AkUniqueID SFX_KEY_NOPE = 941231893U;
+        static const AkUniqueID SFX_KEY_NOPE_STOP = 921616632U;
         static const AkUniqueID SFX_OPEN_BOSS_DOOR = 2240776526U;
         static const AkUniqueID SFX_OPEN_CHEST = 3378814075U;
         static const AkUniqueID SFX_OPEN_LEFT_DOOR = 3670362726U;
@@ -48,6 +55,8 @@ namespace AK
         static const AkUniqueID SFX_STAIRS_ROOM = 4209853719U;
         static const AkUniqueID SFX_SWORD = 2452502980U;
         static const AkUniqueID SFX_SWORD_DRAG = 4193343421U;
+        static const AkUniqueID SFX_SWORD_DRAG_STONE_DONJON = 439170446U;
+        static const AkUniqueID SFX_SWORD_DRAG_STONE_DONJON_STOP = 1168412621U;
         static const AkUniqueID SFX_SWORD_DRAG_STOP = 1704546832U;
         static const AkUniqueID STOP_FOOTSTEPS_ROOM_CARPET = 1081171197U;
         static const AkUniqueID STOP_MUSIC_DONJON = 3111214772U;
@@ -104,6 +113,9 @@ namespace AK
         static const AkUniqueID MUSIC_FADE_OUT_TITLE_SCREEN = 1395019464U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;
+        static const AkUniqueID SFX_KEY_NOPE_RTPC = 3074675057U;
+        static const AkUniqueID SFX_LEFT_DOOR_RTPC = 4004428957U;
+        static const AkUniqueID SFX_RIGHT_DOOR_RTPC = 1045480886U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;

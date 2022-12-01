@@ -65,6 +65,21 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="SFX_Key_Nope_RTPC" ID="{5B91A1DC-586E-4708-9A2B-BF8DABAD7A43}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFX_Left_Door_RTPC" ID="{AB975339-D243-4319-A43B-B04669B3C988}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFX_Right_Door_RTPC" ID="{BAF22ECF-EC81-400B-8411-0A589F937066}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -101,6 +101,9 @@
 				<Event Name="SFX_Open_Left_Door" ID="{A2B551FB-BDC3-43BB-A463-03B6ED60EED3}">
 					<ChildrenList>
 						<Action Name="" ID="{7215A0A8-ED7E-4143-8379-69235C7E300C}" ShortID="755019028">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.3"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Open_Left_Door" ID="{F19F13E8-09A2-4913-98F2-4461546D3B0F}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
@@ -126,6 +129,145 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Open_Boss_Door" ID="{C9182C14-4A11-4135-A09D-344495433F62}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Sword_Drag_Stone_Donjon" ID="{AEED7BF7-A702-4DBB-B832-37C2C3ACA262}">
+					<ChildrenList>
+						<Action Name="" ID="{6B2E7255-AF6A-47B4-B845-1E0E07C40C44}" ShortID="679497934">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Sword_Drag_Stone_Donjon" ID="{03F73CAC-7ADF-4B8C-B0B8-E55B804AAA59}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Sword_Drag_Stone_Donjon_Stop" ID="{4CD002D0-7CEF-4218-9D7B-B7B7DC15DD32}">
+					<ChildrenList>
+						<Action Name="" ID="{E51B6EE7-0BC5-4DFE-BF9B-E9F4B433E702}" ShortID="557128910">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Sword_Drag_Stone_Donjon" ID="{03F73CAC-7ADF-4B8C-B0B8-E55B804AAA59}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Artefact" ID="{36AB4ACF-0098-4FBE-ABF5-11D359D306D5}">
+					<ChildrenList>
+						<Action Name="" ID="{232C8F5E-43E5-4775-A524-DDD30A1C2048}" ShortID="104062001">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="75"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_Donjon" ID="{FB83A6DF-17FB-432C-B63F-68B2E917F170}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E6231471-2C80-453D-BCC5-A07DBF90237C}" ShortID="166413490">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Artefact" ID="{BA7D2DC1-36B5-436E-8EEE-51C111B150B6}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D9C7802A-E813-4676-A0F8-12FB4E5CE0BF}" ShortID="384842101">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fade_Out_Donjon" ID="{FB83A6DF-17FB-432C-B63F-68B2E917F170}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Key_Nope" ID="{814C0EE2-BD67-494C-A963-CB662C542D59}">
+					<ChildrenList>
+						<Action Name="" ID="{ACEAD94E-868B-4EE3-85E4-E26894478E04}" ShortID="510107848">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Key_Nope" ID="{D9D17159-CFCB-4FD1-8D02-2B333486DB2B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Key_Nope_Stop" ID="{B3225C62-B240-4934-B99D-C186B89D11F4}">
+					<ChildrenList>
+						<Action Name="" ID="{67777623-7947-46CE-8177-A623482B1494}" ShortID="977470778">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Key_Nope" ID="{D9D17159-CFCB-4FD1-8D02-2B333486DB2B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Chest_Inv" ID="{DC04E6E9-E643-4C3E-A4BC-599CEEE6CABD}">
+					<ChildrenList>
+						<Action Name="" ID="{FCA08CC6-901D-4509-9C07-C0E74CC30CF2}" ShortID="1069317991">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chest_Inv" ID="{E5CCC9CA-9A33-4EF9-9491-89BB603D0802}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Chest_Pop" ID="{456DD649-1AC3-452A-9E30-A593646E782C}">
+					<ChildrenList>
+						<Action Name="" ID="{620AB73A-F05E-4631-B946-8A002D280C05}" ShortID="19531577">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chest_Pop" ID="{771388A3-737D-41F8-B2BF-92DB5AD931E7}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Chest_Pop_Stop" ID="{6B894D7F-6ADA-422F-A83E-A6607E24F982}">
+					<ChildrenList>
+						<Action Name="" ID="{5206B4C3-FCBA-4A5B-AB89-2612AFCCDE36}" ShortID="783897639">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chest_Pop" ID="{771388A3-737D-41F8-B2BF-92DB5AD931E7}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SFX_Artefact_Anim" ID="{DA3CC07B-8ED9-41EE-83A9-51608BECE6C6}">
+					<ChildrenList>
+						<Action Name="" ID="{DE562D8A-3B0E-494D-8AFC-151FD60021C1}" ShortID="797084452">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Artefact_Anim" ID="{87307672-D0A3-49D9-978B-55B7C0565A4D}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
