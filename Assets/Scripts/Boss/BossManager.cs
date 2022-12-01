@@ -233,6 +233,9 @@ public class BossManager : MonoBehaviour
     }
 
     #region P1 Boss
+
+    [SerializeField]
+    private AK.Wwise.Event SFXProjectileP1 = null;
     private IEnumerator Phase1Coroutine()
     {
         yield return StartCoroutine(WaitBeforeStart());
@@ -270,6 +273,7 @@ public class BossManager : MonoBehaviour
                     bossPattern.speed,
                     bossPattern.freq,
                     bossPattern.amp);
+                SFXProjectileP1.Post(gameObject);
             }
 
             i += 1;
@@ -282,6 +286,9 @@ public class BossManager : MonoBehaviour
     #endregion
 
     #region P2 Boss
+
+    [SerializeField]
+    private AK.Wwise.Event SFXProjectileP2 = null;
     private IEnumerator Phase2Coroutine()
     {
         yield return StartCoroutine(WaitBeforeStart());
@@ -312,6 +319,7 @@ public class BossManager : MonoBehaviour
                     bossPattern.speed,
                     bossPattern.freq,
                     bossPattern.amp);
+                SFXProjectileP2.Post(gameObject);
             }
 
             i += 1;
@@ -325,6 +333,8 @@ public class BossManager : MonoBehaviour
 
     #region P3 Boss
 
+    [SerializeField]
+    private AK.Wwise.Event SFXProjectileP3 = null;
     private IEnumerator Phase3Coroutine()
     {
         yield return StartCoroutine(WaitBeforeStart());
@@ -345,6 +355,7 @@ public class BossManager : MonoBehaviour
         while (i < BossPatterns.Count)
         {
             PatternBossP3 currentBossPattern = BossPatterns[i];
+            SFXProjectileP3.Post(gameObject);
             LineAreaManager.Instance.ToggleLines(currentBossPattern.nbOfVertLines, 
                 currentBossPattern.nbOfHorLines, 
                 currentBossPattern.timeForActivation,
@@ -356,6 +367,8 @@ public class BossManager : MonoBehaviour
 
     #endregion
 
+    [SerializeField]
+    private AK.Wwise.Event SFXProjectileP4 = null;
 
     private IEnumerator Phase4Coroutine()
     {
@@ -384,6 +397,8 @@ public class BossManager : MonoBehaviour
                     bossPattern.speed,
                     bossPattern.freq,
                     bossPattern.amp);
+                SFXProjectileP4.Post(gameObject);
+
             }
 
             i += 1;

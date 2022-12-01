@@ -697,7 +697,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1496497957">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3692889109">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -709,7 +709,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1560169506" Language="SFX" Hash="3116913960">
+		<SoundBank Id="1560169506" Language="SFX" Hash="2063347709">
 			<ObjectPath>\SoundBanks\Default Work Unit\Boss</ObjectPath>
 			<ShortName>Boss</ShortName>
 			<Path>Boss.bnk</Path>
@@ -726,11 +726,28 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="819129657" Name="Music_Boss_Stop" ObjectPath="\Events\Boss\Music_Boss_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="85250538" Name="SFX_Bounce_P2" ObjectPath="\Events\Boss\SFX_Bounce_P2" DurationType="OneShot" DurationMin="0.269587" DurationMax="0.483131">
+					<IncludedMemoryFiles>
+						<File Id="475410730" Language="SFX">
+							<ShortName>SFX_Bounce_P2 [2022-12-01 082102].wav</ShortName>
+							<Path>SFX\SFX_Bounce_P2 [2022-12-01 082102]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1905497203" Name="SFX_Dead" ObjectPath="\Events\Boss\SFX_Dead" DurationType="OneShot" DurationMin="1.25" DurationMax="1.25">
 					<IncludedMemoryFiles>
 						<File Id="636525220" Language="SFX">
 							<ShortName>SFX_Dead.wav</ShortName>
 							<Path>SFX\SFX_Dead_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3309721871" Name="SFX_Heal" ObjectPath="\Events\Boss\SFX_Heal" DurationType="OneShot" DurationMin="1.25" DurationMax="1.25">
+					<IncludedMemoryFiles>
+						<File Id="362198152" Language="SFX">
+							<ShortName>SFX_Heal.wav</ShortName>
+							<Path>SFX\SFX_Heal_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -742,15 +759,71 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3084689730" Name="SFX_Projectile_P1" ObjectPath="\Events\Boss\SFX_Projectile_P1" DurationType="OneShot" DurationMin="0.362654" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="7169808" Language="SFX">
+							<ShortName>SFX_Projectile_P1_1 [2022-12-01 082057].wav</ShortName>
+							<Path>SFX\SFX_Projectile_P1_1 [2022-12-01 082057]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3084689729" Name="SFX_Projectile_P2" ObjectPath="\Events\Boss\SFX_Projectile_P2" DurationType="OneShot" DurationMin="0.476995" DurationMax="0.638554">
+					<IncludedMemoryFiles>
+						<File Id="85600990" Language="SFX">
+							<ShortName>SFX_Projectile_P2 [2022-12-01 082100].wav</ShortName>
+							<Path>SFX\SFX_Projectile_P2 [2022-12-01 082100]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3084689728" Name="SFX_Projectile_P3" ObjectPath="\Events\Boss\SFX_Projectile_P3" DurationType="OneShot" DurationMin="2.625" DurationMax="2.625">
+					<IncludedMemoryFiles>
+						<File Id="638373655" Language="SFX">
+							<ShortName>SFX_Projectile_P3 [2022-12-01 082105].wav</ShortName>
+							<Path>SFX\SFX_Projectile_P3 [2022-12-01 082105]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3084689735" Name="SFX_Projectile_P4" ObjectPath="\Events\Boss\SFX_Projectile_P4" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="341657247" Language="SFX">
+							<ShortName>SFX_Projectile_P4.wav</ShortName>
+							<Path>SFX\SFX_Projectile_P4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="7169808" Language="SFX">
+					<ShortName>SFX_Projectile_P1_1 [2022-12-01 082057].wav</ShortName>
+					<Path>SFX\SFX_Projectile_P1_1 [2022-12-01 082057]_10C4C929.wem</Path>
+				</File>
 				<File Id="65038811" Language="SFX">
 					<ShortName>MS_Boss_Start.wav</ShortName>
 					<Path>SFX\MS_Boss_Start_D79FB2B7.wem</Path>
 				</File>
+				<File Id="85600990" Language="SFX">
+					<ShortName>SFX_Projectile_P2 [2022-12-01 082100].wav</ShortName>
+					<Path>SFX\SFX_Projectile_P2 [2022-12-01 082100]_10C4C929.wem</Path>
+				</File>
+				<File Id="341657247" Language="SFX">
+					<ShortName>SFX_Projectile_P4.wav</ShortName>
+					<Path>SFX\SFX_Projectile_P4_10C4C929.wem</Path>
+				</File>
+				<File Id="362198152" Language="SFX">
+					<ShortName>SFX_Heal.wav</ShortName>
+					<Path>SFX\SFX_Heal_10C4C929.wem</Path>
+				</File>
+				<File Id="475410730" Language="SFX">
+					<ShortName>SFX_Bounce_P2 [2022-12-01 082102].wav</ShortName>
+					<Path>SFX\SFX_Bounce_P2 [2022-12-01 082102]_10C4C929.wem</Path>
+				</File>
 				<File Id="636525220" Language="SFX">
 					<ShortName>SFX_Dead.wav</ShortName>
 					<Path>SFX\SFX_Dead_10C4C929.wem</Path>
+				</File>
+				<File Id="638373655" Language="SFX">
+					<ShortName>SFX_Projectile_P3 [2022-12-01 082105].wav</ShortName>
+					<Path>SFX\SFX_Projectile_P3 [2022-12-01 082105]_10C4C929.wem</Path>
 				</File>
 				<File Id="774942894" Language="SFX">
 					<ShortName>SFX_Hit.wav</ShortName>
@@ -760,9 +833,17 @@
 					<ShortName>MS_Boss_Loop.wav</ShortName>
 					<Path>SFX\MS_Boss_Loop_D79FB2B7.wem</Path>
 				</File>
+				<File Id="1003499590" Language="SFX">
+					<ShortName>SFX_Projectile_P1_2 [2022-12-01 082058].wav</ShortName>
+					<Path>SFX\SFX_Projectile_P1_2 [2022-12-01 082058]_10C4C929.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="580948670" Name="Music_Fade_Out_Boss" ObjectPath="\Game Parameters\Default Work Unit\Music_Fade_Out_Boss"/>
+				<GameParameter Id="3688824786" Name="SFX_Hit_RTPC" ObjectPath="\Game Parameters\Default Work Unit\SFX_Hit_RTPC"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2607556080" Language="SFX" Hash="2794599965">
+		<SoundBank Id="2607556080" Language="SFX" Hash="2073949657">
 			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
