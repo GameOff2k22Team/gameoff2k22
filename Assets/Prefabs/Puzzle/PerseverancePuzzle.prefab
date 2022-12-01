@@ -56,6 +56,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5867872209555402765}
     m_Modifications:
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[8].key
+      value: 
+      objectReference: {fileID: 3387341876802924051, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[9].key
+      value: 
+      objectReference: {fileID: -4667392350045429414, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[10].key
+      value: 
+      objectReference: {fileID: -7247437986321035960, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -115,6 +138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
@@ -232,6 +260,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
 --- !u!1 &3688512892734372036 stripped
@@ -347,6 +380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
@@ -464,6 +502,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest6 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
 --- !u!1 &1498655876502134798 stripped
@@ -579,6 +622,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
@@ -696,6 +744,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest3
       objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
 --- !u!4 &9133994689949803872 stripped
@@ -755,7 +808,7 @@ PrefabInstance:
     - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
@@ -777,6 +830,24 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
+      propertyPath: m_SceneBindings.Array.data[6].key
+      value: 
+      objectReference: {fileID: 3387341876802924051, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[7].key
+      value: 
+      objectReference: {fileID: -4667392350045429414, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[8].key
+      value: 
+      objectReference: {fileID: -7247437986321035960, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
       propertyPath: m_SceneBindings.Array.data[4].value
       value: 
       objectReference: {fileID: 4468884248916487096}
@@ -785,6 +856,16 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[5].value
       value: 
       objectReference: {fileID: 5588256554599279048}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[6].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[7].value
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -844,6 +925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7562850912999721229, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
@@ -977,6 +1063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
@@ -1215,6 +1306,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
 --- !u!1 &8163725387966535102 stripped
@@ -1271,6 +1367,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5867872209555402765}
     m_Modifications:
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[8].key
+      value: 
+      objectReference: {fileID: 3387341876802924051, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[9].key
+      value: 
+      objectReference: {fileID: -4667392350045429414, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[10].key
+      value: 
+      objectReference: {fileID: -7247437986321035960, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
     - target: {fileID: 2904698050737913347, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: isAlreadyInRoom
@@ -1346,6 +1465,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest4
       objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
 --- !u!4 &8275453510428226314 stripped
@@ -1402,6 +1526,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5867872209555402765}
     m_Modifications:
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[8].key
+      value: 
+      objectReference: {fileID: 3387341876802924051, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[9].key
+      value: 
+      objectReference: {fileID: -4667392350045429414, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
+    - target: {fileID: 2570917552434384040, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[10].key
+      value: 
+      objectReference: {fileID: -7247437986321035960, guid: 7f9ae3a46977d14428c0f7eb10636808,
+        type: 2}
     - target: {fileID: 2904698050737913348, guid: 570b5215202d5394fb7c4982731434f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -1461,6 +1608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest6 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
@@ -1577,6 +1729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
@@ -1835,6 +1992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
 --- !u!1 &6606456617670190722 stripped
@@ -1950,6 +2112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
@@ -2067,6 +2234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}
 --- !u!4 &6777299732846737548 stripped
@@ -2182,6 +2354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904698050737913349, guid: 570b5215202d5394fb7c4982731434f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b5215202d5394fb7c4982731434f9, type: 3}

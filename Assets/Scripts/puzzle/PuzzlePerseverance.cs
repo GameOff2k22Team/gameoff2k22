@@ -17,14 +17,9 @@ public class PuzzlePerseverance : PuzzleBase
     {
         base.Start();
         type = PuzzleManager.PuzzleType.PERSEVERANCE;
-
-        if (!isAlreadyInRoom)
-        {
-            StartCoroutine(MakeChestFall());
-        }
     }
 
-    IEnumerator MakeChestFall()
+    public IEnumerator MakeChestFall()
     {
         float originalAnimatorSpeed = animator.speed;
 

@@ -176,8 +176,8 @@ MonoBehaviour:
   animator: {fileID: 3268100977465491899}
   openAnimation: {fileID: 7400000, guid: ed4335924dbc6f8469799b20c972f107, type: 2}
   isAlreadyInRoom: 0
-  minimumTimeToWait: 2
-  maximumTimeToWait: 5
+  minimumTimeToWait: 0.5
+  maximumTimeToWait: 3
 --- !u!114 &8435246228264033991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +222,12 @@ PlayableDirector:
     value: {fileID: 7562850912999721229}
   - key: {fileID: -4153083847598765623, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
     value: {fileID: 1980871230021192573}
+  - key: {fileID: 3387341876802924051, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4667392350045429414, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7247437986321035960, guid: 7f9ae3a46977d14428c0f7eb10636808, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &6687074350352797980
@@ -375,8 +381,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.68536633, z: 1.8537966}
-  m_Center: {x: 0, y: 0.36971506, z: -0.4268983}
+  m_Size: {x: 0.6925437, y: 0.68536633, z: 1.2784405}
+  m_Center: {x: -0.032708764, y: 0.36971506, z: -0.49435288}
 --- !u!114 &8573483511166760607
 MonoBehaviour:
   m_ObjectHideFlags: 0
