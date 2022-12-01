@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BossEnemy : MonoBehaviour
 {
+    [SerializeField]
+    protected bool isRotated;
+
     protected Vector3 _direction;
 
     protected float _movementSpeed;
@@ -34,6 +37,11 @@ public class BossEnemy : MonoBehaviour
     {
         while(_isAlive)
         {
+            if(isRotated)
+            {
+                float angle = Vector3.SignedAngle(transform.right, _direction, transform.right);
+                this.transform.Rotate(transform.forward, angle);
+            }    
             this.transform.position += _direction * _movementSpeed * Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
