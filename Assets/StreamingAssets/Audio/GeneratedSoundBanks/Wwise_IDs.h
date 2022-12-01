@@ -71,6 +71,7 @@ namespace AK
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_HOVER = 2118900976U;
         static const AkUniqueID UI_PLAY = 2382194672U;
+        static const AkUniqueID UI_POP_DIALOG = 2421372162U;
     } // namespace EVENTS
 
     namespace STATES

@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="UI_Pop_Dialog" ID="{E0172A40-3C9E-473B-9577-F903BCF6BCF9}">
+					<ChildrenList>
+						<Action Name="" ID="{F75FC9C9-DBBA-4AFC-8CB5-EBAB242DF205}" ShortID="848652151">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Pop_Dialog" ID="{54FF7965-DA6E-42C1-8FD5-7D4BBF131CD8}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
