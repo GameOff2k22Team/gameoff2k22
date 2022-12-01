@@ -385,6 +385,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1380682755, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1398194920, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -396,6 +400,10 @@ PrefabInstance:
     - target: {fileID: 1411857538, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411857538, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1597398402, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
       propertyPath: m_Layer
@@ -1045,7 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09cdd45ae82c262448982b813861c6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 11400000, guid: 5690d858dd005ee428589d7da59a6ac8, type: 2}
+  dialog: {fileID: 11400000, guid: f015b25ffc0fa524fbc5eafdc6525200, type: 2}
   pannelScale: {x: 0.003, y: 0.003, z: 0.003}
 --- !u!114 &213281377
 MonoBehaviour:
@@ -4365,7 +4373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09cdd45ae82c262448982b813861c6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 11400000, guid: f015b25ffc0fa524fbc5eafdc6525200, type: 2}
+  dialog: {fileID: 11400000, guid: 02e8fb5b4246e694daa9dad56878061f, type: 2}
   pannelScale: {x: 0.003, y: 0.003, z: 0.003}
 --- !u!114 &1313530894
 MonoBehaviour:

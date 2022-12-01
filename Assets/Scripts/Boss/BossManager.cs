@@ -291,7 +291,7 @@ public class BossManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(10f);
         yield return StartCoroutine(P2PatternCoroutine(p2S3Pattern, _numberOfPatternP2S3, false, _P2S3SpawningSpeed));
         yield return new WaitForSecondsRealtime(10f);
-
+        ClearEnemies();
         OnPhase2End?.Raise();
     }
 
