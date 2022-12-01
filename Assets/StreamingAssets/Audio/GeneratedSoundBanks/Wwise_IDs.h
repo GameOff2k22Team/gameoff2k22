@@ -140,6 +140,7 @@ namespace AK
         static const AkUniqueID DONJON = 2891873417U;
         static const AkUniqueID FOREST = 491961918U;
         static const AkUniqueID HOUSE = 3720479411U;
+        static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID TITLE_SCREEN = 3853285476U;
         static const AkUniqueID VOICE = 3170124113U;
     } // namespace BANKS
