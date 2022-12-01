@@ -8,10 +8,14 @@ public class BossManager : MonoBehaviour
 {
     private enum BossState { phase1 = 1, 
                              phase2 = 2, 
-                             phase3 = 3}
+                             phase3 = 3,
+                             phase4 = 4,}
 
     [SerializeField]
     private GameEventListener OnPlayerDeath;
+
+    [SerializeField]
+    private GameEvent OnPlayerMustNotDie;
 
     [SerializeField]
     private BossEnemy enemy;
@@ -22,11 +26,16 @@ public class BossManager : MonoBehaviour
     [SerializeField]
     private NewBouncerSplitEnemy splitterEnemy;
 
+    [SerializeField]
+    private HealEnemy healEnemy;
+
     public static List<BossEnemy> enemies = new List<BossEnemy>();
 
     private float _projectileSpeed = 5.0f;
 
     private float _spawningSpeed = 1.0f;
+
+    private float _spawningSpeedP4 = 3.0f;
 
     private float _timerBeforeStart = 3.0f;
 
@@ -111,6 +120,17 @@ public class BossManager : MonoBehaviour
     private List<PatternBossP3> p3S2Pattern;
     [SerializeField]
     private List<PatternBossP3> p3S3Pattern;
+    [SerializeField]
+    private List<PatternBossP3> p3S4Pattern;
+
+    [Space(10)]
+    [Header("Phase 4")]
+    [SerializeField]
+    private GameEvent OnPhase4End;
+    [Header("Step 1")]
+    [SerializeField]
+    private List<PatternBossP1> p4S1Pattern;
+
 
     private void Awake()
     {
@@ -131,7 +151,7 @@ public class BossManager : MonoBehaviour
 
     private void Start()
     {
-
+        //UpdateBossPhase(BossState.phase3);
     }
 
     #region Generic Method
@@ -151,6 +171,11 @@ public class BossManager : MonoBehaviour
                 NewBouncerSplitEnemy _currentSplitEnemy = Instantiate(splitterEnemy, tr.position, Quaternion.identity);
                 _currentSplitEnemy.Initialize(direction, _projectileSpeed * ((float)projectileSpeedRatio / 100f), _currentDamage, true);
                 break;
+            case EnemyType.heal:
+                HealEnemy _currentHealEnemy = Instantiate(healEnemy, tr.position, Quaternion.identity);
+                _currentHealEnemy.Initialize(direction, _projectileSpeed * ((float)projectileSpeedRatio / 100f), _currentDamage);
+                break;
+
         }
         
 
@@ -170,6 +195,10 @@ public class BossManager : MonoBehaviour
             case BossState.phase3:
                 ClearEnemies();
                 StartCoroutine(Phase3Coroutine());
+                break;
+            case BossState.phase4:
+                ClearEnemies();
+                StartCoroutine(Phase4Coroutine());
                 break;
         }
     }
@@ -192,6 +221,16 @@ public class BossManager : MonoBehaviour
 
     }
     #endregion
+    private static void ClearEnemies()
+    {
+        foreach (BossEnemy enemy in enemies)
+        {
+            if (enemy.gameObject != null)
+            {
+                Destroy(enemy.gameObject);
+            }
+        }
+    }
 
     #region P1 Boss
     private IEnumerator Phase1Coroutine()
@@ -211,16 +250,7 @@ public class BossManager : MonoBehaviour
         OnPhase1End?.Raise();
     }
 
-    private static void ClearEnemies()
-    {
-        foreach (BossEnemy enemy in enemies)
-        {
-            if(enemy.gameObject != null)
-            {
-                Destroy(enemy.gameObject);
-            }
-        }
-    }
+
 
     private IEnumerator P1PatternCoroutine(List<PatternBossP1> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)
     {
@@ -304,7 +334,8 @@ public class BossManager : MonoBehaviour
         yield return StartCoroutine(WaitBeforeStart());
         yield return StartCoroutine(P3PatternCoroutine(p3S3Pattern));
         yield return StartCoroutine(WaitBeforeStart());
-
+        OnPlayerMustNotDie?.Raise();
+        yield return StartCoroutine(P3PatternCoroutine(p3S4Pattern));
         OnPhase3End?.Raise();
     }
 
@@ -322,8 +353,46 @@ public class BossManager : MonoBehaviour
             yield return new WaitForSecondsRealtime(currentBossPattern.timeToWait);
         }
     }
-    
+
     #endregion
+
+
+    private IEnumerator Phase4Coroutine()
+    {
+        yield return StartCoroutine(WaitBeforeStart());
+        yield return StartCoroutine(P4PatternCoroutine(p4S1Pattern, _numberOfPatternP1S1, isP1S1Random, _spawningSpeedP4));
+        OnPhase4End?.Raise();
+    }
+
+
+
+    private IEnumerator P4PatternCoroutine(List<PatternBossP1> BossPatterns, int numberOfPattern, bool isRandom, float spawningSpeed)
+    {
+        var i = 0;
+
+        int countNumber = isRandom ? numberOfPattern : BossPatterns.Count;
+        while (i < countNumber)
+        {
+            PatternBossP1 bossPattern = isRandom ? BossPatterns[UnityEngine.Random.Range(0, BossPatterns.Count)] : BossPatterns[i];
+
+            foreach (SpawnManager.P1SpawnArea spawnArea in bossPattern.SpawnArea)
+            {
+                SpawnManager.BossP1SpawnPattern spawnAreaPosition = SpawnManager.Instance.GetSpawnAreaPositionByType(spawnArea);
+                SpawnEnemy(bossPattern.enemyType,
+                    spawnAreaPosition.position,
+                    spawnAreaPosition.direction,
+                    bossPattern.speed,
+                    bossPattern.freq,
+                    bossPattern.amp);
+            }
+
+            i += 1;
+            yield return new WaitForSecondsRealtime(spawningSpeed);
+        }
+
+
+
+    }
     // Refaire avec sinusoides et amplitude
     // P2 Zones qui rebondissent et qui te rentrent dedans
     // P3 lasers  )))))))))))))))))))))))))))))))

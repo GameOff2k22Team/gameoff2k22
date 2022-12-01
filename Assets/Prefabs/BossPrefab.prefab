@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 316010665}
   - component: {fileID: 316010666}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: 'Top Left Corner '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 504094014}
   - component: {fileID: 504094013}
   - component: {fileID: 504094015}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: BounceActivator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675774493}
   - component: {fileID: 675774494}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Zones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 965782657}
   - component: {fileID: 965782659}
   - component: {fileID: 324147002}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: RightLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +379,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.33}
   m_EdgeRadius: 0
 --- !u!114 &965782659
 MonoBehaviour:
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 1081557032}
   - component: {fileID: 1081557034}
   - component: {fileID: 1395502687}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: MidLineHor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.33}
   m_EdgeRadius: 0
 --- !u!114 &1081557034
 MonoBehaviour:
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 1380682757}
   - component: {fileID: 1380682759}
   - component: {fileID: 555564184}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: MidLineVert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,7 +669,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.33}
   m_EdgeRadius: 0
 --- !u!114 &1380682759
 MonoBehaviour:
@@ -713,7 +713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1398194921}
   - component: {fileID: 1398194922}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: 'Bot Right Corner  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,7 +801,7 @@ GameObject:
   - component: {fileID: 1411857540}
   - component: {fileID: 1411857542}
   - component: {fileID: 77159659}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: LeftLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -899,7 +899,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.333}
   m_EdgeRadius: 0
 --- !u!114 &1411857542
 MonoBehaviour:
@@ -946,7 +946,7 @@ GameObject:
   - component: {fileID: 1597398404}
   - component: {fileID: 1597398406}
   - component: {fileID: 1014330688}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: BotLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1044,7 +1044,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.333}
   m_EdgeRadius: 0
 --- !u!114 &1597398406
 MonoBehaviour:
@@ -1091,7 +1091,7 @@ GameObject:
   - component: {fileID: 1705801943}
   - component: {fileID: 1705801945}
   - component: {fileID: 1089255871}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: TopLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1189,7 +1189,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.33}
   m_EdgeRadius: 0
 --- !u!114 &1705801945
 MonoBehaviour:
@@ -1233,7 +1233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1852046647}
   - component: {fileID: 1852046648}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: 'Top Right Corner  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2088644879}
   - component: {fileID: 2088644880}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: 'Bot Left Corner '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 2494362161363474700}
   - component: {fileID: 2494362163355096836}
   - component: {fileID: 1653187095}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Player2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1530,6 +1530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnPlayer2DDeath: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa, type: 2}
+  OnPlayerMustNotDie:
+    Event: {fileID: 11400000, guid: 45cfe3066bb248041ab0cc88ed6b6b6e, type: 2}
   PlayerHPChanged: {fileID: 11400000, guid: 84aee348d17c1be479612779e971dbdb, type: 2}
 --- !u!61 &2494362163355096836
 BoxCollider2D:
@@ -1589,7 +1591,7 @@ GameObject:
   - component: {fileID: 2494362161405228926}
   - component: {fileID: 2494362161405228924}
   - component: {fileID: 5296360245284406367}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: BossPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1684,10 +1686,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnPlayerDeath:
     Event: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa, type: 2}
+  OnPlayerMustNotDie: {fileID: 11400000, guid: 45cfe3066bb248041ab0cc88ed6b6b6e, type: 2}
   enemy: {fileID: 8500118781570255505, guid: 069bd3f31ddf7194095699b3383f151c, type: 3}
   zigZagEnemy: {fileID: -271683245168513361, guid: fece696e65799164e8ae0dd77c681ec7,
     type: 3}
   splitterEnemy: {fileID: 1168830573054995149, guid: ad58ce2dddd0c094e81e1424e461c653,
+    type: 3}
+  healEnemy: {fileID: 6426943593979315694, guid: e38164a5007d21148888d15e5858b684,
     type: 3}
   OnPhase1End: {fileID: 11400000, guid: 68d68b7bf6d561e4f8f07beaf9f5c59d, type: 2}
   isP1S1Random: 0
@@ -1810,6 +1815,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b5e4c449173d9ce4e9ee2bfc8c749dfe, type: 2}
   - {fileID: 11400000, guid: 6407890cedca17f4598c003f0ad4d356, type: 2}
   - {fileID: 11400000, guid: 02996f1f0a75ca7428aca676b409f987, type: 2}
+  p3S4Pattern:
+  - {fileID: 11400000, guid: b636e62ca03017a4f94cd357e5fe4ab6, type: 2}
+  OnPhase4End: {fileID: 11400000, guid: 09ad2d7b4214dbc4191475f46739f76d, type: 2}
+  p4S1Pattern:
+  - {fileID: 11400000, guid: 1c7249c92fd0d1848aa5f320d7e7a8cd, type: 2}
+  - {fileID: 11400000, guid: d83fa815125466440af22737b667bd1f, type: 2}
+  - {fileID: 11400000, guid: 30e1159f98e391e4f99b79cb1153cd7f, type: 2}
+  - {fileID: 11400000, guid: 61eeca84775592f48863a6881088f591, type: 2}
+  - {fileID: 11400000, guid: 61eeca84775592f48863a6881088f591, type: 2}
+  - {fileID: 11400000, guid: 61eeca84775592f48863a6881088f591, type: 2}
+  - {fileID: 11400000, guid: 61eeca84775592f48863a6881088f591, type: 2}
+  - {fileID: 11400000, guid: 61eeca84775592f48863a6881088f591, type: 2}
 --- !u!114 &5296360245284406367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,7 +1898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2494362161410247410}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1929,7 +1946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362161466027403}
   - component: {fileID: 2494362161466027400}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Top Spawner left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2017,7 +2034,7 @@ GameObject:
   - component: {fileID: 2494362161487559409}
   - component: {fileID: 8107840631280175164}
   - component: {fileID: 2073911727}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: RightWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2163,7 +2180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2494362161631339548}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Despawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2202,7 +2219,7 @@ GameObject:
   - component: {fileID: 2494362161735255000}
   - component: {fileID: 6301007694498806650}
   - component: {fileID: 1133567193}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: BotWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2349,7 +2366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362161891789493}
   - component: {fileID: 2494362161891789498}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Left Spawner Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2437,7 +2454,7 @@ GameObject:
   - component: {fileID: 2494362161904234822}
   - component: {fileID: 2494362161904234820}
   - component: {fileID: 2494362161904234821}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: DespawnRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2584,7 +2601,7 @@ GameObject:
   - component: {fileID: 2494362161924312252}
   - component: {fileID: 2494362161924312259}
   - component: {fileID: 2494362161924312258}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: DespawnTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2731,7 +2748,7 @@ GameObject:
   - component: {fileID: 2494362162134066060}
   - component: {fileID: 624960456898213181}
   - component: {fileID: 581781589}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2881,7 +2898,7 @@ GameObject:
   - component: {fileID: 2494362162214540223}
   - component: {fileID: 4223527604432433453}
   - component: {fileID: 294150185}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: TopWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3029,7 +3046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162223735645}
   - component: {fileID: 2494362162223735650}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Right Spawner Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3114,7 +3131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162298319719}
   - component: {fileID: 2494362162298319716}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Right Spawner Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3199,7 +3216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162351537487}
   - component: {fileID: 2494362162351537484}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Left Spawner Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3284,7 +3301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162365176730}
   - component: {fileID: 2494362162365176731}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Top Spawner Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3369,7 +3386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162416401105}
   - component: {fileID: 2494362162416401110}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Top Spawner Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3457,7 +3474,7 @@ GameObject:
   - component: {fileID: 2494362162479020445}
   - component: {fileID: 2494362162479020451}
   - component: {fileID: 2494362162479020448}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: DespawnLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3601,7 +3618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162692799001}
   - component: {fileID: 2494362162692799006}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Right Spawner Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3686,7 +3703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162705069776}
   - component: {fileID: 2494362162705069777}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Bot Spawner Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3771,7 +3788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362162888412821}
   - component: {fileID: 2494362162888412826}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Left Spawner Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3856,7 +3873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362163255252668}
   - component: {fileID: 1504658831}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3917,7 +3934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362163256050768}
   - component: {fileID: 2494362163256050769}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: 'Bot Spawner left '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4005,7 +4022,7 @@ GameObject:
   - component: {fileID: 2494362163324349913}
   - component: {fileID: 2494362163324349919}
   - component: {fileID: 2494362163324349916}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: DespawnBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4149,7 +4166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494362163331484603}
   - component: {fileID: 2494362163331484600}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: 'Bot Spawner Right '
   m_TagString: Untagged
   m_Icon: {fileID: 0}

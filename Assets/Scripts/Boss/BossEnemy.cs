@@ -45,12 +45,9 @@ public class BossEnemy : MonoBehaviour
         if(col.TryGetComponent<PlayerMovement2D>(out PlayerMovement2D player))
         {
             player.GetComponent<Player2D>().RemoveHP(_damage);
-            //player.GetComponent<Rigidbody2D>().AddForce(_direction);
-            //_isAlive = false;
         }
         else if(col.TryGetComponent<DespawnArea>(out DespawnArea area))
         {
-            Debug.Log("isHittingDespawn");
             _isAlive=false;
         }
     }
@@ -61,5 +58,6 @@ public enum EnemyType
     normal,
     zigzag,
     splitter,
+    heal,
 }
 
