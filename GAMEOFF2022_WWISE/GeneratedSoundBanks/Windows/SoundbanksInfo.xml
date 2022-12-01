@@ -762,7 +762,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2607556080" Language="SFX" Hash="905391038">
+		<SoundBank Id="2607556080" Language="SFX" Hash="2794599965">
 			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
@@ -796,6 +796,14 @@
 						<File Id="286650089" Language="SFX">
 							<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
 							<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2421372162" Name="UI_Pop_Dialog" ObjectPath="\Events\Menu\UI_Pop_Dialog" DurationType="OneShot" DurationMin="0.825055" DurationMax="1.2234">
+					<IncludedMemoryFiles>
+						<File Id="798767294" Language="SFX">
+							<ShortName>UI_Pop_Dialog [2022-11-28 211104].wav</ShortName>
+							<Path>SFX\UI_Pop_Dialog [2022-11-28 211104]_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

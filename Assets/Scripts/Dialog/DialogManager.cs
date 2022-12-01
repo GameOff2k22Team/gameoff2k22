@@ -14,13 +14,14 @@ public class DialogManager : Singleton<DialogManager>
     }
 
     private Action<InputAction.CallbackContext> lambdaHandler;
-
+    [SerializeField]
+    private AK.Wwise.Event SFXDialogPop = null;
     public void StartDialog(DialogTrigger dialogTrigger)
     {
         GameManager.Instance.UpdateGameState(GameState.StartDialogue);
         lambdaHandler = context => dialogTrigger.NextMessage();
         InputManager.Instance._playerInputs.Player.Use.performed += lambdaHandler;
-
+        
         dialogTrigger.NextMessage();
     }
 
@@ -36,5 +37,6 @@ public class DialogManager : Singleton<DialogManager>
             SpeechBubbleManager.Instance.Clear();
             SpeechBubbleManager.Instance.AddSpeechBubble(UnitManager.Instance.GetUnitByType(dialogInfo.type).transform.position, 
                                                          pannelScale, dialogInfo.message, speechbubbleType);
+        SFXDialogPop.Post(gameObject);
     }
 }
