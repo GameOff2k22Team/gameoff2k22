@@ -3,7 +3,12 @@ guid: cc92224e92fab3944993fc192bd98712
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yoshi
+    second: {fileID: 2100000, guid: 2f2671cff8a782744841bc4f19c8258d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
