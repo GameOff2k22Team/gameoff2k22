@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f6e431c6e57ab4b96d664749a1aed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRotated: 0
   _isFirst: 1
   SplitCount: 0
 --- !u!114 &1168830573054995149
@@ -152,6 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971fcefb7005c244ab5763c8dd2f98ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRotated: 0
+  SFXBounceP2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b6bd3037784c03f4e877735c4a415574,
+      type: 2}
 --- !u!95 &-4402271682493196265
 Animator:
   serializedVersion: 4

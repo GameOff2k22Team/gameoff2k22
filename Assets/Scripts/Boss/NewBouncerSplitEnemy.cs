@@ -34,6 +34,8 @@ public class NewBouncerSplitEnemy : BossEnemy
         _mustSplit = mustSplit;
     }
 
+    [SerializeField]
+    private AK.Wwise.Event SFXBounceP2 = null;
     private new void OnTriggerEnter2D(Collider2D col)
     {
         if (!_isBounceActive)
@@ -41,6 +43,7 @@ public class NewBouncerSplitEnemy : BossEnemy
             if (col.GetComponent<EnemyActivator>() != null)
             {
                 _isBounceActive = true;
+                SFXBounceP2.Post(gameObject);
             }
         }
         else

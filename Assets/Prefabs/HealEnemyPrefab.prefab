@@ -114,3 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2f5d7e3744e0474aaa2d52c5c29c4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRotated: 0
+  SFXHeal:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a11dcfc635b697049a0dd30c58be56ba,
+      type: 2}
