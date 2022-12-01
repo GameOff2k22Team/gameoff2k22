@@ -9,6 +9,8 @@ public class LineAreaDamage : MonoBehaviour
     private Renderer _renderer;
     private BoxCollider2D _boxCollider;
     private int _damage;
+    [SerializeField]
+    private Animator animator;
 
     private void Awake()
     {
@@ -26,7 +28,9 @@ public class LineAreaDamage : MonoBehaviour
     public void Initialize(float timeBeforeDamage, float timeWithDamage)
     {
         _timeBeforeDamage = timeBeforeDamage;
+        
         _timeWithDamage = timeWithDamage;
+
     }
 
     public IEnumerator AppearCoroutine()
@@ -36,7 +40,9 @@ public class LineAreaDamage : MonoBehaviour
         float timer = 0f;
         while (timer < _timeBeforeDamage)
         {
+
             timer += Time.deltaTime;
+            animator.SetFloat("speed1", timer);
             yield return null;
         }
         _renderer.material.color = new Color(1f, 1f, 1f, 1f);
@@ -46,6 +52,8 @@ public class LineAreaDamage : MonoBehaviour
         while (timer < _timeWithDamage)
         {
             timer += Time.deltaTime;
+            animator.SetFloat("speed2", timer);
+
             yield return null;
         }
         _boxCollider.enabled = false;
