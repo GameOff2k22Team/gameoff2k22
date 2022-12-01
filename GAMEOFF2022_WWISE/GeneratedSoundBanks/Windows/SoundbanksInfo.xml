@@ -709,7 +709,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1560169506" Language="SFX" Hash="2063347709">
+		<SoundBank Id="1560169506" Language="SFX" Hash="1837966063">
 			<ObjectPath>\SoundBanks\Default Work Unit\Boss</ObjectPath>
 			<ShortName>Boss</ShortName>
 			<Path>Boss.bnk</Path>
@@ -843,7 +843,7 @@
 				<GameParameter Id="3688824786" Name="SFX_Hit_RTPC" ObjectPath="\Game Parameters\Default Work Unit\SFX_Hit_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2607556080" Language="SFX" Hash="2073949657">
+		<SoundBank Id="2607556080" Language="SFX" Hash="2569722483">
 			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
@@ -872,14 +872,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2382194672" Name="UI_Play" ObjectPath="\Events\Menu\UI_Play" DurationType="OneShot" DurationMin="0.380604" DurationMax="0.380604">
-					<IncludedMemoryFiles>
-						<File Id="286650089" Language="SFX">
-							<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
-							<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="2421372162" Name="UI_Pop_Dialog" ObjectPath="\Events\Menu\UI_Pop_Dialog" DurationType="OneShot" DurationMin="0.825055" DurationMax="1.2234">
 					<IncludedMemoryFiles>
 						<File Id="798767294" Language="SFX">
@@ -894,10 +886,6 @@
 					<ShortName>UI_Back [2022-11-21 165940].wav</ShortName>
 					<Path>SFX\UI_Back [2022-11-21 165940]_10C4C929.wem</Path>
 				</File>
-				<File Id="286650089" Language="SFX">
-					<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
-					<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
-				</File>
 				<File Id="321886356" Language="SFX">
 					<ShortName>UI_Click [2022-11-21 165938].wav</ShortName>
 					<Path>SFX\UI_Click [2022-11-21 165938]_10C4C929.wem</Path>
@@ -905,6 +893,14 @@
 				<File Id="491094595" Language="SFX">
 					<ShortName>UI_Hover [2022-11-21 165937].wav</ShortName>
 					<Path>SFX\UI_Hover [2022-11-21 165937]_10C4C929.wem</Path>
+				</File>
+				<File Id="798767294" Language="SFX">
+					<ShortName>UI_Pop_Dialog [2022-11-28 211104].wav</ShortName>
+					<Path>SFX\UI_Pop_Dialog [2022-11-28 211104]_10C4C929.wem</Path>
+				</File>
+				<File Id="1009269138" Language="SFX">
+					<ShortName>Ui_Pop_Dialog_2 [2022-12-01 054157].wav</ShortName>
+					<Path>SFX\Ui_Pop_Dialog_2 [2022-12-01 054157]_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -1327,7 +1323,184 @@
 				<GameParameter Id="1199740901" Name="VOICE_RTPC" ObjectPath="\Game Parameters\Default Work Unit\VOICE_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3720479411" Language="SFX" Hash="722544898">
+		<SoundBank Id="3261888876" Language="SFX" Hash="2468691708">
+			<ObjectPath>\SoundBanks\Default Work Unit\Cinematique</ObjectPath>
+			<ShortName>Cinematique</ShortName>
+			<Path>Cinematique.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3871049322" Name="SFX_Bed_1" ObjectPath="\Events\Cinematique\SFX_Bed_1" DurationType="OneShot" DurationMin="0.78125" DurationMax="0.78125">
+					<IncludedMemoryFiles>
+						<File Id="346909849" Language="SFX">
+							<ShortName>SFX_Bed_1.wav</ShortName>
+							<Path>SFX\SFX_Bed_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3871049321" Name="SFX_Bed_2" ObjectPath="\Events\Cinematique\SFX_Bed_2" DurationType="OneShot" DurationMin="0.5625" DurationMax="0.5625">
+					<IncludedMemoryFiles>
+						<File Id="44942049" Language="SFX">
+							<ShortName>SFX_Bed_2.wav</ShortName>
+							<Path>SFX\SFX_Bed_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3871049320" Name="SFX_Bed_3" ObjectPath="\Events\Cinematique\SFX_Bed_3" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="239652335" Language="SFX">
+							<ShortName>SFX_Bed_3.wav</ShortName>
+							<Path>SFX\SFX_Bed_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3871049327" Name="SFX_Bed_4" ObjectPath="\Events\Cinematique\SFX_Bed_4" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+					<IncludedMemoryFiles>
+						<File Id="176053616" Language="SFX">
+							<ShortName>SFX_Bed_4.wav</ShortName>
+							<Path>SFX\SFX_Bed_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3871049326" Name="SFX_Bed_5" ObjectPath="\Events\Cinematique\SFX_Bed_5" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
+					<IncludedMemoryFiles>
+						<File Id="161188132" Language="SFX">
+							<ShortName>SFX_Bed_5.wav</ShortName>
+							<Path>SFX\SFX_Bed_5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3871049325" Name="SFX_Bed_6" ObjectPath="\Events\Cinematique\SFX_Bed_6" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+					<IncludedMemoryFiles>
+						<File Id="1052398937" Language="SFX">
+							<ShortName>SFX_Bed_6.wav</ShortName>
+							<Path>SFX\SFX_Bed_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3871049324" Name="SFX_Bed_7" ObjectPath="\Events\Cinematique\SFX_Bed_7" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="587249764" Language="SFX">
+							<ShortName>SFX_Bed_7.wav</ShortName>
+							<Path>SFX\SFX_Bed_7_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="46269824" Name="SFX_Chair" ObjectPath="\Events\Cinematique\SFX_Chair" DurationType="OneShot" DurationMin="0.679688" DurationMax="0.679688">
+					<IncludedMemoryFiles>
+						<File Id="287921190" Language="SFX">
+							<ShortName>SFX_Chair.wav</ShortName>
+							<Path>SFX\SFX_Chair_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2257423824" Name="SFX_Console_1" ObjectPath="\Events\Cinematique\SFX_Console_1" DurationType="OneShot" DurationMin="13.5" DurationMax="13.5">
+					<IncludedMemoryFiles>
+						<File Id="555800018" Language="SFX">
+							<ShortName>SFX_Console_1l.wav</ShortName>
+							<Path>SFX\SFX_Console_1l_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2257423827" Name="SFX_Console_2" ObjectPath="\Events\Cinematique\SFX_Console_2" DurationType="OneShot" DurationMin="10.5" DurationMax="10.5">
+					<IncludedMemoryFiles>
+						<File Id="651627578" Language="SFX">
+							<ShortName>SFX_Console_2.wav</ShortName>
+							<Path>SFX\SFX_Console_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2257423826" Name="SFX_Console_3" ObjectPath="\Events\Cinematique\SFX_Console_3" DurationType="OneShot" DurationMin="6.4375" DurationMax="6.4375">
+					<IncludedMemoryFiles>
+						<File Id="799079370" Language="SFX">
+							<ShortName>SFX_Console_3.wav</ShortName>
+							<Path>SFX\SFX_Console_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="788924100" Name="SFX_Hey_Link" ObjectPath="\Events\Cinematique\SFX_Hey_Link" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="211427515" Language="SFX">
+							<ShortName>SFX_Hey_Link.wav</ShortName>
+							<Path>SFX\SFX_Hey_Link_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="995018306" Name="SFX_Impact_Link" ObjectPath="\Events\Cinematique\SFX_Impact_Link" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="98362633" Language="SFX">
+							<ShortName>SFX_Impact_Link.wav</ShortName>
+							<Path>SFX\SFX_Impact_Link_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2227851195" Name="SFX_Thief_Steal" ObjectPath="\Events\Cinematique\SFX_Thief_Steal" DurationType="OneShot" DurationMin="3.46875" DurationMax="3.46875">
+					<IncludedMemoryFiles>
+						<File Id="658756326" Language="SFX">
+							<ShortName>SFX_Thief_Steal.wav</ShortName>
+							<Path>SFX\SFX_Thief_Steal_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="44942049" Language="SFX">
+					<ShortName>SFX_Bed_2.wav</ShortName>
+					<Path>SFX\SFX_Bed_2_10C4C929.wem</Path>
+				</File>
+				<File Id="98362633" Language="SFX">
+					<ShortName>SFX_Impact_Link.wav</ShortName>
+					<Path>SFX\SFX_Impact_Link_10C4C929.wem</Path>
+				</File>
+				<File Id="161188132" Language="SFX">
+					<ShortName>SFX_Bed_5.wav</ShortName>
+					<Path>SFX\SFX_Bed_5_10C4C929.wem</Path>
+				</File>
+				<File Id="176053616" Language="SFX">
+					<ShortName>SFX_Bed_4.wav</ShortName>
+					<Path>SFX\SFX_Bed_4_10C4C929.wem</Path>
+				</File>
+				<File Id="211427515" Language="SFX">
+					<ShortName>SFX_Hey_Link.wav</ShortName>
+					<Path>SFX\SFX_Hey_Link_10C4C929.wem</Path>
+				</File>
+				<File Id="239652335" Language="SFX">
+					<ShortName>SFX_Bed_3.wav</ShortName>
+					<Path>SFX\SFX_Bed_3_10C4C929.wem</Path>
+				</File>
+				<File Id="287921190" Language="SFX">
+					<ShortName>SFX_Chair.wav</ShortName>
+					<Path>SFX\SFX_Chair_10C4C929.wem</Path>
+				</File>
+				<File Id="346909849" Language="SFX">
+					<ShortName>SFX_Bed_1.wav</ShortName>
+					<Path>SFX\SFX_Bed_1_10C4C929.wem</Path>
+				</File>
+				<File Id="555800018" Language="SFX">
+					<ShortName>SFX_Console_1l.wav</ShortName>
+					<Path>SFX\SFX_Console_1l_10C4C929.wem</Path>
+				</File>
+				<File Id="587249764" Language="SFX">
+					<ShortName>SFX_Bed_7.wav</ShortName>
+					<Path>SFX\SFX_Bed_7_10C4C929.wem</Path>
+				</File>
+				<File Id="651627578" Language="SFX">
+					<ShortName>SFX_Console_2.wav</ShortName>
+					<Path>SFX\SFX_Console_2_10C4C929.wem</Path>
+				</File>
+				<File Id="658756326" Language="SFX">
+					<ShortName>SFX_Thief_Steal.wav</ShortName>
+					<Path>SFX\SFX_Thief_Steal_10C4C929.wem</Path>
+				</File>
+				<File Id="799079370" Language="SFX">
+					<ShortName>SFX_Console_3.wav</ShortName>
+					<Path>SFX\SFX_Console_3_10C4C929.wem</Path>
+				</File>
+				<File Id="1052398937" Language="SFX">
+					<ShortName>SFX_Bed_6.wav</ShortName>
+					<Path>SFX\SFX_Bed_6_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3720479411" Language="SFX" Hash="551191618">
 			<ObjectPath>\SoundBanks\Default Work Unit\House</ObjectPath>
 			<ShortName>House</ShortName>
 			<Path>House.bnk</Path>
@@ -1510,14 +1683,7 @@
 						<AuxBus Id="2077253480" Name="Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3567259750" Name="SFX_Dik_Intro_Cinematique" ObjectPath="\Events\House\SFX_Dik_Intro_Cinematique" DurationType="OneShot" DurationMin="73.657333" DurationMax="73.657333">
-					<IncludedMemoryFiles>
-						<File Id="1040132542" Language="SFX">
-							<ShortName>SFX_Dik_Intro_Cinematique [2022-11-28 175901].wav</ShortName>
-							<Path>SFX\SFX_Dik_Intro_Cinematique [2022-11-28 175901]_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="3567259750" Name="SFX_Dik_Intro_Cinematique" ObjectPath="\Events\House\SFX_Dik_Intro_Cinematique" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1739295053" Name="SFX_Door" ObjectPath="\Events\House\SFX_Door" DurationType="OneShot" DurationMin="2.262167" DurationMax="2.262167">
 					<IncludedMemoryFiles>
 						<File Id="656424530" Language="SFX">
@@ -1638,7 +1804,7 @@
 				<GameParameter Id="3749487386" Name="FS_RTPC" ObjectPath="\Game Parameters\Default Work Unit\FS_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3853285476" Language="SFX" Hash="3711582191">
+		<SoundBank Id="3853285476" Language="SFX" Hash="441156215">
 			<ObjectPath>\SoundBanks\Default Work Unit\Title_Screen</ObjectPath>
 			<ShortName>Title_Screen</ShortName>
 			<Path>Title_Screen.bnk</Path>
@@ -1656,6 +1822,14 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2271500369" Name="Stop_Music_Title_Screen" ObjectPath="\Events\Title_Screen\Stop_Music_Title_Screen" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2382194672" Name="UI_Play" ObjectPath="\Events\Title_Screen\UI_Play" DurationType="OneShot" DurationMin="0.380604" DurationMax="0.380604">
+					<IncludedMemoryFiles>
+						<File Id="286650089" Language="SFX">
+							<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
+							<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="420687696" Language="SFX">

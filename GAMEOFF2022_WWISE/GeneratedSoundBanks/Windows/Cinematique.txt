@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	46269824	SFX_Chair			\Cinematique\SFX_Chair	
+	788924100	SFX_Hey_Link			\Cinematique\SFX_Hey_Link	
+	995018306	SFX_Impact_Link			\Cinematique\SFX_Impact_Link	
+	2227851195	SFX_Thief_Steal			\Cinematique\SFX_Thief_Steal	
+	2257423824	SFX_Console_1			\Cinematique\SFX_Console_1	
+	2257423826	SFX_Console_3			\Cinematique\SFX_Console_3	
+	2257423827	SFX_Console_2			\Cinematique\SFX_Console_2	
+	3871049320	SFX_Bed_3			\Cinematique\SFX_Bed_3	
+	3871049321	SFX_Bed_2			\Cinematique\SFX_Bed_2	
+	3871049322	SFX_Bed_1			\Cinematique\SFX_Bed_1	
+	3871049324	SFX_Bed_7			\Cinematique\SFX_Bed_7	
+	3871049325	SFX_Bed_6			\Cinematique\SFX_Bed_6	
+	3871049326	SFX_Bed_5			\Cinematique\SFX_Bed_5	
+	3871049327	SFX_Bed_4			\Cinematique\SFX_Bed_4	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	44942049	SFX_Bed_2	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Bed_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Bed_2		108064
+	98362633	SFX_Impact_Link	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Impact_Link_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Impact_Link		96064
+	161188132	SFX_Bed_5	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Bed_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Bed_5		120064
+	176053616	SFX_Bed_4	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Bed_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Bed_4		144064
+	211427515	SFX_Hey_Link	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Hey_Link_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Hey_Link		96064
+	239652335	SFX_Bed_3	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Bed_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Bed_3		96064
+	287921190	SFX_Chair	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Chair_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Chair		130564
+	346909849	SFX_Bed_1	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Bed_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Bed_1		150064
+	555800018	SFX_Console_1	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Console_1l_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Console_1		2592064
+	587249764	SFX_Bed_7	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Bed_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Bed_7		96064
+	651627578	SFX_Console_2	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Console_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Console_2		2016064
+	658756326	SFX_Thief_Steal	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Thief_Steal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Thief_Steal		666064
+	799079370	SFX_Console_3	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Console_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Console_3		1236064
+	1052398937	SFX_Bed_6	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\SFX_Bed_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\House\Cinematique\SFX_Bed_6		144064
+

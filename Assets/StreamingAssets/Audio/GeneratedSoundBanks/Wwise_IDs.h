@@ -31,12 +31,23 @@ namespace AK
         static const AkUniqueID PLAY_VOICE_MOTHER = 2092731998U;
         static const AkUniqueID SFX_ARTEFACT = 1295230719U;
         static const AkUniqueID SFX_ARTEFACT_ANIM = 2007898709U;
+        static const AkUniqueID SFX_BED_1 = 3871049322U;
+        static const AkUniqueID SFX_BED_2 = 3871049321U;
+        static const AkUniqueID SFX_BED_3 = 3871049320U;
+        static const AkUniqueID SFX_BED_4 = 3871049327U;
+        static const AkUniqueID SFX_BED_5 = 3871049326U;
+        static const AkUniqueID SFX_BED_6 = 3871049325U;
+        static const AkUniqueID SFX_BED_7 = 3871049324U;
         static const AkUniqueID SFX_BED_COVER = 3739131574U;
         static const AkUniqueID SFX_BOUNCE_P2 = 85250538U;
         static const AkUniqueID SFX_CARPET_FOREST = 1831562812U;
+        static const AkUniqueID SFX_CHAIR = 46269824U;
         static const AkUniqueID SFX_CHEST_INV = 194056412U;
         static const AkUniqueID SFX_CHEST_POP = 751704620U;
         static const AkUniqueID SFX_CHEST_POP_STOP = 999550235U;
+        static const AkUniqueID SFX_CONSOLE_1 = 2257423824U;
+        static const AkUniqueID SFX_CONSOLE_2 = 2257423827U;
+        static const AkUniqueID SFX_CONSOLE_3 = 2257423826U;
         static const AkUniqueID SFX_DEAD = 1905497203U;
         static const AkUniqueID SFX_DIK_INTRO_CINEMATIQUE = 3567259750U;
         static const AkUniqueID SFX_DOOR = 1739295053U;
@@ -44,7 +55,9 @@ namespace AK
         static const AkUniqueID SFX_DOORS_CLOSED = 2756585315U;
         static const AkUniqueID SFX_FALL_CHEST = 1261070616U;
         static const AkUniqueID SFX_HEAL = 3309721871U;
+        static const AkUniqueID SFX_HEY_LINK = 788924100U;
         static const AkUniqueID SFX_HIT = 615152896U;
+        static const AkUniqueID SFX_IMPACT_LINK = 995018306U;
         static const AkUniqueID SFX_KEY_FOREST = 1091244002U;
         static const AkUniqueID SFX_KEY_FOREST_OPEN = 3571398045U;
         static const AkUniqueID SFX_KEY_GET = 2452784151U;
@@ -66,6 +79,7 @@ namespace AK
         static const AkUniqueID SFX_SWORD_DRAG_STONE_DONJON = 439170446U;
         static const AkUniqueID SFX_SWORD_DRAG_STONE_DONJON_STOP = 1168412621U;
         static const AkUniqueID SFX_SWORD_DRAG_STOP = 1704546832U;
+        static const AkUniqueID SFX_THIEF_STEAL = 2227851195U;
         static const AkUniqueID STOP_FOOTSTEPS_ROOM_CARPET = 1081171197U;
         static const AkUniqueID STOP_MUSIC_DONJON = 3111214772U;
         static const AkUniqueID STOP_MUSIC_FOREST = 2506571047U;
@@ -147,6 +161,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BOSS = 1560169506U;
+        static const AkUniqueID CINEMATIQUE = 3261888876U;
         static const AkUniqueID DONJON = 2891873417U;
         static const AkUniqueID FOREST = 491961918U;
         static const AkUniqueID HOUSE = 3720479411U;
