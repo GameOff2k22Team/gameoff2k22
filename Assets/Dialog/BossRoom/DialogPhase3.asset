@@ -18,10 +18,10 @@ MonoBehaviour:
   - type: 1
     message: If I take it away, you will find it again.
   - type: 1
-    message: Or you will find something else in the end
+    message: "All I want is to spend some time \nwith you"
   - type: 1
-    message: "You never listen to me. \nI\u2019m so disappointed"
+    message: "When you were little you were \nsuch a mommy\u2019s boy"
   - type: 1
-    message: "I do everything for you \nand that\u2019s how you thank me\u2026"
+    message: I miss those moments with you
   onlyOneTrigger: 0
   canBeTrigger: 1
