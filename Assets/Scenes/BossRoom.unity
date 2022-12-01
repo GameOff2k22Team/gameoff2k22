@@ -385,6 +385,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1380682755, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1398194920, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -396,6 +400,10 @@ PrefabInstance:
     - target: {fileID: 1411857538, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411857538, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1597398402, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
       propertyPath: m_Layer
@@ -1045,7 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09cdd45ae82c262448982b813861c6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 11400000, guid: 5690d858dd005ee428589d7da59a6ac8, type: 2}
+  dialog: {fileID: 11400000, guid: f015b25ffc0fa524fbc5eafdc6525200, type: 2}
   pannelScale: {x: 0.003, y: 0.003, z: 0.003}
 --- !u!114 &213281377
 MonoBehaviour:
@@ -4308,6 +4316,8 @@ PlayableDirector:
     value: {fileID: 2130723842}
   - key: {fileID: 6375326346329992823, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
     value: {fileID: 1402384418}
+  - key: {fileID: -8278775668578964769, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
+    value: {fileID: 1865077602}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1313530891
@@ -4365,7 +4375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09cdd45ae82c262448982b813861c6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 11400000, guid: f015b25ffc0fa524fbc5eafdc6525200, type: 2}
+  dialog: {fileID: 11400000, guid: 02e8fb5b4246e694daa9dad56878061f, type: 2}
   pannelScale: {x: 0.003, y: 0.003, z: 0.003}
 --- !u!114 &1313530894
 MonoBehaviour:
@@ -5662,6 +5672,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 03d6d8a82e631ba4c85f755323734e8c, type: 2}
     - {fileID: 11400000, guid: f3e54d1f4837ec946b0f4bbbf8b9b76a, type: 2}
     - {fileID: 11400000, guid: 62064aeb071d38a48a006c0c728dd7a6, type: 2}
+    - {fileID: 11400000, guid: 93fe211d0795ee74ea199206a9880aa2, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -5701,6 +5712,20 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1865077600}
+          m_TargetAssemblyTypeName: BossManager, Assembly-CSharp
+          m_MethodName: UpdateBossPhase
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
