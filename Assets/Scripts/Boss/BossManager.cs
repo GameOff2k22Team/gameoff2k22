@@ -111,6 +111,9 @@ public class BossManager : MonoBehaviour
     private List<PatternBossP3> p3S2Pattern;
     [SerializeField]
     private List<PatternBossP3> p3S3Pattern;
+    [SerializeField]
+    private List<PatternBossP3> p3S4Pattern;
+
 
     private void Awake()
     {
@@ -131,7 +134,7 @@ public class BossManager : MonoBehaviour
 
     private void Start()
     {
-
+        //UpdateBossPhase(BossState.phase3);
     }
 
     #region Generic Method
@@ -304,6 +307,7 @@ public class BossManager : MonoBehaviour
         yield return StartCoroutine(WaitBeforeStart());
         yield return StartCoroutine(P3PatternCoroutine(p3S3Pattern));
         yield return StartCoroutine(WaitBeforeStart());
+        yield return StartCoroutine(P3PatternCoroutine(p3S4Pattern));
 
         OnPhase3End?.Raise();
     }

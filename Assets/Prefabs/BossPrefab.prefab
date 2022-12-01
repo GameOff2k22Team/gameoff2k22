@@ -1810,6 +1810,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b5e4c449173d9ce4e9ee2bfc8c749dfe, type: 2}
   - {fileID: 11400000, guid: 6407890cedca17f4598c003f0ad4d356, type: 2}
   - {fileID: 11400000, guid: 02996f1f0a75ca7428aca676b409f987, type: 2}
+  p3S4Pattern:
+  - {fileID: 11400000, guid: b636e62ca03017a4f94cd357e5fe4ab6, type: 2}
 --- !u!114 &5296360245284406367
 MonoBehaviour:
   m_ObjectHideFlags: 0
