@@ -1,0 +1,48 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1897164952	Footsteps_Forest_State			\Default Work Unit\Footsteps_Forest_State	
+	2186369235	Sword_Drag_State_Group			\Default Work Unit\Sword_Drag_State_Group	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Footsteps_Forest_State			
+	1216965916	Stone	Footsteps_Forest_State			
+	2195636714	Dirt	Footsteps_Forest_State			
+	4248645337	Grass	Footsteps_Forest_State			
+	748895195	None	Sword_Drag_State_Group			
+	1216965916	Stone	Sword_Drag_State_Group			
+	2195636714	Dirt	Sword_Drag_State_Group			
+	4248645337	Grass	Sword_Drag_State_Group			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4179668880	Master_Volume			\Default Work Unit\Master_Volume	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2077253480	Room			\Default Work Unit\Master Audio Bus\Room	
+	2891873417	Donjon			\Default Work Unit\Master Audio Bus\Donjon	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+	4230635974	Default_Motion_Device	Wwise Motion			
+

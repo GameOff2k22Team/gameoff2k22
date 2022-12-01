@@ -197,6 +197,45 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Music_End" ID="{9776BD6E-2E82-4768-9D38-BE58E76E878E}">
+					<ChildrenList>
+						<Action Name="" ID="{DD5CE1CA-408A-4510-9F3B-1BEA8A59380C}" ShortID="958069694">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_End" ID="{F4753848-1201-4F8B-94A6-8A30DAF9E618}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_End_Stop" ID="{A59B344E-FCE0-4A7B-A459-38FE2EF6A6E6}">
+					<ChildrenList>
+						<Action Name="" ID="{1338CCBC-9BF3-4619-A06A-27334F34593C}" ShortID="135149073">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_End_RTPC" ID="{CAF6B524-E631-48F0-8430-FD402DCC6F91}" WorkUnitID="{49A1D608-54F1-4AF9-9E94-4913BD93FCFE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{10A109C3-E33B-41D4-A412-0F514FDF37B8}" ShortID="825229270">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_End" ID="{F4753848-1201-4F8B-94A6-8A30DAF9E618}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

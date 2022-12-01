@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2678962602	AMB_House			\House\AMB_House	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	933608982	AMB_Room	E:\GAMEOFF2022\GAMEOFF2022_WWISE\.cache\Windows\SFX\AMB_Chambre_Roomtone [2022-11-07 224126]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\Room\AMB_Room		9672064
+

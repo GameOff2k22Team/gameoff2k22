@@ -36,6 +36,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="SFX_Fire_Loop_RTPC" ID="{82684759-B375-407A-9B14-3E2862E24AB8}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
 							<Value>6</Value>
 						</RTPCValue>
@@ -94,6 +98,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="VOICE_Hero_RTPC" ID="{B36738BA-5852-47B8-87A1-0B26645BED85}"/>
 							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_End_RTPC" ID="{CAF6B524-E631-48F0-8430-FD402DCC6F91}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>

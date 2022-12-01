@@ -33,7 +33,9 @@
 						<ObjectRef Name="Footsteps_Room_Wood" ID="{F0EAF49E-5D5A-434F-8091-92BAAB74814B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_House" ID="{39592BD7-2F1D-438B-A662-77C257F5CE18}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="House" ID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" WorkUnitID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_End" ID="{9776BD6E-2E82-4768-9D38-BE58E76E878E}" WorkUnitID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps_House_Wood" ID="{0C47EA4A-3AEB-49F0-AF58-3C0E8DCB58CF}" WorkUnitID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_End_Stop" ID="{A59B344E-FCE0-4A7B-A459-38FE2EF6A6E6}" WorkUnitID="{A48A028A-2F2A-4732-866C-4F26E308C3A7}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -80,9 +82,12 @@
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="Dead" ID="{1FCDDDCB-16AD-414A-80C9-137387AD0EE3}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Boss" ID="{522ED282-1BB1-4159-94F6-FC6F2156A118}" WorkUnitID="{BB47AA4B-85DA-4D49-A54C-F745F32EF8BE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Projectiles" ID="{F14D5E6E-79A0-4277-A416-6F261C9E1505}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Boss" ID="{DD5642B8-2453-4485-AFAD-02A2B661B6D8}" WorkUnitID="{DD5642B8-2453-4485-AFAD-02A2B661B6D8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Boss" ID="{DCC2E968-C85F-45AC-A192-F8ABB3839916}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Heal" ID="{0074BC97-E122-491A-91D2-70C3725DBE1B}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Get_Hit" ID="{A348A42A-6041-4F1C-A220-B1FD59962E5E}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

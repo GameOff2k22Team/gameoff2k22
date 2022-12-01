@@ -524,6 +524,7 @@ GameObject:
   - component: {fileID: 219449014}
   - component: {fileID: 219449013}
   - component: {fileID: 219449012}
+  - component: {fileID: 219449015}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -597,6 +598,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &219449015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219449011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea0298d2d1b17f4a837ecb9a4a65e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 395376443e13af04fa3f3209db1af770,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &250006815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,6 +1857,12 @@ PrefabInstance:
       propertyPath: _cam
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1795660069567400891, guid: 5041a13e1132c2e4ebe1e749c31de3de,
+        type: 3}
+      propertyPath: SFXDialogPop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 0959cb3d453f2334986db0765c74667f,
+        type: 2}
     - target: {fileID: 3189609122891604165, guid: 5041a13e1132c2e4ebe1e749c31de3de,
         type: 3}
       propertyPath: m_Name
