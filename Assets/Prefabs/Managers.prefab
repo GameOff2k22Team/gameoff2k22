@@ -141,10 +141,10 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2067690920036827800}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 5626964452074506572}
+        m_TargetAssemblyTypeName: HUDManager, Assembly-CSharp
+        m_MethodName: ChangeActivateState
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -198,6 +198,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be8ada53aa2e9e40af1556e9013fa3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SFXDialogPop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &807299016771110152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -442,12 +446,6 @@ PrefabInstance:
       objectReference: {fileID: 4770926948683093907}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a687cdb3f591ec84fb1237170e435dfd, type: 3}
---- !u!1 &2067690920036827800 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1695028851340642192, guid: a687cdb3f591ec84fb1237170e435dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 807299016771110152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2067690920036827804 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1695028851340642196, guid: a687cdb3f591ec84fb1237170e435dfd,
@@ -460,6 +458,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 807299016771110152}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5626964452074506572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4981795335489506372, guid: a687cdb3f591ec84fb1237170e435dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 807299016771110152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4e93059eb1fbd4293182a000996b49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1014748631882858942
 PrefabInstance:
   m_ObjectHideFlags: 0
