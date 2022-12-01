@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00e181a54629884f830acd01c6c3bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRotated: 1
 --- !u!95 &-1733358197777741814
 Animator:
   serializedVersion: 4
