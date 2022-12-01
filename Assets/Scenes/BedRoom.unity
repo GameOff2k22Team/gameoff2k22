@@ -972,6 +972,41 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: -5093995023089752759, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49998903
+      objectReference: {fileID: 0}
+    - target: {fileID: -5093995023089752759, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50001085
+      objectReference: {fileID: 0}
+    - target: {fileID: -5093995023089752759, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49998915
+      objectReference: {fileID: 0}
+    - target: {fileID: -5093995023089752759, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.50001097
+      objectReference: {fileID: 0}
+    - target: {fileID: -5093995023089752759, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: -5093995023089752759, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -5093995023089752759, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -89.99701
+      objectReference: {fileID: 0}
     - target: {fileID: -4133703932355585839, guid: 7092701aac7cf3c488a26aabeb79f7f2,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -981,6 +1016,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -859322575320243141, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7070302
+      objectReference: {fileID: 0}
+    - target: {fileID: -859322575320243141, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70718336
+      objectReference: {fileID: 0}
+    - target: {fileID: -859322575320243141, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -859322575320243141, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -270.02
       objectReference: {fileID: 0}
     - target: {fileID: 773579508035765654, guid: 7092701aac7cf3c488a26aabeb79f7f2,
         type: 3}
@@ -997,6 +1052,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1738776581880846596, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a63bd117280a3443ab93d082980379e, type: 2}
+    - target: {fileID: 1738776581880846596, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a63bd117280a3443ab93d082980379e, type: 2}
+    - target: {fileID: 1738776581880846596, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a63bd117280a3443ab93d082980379e, type: 2}
+    - target: {fileID: 2380718651202138832, guid: 7092701aac7cf3c488a26aabeb79f7f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e582956a6427e64faaed5b506f6d53a, type: 2}
     - target: {fileID: 4356877828898064976, guid: 7092701aac7cf3c488a26aabeb79f7f2,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1449,7 +1524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listOfUnitByType:
   - type: 0
-    unit: {fileID: 491642907}
+    unit: {fileID: 0}
   - type: 2
     unit: {fileID: 1303652797}
   - type: 1
@@ -2640,12 +2715,6 @@ PrefabInstance:
 --- !u!1 &491642906 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1013781569815868834, guid: e2b28dbb7954177479ec203660781dfe,
-    type: 3}
-  m_PrefabInstance: {fileID: 491642905}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &491642907 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8733697162745400650, guid: e2b28dbb7954177479ec203660781dfe,
     type: 3}
   m_PrefabInstance: {fileID: 491642905}
   m_PrefabAsset: {fileID: 0}
