@@ -37,6 +37,8 @@ public class PuzzleManager : MonoBehaviour
     public PerseverancePuzzle perseverancePuzzle;
     [HideInInspector]
     public bool perseverancePuzzleIsEnd = false;
+    public PuzzlePerseverance[] chestsPerseverence;
+
     [Space(10)]
     [Header("Focus Puzzle")]
     public GameObject focusPuzzleObject;
@@ -178,6 +180,21 @@ public class PuzzleManager : MonoBehaviour
 
     private void OpenChestPerseverance(PuzzleBase chest)
     {
+        PuzzlePerseverance chestPerseverence = chest as PuzzlePerseverance;
+        
+        void NotGivingArtefact()
+        {
+            chestPerseverence.animator.enabled = true;
+            chestPerseverence.animator.Play(chestPerseverence.openAnimation.name);
+        }
+
+        if (chestPerseverence.isAlreadyInRoom)
+        {
+            NotGivingArtefact();
+            StartCoroutine(MakeAllChestsFall());
+            return;
+        }
+
         if (this.perseverancePuzzle.numberOfTry == this.perseverancePuzzle.numberOfTryRequired)
         {
             if(!this.perseverancePuzzleIsEnd)
@@ -188,11 +205,22 @@ public class PuzzleManager : MonoBehaviour
         }
         else
         {
-            PuzzlePerseverance chestPerseverence = chest as PuzzlePerseverance;
-            chestPerseverence.animator.enabled = true;
-            chestPerseverence.animator.Play(chestPerseverence.openAnimation.name);
+            NotGivingArtefact();
             this.AddTry();
         }
+    }
+
+    private IEnumerator MakeAllChestsFall()
+    {
+        GameManager.Instance.UpdateGameState(GameState.OnStartKinematic);
+        foreach (PuzzlePerseverance chest in chestsPerseverence)
+        {
+            chest.gameObject.SetActive(true);
+            chest.StartCoroutine(chest.MakeChestFall());
+        }
+
+        yield return new WaitForSecondsRealtime(chestsPerseverence[0].maximumTimeToWait + 0.5f);
+        GameManager.Instance.UpdateGameState(GameState.OnEndKinematic);
     }
 
     private void AddTry()

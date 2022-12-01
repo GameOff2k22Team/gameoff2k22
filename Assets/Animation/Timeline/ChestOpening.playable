@@ -101,7 +101,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: AkTimelineRtpcPlayable
+    m_DisplayName: SFX_Right_Door_RTPC
   m_Markers:
     m_Objects: []
 --- !u!114 &-7226221933994306134
@@ -323,7 +323,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: AkTimelineRtpcPlayable
+    m_DisplayName: SFX_Left_Door_RTPC
   m_Markers:
     m_Objects: []
 --- !u!114 &-4153083847598765623
@@ -413,6 +413,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 1.55
         value: {x: -0.047, y: 0.703, z: 0.09}
+        inSlope: {x: 0, y: 0.39669418, z: 0}
+        outSlope: {x: 0, y: 0.39669418, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 4.0333333
+        value: {x: -0.047, y: 1.78, z: 0.09}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -512,6 +521,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 1.55
         value: 0.703
+        inSlope: 0.39669418
+        outSlope: 0.39669418
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 4.0333333
+        value: 1.78
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1135,7 +1153,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1.4333333
-        value: 1
+        value: 1.5
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1144,7 +1162,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 4
-        value: 1
+        value: 1.5
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1271,7 +1289,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1.4333333
-        value: 1
+        value: 1.5
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1280,7 +1298,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 4
-        value: 1
+        value: 1.5
         inSlope: 0
         outSlope: 0
         tangentMode: 136
