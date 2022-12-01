@@ -2607,7 +2607,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
@@ -2851,6 +2851,11 @@
 								</ActorMixer>
 								<ActorMixer Name="Sword" ID="{56916768-F74B-46AA-9A9E-1E3018F85770}" ShortID="607364758">
 									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>1</Value>
@@ -4373,7 +4378,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="UI_Title_Screen" ID="{896D3905-7BA5-47CE-833B-B6C3E6AC55D6}" ShortID="658495612">
+						<ActorMixer Name="UI_Menu" ID="{896D3905-7BA5-47CE-833B-B6C3E6AC55D6}" ShortID="658495612">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C142B4C4-E715-4FC1-BE39-7F3B153284A6}"/>

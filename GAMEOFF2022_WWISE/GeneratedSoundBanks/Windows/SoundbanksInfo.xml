@@ -762,7 +762,64 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2891873417" Language="SFX" Hash="3032780981">
+		<SoundBank Id="2607556080" Language="SFX" Hash="905391038">
+			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
+			<ShortName>Menu</ShortName>
+			<Path>Menu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2024222415" Name="UI_Back" ObjectPath="\Events\Menu\UI_Back" DurationType="OneShot" DurationMin="0.107" DurationMax="0.107">
+					<IncludedMemoryFiles>
+						<File Id="192766873" Language="SFX">
+							<ShortName>UI_Back [2022-11-21 165940].wav</ShortName>
+							<Path>SFX\UI_Back [2022-11-21 165940]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2249769530" Name="UI_Click" ObjectPath="\Events\Menu\UI_Click" DurationType="OneShot" DurationMin="0.095312" DurationMax="0.095312">
+					<IncludedMemoryFiles>
+						<File Id="321886356" Language="SFX">
+							<ShortName>UI_Click [2022-11-21 165938].wav</ShortName>
+							<Path>SFX\UI_Click [2022-11-21 165938]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Menu\UI_Hover" DurationType="OneShot" DurationMin="0.053677" DurationMax="0.053677">
+					<IncludedMemoryFiles>
+						<File Id="491094595" Language="SFX">
+							<ShortName>UI_Hover [2022-11-21 165937].wav</ShortName>
+							<Path>SFX\UI_Hover [2022-11-21 165937]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2382194672" Name="UI_Play" ObjectPath="\Events\Menu\UI_Play" DurationType="OneShot" DurationMin="0.380604" DurationMax="0.380604">
+					<IncludedMemoryFiles>
+						<File Id="286650089" Language="SFX">
+							<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
+							<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="192766873" Language="SFX">
+					<ShortName>UI_Back [2022-11-21 165940].wav</ShortName>
+					<Path>SFX\UI_Back [2022-11-21 165940]_10C4C929.wem</Path>
+				</File>
+				<File Id="286650089" Language="SFX">
+					<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
+					<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
+				</File>
+				<File Id="321886356" Language="SFX">
+					<ShortName>UI_Click [2022-11-21 165938].wav</ShortName>
+					<Path>SFX\UI_Click [2022-11-21 165938]_10C4C929.wem</Path>
+				</File>
+				<File Id="491094595" Language="SFX">
+					<ShortName>UI_Hover [2022-11-21 165937].wav</ShortName>
+					<Path>SFX\UI_Hover [2022-11-21 165937]_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2891873417" Language="SFX" Hash="3973699621">
 			<ObjectPath>\SoundBanks\Default Work Unit\Donjon</ObjectPath>
 			<ShortName>Donjon</ShortName>
 			<Path>Donjon.bnk</Path>
@@ -1491,7 +1548,7 @@
 				<GameParameter Id="3749487386" Name="FS_RTPC" ObjectPath="\Game Parameters\Default Work Unit\FS_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3853285476" Language="SFX" Hash="2497907359">
+		<SoundBank Id="3853285476" Language="SFX" Hash="3711582191">
 			<ObjectPath>\SoundBanks\Default Work Unit\Title_Screen</ObjectPath>
 			<ShortName>Title_Screen</ShortName>
 			<Path>Title_Screen.bnk</Path>
@@ -1509,59 +1566,11 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2271500369" Name="Stop_Music_Title_Screen" ObjectPath="\Events\Title_Screen\Stop_Music_Title_Screen" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2024222415" Name="UI_Back" ObjectPath="\Events\Title_Screen\UI_Back" DurationType="OneShot" DurationMin="0.107" DurationMax="0.107">
-					<IncludedMemoryFiles>
-						<File Id="192766873" Language="SFX">
-							<ShortName>UI_Back [2022-11-21 165940].wav</ShortName>
-							<Path>SFX\UI_Back [2022-11-21 165940]_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2249769530" Name="UI_Click" ObjectPath="\Events\Title_Screen\UI_Click" DurationType="OneShot" DurationMin="0.095312" DurationMax="0.095312">
-					<IncludedMemoryFiles>
-						<File Id="321886356" Language="SFX">
-							<ShortName>UI_Click [2022-11-21 165938].wav</ShortName>
-							<Path>SFX\UI_Click [2022-11-21 165938]_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Title_Screen\UI_Hover" DurationType="OneShot" DurationMin="0.053677" DurationMax="0.053677">
-					<IncludedMemoryFiles>
-						<File Id="491094595" Language="SFX">
-							<ShortName>UI_Hover [2022-11-21 165937].wav</ShortName>
-							<Path>SFX\UI_Hover [2022-11-21 165937]_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2382194672" Name="UI_Play" ObjectPath="\Events\Title_Screen\UI_Play" DurationType="OneShot" DurationMin="0.380604" DurationMax="0.380604">
-					<IncludedMemoryFiles>
-						<File Id="286650089" Language="SFX">
-							<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
-							<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="192766873" Language="SFX">
-					<ShortName>UI_Back [2022-11-21 165940].wav</ShortName>
-					<Path>SFX\UI_Back [2022-11-21 165940]_10C4C929.wem</Path>
-				</File>
-				<File Id="286650089" Language="SFX">
-					<ShortName>UI_Play [2022-11-21 165939].wav</ShortName>
-					<Path>SFX\UI_Play [2022-11-21 165939]_10C4C929.wem</Path>
-				</File>
-				<File Id="321886356" Language="SFX">
-					<ShortName>UI_Click [2022-11-21 165938].wav</ShortName>
-					<Path>SFX\UI_Click [2022-11-21 165938]_10C4C929.wem</Path>
-				</File>
 				<File Id="420687696" Language="SFX">
 					<ShortName>MS_Title_Screen_Loop.wav</ShortName>
 					<Path>SFX\MS_Title_Screen_Loop_9BBFD5C5.wem</Path>
-				</File>
-				<File Id="491094595" Language="SFX">
-					<ShortName>UI_Hover [2022-11-21 165937].wav</ShortName>
-					<Path>SFX\UI_Hover [2022-11-21 165937]_10C4C929.wem</Path>
 				</File>
 				<File Id="1044038537" Language="SFX">
 					<ShortName>menu [2022-11-24 133230].wav</ShortName>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8635B51D-2E4A-4A39-B663-2E8EBFFC8687}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Menu" ID="{8635B51D-2E4A-4A39-B663-2E8EBFFC8687}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="UI_Click" ID="{BCBF745E-8D0F-4DE5-BC77-555866D84515}">
+					<ChildrenList>
+						<Action Name="" ID="{5A5813E6-9CCA-4981-80BC-F84BA71527A0}" ShortID="967799313">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Click" ID="{DE5E98C2-970E-462F-BD72-8406138BB320}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Hover" ID="{E51E3507-A059-43CE-9707-B19EA75F3387}">
+					<ChildrenList>
+						<Action Name="" ID="{AA5D3D96-B5BE-4E68-A33E-FE86BB296A14}" ShortID="890362495">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Hover" ID="{2401A2BA-E7D9-42B7-A3EE-8A0C9B352425}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Back" ID="{67118D65-5EEE-4014-96D8-9CE210E08753}">
+					<ChildrenList>
+						<Action Name="" ID="{8159F4CC-9A89-430D-AEB5-68BBE7A8AE84}" ShortID="544954775">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Back" ID="{2E4FF358-750C-42C9-A127-E9DE43ED1629}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Play" ID="{6575DD0A-05EB-4C2A-B898-CA0ED8EE69D5}">
+					<ChildrenList>
+						<Action Name="" ID="{3203F888-7796-4619-8FC3-58C1F1D09E45}" ShortID="791538301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Play" ID="{3F3FB20F-5163-43EC-B1B5-8474EBADB4BD}" WorkUnitID="{9CE15C3D-836E-4ECE-870D-023C562D4FA6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
