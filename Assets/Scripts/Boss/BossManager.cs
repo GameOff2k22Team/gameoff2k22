@@ -18,6 +18,9 @@ public class BossManager : MonoBehaviour
     private GameEvent OnPlayerMustNotDie;
 
     [SerializeField]
+    private GameEvent OnPlayerRespawn;
+
+    [SerializeField]
     private Animator MotherP12;
 
     [SerializeField]
@@ -137,27 +140,29 @@ public class BossManager : MonoBehaviour
     [SerializeField]
     private List<PatternBossP1> p4S1Pattern;
 
+    private Coroutine _currentBossCoroutine = null;
 
     private void Awake()
     {
         OnPlayerDeath.RegisterListener(CallWhenPlayerDies);
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         OnPlayerDeath.UnregisterListener(CallWhenPlayerDies);
     }
 
     private void CallWhenPlayerDies()
     {
+        Debug.Log("Is Called ");
         MotherP12.SetBool("isAttacking", false);
         ClearEnemies();
-        StopAllCoroutines();
+        StopCoroutine(_currentBossCoroutine);
     }
 
     private void Start()
     {
-        //UpdateBossPhase(BossState.phase3);
+        //UpdateBossPhase(BossState.phase1);
     }
 
     #region Generic Method
@@ -192,19 +197,19 @@ public class BossManager : MonoBehaviour
         switch (state)
         {
             case BossState.phase1:
-                StartCoroutine(Phase1Coroutine());
+                _currentBossCoroutine = StartCoroutine(Phase1Coroutine());
                 break;
             case BossState.phase2:
                 ClearEnemies();
-                StartCoroutine(Phase2Coroutine());
+                _currentBossCoroutine = StartCoroutine(Phase2Coroutine());
                 break;
             case BossState.phase3:
                 ClearEnemies();
-                StartCoroutine(Phase3Coroutine());
+                _currentBossCoroutine = StartCoroutine(Phase3Coroutine());
                 break;
             case BossState.phase4:
                 ClearEnemies();
-                StartCoroutine(Phase4Coroutine());
+                _currentBossCoroutine = StartCoroutine(Phase4Coroutine());
                 break;
         }
     }
@@ -245,6 +250,7 @@ public class BossManager : MonoBehaviour
     private AK.Wwise.Event SFXProjectileP1 = null;
     private IEnumerator Phase1Coroutine()
     {
+
         yield return StartCoroutine(WaitBeforeStart());
         yield return StartCoroutine(P1PatternCoroutine(p1S1Pattern, _numberOfPatternP1S1, isP1S1Random, _spawningSpeed));
         yield return StartCoroutine(WaitBeforeStart());

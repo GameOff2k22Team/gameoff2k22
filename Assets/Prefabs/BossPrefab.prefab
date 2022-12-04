@@ -1538,6 +1538,8 @@ MonoBehaviour:
   OnPlayer2DDeath: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa, type: 2}
   OnPlayerMustNotDie:
     Event: {fileID: 11400000, guid: 45cfe3066bb248041ab0cc88ed6b6b6e, type: 2}
+  OnPlayerRespawn:
+    Event: {fileID: 11400000, guid: 728f53c58c5cfb7419fb83ceef13678f, type: 2}
   PlayerHPChanged: {fileID: 11400000, guid: 84aee348d17c1be479612779e971dbdb, type: 2}
 --- !u!61 &2494362163355096836
 BoxCollider2D:
@@ -1693,6 +1695,9 @@ MonoBehaviour:
   OnPlayerDeath:
     Event: {fileID: 11400000, guid: cc483d2c85065d94097f7048b45ac9fa, type: 2}
   OnPlayerMustNotDie: {fileID: 11400000, guid: 45cfe3066bb248041ab0cc88ed6b6b6e, type: 2}
+  OnPlayerRespawn: {fileID: 11400000, guid: 728f53c58c5cfb7419fb83ceef13678f, type: 2}
+  MotherP12: {fileID: 0}
+  MotherP3: {fileID: 0}
   enemy: {fileID: 8500118781570255505, guid: 069bd3f31ddf7194095699b3383f151c, type: 3}
   zigZagEnemy: {fileID: -271683245168513361, guid: fece696e65799164e8ae0dd77c681ec7,
     type: 3}
@@ -1833,6 +1838,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 61eeca84775592f48863a6881088f591, type: 2}
   - {fileID: 11400000, guid: 61eeca84775592f48863a6881088f591, type: 2}
   - {fileID: 11400000, guid: 61eeca84775592f48863a6881088f591, type: 2}
+  SFXProjectileP1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SFXProjectileP2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SFXProjectileP3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  SFXProjectileP4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &5296360245284406367
 MonoBehaviour:
   m_ObjectHideFlags: 0

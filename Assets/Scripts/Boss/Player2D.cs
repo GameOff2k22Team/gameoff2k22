@@ -11,6 +11,9 @@ public class Player2D : MonoBehaviour
     private GameEventListener OnPlayerMustNotDie;
 
     [SerializeField]
+    private GameEventListener OnPlayerRespawn;
+
+    [SerializeField]
     private GameEvent PlayerHPChanged;
 
     private int _playerHP = 5;
@@ -37,12 +40,14 @@ public class Player2D : MonoBehaviour
     {
         _renderer  = GetComponent<Renderer>();
         OnPlayerMustNotDie.RegisterListener(SetPlayerMustNotDie);
+        OnPlayerRespawn.RegisterListener(SetPlayerRespawn);
 
     }
 
     private void OnDestroy()
     {
         OnPlayerMustNotDie.UnregisterListener(SetPlayerMustNotDie);
+        OnPlayerRespawn.UnregisterListener(SetPlayerRespawn);
 
     }
 
@@ -72,8 +77,6 @@ public class Player2D : MonoBehaviour
         else if (!_isInvincible && PlayerHP == 1)
         {
             OnPlayer2DDeath.Raise();
-            _isInvincible = false;
-            PlayerHP = 5;
         }
     }
 
@@ -98,5 +101,12 @@ public class Player2D : MonoBehaviour
                                                _renderer.material.color.b,
                                                1f);
         _isInvincible = !_isInvincible;
+    }
+
+    private void SetPlayerRespawn()
+    {
+        Debug.Log("Set Player Respawn");
+        _isInvincible = false;
+        PlayerHP = 5;
     }
 }
