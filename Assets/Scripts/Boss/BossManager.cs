@@ -157,7 +157,8 @@ public class BossManager : MonoBehaviour
         Debug.Log("Is Called ");
         MotherP12.SetBool("isAttacking", false);
         ClearEnemies();
-        StopCoroutine(_currentBossCoroutine);
+        //StopCoroutine(_currentBossCoroutine);
+        StopAllCoroutines();
     }
 
     private void Start()
@@ -197,19 +198,19 @@ public class BossManager : MonoBehaviour
         switch (state)
         {
             case BossState.phase1:
-                _currentBossCoroutine = StartCoroutine(Phase1Coroutine());
+                StartCoroutine(Phase1Coroutine());
                 break;
             case BossState.phase2:
                 ClearEnemies();
-                _currentBossCoroutine = StartCoroutine(Phase2Coroutine());
+                StartCoroutine(Phase2Coroutine());
                 break;
             case BossState.phase3:
                 ClearEnemies();
-                _currentBossCoroutine = StartCoroutine(Phase3Coroutine());
+                StartCoroutine(Phase3Coroutine());
                 break;
             case BossState.phase4:
                 ClearEnemies();
-                _currentBossCoroutine = StartCoroutine(Phase4Coroutine());
+                StartCoroutine(Phase4Coroutine());
                 break;
         }
     }
