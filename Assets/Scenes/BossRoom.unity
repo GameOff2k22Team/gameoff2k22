@@ -389,6 +389,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1380682759, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1398194920, guid: 89f026904df694c40ba5f88dfa8eb250, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -500,12 +504,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
-        type: 3}
-      propertyPath: OnPhase1End
-      value: 
-      objectReference: {fileID: 11400000, guid: 68d68b7bf6d561e4f8f07beaf9f5c59d,
-        type: 2}
     - target: {fileID: 2494362161405228924, guid: 89f026904df694c40ba5f88dfa8eb250,
         type: 3}
       propertyPath: OnPhase2End
@@ -2931,12 +2929,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1541337037}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &594639378 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5365247661959220218, guid: 2d68672813c3a9046903f4c137c290f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1541337037}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &636034576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4845,6 +4837,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 1430713306947734121, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 5820404726696607435, guid: 8abcf1334c1995242997095dfeeb0d4b, type: 2}
+    value: {fileID: 830216914}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1313530891
@@ -6518,6 +6512,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: f3e54d1f4837ec946b0f4bbbf8b9b76a, type: 2}
     - {fileID: 11400000, guid: 62064aeb071d38a48a006c0c728dd7a6, type: 2}
     - {fileID: 11400000, guid: 93fe211d0795ee74ea199206a9880aa2, type: 2}
+    - {fileID: 11400000, guid: c5c990e43edee524a9e7ebc0dda89113, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -6583,6 +6578,20 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 728f53c58c5cfb7419fb83ceef13678f, type: 2}
+          m_TargetAssemblyTypeName: Architecture.GameEvent, Assembly-CSharp
+          m_MethodName: Raise
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -7462,6 +7471,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 6923759736340039115, guid: 0eda56e90e0d45a4ea58114b7fff7118, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 8556226604111114732, guid: 0eda56e90e0d45a4ea58114b7fff7118, type: 2}
+    value: {fileID: 1865077602}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2139122605
@@ -7569,18 +7580,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 965493819}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: FadeDie
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 594639378}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: Play
         m_Mode: 5
