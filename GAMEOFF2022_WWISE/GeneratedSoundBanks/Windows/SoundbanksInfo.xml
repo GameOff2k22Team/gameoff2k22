@@ -844,7 +844,7 @@
 				<GameParameter Id="3688824786" Name="SFX_Hit_RTPC" ObjectPath="\Game Parameters\Default Work Unit\SFX_Hit_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2607556080" Language="SFX" Hash="2569722483">
+		<SoundBank Id="2607556080" Language="SFX" Hash="767463811">
 			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>

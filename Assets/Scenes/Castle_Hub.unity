@@ -5747,6 +5747,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1795660069567400891, guid: 5041a13e1132c2e4ebe1e749c31de3de,
+        type: 3}
+      propertyPath: SFXDialogPop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 0959cb3d453f2334986db0765c74667f,
+        type: 2}
     - target: {fileID: 2067690919414317388, guid: 5041a13e1132c2e4ebe1e749c31de3de,
         type: 3}
       propertyPath: m_AnchorMax.y
