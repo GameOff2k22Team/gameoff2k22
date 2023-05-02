@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using SpeechBubbleManager = VikingCrew.Tools.UI.SpeechBubbleManager;
 
 public class DialogTrigger : MonoBehaviour
@@ -8,11 +9,14 @@ public class DialogTrigger : MonoBehaviour
     public Vector3 pannelScale = new Vector3(0.01f, 0.01f, 0.01f);
     private int currentMsgIdx = -1;
 
+    public UnityEvent onStartOfDialogue; 
+    public UnityEvent onEndOfDialogue; 
 
     public void LaunchDialog()
     {
         if (dialog.canBeTrigger && currentMsgIdx == -1)
         {
+            onStartOfDialogue?.Invoke();
             DialogManager.Instance.StartDialog(this);
             if (dialog.onlyOneTrigger)
             {
@@ -26,6 +30,7 @@ public class DialogTrigger : MonoBehaviour
         currentMsgIdx++;
         if (currentMsgIdx >= dialog.listOfMessageByUnitType.Count)
         {
+            onEndOfDialogue?.Invoke();
             DialogManager.Instance.FinishDialogue();
             currentMsgIdx = -1;
         }
