@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using VikingCrew.Tools.UI;
 using SpeechBubbleManager = VikingCrew.Tools.UI.SpeechBubbleManager;
 
 
@@ -32,11 +33,12 @@ public class DialogManager : Singleton<DialogManager>
         GameManager.Instance.UpdateGameState(GameState.FinishDialogue);
     }
 
-    public void SaySomething(MessageByUnit dialogInfo, Vector3 pannelScale, SpeechBubbleManager.SpeechbubbleType speechbubbleType)
+    public SpeechBubbleBase SaySomething(MessageByUnit dialogInfo, Vector3 pannelScale, SpeechBubbleManager.SpeechbubbleType speechbubbleType)
     {
             SpeechBubbleManager.Instance.Clear();
-            SpeechBubbleManager.Instance.AddSpeechBubble(UnitManager.Instance.GetUnitByType(dialogInfo.type).transform.position, 
+            SpeechBubbleBase bubble = SpeechBubbleManager.Instance.AddSpeechBubble(UnitManager.Instance.GetUnitByType(dialogInfo.type).transform.position, 
                                                          pannelScale, dialogInfo.message, speechbubbleType);
         SFXDialogPop.Post(gameObject);
+        return bubble;
     }
 }
