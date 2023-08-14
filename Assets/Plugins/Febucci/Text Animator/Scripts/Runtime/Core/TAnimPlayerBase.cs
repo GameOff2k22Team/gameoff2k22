@@ -78,7 +78,7 @@ namespace Febucci.UI.Core
         /// <summary>
         /// <c>true</c> if the typewriter is currently showing letters.
         /// </summary>
-        protected bool isBaseInsideRoutine => isInsideRoutine;
+        public bool isBaseInsideRoutine => isInsideRoutine;
         
         /// <summary>
         /// <c>true</c> if the typewriter is waiting for the player input in the 'waitinput' action tag
@@ -307,7 +307,6 @@ namespace Febucci.UI.Core
                     if (HasSkipped())
                     {
                         textAnimator.ShowAllCharacters(hideAppearancesOnSkip);
-
                         if (triggerEventsOnSkip)
                         {
                             textAnimator.TriggerRemainingEvents();

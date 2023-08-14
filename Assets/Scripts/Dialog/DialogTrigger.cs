@@ -1,4 +1,5 @@
 using UnityEngine;
+using VikingCrew.Tools.UI;
 using SpeechBubbleManager = VikingCrew.Tools.UI.SpeechBubbleManager;
 
 public class DialogTrigger : MonoBehaviour
@@ -8,6 +9,7 @@ public class DialogTrigger : MonoBehaviour
     public Vector3 pannelScale = new Vector3(0.01f, 0.01f, 0.01f);
     private int currentMsgIdx = -1;
 
+    private SpeechBubbleTmp currentBubble;
 
     public void LaunchDialog()
     {
@@ -23,20 +25,29 @@ public class DialogTrigger : MonoBehaviour
 
     public void NextMessage()
     {
-        currentMsgIdx++;
-        if (currentMsgIdx >= dialog.listOfMessageByUnitType.Count)
+        if (currentMsgIdx >= dialog.listOfMessageByUnitType.Count - 1 &&
+            currentBubble.CheckTextDisplayed())
         {
             DialogManager.Instance.FinishDialogue();
             currentMsgIdx = -1;
         }
         else
         {
-            DialogManager.MessageByUnit msg = 
-                    dialog.listOfMessageByUnitType[currentMsgIdx];
-            DialogManager.Instance.SaySomething(msg,
-                                                pannelScale,
-                                       SpeechBubbleManager.SpeechbubbleType.NORMAL);
+            bool finishTheBubbleText = currentBubble != null && !currentBubble.CheckTextDisplayed();
+            if (finishTheBubbleText)
+            {
+                currentBubble.DisplayAllText();
+            } else
+            {
+                currentMsgIdx++;
+                SpeechBubbleManager.SpeechbubbleType type = SpeechBubbleManager.SpeechbubbleType.NORMAL;
+                DialogManager.MessageByUnit msg = 
+                        dialog.listOfMessageByUnitType[currentMsgIdx];
 
+                currentBubble = DialogManager.Instance.SaySomething(msg, 
+                                                                    pannelScale,
+                                                                    type) as SpeechBubbleTmp;
+            }
         }
     }
 }
