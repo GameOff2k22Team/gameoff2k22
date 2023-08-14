@@ -30,5 +30,5 @@ MonoBehaviour:
   - type: 1
     message: "Oh you want to go look for it? \nWell, you can go \nbut don\u2019t
       go too far please\u2026"
-  onlyOneTrigger: 1
+  onlyOneTrigger: 0
   canBeTrigger: 1
