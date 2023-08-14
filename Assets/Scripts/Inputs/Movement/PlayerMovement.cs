@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Idle();
             AkSoundEngine.SetRTPCValue("Sword_Drag_RTPC", 100);
-            SFXSwordStop.HandleEvent(gameObject);
+            SFXSwordStop?.HandleEvent(gameObject);
         }
         else if (inputVector.magnitude > 0.9 ||
                  _playerInputs.Player.Run.IsPressed())

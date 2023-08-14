@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using VikingCrew.Tools.UI;
 using SpeechBubbleManager = VikingCrew.Tools.UI.SpeechBubbleManager;
 
 public class DialogTrigger : MonoBehaviour
@@ -11,6 +12,7 @@ public class DialogTrigger : MonoBehaviour
 
     public UnityEvent onStartOfDialogue; 
     public UnityEvent onEndOfDialogue; 
+    private SpeechBubbleTmp currentBubble;
 
     public void LaunchDialog()
     {
@@ -27,8 +29,8 @@ public class DialogTrigger : MonoBehaviour
 
     public void NextMessage()
     {
-        currentMsgIdx++;
-        if (currentMsgIdx >= dialog.listOfMessageByUnitType.Count)
+        if (currentMsgIdx >= dialog.listOfMessageByUnitType.Count - 1 &&
+            currentBubble.CheckTextDisplayed())
         {
             onEndOfDialogue?.Invoke();
             DialogManager.Instance.FinishDialogue();
@@ -36,12 +38,21 @@ public class DialogTrigger : MonoBehaviour
         }
         else
         {
-            DialogManager.MessageByUnit msg = 
-                    dialog.listOfMessageByUnitType[currentMsgIdx];
-            DialogManager.Instance.SaySomething(msg,
-                                                pannelScale,
-                                       SpeechBubbleManager.SpeechbubbleType.NORMAL);
+            bool finishTheBubbleText = currentBubble != null && !currentBubble.CheckTextDisplayed();
+            if (finishTheBubbleText)
+            {
+                currentBubble.DisplayAllText();
+            } else
+            {
+                currentMsgIdx++;
+                SpeechBubbleManager.SpeechbubbleType type = SpeechBubbleManager.SpeechbubbleType.NORMAL;
+                DialogManager.MessageByUnit msg = 
+                        dialog.listOfMessageByUnitType[currentMsgIdx];
 
+                currentBubble = DialogManager.Instance.SaySomething(msg, 
+                                                                    pannelScale,
+                                                                    type) as SpeechBubbleTmp;
+            }
         }
     }
 }
